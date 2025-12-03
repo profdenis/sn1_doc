@@ -1,0 +1,2455 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://profdenis.github.io/sn1_doc/section1/affichage/">
+      
+      
+        <link rel="prev" href="../../introduction/algorithmes/">
+      
+      
+        <link rel="next" href="../entr%C3%A9es/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+    
+    
+      
+        <title>1. Affichage sur la sortie standard - Cours de programmation en sciences</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.618322db.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../style.css">
+    
+      <link rel="stylesheet" href="../../assets/mkdocs_puml/puml.css">
+    
+      <link rel="stylesheet" href="../../assets/mkdocs_puml/interaction.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#1-affichage-sur-la-sortie-standard" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Cours de programmation en sciences" class="md-header__button md-logo" aria-label="Cours de programmation en sciences" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Cours de programmation en sciences
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              1. Affichage sur la sortie standard
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9zM20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12zm-9.15 3.96h2.3L12 9z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="indigo"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/profdenis/sn1_doc" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    profdenis/sn1_doc
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Accueil
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../introduction/" class="md-tabs__link">
+          
+  
+  
+  Introduction
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
+          
+  
+  
+  Section 1
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Cours de programmation en sciences" class="md-nav__button md-logo" aria-label="Cours de programmation en sciences" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Cours de programmation en sciences
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/profdenis/sn1_doc" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    profdenis/sn1_doc
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Accueil
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Introduction
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Introduction
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../introduction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Qu’est-ce que la programmation ?
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../introduction/histoire/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Histoire de la programmation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../introduction/algorithmes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Qu&rsquo;est-ce qu&rsquo;un algorithme ?
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Section 1
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Section 1
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1. Affichage sur la sortie standard
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1. Affichage sur la sortie standard
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-la-sortie-standard" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. La sortie standard
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. La sortie standard">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#caracteristiques-principales" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Caractéristiques principales
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exemple-dutilisation-dans-differents-langages" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exemple d’utilisation dans différents langages
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-la-fonction-print-en-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. La fonction print en Python
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. La fonction print en Python">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#syntaxe" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Syntaxe
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exemples-dutilisation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exemples d’utilisation
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Exemples d’utilisation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-affichage-simple" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1 Affichage simple
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-affichage-de-plusieurs-valeurs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2 Affichage de plusieurs valeurs
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-utilisation-du-parametre-sep" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3 Utilisation du paramètre sep
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24-utilisation-du-parametre-end" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.4 Utilisation du paramètre end
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#25-combinaison-de-sep-et-end" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.5 Combinaison de sep et end
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#26-affichage-sans-saut-de-ligne" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.6 Affichage sans saut de ligne
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-la-methode-format-en-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. La méthode .format() en Python
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. La méthode .format() en Python">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#syntaxe_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Syntaxe
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exemples-dutilisation_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exemples d’utilisation
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Exemples d’utilisation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-placeholders-simples" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 Placeholders simples
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-plusieurs-valeurs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2 Plusieurs valeurs
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-utilisation-dindices" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.3 Utilisation d’indices
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34-placeholders-nommes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.4 Placeholders nommés
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#35-formatage-des-nombres" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.5 Formatage des nombres
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#36-alignement-et-remplissage" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.6 Alignement et remplissage
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#37-remplissage-avec-des-dictionnaires" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.7 Remplissage avec des dictionnaires
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#avantages-et-inconvenients-de-format" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Avantages et inconvénients de .format()
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#comparaison-avec-les-f-strings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Comparaison avec les f-strings
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-les-f-strings-en-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Les f-strings en Python
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Les f-strings en Python">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#syntaxe_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Syntaxe
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exemples-dutilisation_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exemples d’utilisation
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Exemples d’utilisation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-insertion-de-variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1 Insertion de variables
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-calculs-dans-les-f-strings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2 Calculs dans les f-strings
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43-formatage-des-nombres" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.3 Formatage des nombres
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#44-expressions-conditionnelles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.4 Expressions conditionnelles
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#45-appels-de-fonctions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.5 Appels de fonctions
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#46-alignement-et-remplissage" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.6 Alignement et remplissage
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#avantages-des-f-strings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Avantages des f-strings
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-tableau-recapitulatif-format-vs-f-strings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Tableau récapitulatif : .format() vs. f-strings
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Tableau récapitulatif : .format() vs. f-strings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#quand-utiliser-lun-ou-lautre" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Quand utiliser l’un ou l’autre ?
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entr%C3%A9es/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2. L&rsquo;entrée standard (stdin) en Python
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../modules/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3. Importation de modules en Python
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../fonctions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4. Définition de fonctions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Exercices
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Exercices
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../exercices1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Exercices 1 : Affichage sur la sortie standard
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../exercices2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Exercices 2 : Utilisation de l&rsquo;entrée standard
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../exercices3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Exercices pratiques 3 : Utilisation des modules random, math et datetime
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_6" id="__nav_3_6_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Corrigés
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Corrigés
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../exercices1-corrig%C3%A9s/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Corrigés 1 : Affichage sur la sortie standard
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../exercices2-corrig%C3%A9s/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Corrigés 2 : Utilisation de l&rsquo;entrée standard
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../exercices3-corrig%C3%A9s/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Corrigés 3 : Utilisation des modules random, math et datetime
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-la-sortie-standard" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. La sortie standard
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. La sortie standard">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#caracteristiques-principales" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Caractéristiques principales
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exemple-dutilisation-dans-differents-langages" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exemple d’utilisation dans différents langages
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-la-fonction-print-en-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. La fonction print en Python
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. La fonction print en Python">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#syntaxe" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Syntaxe
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exemples-dutilisation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exemples d’utilisation
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Exemples d’utilisation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-affichage-simple" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1 Affichage simple
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-affichage-de-plusieurs-valeurs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2 Affichage de plusieurs valeurs
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-utilisation-du-parametre-sep" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3 Utilisation du paramètre sep
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24-utilisation-du-parametre-end" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.4 Utilisation du paramètre end
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#25-combinaison-de-sep-et-end" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.5 Combinaison de sep et end
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#26-affichage-sans-saut-de-ligne" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.6 Affichage sans saut de ligne
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-la-methode-format-en-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. La méthode .format() en Python
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. La méthode .format() en Python">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#syntaxe_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Syntaxe
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exemples-dutilisation_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exemples d’utilisation
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Exemples d’utilisation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-placeholders-simples" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 Placeholders simples
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-plusieurs-valeurs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2 Plusieurs valeurs
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-utilisation-dindices" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.3 Utilisation d’indices
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34-placeholders-nommes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.4 Placeholders nommés
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#35-formatage-des-nombres" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.5 Formatage des nombres
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#36-alignement-et-remplissage" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.6 Alignement et remplissage
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#37-remplissage-avec-des-dictionnaires" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.7 Remplissage avec des dictionnaires
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#avantages-et-inconvenients-de-format" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Avantages et inconvénients de .format()
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#comparaison-avec-les-f-strings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Comparaison avec les f-strings
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-les-f-strings-en-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Les f-strings en Python
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Les f-strings en Python">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#syntaxe_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Syntaxe
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exemples-dutilisation_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exemples d’utilisation
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Exemples d’utilisation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-insertion-de-variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1 Insertion de variables
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-calculs-dans-les-f-strings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2 Calculs dans les f-strings
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43-formatage-des-nombres" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.3 Formatage des nombres
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#44-expressions-conditionnelles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.4 Expressions conditionnelles
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#45-appels-de-fonctions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.5 Appels de fonctions
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#46-alignement-et-remplissage" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.6 Alignement et remplissage
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#avantages-des-f-strings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Avantages des f-strings
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-tableau-recapitulatif-format-vs-f-strings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Tableau récapitulatif : .format() vs. f-strings
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Tableau récapitulatif : .format() vs. f-strings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#quand-utiliser-lun-ou-lautre" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Quand utiliser l’un ou l’autre ?
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+  
+
+
+  <nav class="md-path" aria-label="Navigation" >
+    <ol class="md-path__list">
+      
+        
+  
+  
+    <li class="md-path__item">
+      <a href="../.." class="md-path__link">
+        
+  <span class="md-ellipsis">
+    Accueil
+  </span>
+
+      </a>
+    </li>
+  
+
+      
+      
+        
+  
+  
+    
+    
+      <li class="md-path__item">
+        <a href="./" class="md-path__link">
+          
+  <span class="md-ellipsis">
+    Section 1
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ol>
+  </nav>
+
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="1-affichage-sur-la-sortie-standard"><strong>1. Affichage sur la sortie standard</strong><a class="headerlink" href="#1-affichage-sur-la-sortie-standard" title="Permanent link">&para;</a></h1>
+<hr />
+<h2 id="1-la-sortie-standard"><strong>1. La sortie standard</strong><a class="headerlink" href="#1-la-sortie-standard" title="Permanent link">&para;</a></h2>
+<p><strong>Concept général</strong></p>
+<p>La <strong>sortie standard</strong> (ou <em>standard output</em>, souvent abrégée <strong>stdout</strong>) est un mécanisme utilisé par les programmes
+pour afficher des informations à l’utilisateur. Dans la plupart des systèmes, la sortie standard est généralement
+associée à l’écran (le terminal ou la console).</p>
+<h3 id="caracteristiques-principales"><strong>Caractéristiques principales</strong><a class="headerlink" href="#caracteristiques-principales" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Destination par défaut</strong> : Affiche le texte dans le terminal ou la console.</li>
+<li><strong>Utilisation universelle</strong> : Tous les langages de programmation offrent un moyen d’écrire sur la sortie standard (
+  ex. : <code>printf</code> en C, <code>console.log</code> en JavaScript, <code>print</code> en Python).</li>
+<li><strong>Redirection possible</strong> : La sortie standard peut être redirigée vers un fichier ou un autre programme (ex. :
+  <code>mon_programme &gt; sortie.txt</code> dans un terminal).</li>
+</ul>
+<h3 id="exemple-dutilisation-dans-differents-langages"><strong>Exemple d’utilisation dans différents langages</strong><a class="headerlink" href="#exemple-dutilisation-dans-differents-langages" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Langage</th>
+<th>Instruction pour afficher &ldquo;Bonjour&rdquo;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>C</td>
+<td><code>printf("Bonjour\n");</code></td>
+</tr>
+<tr>
+<td>Java</td>
+<td><code>System.out.println("Bonjour");</code></td>
+</tr>
+<tr>
+<td>JavaScript</td>
+<td><code>console.log("Bonjour");</code></td>
+</tr>
+<tr>
+<td>Python</td>
+<td><code>print("Bonjour")</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="2-la-fonction-print-en-python"><strong>2. La fonction <code>print</code> en Python</strong><a class="headerlink" href="#2-la-fonction-print-en-python" title="Permanent link">&para;</a></h2>
+<p><strong>Syntaxe et utilisation de base</strong></p>
+<p>En Python, la fonction <code>print()</code> est utilisée pour afficher des données sur la sortie standard. Elle peut prendre un ou
+plusieurs arguments, qu’elle affichera séparés par un espace par défaut.</p>
+<h3 id="syntaxe"><strong>Syntaxe</strong><a class="headerlink" href="#syntaxe" title="Permanent link">&para;</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nb">print</span><span class="p">(</span><span class="o">*</span><span class="n">objects</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s1">&#39; &#39;</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">file</span><span class="o">=</span><span class="n">sys</span><span class="o">.</span><span class="n">stdout</span><span class="p">,</span> <span class="n">flush</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</span></code></pre></div>
+<ul>
+<li><strong><code>objects</code></strong> : Les valeurs à afficher (peuvent être de n’importe quel type : chaînes, nombres, listes, etc.).</li>
+<li><strong><code>sep</code></strong> (optionnel) : Chaîne utilisée pour séparer les objets. Par défaut : <code>' '</code> (un espace).</li>
+<li><strong><code>end</code></strong> (optionnel) : Chaîne ajoutée à la fin de la sortie. Par défaut : <code>'\n'</code> (un saut de ligne).</li>
+<li><strong><code>file</code></strong> (optionnel) : Destination de la sortie (par défaut : <code>sys.stdout</code>).</li>
+<li><strong><code>flush</code></strong> (optionnel) : Si <code>True</code>, force l’affichage immédiat (utile pour les sorties en temps réel).</li>
+</ul>
+<hr />
+<h3 id="exemples-dutilisation"><strong>Exemples d’utilisation</strong><a class="headerlink" href="#exemples-dutilisation" title="Permanent link">&para;</a></h3>
+<h4 id="21-affichage-simple"><strong>2.1 Affichage simple</strong><a class="headerlink" href="#21-affichage-simple" title="Permanent link">&para;</a></h4>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Bonjour, monde!&quot;</span><span class="p">)</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="c1"># Affiche : Bonjour, monde!</span>
+</span></code></pre></div>
+<h4 id="22-affichage-de-plusieurs-valeurs"><strong>2.2 Affichage de plusieurs valeurs</strong><a class="headerlink" href="#22-affichage-de-plusieurs-valeurs" title="Permanent link">&para;</a></h4>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;La valeur de pi est environ&quot;</span><span class="p">,</span> <span class="mf">3.14159</span><span class="p">)</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="c1"># Affiche : La valeur de pi est environ 3.14159</span>
+</span></code></pre></div>
+<h4 id="23-utilisation-du-parametre-sep"><strong>2.3 Utilisation du paramètre <code>sep</code></strong><a class="headerlink" href="#23-utilisation-du-parametre-sep" title="Permanent link">&para;</a></h4>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Python&quot;</span><span class="p">,</span> <span class="s2">&quot;est&quot;</span><span class="p">,</span> <span class="s2">&quot;génial&quot;</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s2">&quot;-&quot;</span><span class="p">)</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="c1"># Affiche : Python-est-génial</span>
+</span></code></pre></div>
+<h4 id="24-utilisation-du-parametre-end"><strong>2.4 Utilisation du paramètre <code>end</code></strong><a class="headerlink" href="#24-utilisation-du-parametre-end" title="Permanent link">&para;</a></h4>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Première ligne&quot;</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s2">&quot; &quot;</span><span class="p">)</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Deuxième ligne&quot;</span><span class="p">)</span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="c1"># Affiche : Première ligne Deuxième ligne</span>
+</span></code></pre></div>
+<h4 id="25-combinaison-de-sep-et-end"><strong>2.5 Combinaison de <code>sep</code> et <code>end</code></strong><a class="headerlink" href="#25-combinaison-de-sep-et-end" title="Permanent link">&para;</a></h4>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Valeurs :&quot;</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s2">&quot;, &quot;</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s2">&quot;.</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="c1"># Affiche : Valeurs : 1, 2, 3.</span>
+</span></code></pre></div>
+<h4 id="26-affichage-sans-saut-de-ligne"><strong>2.6 Affichage sans saut de ligne</strong><a class="headerlink" href="#26-affichage-sans-saut-de-ligne" title="Permanent link">&para;</a></h4>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Chargement&quot;</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;.&quot;</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;.&quot;</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;.&quot;</span><span class="p">)</span>
+</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="c1"># Affiche : Chargement...</span>
+</span></code></pre></div>
+<hr />
+<p>Voici la section à ajouter avant la partie sur les <strong>f-strings</strong>, pour offrir une comparaison complète des méthodes de
+formatage en Python.</p>
+<hr />
+<h2 id="3-la-methode-format-en-python"><strong>3. La méthode <code>.format()</code> en Python</strong><a class="headerlink" href="#3-la-methode-format-en-python" title="Permanent link">&para;</a></h2>
+<p><strong>Formatage de chaînes avec <code>.format()</code></strong></p>
+<p>Avant l’introduction des f-strings (Python 3.6), la méthode <code>.format()</code> était la manière la plus courante de formater
+des chaînes de caractères en Python. Elle permet d’insérer des valeurs dans une chaîne en utilisant des **placeholders
+** (marqueurs de position) <code>{}</code>.</p>
+<h3 id="syntaxe_1"><strong>Syntaxe</strong><a class="headerlink" href="#syntaxe_1" title="Permanent link">&para;</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="s2">&quot;texte </span><span class="si">{}</span><span class="s2"> texte&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">valeur1</span><span class="p">,</span> <span class="n">valeur2</span><span class="p">,</span> <span class="o">...</span><span class="p">)</span>
+</span></code></pre></div>
+<ul>
+<li>Les <code>{}</code> sont remplacés par les valeurs passées à <code>.format()</code>, dans l’ordre.</li>
+<li>On peut aussi utiliser des <strong>indices</strong> ou des <strong>noms</strong> pour identifier les placeholders.</li>
+</ul>
+<hr />
+<h3 id="exemples-dutilisation_1"><strong>Exemples d’utilisation</strong><a class="headerlink" href="#exemples-dutilisation_1" title="Permanent link">&para;</a></h3>
+<h4 id="31-placeholders-simples"><strong>3.1 Placeholders simples</strong><a class="headerlink" href="#31-placeholders-simples" title="Permanent link">&para;</a></h4>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Bonjour, </span><span class="si">{}</span><span class="s2"> !&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="s2">&quot;Alice&quot;</span><span class="p">))</span>
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="c1"># Affiche : Bonjour, Alice !</span>
+</span></code></pre></div>
+<h4 id="32-plusieurs-valeurs"><strong>3.2 Plusieurs valeurs</strong><a class="headerlink" href="#32-plusieurs-valeurs" title="Permanent link">&para;</a></h4>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{}</span><span class="s2"> a </span><span class="si">{}</span><span class="s2"> ans.&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="s2">&quot;Alice&quot;</span><span class="p">,</span> <span class="mi">25</span><span class="p">))</span>
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="c1"># Affiche : Alice a 25 ans.</span>
+</span></code></pre></div>
+<h4 id="33-utilisation-dindices"><strong>3.3 Utilisation d’indices</strong><a class="headerlink" href="#33-utilisation-dindices" title="Permanent link">&para;</a></h4>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{1}</span><span class="s2"> a </span><span class="si">{0}</span><span class="s2"> ans.&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="mi">25</span><span class="p">,</span> <span class="s2">&quot;Alice&quot;</span><span class="p">))</span>
+</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="c1"># Affiche : Alice a 25 ans.</span>
+</span></code></pre></div>
+<h4 id="34-placeholders-nommes"><strong>3.4 Placeholders nommés</strong><a class="headerlink" href="#34-placeholders-nommes" title="Permanent link">&para;</a></h4>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{nom}</span><span class="s2"> a </span><span class="si">{age}</span><span class="s2"> ans.&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">nom</span><span class="o">=</span><span class="s2">&quot;Alice&quot;</span><span class="p">,</span> <span class="n">age</span><span class="o">=</span><span class="mi">25</span><span class="p">))</span>
+</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="c1"># Affiche : Alice a 25 ans.</span>
+</span></code></pre></div>
+<h4 id="35-formatage-des-nombres"><strong>3.5 Formatage des nombres</strong><a class="headerlink" href="#35-formatage-des-nombres" title="Permanent link">&para;</a></h4>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="n">prix</span> <span class="o">=</span> <span class="mf">12.3456</span>
+</span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Prix : </span><span class="si">{:.2f}</span><span class="s2"> $&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">prix</span><span class="p">))</span>
+</span><span id="__span-12-3"><a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a><span class="c1"># Affiche : Prix : 12.35 $</span>
+</span></code></pre></div>
+<h4 id="36-alignement-et-remplissage"><strong>3.6 Alignement et remplissage</strong><a class="headerlink" href="#36-alignement-et-remplissage" title="Permanent link">&para;</a></h4>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="n">mot</span> <span class="o">=</span> <span class="s2">&quot;Python&quot;</span>
+</span><span id="__span-13-2"><a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{:*^10}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">mot</span><span class="p">))</span>
+</span><span id="__span-13-3"><a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a><span class="c1"># Affiche : **Python** (centré avec des * autour)</span>
+</span></code></pre></div>
+<h4 id="37-remplissage-avec-des-dictionnaires"><strong>3.7 Remplissage avec des dictionnaires</strong><a class="headerlink" href="#37-remplissage-avec-des-dictionnaires" title="Permanent link">&para;</a></h4>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="n">personne</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;nom&quot;</span><span class="p">:</span> <span class="s2">&quot;Alice&quot;</span><span class="p">,</span> <span class="s2">&quot;age&quot;</span><span class="p">:</span> <span class="mi">25</span><span class="p">}</span>
+</span><span id="__span-14-2"><a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{nom}</span><span class="s2"> a </span><span class="si">{age}</span><span class="s2"> ans.&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="o">**</span><span class="n">personne</span><span class="p">))</span>
+</span><span id="__span-14-3"><a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a><span class="c1"># Affiche : Alice a 25 ans.</span>
+</span></code></pre></div>
+<hr />
+<h3 id="avantages-et-inconvenients-de-format"><strong>Avantages et inconvénients de <code>.format()</code></strong><a class="headerlink" href="#avantages-et-inconvenients-de-format" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th><strong>Avantages</strong></th>
+<th><strong>Inconvénients</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Plus lisible que l’ancien formatage avec <code>%</code>.</td>
+<td>Moins concis que les f-strings.</td>
+</tr>
+<tr>
+<td>Permet des formatages complexes.</td>
+<td>Légèrement moins performant que les f-strings.</td>
+</tr>
+<tr>
+<td>Compatible avec toutes les versions de Python 3.</td>
+<td>Syntaxe plus verbeuse.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="comparaison-avec-les-f-strings"><strong>Comparaison avec les f-strings</strong><a class="headerlink" href="#comparaison-avec-les-f-strings" title="Permanent link">&para;</a></h3>
+<p>Les f-strings sont généralement préférées aujourd’hui pour leur <strong>simplicité</strong> et leur <strong>performance</strong>, mais <code>.format()</code>
+reste utile dans certains cas, notamment :</p>
+<ul>
+<li>Pour du code devant être compatible avec des versions de Python antérieures à 3.6.</li>
+<li>Pour des formatages dynamiques où les placeholders sont construits à la volée.</li>
+</ul>
+<hr />
+<p><strong>Transition vers les f-strings</strong> :
+<em>&ldquo;Les f-strings, introduites en Python 3.6, offrent une syntaxe encore plus intuitive et performante pour le formatage
+de chaînes. Voyons comment les utiliser&hellip;&rdquo;</em></p>
+<h2 id="4-les-f-strings-en-python"><strong>4. Les f-strings en Python</strong><a class="headerlink" href="#4-les-f-strings-en-python" title="Permanent link">&para;</a></h2>
+<p><strong>Chaînes de caractères formatées</strong></p>
+<p>Les <strong>f-strings</strong> (ou <em>formatted string literals</em>) sont une syntaxe introduite en Python 3.6 pour faciliter le formatage
+des chaînes de caractères. Elles permettent d’insérer directement des expressions Python dans une chaîne, entre
+accolades <code>{}</code> précédées du préfixe <code>f</code>.</p>
+<h3 id="syntaxe_2"><strong>Syntaxe</strong><a class="headerlink" href="#syntaxe_2" title="Permanent link">&para;</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="sa">f</span><span class="s2">&quot;texte </span><span class="si">{</span><span class="n">expression</span><span class="si">}</span><span class="s2"> texte&quot;</span>
+</span></code></pre></div>
+<ul>
+<li>Les expressions entre <code>{}</code> sont évaluées et converties en chaînes de caractères.</li>
+<li>Les f-strings sont <strong>plus rapides</strong> et <strong>plus lisibles</strong> que les méthodes traditionnelles comme <code>.format()</code> ou <code>%</code>.</li>
+</ul>
+<hr />
+<h3 id="exemples-dutilisation_2"><strong>Exemples d’utilisation</strong><a class="headerlink" href="#exemples-dutilisation_2" title="Permanent link">&para;</a></h3>
+<h4 id="41-insertion-de-variables"><strong>4.1 Insertion de variables</strong><a class="headerlink" href="#41-insertion-de-variables" title="Permanent link">&para;</a></h4>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="n">nom</span> <span class="o">=</span> <span class="s2">&quot;Alice&quot;</span>
+</span><span id="__span-16-2"><a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a><span class="n">age</span> <span class="o">=</span> <span class="mi">25</span>
+</span><span id="__span-16-3"><a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">nom</span><span class="si">}</span><span class="s2"> a </span><span class="si">{</span><span class="n">age</span><span class="si">}</span><span class="s2"> ans.&quot;</span><span class="p">)</span>
+</span><span id="__span-16-4"><a id="__codelineno-16-4" name="__codelineno-16-4" href="#__codelineno-16-4"></a><span class="c1"># Affiche : Alice a 25 ans.</span>
+</span></code></pre></div>
+<h4 id="42-calculs-dans-les-f-strings"><strong>4.2 Calculs dans les f-strings</strong><a class="headerlink" href="#42-calculs-dans-les-f-strings" title="Permanent link">&para;</a></h4>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="n">rayon</span> <span class="o">=</span> <span class="mi">5</span>
+</span><span id="__span-17-2"><a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;L&#39;aire d&#39;un cercle de rayon </span><span class="si">{</span><span class="n">rayon</span><span class="si">}</span><span class="s2"> est </span><span class="si">{</span><span class="mf">3.14159</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">rayon</span><span class="w"> </span><span class="o">**</span><span class="w"> </span><span class="mi">2</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">.&quot;</span><span class="p">)</span>
+</span><span id="__span-17-3"><a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a><span class="c1"># Affiche : L&#39;aire d&#39;un cercle de rayon 5 est 78.54.</span>
+</span></code></pre></div>
+<h4 id="43-formatage-des-nombres"><strong>4.3 Formatage des nombres</strong><a class="headerlink" href="#43-formatage-des-nombres" title="Permanent link">&para;</a></h4>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-18-1"><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a><span class="n">prix</span> <span class="o">=</span> <span class="mf">12.3456</span>
+</span><span id="__span-18-2"><a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Prix : </span><span class="si">{</span><span class="n">prix</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2"> $&quot;</span><span class="p">)</span>
+</span><span id="__span-18-3"><a id="__codelineno-18-3" name="__codelineno-18-3" href="#__codelineno-18-3"></a><span class="c1"># Affiche : Prix : 12.35 $</span>
+</span></code></pre></div>
+<h4 id="44-expressions-conditionnelles"><strong>4.4 Expressions conditionnelles</strong><a class="headerlink" href="#44-expressions-conditionnelles" title="Permanent link">&para;</a></h4>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-19-1"><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a><span class="n">note</span> <span class="o">=</span> <span class="mi">15</span>
+</span><span id="__span-19-2"><a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Résultat : </span><span class="si">{</span><span class="s1">&#39;Réussi&#39;</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="n">note</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="mi">10</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="s1">&#39;Échoué&#39;</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</span><span id="__span-19-3"><a id="__codelineno-19-3" name="__codelineno-19-3" href="#__codelineno-19-3"></a><span class="c1"># Affiche : Résultat : Réussi</span>
+</span></code></pre></div>
+<h4 id="45-appels-de-fonctions"><strong>4.5 Appels de fonctions</strong><a class="headerlink" href="#45-appels-de-fonctions" title="Permanent link">&para;</a></h4>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-20-1"><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">carre</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+</span><span id="__span-20-2"><a id="__codelineno-20-2" name="__codelineno-20-2" href="#__codelineno-20-2"></a>    <span class="k">return</span> <span class="n">x</span> <span class="o">**</span> <span class="mi">2</span>
+</span><span id="__span-20-3"><a id="__codelineno-20-3" name="__codelineno-20-3" href="#__codelineno-20-3"></a>
+</span><span id="__span-20-4"><a id="__codelineno-20-4" name="__codelineno-20-4" href="#__codelineno-20-4"></a>
+</span><span id="__span-20-5"><a id="__codelineno-20-5" name="__codelineno-20-5" href="#__codelineno-20-5"></a><span class="n">nombre</span> <span class="o">=</span> <span class="mi">4</span>
+</span><span id="__span-20-6"><a id="__codelineno-20-6" name="__codelineno-20-6" href="#__codelineno-20-6"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Le carré de </span><span class="si">{</span><span class="n">nombre</span><span class="si">}</span><span class="s2"> est </span><span class="si">{</span><span class="n">carre</span><span class="p">(</span><span class="n">nombre</span><span class="p">)</span><span class="si">}</span><span class="s2">.&quot;</span><span class="p">)</span>
+</span><span id="__span-20-7"><a id="__codelineno-20-7" name="__codelineno-20-7" href="#__codelineno-20-7"></a><span class="c1"># Affiche : Le carré de 4 est 16.</span>
+</span></code></pre></div>
+<h4 id="46-alignement-et-remplissage"><strong>4.6 Alignement et remplissage</strong><a class="headerlink" href="#46-alignement-et-remplissage" title="Permanent link">&para;</a></h4>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-21-1"><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a><span class="n">mot</span> <span class="o">=</span> <span class="s2">&quot;Python&quot;</span>
+</span><span id="__span-21-2"><a id="__codelineno-21-2" name="__codelineno-21-2" href="#__codelineno-21-2"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">mot</span><span class="si">:</span><span class="s2">*^10</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</span><span id="__span-21-3"><a id="__codelineno-21-3" name="__codelineno-21-3" href="#__codelineno-21-3"></a><span class="c1"># Affiche : **Python** (centré avec des * autour)</span>
+</span></code></pre></div>
+<hr />
+<h3 id="avantages-des-f-strings"><strong>Avantages des f-strings</strong><a class="headerlink" href="#avantages-des-f-strings" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Lisibilité</strong> : Le code est plus clair et plus concis.</li>
+<li><strong>Performance</strong> : Les f-strings sont plus rapides que les autres méthodes de formatage.</li>
+<li><strong>Flexibilité</strong> : Permet d’insérer n’importe quelle expression Python valide.</li>
+</ul>
+<hr />
+<h2 id="5-tableau-recapitulatif-format-vs-f-strings"><strong>5. Tableau récapitulatif : <code>.format()</code> vs. f-strings</strong><a class="headerlink" href="#5-tableau-recapitulatif-format-vs-f-strings" title="Permanent link">&para;</a></h2>
+<p>Comparaison entre <code>.format()</code> et les f-strings</p>
+<table>
+<thead>
+<tr>
+<th><strong>Critère</strong></th>
+<th><strong><code>.format()</code></strong></th>
+<th><strong>f-strings</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Syntaxe</strong></td>
+<td><code>"texte {} texte".format(valeur)</code></td>
+<td><code>f"texte {expression} texte"</code></td>
+</tr>
+<tr>
+<td><strong>Lisibilité</strong></td>
+<td>Bonne, mais plus verbeuse.</td>
+<td>Excellente, plus concise et intuitive.</td>
+</tr>
+<tr>
+<td><strong>Performance</strong></td>
+<td>Légèrement moins rapide.</td>
+<td>Plus rapide (optimisée par Python).</td>
+</tr>
+<tr>
+<td><strong>Compatibilité</strong></td>
+<td>Fonctionne avec toutes les versions de Python 3.</td>
+<td>Disponible à partir de Python 3.6.</td>
+</tr>
+<tr>
+<td><strong>Expressions</strong></td>
+<td>Nécessite <code>.format()</code> après la chaîne.</td>
+<td>Permet d’insérer n’importe quelle expression.</td>
+</tr>
+<tr>
+<td><strong>Placeholders</strong></td>
+<td>Utilise <code>{}</code> avec indices ou noms.</td>
+<td>Utilise <code>{expression}</code> directement.</td>
+</tr>
+<tr>
+<td><strong>Formatage complexe</strong></td>
+<td>Supporte bien les formats avancés (ex. : <code>:.2f</code>).</td>
+<td>Supporte aussi les formats avancés.</td>
+</tr>
+<tr>
+<td><strong>Exemple simple</strong></td>
+<td><code>"Bonjour, {} !".format("Alice")</code></td>
+<td><code>f"Bonjour, {"Alice"} !"</code> ou <code>f"Bonjour, {nom} !"</code></td>
+</tr>
+<tr>
+<td><strong>Exemple avec calcul</strong></td>
+<td><code>"Le carré de {} est {}.".format(5, 5**2)</code></td>
+<td><code>f"Le carré de {5} est {5**2}."</code></td>
+</tr>
+<tr>
+<td><strong>Exemple avec format</strong></td>
+<td><code>"Prix : {:.2f} $".format(12.3456)</code></td>
+<td><code>f"Prix : {12.3456:.2f} $"</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="quand-utiliser-lun-ou-lautre"><strong>Quand utiliser l’un ou l’autre ?</strong><a class="headerlink" href="#quand-utiliser-lun-ou-lautre" title="Permanent link">&para;</a></h3>
+<ul>
+<li>
+<p><strong>Utilise <code>.format()</code> si</strong> :</p>
+<ul>
+<li>Tu travailles avec une version de Python antérieure à 3.6.</li>
+<li>Tu as besoin de construire dynamiquement les placeholders (ex. : avec des boucles).</li>
+</ul>
+</li>
+<li>
+<p><strong>Utilise les f-strings si</strong> :</p>
+<ul>
+<li>Tu utilises Python 3.6 ou une version plus récente.</li>
+<li>Tu veux un code plus lisible et concis.</li>
+<li>Tu as besoin de performances optimales (ex. : dans des boucles ou des calculs intensifs).</li>
+</ul>
+</li>
+</ul>
+<hr />
+<p><strong>Exemple comparatif complet</strong> :</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-22-1"><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a><span class="c1"># Avec .format()</span>
+</span><span id="__span-22-2"><a id="__codelineno-22-2" name="__codelineno-22-2" href="#__codelineno-22-2"></a><span class="n">nom</span> <span class="o">=</span> <span class="s2">&quot;Alice&quot;</span>
+</span><span id="__span-22-3"><a id="__codelineno-22-3" name="__codelineno-22-3" href="#__codelineno-22-3"></a><span class="n">age</span> <span class="o">=</span> <span class="mi">25</span>
+</span><span id="__span-22-4"><a id="__codelineno-22-4" name="__codelineno-22-4" href="#__codelineno-22-4"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{}</span><span class="s2"> a </span><span class="si">{}</span><span class="s2"> ans.&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">nom</span><span class="p">,</span> <span class="n">age</span><span class="p">))</span>
+</span><span id="__span-22-5"><a id="__codelineno-22-5" name="__codelineno-22-5" href="#__codelineno-22-5"></a>
+</span><span id="__span-22-6"><a id="__codelineno-22-6" name="__codelineno-22-6" href="#__codelineno-22-6"></a><span class="c1"># Avec f-strings</span>
+</span><span id="__span-22-7"><a id="__codelineno-22-7" name="__codelineno-22-7" href="#__codelineno-22-7"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">nom</span><span class="si">}</span><span class="s2"> a </span><span class="si">{</span><span class="n">age</span><span class="si">}</span><span class="s2"> ans.&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+<hr />
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../../introduction/algorithmes/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Qu&amp;rsquo;est-ce qu&amp;rsquo;un algorithme ?">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Qu&rsquo;est-ce qu&rsquo;un algorithme ?
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../entr%C3%A9es/" class="md-footer__link md-footer__link--next" aria-label="Next: 2. L&amp;rsquo;entrée standard (stdin) en Python">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                2. L&rsquo;entrée standard (stdin) en Python
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["content.code.copy", "content.code.select", "navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.expand", "navigation.path", "navigation.top", "navigation.footer", "search.suggest", "search.highlight"], "search": "../../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.e71a0d61.min.js"></script>
+      
+        <script src="../../javascripts/config.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+        <script src="../../assets/mkdocs_puml/puml.js"></script>
+      
+        <script src="https://unpkg.com/@panzoom/panzoom@4.5.1/dist/panzoom.min.js"></script>
+      
+        <script src="../../assets/mkdocs_puml/interaction.js"></script>
+      
+    
+  </body>
+</html>

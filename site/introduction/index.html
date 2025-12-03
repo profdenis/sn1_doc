@@ -1,0 +1,2186 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://profdenis.github.io/sn1_doc/introduction/">
+      
+      
+        <link rel="prev" href="..">
+      
+      
+        <link rel="next" href="histoire/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+    
+    
+      
+        <title>Qu’est-ce que la programmation ? - Cours de programmation en sciences</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.618322db.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../style.css">
+    
+      <link rel="stylesheet" href="../assets/mkdocs_puml/puml.css">
+    
+      <link rel="stylesheet" href="../assets/mkdocs_puml/interaction.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#quest-ce-que-la-programmation" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Cours de programmation en sciences" class="md-header__button md-logo" aria-label="Cours de programmation en sciences" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Cours de programmation en sciences
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Qu’est-ce que la programmation ?
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9zM20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12zm-9.15 3.96h2.3L12 9z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="indigo"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/profdenis/sn1_doc" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    profdenis/sn1_doc
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Accueil
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
+          
+  
+  
+  Introduction
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../section1/affichage/" class="md-tabs__link">
+          
+  
+  
+  Section 1
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Cours de programmation en sciences" class="md-nav__button md-logo" aria-label="Cours de programmation en sciences" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Cours de programmation en sciences
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/profdenis/sn1_doc" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    profdenis/sn1_doc
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Accueil
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Introduction
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Introduction
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Qu’est-ce que la programmation ?
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Qu’est-ce que la programmation ?
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-definitions-et-analogies" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Définitions et analogies
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Définitions et analogies">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-quest-ce-quun-programme" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.1 Qu’est-ce qu’un programme ?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-pourquoi-programmer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2 Pourquoi programmer ?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-quest-ce-quun-algorithme" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.3 Qu’est-ce qu’un algorithme ?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-algorithme-vs-programme" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.3 Algorithme vs. Programme
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-langages-de-programmation-et-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Langages de programmation et Python
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Langages de programmation et Python">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-quest-ce-quun-langage-de-programmation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1 Qu’est-ce qu’un langage de programmation ?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-pourquoi-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2 Pourquoi Python ?
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-concepts-de-base-en-programmation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Concepts de base en programmation
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Concepts de base en programmation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-variables-et-types-de-donnees" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 Variables et types de données
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-instructions-et-sequences" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2 Instructions et séquences
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-structures-de-controle" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.3 Structures de contrôle
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-applications-en-sciences-naturelles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Applications en sciences naturelles
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Applications en sciences naturelles">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-exemples-dutilisation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1 Exemples d’utilisation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-exemple-calcul-de-la-moyenne" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2 Exemple : Calcul de la moyenne
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-applications-de-la-programmation-dans-dautres-domaines" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Applications de la programmation dans d&rsquo;autres domaines
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Applications de la programmation dans d’autres domaines">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-jeux-video" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1 Jeux vidéo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-developpement-web" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.2 Développement web
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53-finances-et-banques" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.3 Finances et banques
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#54-ressources-humaines-rh" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.4 Ressources humaines (RH)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#55-intelligence-artificielle-et-apprentissage-automatique" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.5 Intelligence artificielle et apprentissage automatique
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#56-art-et-design" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.6 Art et design
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#57-resume-des-applications-par-domaine" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.7 Résumé des applications par domaine
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#58-pourquoi-apprendre-la-programmation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.8 Pourquoi apprendre la programmation ?
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-resume-et-questions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Résumé et questions
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="histoire/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Histoire de la programmation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="algorithmes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Qu&rsquo;est-ce qu&rsquo;un algorithme ?
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Section 1
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Section 1
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../section1/affichage/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1. Affichage sur la sortie standard
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../section1/entr%C3%A9es/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2. L&rsquo;entrée standard (stdin) en Python
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../section1/modules/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3. Importation de modules en Python
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../section1/fonctions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4. Définition de fonctions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Exercices
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Exercices
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../section1/exercices1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Exercices 1 : Affichage sur la sortie standard
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../section1/exercices2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Exercices 2 : Utilisation de l&rsquo;entrée standard
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../section1/exercices3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Exercices pratiques 3 : Utilisation des modules random, math et datetime
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_6" id="__nav_3_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Corrigés
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Corrigés
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../section1/exercices1-corrig%C3%A9s/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Corrigés 1 : Affichage sur la sortie standard
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../section1/exercices2-corrig%C3%A9s/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Corrigés 2 : Utilisation de l&rsquo;entrée standard
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../section1/exercices3-corrig%C3%A9s/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Corrigés 3 : Utilisation des modules random, math et datetime
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-definitions-et-analogies" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Définitions et analogies
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Définitions et analogies">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-quest-ce-quun-programme" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.1 Qu’est-ce qu’un programme ?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-pourquoi-programmer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2 Pourquoi programmer ?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-quest-ce-quun-algorithme" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.3 Qu’est-ce qu’un algorithme ?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-algorithme-vs-programme" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.3 Algorithme vs. Programme
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-langages-de-programmation-et-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Langages de programmation et Python
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Langages de programmation et Python">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-quest-ce-quun-langage-de-programmation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1 Qu’est-ce qu’un langage de programmation ?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-pourquoi-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2 Pourquoi Python ?
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-concepts-de-base-en-programmation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Concepts de base en programmation
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Concepts de base en programmation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-variables-et-types-de-donnees" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 Variables et types de données
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-instructions-et-sequences" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2 Instructions et séquences
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-structures-de-controle" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.3 Structures de contrôle
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-applications-en-sciences-naturelles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Applications en sciences naturelles
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Applications en sciences naturelles">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-exemples-dutilisation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1 Exemples d’utilisation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-exemple-calcul-de-la-moyenne" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2 Exemple : Calcul de la moyenne
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-applications-de-la-programmation-dans-dautres-domaines" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Applications de la programmation dans d&rsquo;autres domaines
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Applications de la programmation dans d’autres domaines">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-jeux-video" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1 Jeux vidéo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-developpement-web" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.2 Développement web
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53-finances-et-banques" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.3 Finances et banques
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#54-ressources-humaines-rh" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.4 Ressources humaines (RH)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#55-intelligence-artificielle-et-apprentissage-automatique" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.5 Intelligence artificielle et apprentissage automatique
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#56-art-et-design" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.6 Art et design
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#57-resume-des-applications-par-domaine" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.7 Résumé des applications par domaine
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#58-pourquoi-apprendre-la-programmation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.8 Pourquoi apprendre la programmation ?
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-resume-et-questions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Résumé et questions
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+  
+
+
+  <nav class="md-path" aria-label="Navigation" >
+    <ol class="md-path__list">
+      
+        
+  
+  
+    <li class="md-path__item">
+      <a href=".." class="md-path__link">
+        
+  <span class="md-ellipsis">
+    Accueil
+  </span>
+
+      </a>
+    </li>
+  
+
+      
+      
+        
+  
+  
+    
+    
+      <li class="md-path__item">
+        <a href="./" class="md-path__link">
+          
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ol>
+  </nav>
+
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="quest-ce-que-la-programmation">Qu’est-ce que la programmation ?<a class="headerlink" href="#quest-ce-que-la-programmation" title="Permanent link">&para;</a></h1>
+<h2 id="1-definitions-et-analogies"><strong>1. Définitions et analogies</strong><a class="headerlink" href="#1-definitions-et-analogies" title="Permanent link">&para;</a></h2>
+<p><strong>Objectif</strong> : Expliquer la programmation comme un outil pour résoudre des problèmes.</p>
+<h3 id="11-quest-ce-quun-programme"><strong>1.1 Qu’est-ce qu’un programme ?</strong><a class="headerlink" href="#11-quest-ce-quun-programme" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Définition</strong> : Un programme est une <strong>séquence d’instructions</strong> écrites dans un langage compréhensible par un
+  ordinateur, pour accomplir une tâche spécifique.</li>
+<li><strong>Analogie</strong> :<ul>
+<li>Une recette de cuisine : les ingrédients sont les <strong>données</strong>, les étapes sont les <strong>instructions</strong>, et le plat
+  final est le <strong>résultat</strong>.</li>
+<li>Un protocole de laboratoire : chaque étape est une instruction, et le résultat est l’observation ou la mesure.</li>
+</ul>
+</li>
+</ul>
+<h3 id="12-pourquoi-programmer"><strong>1.2 Pourquoi programmer ?</strong><a class="headerlink" href="#12-pourquoi-programmer" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Automatisation</strong> : Éviter les tâches répétitives (ex. : calculer la moyenne de 1000 mesures).</li>
+<li><strong>Précision</strong> : Éviter les erreurs humaines (ex. : calculs complexes en physique).</li>
+<li><strong>Modélisation</strong> : Simuler des phénomènes naturels (ex. : croissance d’une population, trajectoire d’un projectile).</li>
+</ul>
+<h3 id="13-quest-ce-quun-algorithme"><strong>1.3 Qu’est-ce qu’un algorithme ?</strong><a class="headerlink" href="#13-quest-ce-quun-algorithme" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Définition</strong> : Un algorithme est une <strong>méthode étape par étape</strong> pour résoudre un problème ou accomplir une tâche.
+  C’est une <strong>recette logique</strong>, indépendante du langage de programmation.</li>
+<li><strong>Exemple</strong> :<ul>
+<li><strong>Algorithme pour faire un café</strong> :<ol type="1">
+<li>Faire bouillir de l’eau.</li>
+<li>Mettre du café moulu dans une tasse.</li>
+<li>Verser l’eau bouillante sur le café.</li>
+<li>Attendre 3 minutes.</li>
+<li>Boire le café.</li>
+</ol>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="13-algorithme-vs-programme"><strong>1.3 Algorithme vs. Programme</strong><a class="headerlink" href="#13-algorithme-vs-programme" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th><strong>Algorithme</strong></th>
+<th><strong>Programme</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Description abstraite des étapes.</td>
+<td>Implémentation concrète dans un langage (ex. : Python).</td>
+</tr>
+<tr>
+<td>Indépendant de la machine.</td>
+<td>Dépend du langage et de l’ordinateur.</td>
+</tr>
+<tr>
+<td>Exemple : « Trouver le plus grand nombre dans une liste. »</td>
+<td>Exemple : Code Python qui utilise une boucle pour trouver le maximum.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="2-langages-de-programmation-et-python"><strong>2. Langages de programmation et Python</strong><a class="headerlink" href="#2-langages-de-programmation-et-python" title="Permanent link">&para;</a></h2>
+<p><strong>Objectif</strong> : Présenter Python comme un outil accessible et puissant.</p>
+<h3 id="21-quest-ce-quun-langage-de-programmation"><strong>2.1 Qu’est-ce qu’un langage de programmation ?</strong><a class="headerlink" href="#21-quest-ce-quun-langage-de-programmation" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Langage naturel</strong> vs <strong>langage machine</strong> :<ul>
+<li>Les humains parlent français, anglais, etc.</li>
+<li>Les ordinateurs comprennent le <strong>binaire</strong> (0 et 1).</li>
+<li>Un langage de programmation est un <strong>intermédiaire</strong> entre les deux.</li>
+</ul>
+</li>
+</ul>
+<h3 id="22-pourquoi-python"><strong>2.2 Pourquoi Python ?</strong><a class="headerlink" href="#22-pourquoi-python" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Simple et lisible</strong> : Syntaxe proche de l’anglais.</li>
+<li><strong>Polyvalent</strong> : Utilisé en sciences, ingénierie, data science, IA, etc.</li>
+<li><strong>Communauté active</strong> : Beaucoup de ressources et de bibliothèques (ex. : NumPy pour les calculs scientifiques).</li>
+</ul>
+<p><strong>Exemple simple</strong> :</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1"># Calcul de la vitesse moyenne</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="n">distance</span> <span class="o">=</span> <span class="mi">100</span>  <span class="c1"># en mètres</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="n">temps</span> <span class="o">=</span> <span class="mi">10</span>  <span class="c1"># en secondes</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="n">vitesse</span> <span class="o">=</span> <span class="n">distance</span> <span class="o">/</span> <span class="n">temps</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;La vitesse est de </span><span class="si">{</span><span class="n">vitesse</span><span class="si">}</span><span class="s2"> m/s.&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+<hr />
+<h2 id="3-concepts-de-base-en-programmation"><strong>3. Concepts de base en programmation</strong><a class="headerlink" href="#3-concepts-de-base-en-programmation" title="Permanent link">&para;</a></h2>
+<p><strong>Objectif</strong> : Introduire les briques fondamentales.</p>
+<h3 id="31-variables-et-types-de-donnees"><strong>3.1 Variables et types de données</strong><a class="headerlink" href="#31-variables-et-types-de-donnees" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Variable</strong> : Une « boîte » qui contient une information (ex. : <code>temperature = 25.5</code>).</li>
+<li><strong>Types de données</strong> :<ul>
+<li><strong>Entiers</strong> (<code>int</code>) : <code>42</code></li>
+<li><strong>Nombres à virgule</strong> (<code>float</code>) : <code>3.14</code></li>
+<li><strong>Texte</strong> (<code>str</code>) : <code>"ADN"</code></li>
+<li><strong>Booléens</strong> (<code>bool</code>) : <code>True</code> ou <code>False</code></li>
+</ul>
+</li>
+</ul>
+<h3 id="32-instructions-et-sequences"><strong>3.2 Instructions et séquences</strong><a class="headerlink" href="#32-instructions-et-sequences" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Un programme est une <strong>séquence d’instructions</strong> exécutées dans l’ordre.</li>
+<li>Exemple :
+  <div class="language-python highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c1"># Calcul de l&#39;aire d&#39;un cercle</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="n">rayon</span> <span class="o">=</span> <span class="mi">5</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="n">aire</span> <span class="o">=</span> <span class="mf">3.14</span> <span class="o">*</span> <span class="n">rayon</span> <span class="o">**</span> <span class="mi">2</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;L&#39;aire est </span><span class="si">{</span><span class="n">aire</span><span class="si">}</span><span class="s2">.&quot;</span><span class="p">)</span>
+</span></code></pre></div></li>
+</ul>
+<h3 id="33-structures-de-controle"><strong>3.3 Structures de contrôle</strong><a class="headerlink" href="#33-structures-de-controle" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Conditions</strong> (<code>if/else</code>) : Prendre des décisions.
+  <div class="language-python highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="n">temperature</span> <span class="o">=</span> <span class="mi">22</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="k">if</span> <span class="n">temperature</span> <span class="o">&gt;</span> <span class="mi">20</span><span class="p">:</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Il fait chaud !&quot;</span><span class="p">)</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="k">else</span><span class="p">:</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Il fait frais.&quot;</span><span class="p">)</span>
+</span></code></pre></div></li>
+<li><strong>Boucles</strong> (<code>for</code>, <code>while</code>) : Répéter des actions.
+  <div class="language-python highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="c1"># Afficher les nombres de 1 à 5</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">6</span><span class="p">):</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+</span></code></pre></div></li>
+</ul>
+<hr />
+<h2 id="4-applications-en-sciences-naturelles"><strong>4. Applications en sciences naturelles</strong><a class="headerlink" href="#4-applications-en-sciences-naturelles" title="Permanent link">&para;</a></h2>
+<p><strong>Objectif</strong> : Montrer l’utilité concrète de la programmation.</p>
+<h3 id="41-exemples-dutilisation"><strong>4.1 Exemples d’utilisation</strong><a class="headerlink" href="#41-exemples-dutilisation" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Biologie</strong> :<ul>
+<li>Analyser des séquences d’ADN pour identifier des gènes.</li>
+<li>Simuler la croissance d’une population de bactéries en fonction des ressources disponibles.</li>
+<li>Automatiser le traitement de données de séquençage (ex. : trouver des mutations).</li>
+</ul>
+</li>
+<li><strong>Physique</strong> :<ul>
+<li>Calculer la trajectoire d’un projectile en tenant compte de la gravité et de la résistance de l’air.</li>
+<li>Simuler le comportement d’un circuit électrique (lois de Kirchhoff).</li>
+<li>Analyser des données expérimentales pour valider une hypothèse.</li>
+</ul>
+</li>
+<li><strong>Chimie</strong> :<ul>
+<li>Calculer les concentrations molaires dans une solution après une réaction.</li>
+<li>Prédire les produits d’une réaction chimique à partir des réactifs.</li>
+<li>Automatiser le calcul du pH d’une solution tampon.</li>
+</ul>
+</li>
+<li><strong>Environnement</strong> :<ul>
+<li>Modéliser l’évolution de la concentration de CO₂ dans l’atmosphère.</li>
+<li>Analyser des données météorologiques pour prédire les changements climatiques.</li>
+<li>Simuler la dispersion d’un polluant dans un cours d’eau.</li>
+</ul>
+</li>
+<li><strong>Mathématiques</strong> :<ul>
+<li>Résoudre des équations différentielles pour modéliser des phénomènes naturels.</li>
+<li>Calculer des intégrales numériquement pour déterminer des aires sous des courbes.</li>
+<li>Générer des graphiques 3D pour visualiser des fonctions complexes.</li>
+</ul>
+</li>
+</ul>
+<h3 id="42-exemple-calcul-de-la-moyenne"><strong>4.2 Exemple : Calcul de la moyenne</strong><a class="headerlink" href="#42-exemple-calcul-de-la-moyenne" title="Permanent link">&para;</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="c1"># Liste de mesures de pH</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="n">ph_echantillons</span> <span class="o">=</span> <span class="p">[</span><span class="mf">6.2</span><span class="p">,</span> <span class="mf">6.5</span><span class="p">,</span> <span class="mf">6.3</span><span class="p">,</span> <span class="mf">6.7</span><span class="p">,</span> <span class="mf">6.4</span><span class="p">]</span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="n">moyenne</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">ph_echantillons</span><span class="p">)</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="n">ph_echantillons</span><span class="p">)</span>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Le pH moyen est </span><span class="si">{</span><span class="n">moyenne</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">.&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+<hr />
+<p>Voici une section que tu peux ajouter à ton introduction, après les exemples d&rsquo;applications en sciences naturelles. Elle
+couvre divers domaines d&rsquo;application de la programmation, avec des exemples concrets et accessibles pour des étudiants
+en sciences de la nature.</p>
+<hr />
+<h2 id="5-applications-de-la-programmation-dans-dautres-domaines"><strong>5. Applications de la programmation dans d&rsquo;autres domaines</strong><a class="headerlink" href="#5-applications-de-la-programmation-dans-dautres-domaines" title="Permanent link">&para;</a></h2>
+<p>La programmation n&rsquo;est pas limitée aux sciences naturelles. Elle est un outil polyvalent utilisé dans de nombreux
+secteurs. Voici quelques exemples d&rsquo;applications dans d&rsquo;autres domaines :</p>
+<hr />
+<h3 id="51-jeux-video"><strong>5.1 Jeux vidéo</strong><a class="headerlink" href="#51-jeux-video" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Développement de jeux</strong> : Les moteurs de jeu comme Unity (C#) ou Unreal Engine (C++) permettent de créer des mondes
+  virtuels interactifs.<ul>
+<li><strong>Exemple</strong> : Un jeu de plateforme où le joueur doit sauter pour éviter des obstacles.</li>
+<li><strong>Concepts clés</strong> : Boucles pour les animations, conditions pour les collisions, variables pour les scores.</li>
+</ul>
+</li>
+</ul>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="c1"># Exemple simplifié : Gestion du score dans un jeu</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="n">score</span> <span class="o">=</span> <span class="mi">0</span>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="n">score</span> <span class="o">+=</span> <span class="mi">10</span>  <span class="c1"># Le joueur gagne 10 points</span>
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Score actuel : </span><span class="si">{</span><span class="n">score</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+<hr />
+<h3 id="52-developpement-web"><strong>5.2 Développement web</strong><a class="headerlink" href="#52-developpement-web" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Sites web et applications</strong> : HTML, CSS, et JavaScript sont utilisés pour créer des interfaces interactives.<ul>
+<li><strong>Exemple</strong> : Un site de commerce en ligne où les utilisateurs peuvent ajouter des produits à un panier.</li>
+<li><strong>Concepts clés</strong> : Gestion des événements (clics, soumissions de formulaires), communication avec des bases de
+  données.</li>
+</ul>
+</li>
+</ul>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="c1"># Exemple simplifié : Affichage dynamique d&#39;un produit</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="n">nom_produit</span> <span class="o">=</span> <span class="s2">&quot;Ordinateur portable&quot;</span>
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="n">prix</span> <span class="o">=</span> <span class="mf">999.99</span>
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Produit : </span><span class="si">{</span><span class="n">nom_produit</span><span class="si">}</span><span class="s2">, Prix : </span><span class="si">{</span><span class="n">prix</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2"> $&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+<hr />
+<h3 id="53-finances-et-banques"><strong>5.3 Finances et banques</strong><a class="headerlink" href="#53-finances-et-banques" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Gestion des transactions</strong> : Les systèmes bancaires utilisent des langages comme Java ou Python pour gérer les
+  comptes, les transactions et la sécurité.<ul>
+<li><strong>Exemple</strong> : Un programme qui calcule les intérêts composés sur un compte épargne.</li>
+<li><strong>Concepts clés</strong> : Boucles pour les calculs récurrents, conditions pour vérifier les soldes, sécurité des
+  données.</li>
+</ul>
+</li>
+</ul>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="c1"># Exemple simplifié : Calcul d&#39;intérêts composés</span>
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="n">capital_initial</span> <span class="o">=</span> <span class="mi">1000</span>
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="n">taux_interet</span> <span class="o">=</span> <span class="mf">0.05</span>  <span class="c1"># 5%</span>
+</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="n">annees</span> <span class="o">=</span> <span class="mi">10</span>
+</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="n">capital_final</span> <span class="o">=</span> <span class="n">capital_initial</span> <span class="o">*</span> <span class="p">(</span><span class="mi">1</span> <span class="o">+</span> <span class="n">taux_interet</span><span class="p">)</span> <span class="o">**</span> <span class="n">annees</span>
+</span><span id="__span-7-6"><a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Capital final après </span><span class="si">{</span><span class="n">annees</span><span class="si">}</span><span class="s2"> ans : </span><span class="si">{</span><span class="n">capital_final</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2"> $&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+<hr />
+<h3 id="54-ressources-humaines-rh"><strong>5.4 Ressources humaines (RH)</strong><a class="headerlink" href="#54-ressources-humaines-rh" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Gestion des employés</strong> : Les logiciels de RH utilisent des bases de données et des scripts pour gérer les dossiers
+  des employés, les paies et les congés.<ul>
+<li><strong>Exemple</strong> : Un programme qui calcule automatiquement les heures de travail et les salaires.</li>
+<li><strong>Concepts clés</strong> : Structures de données pour stocker les informations, boucles pour traiter les données de
+  plusieurs employés.</li>
+</ul>
+</li>
+</ul>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="c1"># Exemple simplifié : Calcul du salaire mensuel</span>
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="n">heures_travaillees</span> <span class="o">=</span> <span class="mi">160</span>
+</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="n">taux_horaire</span> <span class="o">=</span> <span class="mf">20.50</span>
+</span><span id="__span-8-4"><a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="n">salaire</span> <span class="o">=</span> <span class="n">heures_travaillees</span> <span class="o">*</span> <span class="n">taux_horaire</span>
+</span><span id="__span-8-5"><a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Salaire mensuel : </span><span class="si">{</span><span class="n">salaire</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2"> $&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+<hr />
+<h3 id="55-intelligence-artificielle-et-apprentissage-automatique"><strong>5.5 Intelligence artificielle et apprentissage automatique</strong><a class="headerlink" href="#55-intelligence-artificielle-et-apprentissage-automatique" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Automatisation et prédictions</strong> : Python (avec des bibliothèques comme TensorFlow ou PyTorch) est largement utilisé
+  pour créer des modèles d&rsquo;IA.<ul>
+<li><strong>Exemple</strong> : Un programme qui prédit les tendances du marché boursier.</li>
+<li><strong>Concepts clés</strong> : Traitement des données, algorithmes d&rsquo;apprentissage, évaluation des modèles.</li>
+</ul>
+</li>
+</ul>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="c1"># Exemple simplifié : Prédiction de tendance (pseudo-code)</span>
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="n">tendance</span> <span class="o">=</span> <span class="s2">&quot;hausse&quot;</span>  <span class="c1"># Résultat d&#39;un modèle d&#39;IA</span>
+</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Prédiction du marché : </span><span class="si">{</span><span class="n">tendance</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+<hr />
+<h3 id="56-art-et-design"><strong>5.6 Art et design</strong><a class="headerlink" href="#56-art-et-design" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Création d&rsquo;œuvres d&rsquo;art génératives</strong> : Des programmes comme Processing (Java) ou des scripts Python permettent de
+  créer des visuels artistiques.<ul>
+<li><strong>Exemple</strong> : Un programme qui génère des motifs géométriques aléatoires.</li>
+<li><strong>Concepts clés</strong> : Boucles pour les répétitions, fonctions mathématiques pour les formes, aléatoire pour la
+  variété.</li>
+</ul>
+</li>
+</ul>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="c1"># Exemple simplifié : Génération d&#39;un motif simple</span>
+</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="kn">import</span><span class="w"> </span><span class="nn">random</span>
+</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>
+</span><span id="__span-10-4"><a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a><span class="n">couleurs</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;rouge&quot;</span><span class="p">,</span> <span class="s2">&quot;bleu&quot;</span><span class="p">,</span> <span class="s2">&quot;vert&quot;</span><span class="p">,</span> <span class="s2">&quot;jaune&quot;</span><span class="p">]</span>
+</span><span id="__span-10-5"><a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a><span class="n">couleur_aleatoire</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">couleurs</span><span class="p">)</span>
+</span><span id="__span-10-6"><a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Motif généré avec la couleur : </span><span class="si">{</span><span class="n">couleur_aleatoire</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+<hr />
+<h3 id="57-resume-des-applications-par-domaine"><strong>5.7 Résumé des applications par domaine</strong><a class="headerlink" href="#57-resume-des-applications-par-domaine" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th><strong>Domaine</strong></th>
+<th><strong>Exemples d&rsquo;applications</strong></th>
+<th><strong>Langages/Outils courants</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Jeux vidéo</td>
+<td>Développement de jeux, simulations</td>
+<td>C++, C#, Unity, Unreal Engine</td>
+</tr>
+<tr>
+<td>Développement web</td>
+<td>Sites web, applications interactives</td>
+<td>HTML, CSS, JavaScript, Python (Django)</td>
+</tr>
+<tr>
+<td>Finances et banques</td>
+<td>Gestion des comptes, transactions</td>
+<td>Java, Python, SQL</td>
+</tr>
+<tr>
+<td>Ressources humaines</td>
+<td>Gestion des employés, paie</td>
+<td>Python, SQL, Excel (VBA)</td>
+</tr>
+<tr>
+<td>Intelligence artificielle</td>
+<td>Prédictions, automatisation</td>
+<td>Python (TensorFlow, PyTorch)</td>
+</tr>
+<tr>
+<td>Art et design</td>
+<td>Œuvres génératives, animations</td>
+<td>Processing, Python (Pygame)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="58-pourquoi-apprendre-la-programmation"><strong>5.8 Pourquoi apprendre la programmation ?</strong><a class="headerlink" href="#58-pourquoi-apprendre-la-programmation" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Polyvalence</strong> : La programmation est un outil puissant applicable dans presque tous les domaines.</li>
+<li><strong>Automatisation</strong> : Elle permet d&rsquo;automatiser des tâches répétitives et d&rsquo;augmenter l&rsquo;efficacité.</li>
+<li><strong>Créativité</strong> : Elle offre la possibilité de créer des solutions innovantes à des problèmes complexes.</li>
+<li><strong>Emplois</strong> : Les compétences en programmation sont très recherchées sur le marché du travail.</li>
+</ul>
+<hr />
+<h2 id="6-resume-et-questions"><strong>6. Résumé et questions</strong><a class="headerlink" href="#6-resume-et-questions" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>Résumé</strong> :<ul>
+<li>La programmation est un outil pour <strong>automatiser</strong>, <strong>calculer</strong> et <strong>modéliser</strong>.</li>
+<li>Python est un langage <strong>simple</strong> et <strong>puissant</strong> pour les sciences.</li>
+<li>Les concepts de base : variables, instructions, conditions, boucles.</li>
+</ul>
+</li>
+<li><strong>Questions pour les étudiants</strong> :<ul>
+<li>Quel problème dans votre domaine aimeriez-vous automatiser avec un programme ?</li>
+<li>Pouvez-vous imaginer un exemple où une boucle serait utile en laboratoire ?</li>
+</ul>
+</li>
+</ul>
+<hr />
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href=".." class="md-footer__link md-footer__link--prev" aria-label="Previous: Accueil">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Accueil
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="histoire/" class="md-footer__link md-footer__link--next" aria-label="Next: Histoire de la programmation">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Histoire de la programmation
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["content.code.copy", "content.code.select", "navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.expand", "navigation.path", "navigation.top", "navigation.footer", "search.suggest", "search.highlight"], "search": "../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.e71a0d61.min.js"></script>
+      
+        <script src="../javascripts/config.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+        <script src="../assets/mkdocs_puml/puml.js"></script>
+      
+        <script src="https://unpkg.com/@panzoom/panzoom@4.5.1/dist/panzoom.min.js"></script>
+      
+        <script src="../assets/mkdocs_puml/interaction.js"></script>
+      
+    
+  </body>
+</html>
