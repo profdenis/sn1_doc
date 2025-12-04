@@ -1,4 +1,4 @@
-# **3. Importation de modules en Python**
+# **3. Importation de modules**
 
 ---
 

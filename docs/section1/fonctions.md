@@ -1,192 +1,420 @@
-# 4. Définition de fonctions
+# **4. Définition et utilisation des fonctions**
 
-## Introduction aux fonctions en programmation
+---
 
-Dans nos programmes précédents, nous avons déjà utilisé plusieurs fonctions sans les définir nous-mêmes.
-Par exemple, nous avons employé `print()` pour afficher du texte à l'écran, `input()` pour demander une saisie à
-l'utilisateur, et `numpy.cos()` (ou `np.cos()`) pour calculer le cosinus d'un angle. Ces fonctions sont des outils 
-prédéfinis qui nous permettent d'effectuer des tâches spécifiques sans avoir à réécrire le code à chaque fois.
+## **1. Définition vs. utilisation (appel) d'une fonction**
 
-En programmation, les fonctions sont similaires aux fonctions mathématiques que vous connaissez déjà. Elles prennent des
-entrées (appelées arguments ou paramètres), effectuent des opérations sur ces entrées, et produisent un résultat. Par
-exemple, la fonction mathématique $f(x) = x^2$ prend un nombre $x$ en entrée et retourne son carré.
+### **1.1 Définition d'une fonction**
 
-## Définition d'une fonction simple
+Une **fonction** est un bloc de code qui effectue une tâche spécifique. Elle est définie avec le mot-clé `def`.
 
-Voyons maintenant comment définir notre propre fonction en Python. Prenons l'exemple d'une fonction qui calcule l'aire
-d'un cercle.
+**Syntaxe** :
 
 ```python
-import numpy as np
+def nom_de_la_fonction():
+# Instructions
+```
+
+- **`def`** : Mot-clé pour définir une fonction.
+- **`nom_de_la_fonction`** : Nom donné à la fonction (doit être descriptif).
+- **`:`** : Indique le début du bloc de code.
+- **Indentation** : Les instructions à l'intérieur de la fonction **doivent être indentées** (généralement 4 espaces).
+
+---
+
+### **1.2 Utilisation (appel) d'une fonction**
+
+Pour **exécuter** une fonction, il faut l'**appeler** par son nom suivi de parenthèses.
+
+**Syntaxe** :
+
+```python
+nom_de_la_fonction()
+```
+
+---
+
+### **1.3 Exemple simple**
+
+```python
+# Définition de la fonction
+def dire_bonjour():
+    print("Bonjour !")
+
+
+# Appel de la fonction
+dire_bonjour()
+```
+
+**Sortie** :
+
+```
+Bonjour !
+```
+
+---
+
+## **2. Fonctions sans paramètre ni retour**
+
+### **2.1 Définition**
+
+Une fonction **sans paramètre** et **sans retour** effectue une tâche sans recevoir ni retourner de données.
+
+**Exemple** :
+
+```python
+def afficher_date_du_jour():
+    from datetime import datetime
+    aujourdhui = datetime.now()
+    print(f"Aujourd'hui, nous sommes le {aujourdhui.strftime('%d/%m/%Y')}.")
+
+
+# Appel
+afficher_date_du_jour()
+```
+
+**Sortie possible** :
+
+```
+Aujourd'hui, nous sommes le 04/12/2025.
+```
+
+---
+
+## **3. Fonctions avec 1 paramètre et sans retour**
+
+### **3.1 Définition**
+
+Une fonction avec **1 paramètre** reçoit une valeur lors de l'appel.
+
+**Syntaxe** :
+
+```python
+def nom_de_la_fonction(parametre):
+# Instructions utilisant parametre
+```
+
+---
+
+### **3.2 Exemple**
+
+```python
+def dire_bonjour_a(nom):
+    print(f"Bonjour, {nom} !")
+
+
+# Appel
+dire_bonjour_a("Alice")
+```
+
+**Sortie** :
+
+```
+Bonjour, Alice !
+```
+
+---
+
+## **4. Fonctions avec 2 paramètres ou plus et sans retour**
+
+### **4.1 Définition**
+
+Une fonction peut recevoir **plusieurs paramètres**, séparés par des virgules.
+
+**Syntaxe** :
+
+```python
+def nom_de_la_fonction(param1, param2, ...):
+# Instructions utilisant param1, param2, etc.
+```
+
+---
+
+### **4.2 Exemple**
+
+```python
+def afficher_somme(a, b):
+    print(f"La somme de {a} et {b} est {a + b}.")
+
+
+# Appel
+afficher_somme(5, 3)
+```
+
+**Sortie** :
+
+```
+La somme de 5 et 3 est 8.
+```
+
+---
+
+## **5. Fonctions avec retour et différents nombres de paramètres**
+
+### **5.1 Retour de valeur**
+
+Une fonction peut **retourner une valeur** avec le mot-clé `return`.
+
+**Syntaxe** :
+
+```python
+def nom_de_la_fonction(param1, param2, ...):
+    # Instructions
+    return valeur
+```
+
+---
+
+### **5.2 Exemples**
+
+#### **5.2.1 Fonction avec 1 paramètre et retour**
+
+```python
+def carre(nombre):
+    return nombre ** 2
+
+
+# Appel
+resultat = carre(4)
+print(f"Le carré de 4 est {resultat}.")
+```
+
+**Sortie** :
+
+```
+Le carré de 4 est 16.
+```
+
+---
+
+#### **5.2.2 Fonction avec 2 paramètres et retour**
+
+```python
+def produit(a, b):
+    return a * b
+
+
+# Appel
+resultat = produit(3, 7)
+print(f"Le produit de 3 et 7 est {resultat}.")
+```
+
+**Sortie** :
+
+```
+Le produit de 3 et 7 est 21.
+```
+
+---
+
+#### **5.2.3 Fonction avec plusieurs retours**
+
+Une fonction peut retourner **plusieurs valeurs** sous forme de tuple.
+
+```python
+def calculer_somme_et_produit(a, b):
+    somme = a + b
+    produit = a * b
+    return somme, produit
+
+
+# Appel
+somme, produit = calculer_somme_et_produit(4, 5)
+print(f"Somme : {somme}, Produit : {produit}")
+```
+
+**Sortie** :
+
+```
+Somme : 9, Produit : 20
+```
+
+---
+
+## **6. Erreurs courantes avec les fonctions**
+
+### **6.1 Mauvaise indentation**
+
+**Problème** : Oublier d'indenter le code à l'intérieur de la fonction.
+**Exemple incorrect** :
+
+```python
+def dire_bonjour():
+    print("Bonjour !")  # Erreur : pas d'indentation
+```
+
+**Correction** :
+
+```python
+def dire_bonjour():
+    print("Bonjour !")  # Indentation correcte
+```
+
+---
+
+### **6.2 Utilisation de variables extérieures à la place de paramètres**
+
+**Problème** : Utiliser une variable définie **en dehors** de la fonction au lieu de passer un paramètre.
+**Exemple incorrect** :
+
+```python
+nom = "Alice"
+
+
+def dire_bonjour():
+    print(f"Bonjour, {nom}!")  # Utilise une variable externe
+
+
+dire_bonjour()
+```
+
+**Problème** : Si `nom` change, la fonction ne sera plus fiable.
+
+**Correction** :
+
+```python
+def dire_bonjour(nom):
+    print(f"Bonjour, {nom}!")
+
+
+dire_bonjour("Alice")
+```
+
+---
+
+### **6.3 Oublier le `return`**
+
+**Problème** : Oublier de retourner une valeur quand c'est nécessaire.
+**Exemple incorrect** :
+
+```python
+def carre(nombre):
+    nombre ** 2  # Oublie le return
+
+
+resultat = carre(4)
+print(resultat)  # Affiche None
+```
+
+**Correction** :
+
+```python
+def carre(nombre):
+    return nombre ** 2  # Retourne le résultat
+```
+
+---
+
+### **6.4 Nombre incorrect de paramètres**
+
+**Problème** : Appeler une fonction avec un nombre incorrect de paramètres.
+**Exemple incorrect** :
+
+```python
+def afficher_somme(a, b):
+    print(a + b)
+
+
+afficher_somme(5)  # Erreur : il manque un paramètre
+```
+
+**Correction** :
+
+```python
+afficher_somme(5, 3)  # Appel correct
+```
+
+---
+
+## **7. Résumé des concepts clés**
+
+| **Type de fonction**              | **Exemple de définition**                 | **Exemple d'appel**               |
+|-----------------------------------|-------------------------------------------|-----------------------------------|
+| Sans paramètre ni retour          | `def dire_bonjour():`                     | `dire_bonjour()`                  |
+| Avec 1 paramètre et sans retour   | `def dire_bonjour_a(nom):`                | `dire_bonjour_a("Alice")`         |
+| Avec 2+ paramètres et sans retour | `def afficher_somme(a, b):`               | `afficher_somme(5, 3)`            |
+| Avec retour et 1 paramètre        | `def carre(nombre): return nombre ** 2`   | `resultat = carre(4)`             |
+| Avec retour et 2+ paramètres      | `def produit(a, b): return a * b`         | `resultat = produit(3, 7)`        |
+| Avec plusieurs retours            | `def calculer(a, b): return a + b, a * b` | `somme, produit = calculer(4, 5)` |
+
+---
+
+## **8. Exemples détaillés**
+
+### **1. Calcul de l'aire d'un cercle**
+
+**Formule** : \( \text{Aire} = \pi \times \text{rayon}^2 \)
+
+```python
+import math
 
 
 def aire_cercle(rayon):
-    aire = np.pi * rayon ** 2
-    return aire
+    """Calcule l'aire d'un cercle à partir de son rayon."""
+    return math.pi * rayon ** 2
+
+
+# Appel de la fonction
+rayon = float(input("Entrez le rayon du cercle : "))
+aire = aire_cercle(rayon)
+print(f"L'aire du cercle de rayon {rayon} est {aire:.2f}.")
 ```
 
-Examinons les différentes parties de cette définition de fonction :
+---
 
-1. **Signature de la fonction** : La ligne `def aire_cercle(rayon):` est la signature de la fonction. Elle commence par
-   le mot-clé `def`, suivi du nom de la fonction et des paramètres entre parenthèses.
+### **2. Calcul de l'aire d'un rectangle**
 
-2. **Nom de la fonction** : `aire_cercle` est le nom que nous avons choisi pour notre fonction. Il est préférable de
-   choisir un nom descriptif qui indique clairement ce que fait la fonction.
-
-3. **Paramètre** : `rayon` est le paramètre de notre fonction. C'est la valeur d'entrée sur laquelle la fonction va
-   travailler. Une fonction peut avoir plusieurs paramètres, séparés par des virgules.
-
-4. **Corps de la fonction et indentation** : Le corps de la fonction contient les instructions qui seront exécutées
-   lorsque la fonction sera appelée. En Python, le corps de la fonction est indenté (généralement de 4 espaces) pour
-   indiquer qu'il fait partie de la fonction.
-
-5. **Instruction _return_** : `return aire` spécifie la valeur que la fonction doit renvoyer lorsqu'elle est appelée. 
-   Dans ce cas, elle renvoie l'aire calculée du cercle.
-
-Pour utiliser cette fonction, nous pouvons maintenant l'appeler en lui fournissant un rayon :
+**Formule** : \( \text{Aire} = \text{longueur} \times \text{largeur} \)
 
 ```python
-resultat = aire_cercle(5)
-print(f"L'aire d'un cercle de rayon 5 est : {resultat}")
+def aire_rectangle(longueur, largeur):
+    """Calcule l'aire d'un rectangle à partir de sa longueur et de sa largeur."""
+    return longueur * largeur
+
+
+# Appel de la fonction
+longueur = float(input("Entrez la longueur du rectangle : "))
+largeur = float(input("Entrez la largeur du rectangle : "))
+aire = aire_rectangle(longueur, largeur)
+print(f"L'aire du rectangle est {aire:.2f}.")
 ```
 
-Cette approche nous permet de réutiliser facilement le code pour calculer l'aire de différents cercles sans avoir à
-réécrire la formule à chaque fois.
+---
 
-## Définition d'une fonction avec plusieurs paramètres
+### **3. Calcul de la moyenne de trois nombres**
 
-En Python, il est très courant et souvent nécessaire de définir des fonctions qui prennent plusieurs paramètres. Cela
-permet à une fonction d'être plus flexible et de traiter plusieurs entrées à la fois. Voici comment procéder :
-
-### Syntaxe de base
-
-La syntaxe pour définir une fonction avec plusieurs paramètres est similaire à celle d'une fonction avec un seul
-paramètre, mais nous séparons les paramètres par des virgules dans la signature de la fonction.
+**Formule** : \( \text{Moyenne} = \frac{\text{nombre1} + \text{nombre2} + \text{nombre3}}{3} \)
 
 ```python
-def nom_fonction(parametre1, parametre2, parametre3):
-    # Corps de la fonction
-    # Opérations utilisant les paramètres
-    return resultat
+def moyenne_trois_nombres(nombre1, nombre2, nombre3):
+    """Calcule la moyenne de trois nombres."""
+    return (nombre1 + nombre2 + nombre3) / 3
+
+
+# Appel de la fonction
+nombre1 = float(input("Entrez le premier nombre : "))
+nombre2 = float(input("Entrez le deuxième nombre : "))
+nombre3 = float(input("Entrez le troisième nombre : "))
+moyenne = moyenne_trois_nombres(nombre1, nombre2, nombre3)
+print(f"La moyenne des trois nombres est {moyenne:.2f}.")
 ```
 
-### _Exemple_ : Calcul du volume d'une pyramide à 4 côtés
+---
 
-Pour calculer le volume d'une pyramide à 4 côtés (ou pyramide à base rectangulaire), nous avons besoin de trois 
-paramètres : la longueur de la base, la largeur de la base, et la hauteur de la pyramide. La formule pour le volume 
-est :
+### **4. Conversion de kilomètres en miles**
 
-$V = \frac{1}{3} \times longueur \times largeur \times hauteur$.
-
-Voici comment nous pouvons définir cette fonction en Python :
+**Formule** : \( \text{Miles} = \text{Kilomètres} \times 0.621371 \)
 
 ```python
-def volume_pyramide(longueur, largeur, hauteur):
-    volume = (1 / 3) * longueur * largeur * hauteur
-    return volume
+def kilometres_vers_miles(kilometres):
+    """Convertit une distance de kilomètres en miles."""
+    return kilometres * 0.621371
+
+
+# Appel de la fonction
+kilometres = float(input("Entrez la distance en kilomètres : "))
+miles = kilometres_vers_miles(kilometres)
+print(f"{kilometres} km équivaut à {miles:.2f} miles.")
 ```
 
-Dans cet exemple :
-
-- `longueur`, `largeur`, et `hauteur` sont les trois paramètres de la fonction.
-- La fonction utilise ces trois paramètres pour calculer le volume de la pyramide.
-- Le résultat est renvoyé à l'aide de l'instruction `return`.
-
-### Utilisation de la fonction
-
-Pour utiliser cette fonction, nous fournissons les valeurs pour chaque paramètre dans l'ordre où ils sont définis :
-
-```python
-resultat = volume_pyramide(5, 5, 10)
-print(f"Le volume d'une pyramide de base 5x5 et de hauteur 10 est : {resultat}")
-```
-
-### Points importants à retenir
-
-1. **Ordre des paramètres** : L'ordre dans lequel vous définissez les paramètres est crucial. Lors de l'appel de la
-   fonction, les arguments doivent être fournis dans le même ordre (longueur, largeur, hauteur).
-
-2. **Nombre de paramètres** : Cette fonction a trois paramètres, ce qui est parfaitement acceptable. Cependant, si une
-   fonction nécessite de nombreux paramètres, il peut être judicieux de considérer d'autres approches, comme
-   l'utilisation d'un dictionnaire pour les regrouper.
-
-3. **Noms des paramètres** : Notez comment les noms `longueur`, `largeur`, et `hauteur` sont descriptifs et clairs, ce
-   qui rend la fonction plus facile à comprendre et à utiliser.
-
-4. **Flexibilité** : Cette fonction peut calculer le volume de n'importe quelle pyramide à base rectangulaire, pas
-   seulement celles à base carrée. Si la base est carrée, on peut simplement utiliser la même valeur pour la longueur et
-   la largeur.
-
-En utilisant des fonctions avec plusieurs paramètres comme celle-ci, vous pouvez créer des outils puissants et flexibles
-pour résoudre une variété de problèmes en programmation.
-
-## Erreurs courantes à éviter lors de la définition de fonctions en Python
-
-### Erreurs de syntaxe
-
-1. **Oublier les deux-points** : Toujours ajouter `:` à la fin de la ligne de définition de la fonction[3].
-
-2. **Indentation incorrecte** : Le corps de la fonction doit être indenté, généralement de 4 espaces[3].
-
-3. **Oublier les parenthèses** : Pour appeler une fonction, il faut utiliser des parenthèses, même si elle n'a pas 
-   d'arguments[3].
-
-### Erreurs de portée et de nommage
-
-4. **Confusion entre variables locales et globales** : Les variables définies dans une fonction sont locales par défaut.
-   
-5. **Nommer une variable comme une fonction intégrée** : Éviter d'utiliser des noms comme `print` ou `input` qui
-   masqueraient les fonctions Python intégrées[1].
-
-### Erreurs liées aux arguments
-
-6. **Inverser l'ordre des arguments** : Les arguments doivent être fournis dans le bon ordre. C'est pourquoi il est 
-   important de bien nommer les paramètres.
-
-7. **Trop de paramètres** : Limiter le nombre de paramètres pour maintenir la lisibilité et la simplicité de la
-   fonction[9].
-
-### Erreurs de conception
-
-8. **Fonctions trop longues ou complexes** : Diviser les fonctions trop longues en sous-fonctions plus petites et plus
-   simples[9].
-
-9. **Retourner des types de données incohérents** : Une fonction devrait toujours retourner le même type de données,
-   quelle que soit la branche d'exécution[14].
-
-10. **Ne pas gérer les exceptions** : Utiliser des blocs `try/except` pour gérer les erreurs potentielles dans la
-    fonction[15].
-
-En évitant ces erreurs courantes, vous pourrez écrire des fonctions Python plus robustes et maintenables.
-
-??? note "Citations"
-
-     - [1] https://www.youtube.com/watch?v=IzNh3W2DY-w
-     - [2] https://arjancodes.com/blog/python-common-pitfalls-and-fixes-for-syntactic-snafus/
-     - [3] https://hackr.io/blog/common-python-mistakes
-     - [4] https://rollbar.com/blog/python-errors-and-how-to-handle-them/
-     - [5] https://docs.python-guide.org/writing/gotchas/
-     - [6] https://doc.sagemath.org/html/en/tutorial/tour_functions.html
-     - [7] https://www.reddit.com/r/learnpython/comments/pop076/error_the_function_is_not_defined/
-     - [8] https://www.educative.io/blog/common-mistakes-python-programmers-how-to-fix
-     - [9] https://www.kdnuggets.com/5-tips-for-writing-better-python-functions
-     - [10] https://stackoverflow.com/questions/29690663/def-function-syntax-error-in-python-3/29690687
-     - [11] https://stackoverflow.com/questions/1011431/common-pitfalls-in-python
-     - [12] https://www.activestate.com/blog/top-10-coding-mistakes-in-python-how-to-avoid-them/
-     - [13] https://docs.python.org/3/tutorial/errors.html
-     - [14] https://betterstack.com/community/guides/scaling-python/python-errors/
-     - [15] https://www.datacamp.com/tutorial/exception-handling-python
-     - [16] https://stackoverflow.com/questions/19971453/is-it-bad-practice-in-python-to-define-a-function-in-the-middle-of-operational-c
-     - [17] https://www.tutorialsteacher.com/python/error-types-in-python
-     - [18] https://docs.python.org/ja/3.12/library/exceptions.html
-     - [19] https://www.w3schools.com/python/python_functions.asp
-     - [20] https://www.youtube.com/watch?v=zdJEYhA2AZQ
-
-
--------
-
-??? info "Utilisation de l'IA"
-      Page rédigée en partie avec l'aide d'un assistant IA, principalement à l'aide de Perplexity AI, avec le *LLM*
-      **Claude 3.5 Sonnet**. L'IA a été utilisée pour générer des explications, des exemples et/ou des suggestions de
-      structure. Toutes les informations ont été vérifiées, éditées et complétées par l'auteur.
-      
+---

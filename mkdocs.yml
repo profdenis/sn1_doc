@@ -15,13 +15,15 @@ nav:
       - section1/modules.md
       - section1/fonctions.md
       - Exercices:
-        - section1/exercices1.md
-        - section1/exercices2.md
-        - section1/exercices3.md
+        - section1/exercices/exercices1.md
+        - section1/exercices/exercices2.md
+        - section1/exercices/exercices3.md
+        - section1/exercices/exercices4.md
       - Corrigés:
-        - section1/exercices1-corrigés.md
-        - section1/exercices2-corrigés.md
-        - section1/exercices3-corrigés.md
+        - section1/corrigés/exercices1-corrigés.md
+        - section1/corrigés/exercices2-corrigés.md
+        - section1/corrigés/exercices3-corrigés.md
+        - section1/corrigés/exercices4-corrigés.md
 
 
 theme:

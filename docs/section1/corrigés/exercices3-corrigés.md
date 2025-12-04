@@ -1,4 +1,4 @@
-# **Corrigés 3 : Utilisation des modules `random`, `math` et `datetime`**
+# **Corrigés 3 : Importation de modules**
 
 ---
 

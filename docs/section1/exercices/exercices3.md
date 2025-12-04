@@ -1,4 +1,4 @@
-# **Exercices pratiques 3 : Utilisation des modules `random`, `math` et `datetime`**
+# **Exercices pratiques 3 : Importation de modules**
 
 ---
 

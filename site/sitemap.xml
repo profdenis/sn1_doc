@@ -2,66 +2,92 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://profdenis.github.io/sn1_doc/</loc>
-         <lastmod>2025-12-03</lastmod>
+         <lastmod>2025-12-04</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://profdenis.github.io/sn1_doc/introduction/</loc>
-         <lastmod>2025-12-03</lastmod>
+         <lastmod>2025-12-04</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://profdenis.github.io/sn1_doc/introduction/algorithmes/</loc>
-         <lastmod>2025-12-03</lastmod>
+         <lastmod>2025-12-04</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://profdenis.github.io/sn1_doc/introduction/histoire/</loc>
-         <lastmod>2025-12-03</lastmod>
+         <lastmod>2025-12-04</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://profdenis.github.io/sn1_doc/section1/affichage/</loc>
-         <lastmod>2025-12-03</lastmod>
+         <lastmod>2025-12-04</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://profdenis.github.io/sn1_doc/section1/entr%C3%A9es/</loc>
-         <lastmod>2025-12-03</lastmod>
-    </url>
-    <url>
-         <loc>https://profdenis.github.io/sn1_doc/section1/exercices1-corrig%C3%A9s/</loc>
-         <lastmod>2025-12-03</lastmod>
-    </url>
-    <url>
-         <loc>https://profdenis.github.io/sn1_doc/section1/exercices1/</loc>
-         <lastmod>2025-12-03</lastmod>
-    </url>
-    <url>
-         <loc>https://profdenis.github.io/sn1_doc/section1/exercices2-corrig%C3%A9s/</loc>
-         <lastmod>2025-12-03</lastmod>
-    </url>
-    <url>
-         <loc>https://profdenis.github.io/sn1_doc/section1/exercices2/</loc>
-         <lastmod>2025-12-03</lastmod>
-    </url>
-    <url>
-         <loc>https://profdenis.github.io/sn1_doc/section1/exercices3-corrig%C3%A9s/</loc>
-         <lastmod>2025-12-03</lastmod>
-    </url>
-    <url>
-         <loc>https://profdenis.github.io/sn1_doc/section1/exercices3/</loc>
-         <lastmod>2025-12-03</lastmod>
+         <lastmod>2025-12-04</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://profdenis.github.io/sn1_doc/section1/fonctions/</loc>
-         <lastmod>2025-12-03</lastmod>
+         <lastmod>2025-12-04</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://profdenis.github.io/sn1_doc/section1/modules/</loc>
-         <lastmod>2025-12-03</lastmod>
+         <lastmod>2025-12-04</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://profdenis.github.io/sn1_doc/section1/numpy/</loc>
-         <lastmod>2025-12-03</lastmod>
+         <loc>https://profdenis.github.io/sn1_doc/section1/corrig%C3%A9s/exercices1-corrig%C3%A9s/</loc>
+         <lastmod>2025-12-04</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://profdenis.github.io/sn1_doc/section1/pyplot/</loc>
-         <lastmod>2025-12-03</lastmod>
+         <loc>https://profdenis.github.io/sn1_doc/section1/corrig%C3%A9s/exercices2-corrig%C3%A9s/</loc>
+         <lastmod>2025-12-04</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://profdenis.github.io/sn1_doc/section1/corrig%C3%A9s/exercices3-corrig%C3%A9s/</loc>
+         <lastmod>2025-12-04</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://profdenis.github.io/sn1_doc/section1/corrig%C3%A9s/exercices4-corrig%C3%A9s/</loc>
+         <lastmod>2025-12-04</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://profdenis.github.io/sn1_doc/section1/exercices/exercices1/</loc>
+         <lastmod>2025-12-04</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://profdenis.github.io/sn1_doc/section1/exercices/exercices2/</loc>
+         <lastmod>2025-12-04</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://profdenis.github.io/sn1_doc/section1/exercices/exercices3/</loc>
+         <lastmod>2025-12-04</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://profdenis.github.io/sn1_doc/section1/exercices/exercices4/</loc>
+         <lastmod>2025-12-04</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://profdenis.github.io/sn1_doc/section2/numpy/</loc>
+         <lastmod>2025-12-04</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://profdenis.github.io/sn1_doc/section2/pyplot/</loc>
+         <lastmod>2025-12-04</lastmod>
+         <changefreq>daily</changefreq>
     </url>
 </urlset>

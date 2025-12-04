@@ -14,25 +14,22 @@
         <link rel="prev" href="../modules/">
       
       
-        <link rel="next" href="../exercices1/">
-      
-      
-        
+        <link rel="next" href="../exercices/exercices1/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.50">
     
     
       
-        <title>4. Définition de fonctions - Cours de programmation en sciences</title>
+        <title>4. Définition et utilisation des fonctions - Cours de programmation en sciences</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.618322db.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.a40c8224.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -63,6 +60,7 @@
 
     
     
+    
   </head>
   
   
@@ -82,7 +80,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#4-definition-de-fonctions" class="md-skip">
+        <a href="#4-definition-et-utilisation-des-fonctions" class="md-skip">
           Skip to content
         </a>
       
@@ -118,7 +116,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              4. Définition de fonctions
+              4. Définition et utilisation des fonctions
             
           </span>
         </div>
@@ -166,13 +164,11 @@
     
     
     
-      
-      
-        <label class="md-header__button md-icon" for="__search">
-          
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
-        </label>
-        <div class="md-search" data-md-component="search" role="dialog">
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
@@ -206,14 +202,13 @@
     </div>
   </div>
 </div>
-      
     
     
       <div class="md-header__source">
         <a href="https://github.com/profdenis/sn1_doc" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
   </div>
   <div class="md-source__repository">
     profdenis/sn1_doc
@@ -233,11 +228,9 @@
   
   
   
-  
     <li class="md-tabs__item">
       <a href="../.." class="md-tabs__link">
         
-  
   
     
   
@@ -252,13 +245,11 @@
   
   
   
-  
     
     
       <li class="md-tabs__item">
         <a href="../../introduction/" class="md-tabs__link">
           
-  
   
   Introduction
 
@@ -271,7 +262,6 @@
         
   
   
-  
     
   
   
@@ -280,7 +270,6 @@
       <li class="md-tabs__item md-tabs__item--active">
         <a href="../affichage/" class="md-tabs__link">
           
-  
   
   Section 1
 
@@ -331,7 +320,7 @@
       <a href="https://github.com/profdenis/sn1_doc" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
   </div>
   <div class="md-source__repository">
     profdenis/sn1_doc
@@ -351,16 +340,9 @@
       <a href="../.." class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
-    
-  
     Accueil
-  
-
-    
   </span>
-  
   
 
       </a>
@@ -374,7 +356,6 @@
   
   
   
-    
     
     
     
@@ -396,16 +377,9 @@
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
             
   
-  
   <span class="md-ellipsis">
-    
-  
     Introduction
-  
-
-    
   </span>
-  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -414,11 +388,7 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
-            
-  
-    Introduction
-  
-
+            Introduction
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -432,16 +402,9 @@
       <a href="../../introduction/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
-    
-  
     Qu’est-ce que la programmation ?
-  
-
-    
   </span>
-  
   
 
       </a>
@@ -460,16 +423,9 @@
       <a href="../../introduction/histoire/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
-    
-  
     Histoire de la programmation
-  
-
-    
   </span>
-  
   
 
       </a>
@@ -488,16 +444,9 @@
       <a href="../../introduction/algorithmes/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
-    
-  
     Qu&rsquo;est-ce qu&rsquo;un algorithme ?
-  
-
-    
   </span>
-  
   
 
       </a>
@@ -524,7 +473,6 @@
     
     
     
-    
       
         
         
@@ -544,16 +492,9 @@
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
             
   
-  
   <span class="md-ellipsis">
-    
-  
     Section 1
-  
-
-    
   </span>
-  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -562,11 +503,7 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
-            
-  
-    Section 1
-  
-
+            Section 1
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -580,16 +517,9 @@
       <a href="../affichage/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
-    
-  
     1. Affichage sur la sortie standard
-  
-
-    
   </span>
-  
   
 
       </a>
@@ -608,16 +538,9 @@
       <a href="../entr%C3%A9es/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
-    
-  
     2. L&rsquo;entrée standard (stdin) en Python
-  
-
-    
   </span>
-  
   
 
       </a>
@@ -636,16 +559,9 @@
       <a href="../modules/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
-    
-  
-    3. Importation de modules en Python
-  
-
-    
+    3. Importation de modules
   </span>
-  
   
 
       </a>
@@ -673,16 +589,9 @@
         <label class="md-nav__link md-nav__link--active" for="__toc">
           
   
-  
   <span class="md-ellipsis">
-    
-  
-    4. Définition de fonctions
-  
-
-    
+    4. Définition et utilisation des fonctions
   </span>
-  
   
 
           <span class="md-nav__icon md-icon"></span>
@@ -691,16 +600,9 @@
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
-  
   <span class="md-ellipsis">
-    
-  
-    4. Définition de fonctions
-  
-
-    
+    4. Définition et utilisation des fonctions
   </span>
-  
   
 
       </a>
@@ -721,78 +623,37 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#introduction-aux-fonctions-en-programmation" class="md-nav__link">
+  <a href="#1-definition-vs-utilisation-appel-dune-fonction" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        Introduction aux fonctions en programmation
-      
+      1. Définition vs. utilisation (appel) d&rsquo;une fonction
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#definition-dune-fonction-simple" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Définition d&rsquo;une fonction simple
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#definition-dune-fonction-avec-plusieurs-parametres" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Définition d&rsquo;une fonction avec plusieurs paramètres
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Définition d’une fonction avec plusieurs paramètres">
+    <nav class="md-nav" aria-label="1. Définition vs. utilisation (appel) d’une fonction">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#syntaxe-de-base" class="md-nav__link">
+  <a href="#11-definition-dune-fonction" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        Syntaxe de base
-      
+      1.1 Définition d&rsquo;une fonction
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#exemple-calcul-du-volume-dune-pyramide-a-4-cotes" class="md-nav__link">
+  <a href="#12-utilisation-appel-dune-fonction" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        Exemple : Calcul du volume d&rsquo;une pyramide à 4 côtés
-      
+      1.2 Utilisation (appel) d&rsquo;une fonction
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#utilisation-de-la-fonction" class="md-nav__link">
+  <a href="#13-exemple-simple" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        Utilisation de la fonction
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#points-importants-a-retenir" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Points importants à retenir
-      
+      1.3 Exemple simple
     </span>
   </a>
   
@@ -804,56 +665,262 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#erreurs-courantes-a-eviter-lors-de-la-definition-de-fonctions-en-python" class="md-nav__link">
+  <a href="#2-fonctions-sans-parametre-ni-retour" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        Erreurs courantes à éviter lors de la définition de fonctions en Python
-      
+      2. Fonctions sans paramètre ni retour
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Erreurs courantes à éviter lors de la définition de fonctions en Python">
+    <nav class="md-nav" aria-label="2. Fonctions sans paramètre ni retour">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#erreurs-de-syntaxe" class="md-nav__link">
+  <a href="#21-definition" class="md-nav__link">
     <span class="md-ellipsis">
+      2.1 Définition
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
       
-        Erreurs de syntaxe
-      
+        <li class="md-nav__item">
+  <a href="#3-fonctions-avec-1-parametre-et-sans-retour" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Fonctions avec 1 paramètre et sans retour
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Fonctions avec 1 paramètre et sans retour">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-definition" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.1 Définition
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#erreurs-de-portee-et-de-nommage" class="md-nav__link">
+  <a href="#32-exemple" class="md-nav__link">
     <span class="md-ellipsis">
+      3.2 Exemple
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
       
-        Erreurs de portée et de nommage
-      
+        <li class="md-nav__item">
+  <a href="#4-fonctions-avec-2-parametres-ou-plus-et-sans-retour" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Fonctions avec 2 paramètres ou plus et sans retour
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Fonctions avec 2 paramètres ou plus et sans retour">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-definition" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.1 Définition
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#erreurs-liees-aux-arguments" class="md-nav__link">
+  <a href="#42-exemple" class="md-nav__link">
     <span class="md-ellipsis">
+      4.2 Exemple
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
       
-        Erreurs liées aux arguments
-      
+        <li class="md-nav__item">
+  <a href="#5-fonctions-avec-retour-et-differents-nombres-de-parametres" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Fonctions avec retour et différents nombres de paramètres
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Fonctions avec retour et différents nombres de paramètres">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-retour-de-valeur" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.1 Retour de valeur
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#erreurs-de-conception" class="md-nav__link">
+  <a href="#52-exemples" class="md-nav__link">
     <span class="md-ellipsis">
+      5.2 Exemples
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5.2 Exemples">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#521-fonction-avec-1-parametre-et-retour" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.2.1 Fonction avec 1 paramètre et retour
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#522-fonction-avec-2-parametres-et-retour" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.2.2 Fonction avec 2 paramètres et retour
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#523-fonction-avec-plusieurs-retours" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.2.3 Fonction avec plusieurs retours
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
       
-        Erreurs de conception
+        <li class="md-nav__item">
+  <a href="#6-erreurs-courantes-avec-les-fonctions" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Erreurs courantes avec les fonctions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Erreurs courantes avec les fonctions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61-mauvaise-indentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.1 Mauvaise indentation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62-utilisation-de-variables-exterieures-a-la-place-de-parametres" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.2 Utilisation de variables extérieures à la place de paramètres
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#63-oublier-le-return" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.3 Oublier le return
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#64-nombre-incorrect-de-parametres" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.4 Nombre incorrect de paramètres
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
       
+        <li class="md-nav__item">
+  <a href="#7-resume-des-concepts-cles" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. Résumé des concepts clés
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-exemples-detailles" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. Exemples détaillés
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8. Exemples détaillés">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-calcul-de-laire-dun-cercle" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Calcul de l&rsquo;aire d&rsquo;un cercle
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-calcul-de-laire-dun-rectangle" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Calcul de l&rsquo;aire d&rsquo;un rectangle
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-calcul-de-la-moyenne-de-trois-nombres" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Calcul de la moyenne de trois nombres
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-conversion-de-kilometres-en-miles" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Conversion de kilomètres en miles
     </span>
   </a>
   
@@ -882,7 +949,6 @@
     
     
     
-    
       
       
         
@@ -904,16 +970,9 @@
           <label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="">
             
   
-  
   <span class="md-ellipsis">
-    
-  
     Exercices
-  
-
-    
   </span>
-  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -922,11 +981,7 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3_5">
             <span class="md-nav__icon md-icon"></span>
-            
-  
-    Exercices
-  
-
+            Exercices
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -937,19 +992,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../exercices1/" class="md-nav__link">
+      <a href="../exercices/exercices1/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
-    
-  
     Exercices 1 : Affichage sur la sortie standard
-  
-
-    
   </span>
-  
   
 
       </a>
@@ -965,19 +1013,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../exercices2/" class="md-nav__link">
+      <a href="../exercices/exercices2/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
-    
-  
     Exercices 2 : Utilisation de l&rsquo;entrée standard
-  
-
-    
   </span>
-  
   
 
       </a>
@@ -993,19 +1034,33 @@
   
   
     <li class="md-nav__item">
-      <a href="../exercices3/" class="md-nav__link">
+      <a href="../exercices/exercices3/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
-    
-  
-    Exercices pratiques 3 : Utilisation des modules random, math et datetime
-  
-
-    
+    Exercices pratiques 3 : Importation de modules
   </span>
   
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../exercices/exercices4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Exercices 4 : Définition et utilisation des fonctions
+  </span>
   
 
       </a>
@@ -1031,7 +1086,6 @@
     
     
     
-    
       
       
         
@@ -1053,16 +1107,9 @@
           <label class="md-nav__link" for="__nav_3_6" id="__nav_3_6_label" tabindex="">
             
   
-  
   <span class="md-ellipsis">
-    
-  
     Corrigés
-  
-
-    
   </span>
-  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -1071,11 +1118,7 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_6_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3_6">
             <span class="md-nav__icon md-icon"></span>
-            
-  
-    Corrigés
-  
-
+            Corrigés
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -1086,19 +1129,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../exercices1-corrig%C3%A9s/" class="md-nav__link">
+      <a href="../corrig%C3%A9s/exercices1-corrig%C3%A9s/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
-    
-  
     Corrigés 1 : Affichage sur la sortie standard
-  
-
-    
   </span>
-  
   
 
       </a>
@@ -1114,19 +1150,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../exercices2-corrig%C3%A9s/" class="md-nav__link">
+      <a href="../corrig%C3%A9s/exercices2-corrig%C3%A9s/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
-    
-  
     Corrigés 2 : Utilisation de l&rsquo;entrée standard
-  
-
-    
   </span>
-  
   
 
       </a>
@@ -1142,19 +1171,33 @@
   
   
     <li class="md-nav__item">
-      <a href="../exercices3-corrig%C3%A9s/" class="md-nav__link">
+      <a href="../corrig%C3%A9s/exercices3-corrig%C3%A9s/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
-    
-  
-    Corrigés 3 : Utilisation des modules random, math et datetime
-  
-
-    
+    Corrigés 3 : Importation de modules
   </span>
   
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../corrig%C3%A9s/exercices4-corrig%C3%A9s/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Corrigés 4: Définition et utilisation des fonctions
+  </span>
   
 
       </a>
@@ -1205,78 +1248,37 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#introduction-aux-fonctions-en-programmation" class="md-nav__link">
+  <a href="#1-definition-vs-utilisation-appel-dune-fonction" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        Introduction aux fonctions en programmation
-      
+      1. Définition vs. utilisation (appel) d&rsquo;une fonction
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#definition-dune-fonction-simple" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Définition d&rsquo;une fonction simple
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#definition-dune-fonction-avec-plusieurs-parametres" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Définition d&rsquo;une fonction avec plusieurs paramètres
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Définition d’une fonction avec plusieurs paramètres">
+    <nav class="md-nav" aria-label="1. Définition vs. utilisation (appel) d’une fonction">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#syntaxe-de-base" class="md-nav__link">
+  <a href="#11-definition-dune-fonction" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        Syntaxe de base
-      
+      1.1 Définition d&rsquo;une fonction
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#exemple-calcul-du-volume-dune-pyramide-a-4-cotes" class="md-nav__link">
+  <a href="#12-utilisation-appel-dune-fonction" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        Exemple : Calcul du volume d&rsquo;une pyramide à 4 côtés
-      
+      1.2 Utilisation (appel) d&rsquo;une fonction
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#utilisation-de-la-fonction" class="md-nav__link">
+  <a href="#13-exemple-simple" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        Utilisation de la fonction
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#points-importants-a-retenir" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Points importants à retenir
-      
+      1.3 Exemple simple
     </span>
   </a>
   
@@ -1288,56 +1290,262 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#erreurs-courantes-a-eviter-lors-de-la-definition-de-fonctions-en-python" class="md-nav__link">
+  <a href="#2-fonctions-sans-parametre-ni-retour" class="md-nav__link">
     <span class="md-ellipsis">
-      
-        Erreurs courantes à éviter lors de la définition de fonctions en Python
-      
+      2. Fonctions sans paramètre ni retour
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Erreurs courantes à éviter lors de la définition de fonctions en Python">
+    <nav class="md-nav" aria-label="2. Fonctions sans paramètre ni retour">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#erreurs-de-syntaxe" class="md-nav__link">
+  <a href="#21-definition" class="md-nav__link">
     <span class="md-ellipsis">
+      2.1 Définition
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
       
-        Erreurs de syntaxe
-      
+        <li class="md-nav__item">
+  <a href="#3-fonctions-avec-1-parametre-et-sans-retour" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Fonctions avec 1 paramètre et sans retour
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Fonctions avec 1 paramètre et sans retour">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-definition" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.1 Définition
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#erreurs-de-portee-et-de-nommage" class="md-nav__link">
+  <a href="#32-exemple" class="md-nav__link">
     <span class="md-ellipsis">
+      3.2 Exemple
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
       
-        Erreurs de portée et de nommage
-      
+        <li class="md-nav__item">
+  <a href="#4-fonctions-avec-2-parametres-ou-plus-et-sans-retour" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Fonctions avec 2 paramètres ou plus et sans retour
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Fonctions avec 2 paramètres ou plus et sans retour">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-definition" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.1 Définition
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#erreurs-liees-aux-arguments" class="md-nav__link">
+  <a href="#42-exemple" class="md-nav__link">
     <span class="md-ellipsis">
+      4.2 Exemple
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
       
-        Erreurs liées aux arguments
-      
+        <li class="md-nav__item">
+  <a href="#5-fonctions-avec-retour-et-differents-nombres-de-parametres" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Fonctions avec retour et différents nombres de paramètres
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Fonctions avec retour et différents nombres de paramètres">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-retour-de-valeur" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.1 Retour de valeur
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#erreurs-de-conception" class="md-nav__link">
+  <a href="#52-exemples" class="md-nav__link">
     <span class="md-ellipsis">
+      5.2 Exemples
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5.2 Exemples">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#521-fonction-avec-1-parametre-et-retour" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.2.1 Fonction avec 1 paramètre et retour
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#522-fonction-avec-2-parametres-et-retour" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.2.2 Fonction avec 2 paramètres et retour
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#523-fonction-avec-plusieurs-retours" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.2.3 Fonction avec plusieurs retours
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
       
-        Erreurs de conception
+        <li class="md-nav__item">
+  <a href="#6-erreurs-courantes-avec-les-fonctions" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Erreurs courantes avec les fonctions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Erreurs courantes avec les fonctions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61-mauvaise-indentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.1 Mauvaise indentation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62-utilisation-de-variables-exterieures-a-la-place-de-parametres" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.2 Utilisation de variables extérieures à la place de paramètres
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#63-oublier-le-return" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.3 Oublier le return
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#64-nombre-incorrect-de-parametres" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.4 Nombre incorrect de paramètres
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
       
+        <li class="md-nav__item">
+  <a href="#7-resume-des-concepts-cles" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. Résumé des concepts clés
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-exemples-detailles" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. Exemples détaillés
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8. Exemples détaillés">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-calcul-de-laire-dun-cercle" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Calcul de l&rsquo;aire d&rsquo;un cercle
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-calcul-de-laire-dun-rectangle" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Calcul de l&rsquo;aire d&rsquo;un rectangle
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-calcul-de-la-moyenne-de-trois-nombres" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Calcul de la moyenne de trois nombres
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-conversion-de-kilometres-en-miles" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Conversion de kilomètres en miles
     </span>
   </a>
   
@@ -1358,251 +1566,321 @@
           
           
             <div class="md-content" data-md-component="content">
-              
-                
-
-
-
-  
-
-
-  <nav class="md-path" aria-label="Navigation" >
-    <ol class="md-path__list">
-      
-        
-  
-  
-    <li class="md-path__item">
-      <a href="../.." class="md-path__link">
-        
-  <span class="md-ellipsis">
-    Accueil
-  </span>
-
-      </a>
-    </li>
-  
-
-      
-      
-        
-  
-  
-    
-    
-      <li class="md-path__item">
-        <a href="../affichage/" class="md-path__link">
-          
-  <span class="md-ellipsis">
-    Section 1
-  </span>
-
-        </a>
-      </li>
-    
-  
-
-      
-    </ol>
-  </nav>
-
-              
               <article class="md-content__inner md-typeset">
                 
                   
 
-
   
   
 
 
-<h1 id="4-definition-de-fonctions">4. Définition de fonctions<a class="headerlink" href="#4-definition-de-fonctions" title="Permanent link">&para;</a></h1>
-<h2 id="introduction-aux-fonctions-en-programmation">Introduction aux fonctions en programmation<a class="headerlink" href="#introduction-aux-fonctions-en-programmation" title="Permanent link">&para;</a></h2>
-<p>Dans nos programmes précédents, nous avons déjà utilisé plusieurs fonctions sans les définir nous-mêmes.
-Par exemple, nous avons employé <code>print()</code> pour afficher du texte à l&rsquo;écran, <code>input()</code> pour demander une saisie à
-l&rsquo;utilisateur, et <code>numpy.cos()</code> (ou <code>np.cos()</code>) pour calculer le cosinus d&rsquo;un angle. Ces fonctions sont des outils 
-prédéfinis qui nous permettent d&rsquo;effectuer des tâches spécifiques sans avoir à réécrire le code à chaque fois.</p>
-<p>En programmation, les fonctions sont similaires aux fonctions mathématiques que vous connaissez déjà. Elles prennent des
-entrées (appelées arguments ou paramètres), effectuent des opérations sur ces entrées, et produisent un résultat. Par
-exemple, la fonction mathématique <span class="arithmatex">\(f(x) = x^2\)</span> prend un nombre <span class="arithmatex">\(x\)</span> en entrée et retourne son carré.</p>
-<h2 id="definition-dune-fonction-simple">Définition d&rsquo;une fonction simple<a class="headerlink" href="#definition-dune-fonction-simple" title="Permanent link">&para;</a></h2>
-<p>Voyons maintenant comment définir notre propre fonction en Python. Prenons l&rsquo;exemple d&rsquo;une fonction qui calcule l&rsquo;aire
-d&rsquo;un cercle.</p>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="k">def</span><span class="w"> </span><span class="nf">aire_cercle</span><span class="p">(</span><span class="n">rayon</span><span class="p">):</span>
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>    <span class="n">aire</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span> <span class="o">*</span> <span class="n">rayon</span> <span class="o">**</span> <span class="mi">2</span>
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>    <span class="k">return</span> <span class="n">aire</span>
-</span></code></pre></div>
-<p>Examinons les différentes parties de cette définition de fonction :</p>
-<ol type="1">
-<li>
-<p><strong>Signature de la fonction</strong> : La ligne <code>def aire_cercle(rayon):</code> est la signature de la fonction. Elle commence par
-   le mot-clé <code>def</code>, suivi du nom de la fonction et des paramètres entre parenthèses.</p>
-</li>
-<li>
-<p><strong>Nom de la fonction</strong> : <code>aire_cercle</code> est le nom que nous avons choisi pour notre fonction. Il est préférable de
-   choisir un nom descriptif qui indique clairement ce que fait la fonction.</p>
-</li>
-<li>
-<p><strong>Paramètre</strong> : <code>rayon</code> est le paramètre de notre fonction. C&rsquo;est la valeur d&rsquo;entrée sur laquelle la fonction va
-   travailler. Une fonction peut avoir plusieurs paramètres, séparés par des virgules.</p>
-</li>
-<li>
-<p><strong>Corps de la fonction et indentation</strong> : Le corps de la fonction contient les instructions qui seront exécutées
-   lorsque la fonction sera appelée. En Python, le corps de la fonction est indenté (généralement de 4 espaces) pour
-   indiquer qu&rsquo;il fait partie de la fonction.</p>
-</li>
-<li>
-<p><strong>Instruction <em>return</em></strong> : <code>return aire</code> spécifie la valeur que la fonction doit renvoyer lorsqu&rsquo;elle est appelée. 
-   Dans ce cas, elle renvoie l&rsquo;aire calculée du cercle.</p>
-</li>
-</ol>
-<p>Pour utiliser cette fonction, nous pouvons maintenant l&rsquo;appeler en lui fournissant un rayon :</p>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="n">resultat</span> <span class="o">=</span> <span class="n">aire_cercle</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;L&#39;aire d&#39;un cercle de rayon 5 est : </span><span class="si">{</span><span class="n">resultat</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-</span></code></pre></div>
-<p>Cette approche nous permet de réutiliser facilement le code pour calculer l&rsquo;aire de différents cercles sans avoir à
-réécrire la formule à chaque fois.</p>
-<h2 id="definition-dune-fonction-avec-plusieurs-parametres">Définition d&rsquo;une fonction avec plusieurs paramètres<a class="headerlink" href="#definition-dune-fonction-avec-plusieurs-parametres" title="Permanent link">&para;</a></h2>
-<p>En Python, il est très courant et souvent nécessaire de définir des fonctions qui prennent plusieurs paramètres. Cela
-permet à une fonction d&rsquo;être plus flexible et de traiter plusieurs entrées à la fois. Voici comment procéder :</p>
-<h3 id="syntaxe-de-base">Syntaxe de base<a class="headerlink" href="#syntaxe-de-base" title="Permanent link">&para;</a></h3>
-<p>La syntaxe pour définir une fonction avec plusieurs paramètres est similaire à celle d&rsquo;une fonction avec un seul
-paramètre, mais nous séparons les paramètres par des virgules dans la signature de la fonction.</p>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">nom_fonction</span><span class="p">(</span><span class="n">parametre1</span><span class="p">,</span> <span class="n">parametre2</span><span class="p">,</span> <span class="n">parametre3</span><span class="p">):</span>
-</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>    <span class="c1"># Corps de la fonction</span>
-</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>    <span class="c1"># Opérations utilisant les paramètres</span>
-</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>    <span class="k">return</span> <span class="n">resultat</span>
-</span></code></pre></div>
-<h3 id="exemple-calcul-du-volume-dune-pyramide-a-4-cotes"><em>Exemple</em> : Calcul du volume d&rsquo;une pyramide à 4 côtés<a class="headerlink" href="#exemple-calcul-du-volume-dune-pyramide-a-4-cotes" title="Permanent link">&para;</a></h3>
-<p>Pour calculer le volume d&rsquo;une pyramide à 4 côtés (ou pyramide à base rectangulaire), nous avons besoin de trois 
-paramètres : la longueur de la base, la largeur de la base, et la hauteur de la pyramide. La formule pour le volume 
-est :</p>
-<p><span class="arithmatex">\(V = \frac{1}{3} \times longueur \times largeur \times hauteur\)</span>.</p>
-<p>Voici comment nous pouvons définir cette fonction en Python :</p>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">volume_pyramide</span><span class="p">(</span><span class="n">longueur</span><span class="p">,</span> <span class="n">largeur</span><span class="p">,</span> <span class="n">hauteur</span><span class="p">):</span>
-</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>    <span class="n">volume</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span> <span class="o">/</span> <span class="mi">3</span><span class="p">)</span> <span class="o">*</span> <span class="n">longueur</span> <span class="o">*</span> <span class="n">largeur</span> <span class="o">*</span> <span class="n">hauteur</span>
-</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>    <span class="k">return</span> <span class="n">volume</span>
-</span></code></pre></div>
-<p>Dans cet exemple :</p>
-<ul>
-<li><code>longueur</code>, <code>largeur</code>, et <code>hauteur</code> sont les trois paramètres de la fonction.</li>
-<li>La fonction utilise ces trois paramètres pour calculer le volume de la pyramide.</li>
-<li>Le résultat est renvoyé à l&rsquo;aide de l&rsquo;instruction <code>return</code>.</li>
-</ul>
-<h3 id="utilisation-de-la-fonction">Utilisation de la fonction<a class="headerlink" href="#utilisation-de-la-fonction" title="Permanent link">&para;</a></h3>
-<p>Pour utiliser cette fonction, nous fournissons les valeurs pour chaque paramètre dans l&rsquo;ordre où ils sont définis :</p>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="n">resultat</span> <span class="o">=</span> <span class="n">volume_pyramide</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
-</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Le volume d&#39;une pyramide de base 5x5 et de hauteur 10 est : </span><span class="si">{</span><span class="n">resultat</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-</span></code></pre></div>
-<h3 id="points-importants-a-retenir">Points importants à retenir<a class="headerlink" href="#points-importants-a-retenir" title="Permanent link">&para;</a></h3>
-<ol type="1">
-<li>
-<p><strong>Ordre des paramètres</strong> : L&rsquo;ordre dans lequel vous définissez les paramètres est crucial. Lors de l&rsquo;appel de la
-   fonction, les arguments doivent être fournis dans le même ordre (longueur, largeur, hauteur).</p>
-</li>
-<li>
-<p><strong>Nombre de paramètres</strong> : Cette fonction a trois paramètres, ce qui est parfaitement acceptable. Cependant, si une
-   fonction nécessite de nombreux paramètres, il peut être judicieux de considérer d&rsquo;autres approches, comme
-   l&rsquo;utilisation d&rsquo;un dictionnaire pour les regrouper.</p>
-</li>
-<li>
-<p><strong>Noms des paramètres</strong> : Notez comment les noms <code>longueur</code>, <code>largeur</code>, et <code>hauteur</code> sont descriptifs et clairs, ce
-   qui rend la fonction plus facile à comprendre et à utiliser.</p>
-</li>
-<li>
-<p><strong>Flexibilité</strong> : Cette fonction peut calculer le volume de n&rsquo;importe quelle pyramide à base rectangulaire, pas
-   seulement celles à base carrée. Si la base est carrée, on peut simplement utiliser la même valeur pour la longueur et
-   la largeur.</p>
-</li>
-</ol>
-<p>En utilisant des fonctions avec plusieurs paramètres comme celle-ci, vous pouvez créer des outils puissants et flexibles
-pour résoudre une variété de problèmes en programmation.</p>
-<h2 id="erreurs-courantes-a-eviter-lors-de-la-definition-de-fonctions-en-python">Erreurs courantes à éviter lors de la définition de fonctions en Python<a class="headerlink" href="#erreurs-courantes-a-eviter-lors-de-la-definition-de-fonctions-en-python" title="Permanent link">&para;</a></h2>
-<h3 id="erreurs-de-syntaxe">Erreurs de syntaxe<a class="headerlink" href="#erreurs-de-syntaxe" title="Permanent link">&para;</a></h3>
-<ol type="1">
-<li>
-<p><strong>Oublier les deux-points</strong> : Toujours ajouter <code>:</code> à la fin de la ligne de définition de la fonction[3].</p>
-</li>
-<li>
-<p><strong>Indentation incorrecte</strong> : Le corps de la fonction doit être indenté, généralement de 4 espaces[3].</p>
-</li>
-<li>
-<p><strong>Oublier les parenthèses</strong> : Pour appeler une fonction, il faut utiliser des parenthèses, même si elle n&rsquo;a pas 
-   d&rsquo;arguments[3].</p>
-</li>
-</ol>
-<h3 id="erreurs-de-portee-et-de-nommage">Erreurs de portée et de nommage<a class="headerlink" href="#erreurs-de-portee-et-de-nommage" title="Permanent link">&para;</a></h3>
-<ol start="4" type="1">
-<li>
-<p><strong>Confusion entre variables locales et globales</strong> : Les variables définies dans une fonction sont locales par défaut.</p>
-</li>
-<li>
-<p><strong>Nommer une variable comme une fonction intégrée</strong> : Éviter d&rsquo;utiliser des noms comme <code>print</code> ou <code>input</code> qui
-   masqueraient les fonctions Python intégrées[1].</p>
-</li>
-</ol>
-<h3 id="erreurs-liees-aux-arguments">Erreurs liées aux arguments<a class="headerlink" href="#erreurs-liees-aux-arguments" title="Permanent link">&para;</a></h3>
-<ol start="6" type="1">
-<li>
-<p><strong>Inverser l&rsquo;ordre des arguments</strong> : Les arguments doivent être fournis dans le bon ordre. C&rsquo;est pourquoi il est 
-   important de bien nommer les paramètres.</p>
-</li>
-<li>
-<p><strong>Trop de paramètres</strong> : Limiter le nombre de paramètres pour maintenir la lisibilité et la simplicité de la
-   fonction[9].</p>
-</li>
-</ol>
-<h3 id="erreurs-de-conception">Erreurs de conception<a class="headerlink" href="#erreurs-de-conception" title="Permanent link">&para;</a></h3>
-<ol start="8" type="1">
-<li>
-<p><strong>Fonctions trop longues ou complexes</strong> : Diviser les fonctions trop longues en sous-fonctions plus petites et plus
-   simples[9].</p>
-</li>
-<li>
-<p><strong>Retourner des types de données incohérents</strong> : Une fonction devrait toujours retourner le même type de données,
-   quelle que soit la branche d&rsquo;exécution[14].</p>
-</li>
-<li>
-<p><strong>Ne pas gérer les exceptions</strong> : Utiliser des blocs <code>try/except</code> pour gérer les erreurs potentielles dans la
-    fonction[15].</p>
-</li>
-</ol>
-<p>En évitant ces erreurs courantes, vous pourrez écrire des fonctions Python plus robustes et maintenables.</p>
-<details class="note">
-<summary>Citations</summary>
-<ul>
-<li>[1] https://www.youtube.com/watch?v=IzNh3W2DY-w</li>
-<li>[2] https://arjancodes.com/blog/python-common-pitfalls-and-fixes-for-syntactic-snafus/</li>
-<li>[3] https://hackr.io/blog/common-python-mistakes</li>
-<li>[4] https://rollbar.com/blog/python-errors-and-how-to-handle-them/</li>
-<li>[5] https://docs.python-guide.org/writing/gotchas/</li>
-<li>[6] https://doc.sagemath.org/html/en/tutorial/tour_functions.html</li>
-<li>[7] https://www.reddit.com/r/learnpython/comments/pop076/error_the_function_is_not_defined/</li>
-<li>[8] https://www.educative.io/blog/common-mistakes-python-programmers-how-to-fix</li>
-<li>[9] https://www.kdnuggets.com/5-tips-for-writing-better-python-functions</li>
-<li>[10] https://stackoverflow.com/questions/29690663/def-function-syntax-error-in-python-3/29690687</li>
-<li>[11] https://stackoverflow.com/questions/1011431/common-pitfalls-in-python</li>
-<li>[12] https://www.activestate.com/blog/top-10-coding-mistakes-in-python-how-to-avoid-them/</li>
-<li>[13] https://docs.python.org/3/tutorial/errors.html</li>
-<li>[14] https://betterstack.com/community/guides/scaling-python/python-errors/</li>
-<li>[15] https://www.datacamp.com/tutorial/exception-handling-python</li>
-<li>[16] https://stackoverflow.com/questions/19971453/is-it-bad-practice-in-python-to-define-a-function-in-the-middle-of-operational-c</li>
-<li>[17] https://www.tutorialsteacher.com/python/error-types-in-python</li>
-<li>[18] https://docs.python.org/ja/3.12/library/exceptions.html</li>
-<li>[19] https://www.w3schools.com/python/python_functions.asp</li>
-<li>[20] https://www.youtube.com/watch?v=zdJEYhA2AZQ</li>
-</ul>
-</details>
+<h1 id="4-definition-et-utilisation-des-fonctions"><strong>4. Définition et utilisation des fonctions</strong><a class="headerlink" href="#4-definition-et-utilisation-des-fonctions" title="Permanent link">&para;</a></h1>
 <hr />
-<details class="info">
-<summary>Utilisation de l&rsquo;IA</summary>
-<p>Page rédigée en partie avec l&rsquo;aide d&rsquo;un assistant IA, principalement à l&rsquo;aide de Perplexity AI, avec le <em>LLM</em>
-  <strong>Claude 3.5 Sonnet</strong>. L&rsquo;IA a été utilisée pour générer des explications, des exemples et/ou des suggestions de
-  structure. Toutes les informations ont été vérifiées, éditées et complétées par l&rsquo;auteur.</p>
-</details>
+<h2 id="1-definition-vs-utilisation-appel-dune-fonction"><strong>1. Définition vs. utilisation (appel) d&rsquo;une fonction</strong><a class="headerlink" href="#1-definition-vs-utilisation-appel-dune-fonction" title="Permanent link">&para;</a></h2>
+<h3 id="11-definition-dune-fonction"><strong>1.1 Définition d&rsquo;une fonction</strong><a class="headerlink" href="#11-definition-dune-fonction" title="Permanent link">&para;</a></h3>
+<p>Une <strong>fonction</strong> est un bloc de code qui effectue une tâche spécifique. Elle est définie avec le mot-clé <code>def</code>.</p>
+<p><strong>Syntaxe</strong> :</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">nom_de_la_fonction</span><span class="p">():</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="c1"># Instructions</span>
+</span></code></pre></div>
+<ul>
+<li><strong><code>def</code></strong> : Mot-clé pour définir une fonction.</li>
+<li><strong><code>nom_de_la_fonction</code></strong> : Nom donné à la fonction (doit être descriptif).</li>
+<li><strong><code>:</code></strong> : Indique le début du bloc de code.</li>
+<li><strong>Indentation</strong> : Les instructions à l&rsquo;intérieur de la fonction <strong>doivent être indentées</strong> (généralement 4 espaces).</li>
+</ul>
+<hr />
+<h3 id="12-utilisation-appel-dune-fonction"><strong>1.2 Utilisation (appel) d&rsquo;une fonction</strong><a class="headerlink" href="#12-utilisation-appel-dune-fonction" title="Permanent link">&para;</a></h3>
+<p>Pour <strong>exécuter</strong> une fonction, il faut l&rsquo;<strong>appeler</strong> par son nom suivi de parenthèses.</p>
+<p><strong>Syntaxe</strong> :</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="n">nom_de_la_fonction</span><span class="p">()</span>
+</span></code></pre></div>
+<hr />
+<h3 id="13-exemple-simple"><strong>1.3 Exemple simple</strong><a class="headerlink" href="#13-exemple-simple" title="Permanent link">&para;</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c1"># Définition de la fonction</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="k">def</span><span class="w"> </span><span class="nf">dire_bonjour</span><span class="p">():</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Bonjour !&quot;</span><span class="p">)</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="c1"># Appel de la fonction</span>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="n">dire_bonjour</span><span class="p">()</span>
+</span></code></pre></div>
+<p><strong>Sortie</strong> :</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>Bonjour !
+</span></code></pre></div>
+<hr />
+<h2 id="2-fonctions-sans-parametre-ni-retour"><strong>2. Fonctions sans paramètre ni retour</strong><a class="headerlink" href="#2-fonctions-sans-parametre-ni-retour" title="Permanent link">&para;</a></h2>
+<h3 id="21-definition"><strong>2.1 Définition</strong><a class="headerlink" href="#21-definition" title="Permanent link">&para;</a></h3>
+<p>Une fonction <strong>sans paramètre</strong> et <strong>sans retour</strong> effectue une tâche sans recevoir ni retourner de données.</p>
+<p><strong>Exemple</strong> :</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">afficher_date_du_jour</span><span class="p">():</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>    <span class="kn">from</span><span class="w"> </span><span class="nn">datetime</span><span class="w"> </span><span class="kn">import</span> <span class="n">datetime</span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>    <span class="n">aujourdhui</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Aujourd&#39;hui, nous sommes le </span><span class="si">{</span><span class="n">aujourdhui</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">%d</span><span class="s1">/%m/%Y&#39;</span><span class="p">)</span><span class="si">}</span><span class="s2">.&quot;</span><span class="p">)</span>
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>
+</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>
+</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="c1"># Appel</span>
+</span><span id="__span-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="n">afficher_date_du_jour</span><span class="p">()</span>
+</span></code></pre></div>
+<p><strong>Sortie possible</strong> :</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>Aujourd&#39;hui, nous sommes le 04/12/2025.
+</span></code></pre></div>
+<hr />
+<h2 id="3-fonctions-avec-1-parametre-et-sans-retour"><strong>3. Fonctions avec 1 paramètre et sans retour</strong><a class="headerlink" href="#3-fonctions-avec-1-parametre-et-sans-retour" title="Permanent link">&para;</a></h2>
+<h3 id="31-definition"><strong>3.1 Définition</strong><a class="headerlink" href="#31-definition" title="Permanent link">&para;</a></h3>
+<p>Une fonction avec <strong>1 paramètre</strong> reçoit une valeur lors de l&rsquo;appel.</p>
+<p><strong>Syntaxe</strong> :</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">nom_de_la_fonction</span><span class="p">(</span><span class="n">parametre</span><span class="p">):</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="c1"># Instructions utilisant parametre</span>
+</span></code></pre></div>
+<hr />
+<h3 id="32-exemple"><strong>3.2 Exemple</strong><a class="headerlink" href="#32-exemple" title="Permanent link">&para;</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">dire_bonjour_a</span><span class="p">(</span><span class="n">nom</span><span class="p">):</span>
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Bonjour, </span><span class="si">{</span><span class="n">nom</span><span class="si">}</span><span class="s2"> !&quot;</span><span class="p">)</span>
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>
+</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>
+</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="c1"># Appel</span>
+</span><span id="__span-7-6"><a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a><span class="n">dire_bonjour_a</span><span class="p">(</span><span class="s2">&quot;Alice&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+<p><strong>Sortie</strong> :</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>Bonjour, Alice !
+</span></code></pre></div>
+<hr />
+<h2 id="4-fonctions-avec-2-parametres-ou-plus-et-sans-retour"><strong>4. Fonctions avec 2 paramètres ou plus et sans retour</strong><a class="headerlink" href="#4-fonctions-avec-2-parametres-ou-plus-et-sans-retour" title="Permanent link">&para;</a></h2>
+<h3 id="41-definition"><strong>4.1 Définition</strong><a class="headerlink" href="#41-definition" title="Permanent link">&para;</a></h3>
+<p>Une fonction peut recevoir <strong>plusieurs paramètres</strong>, séparés par des virgules.</p>
+<p><strong>Syntaxe</strong> :</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">nom_de_la_fonction</span><span class="p">(</span><span class="n">param1</span><span class="p">,</span> <span class="n">param2</span><span class="p">,</span> <span class="o">...</span><span class="p">):</span>
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="c1"># Instructions utilisant param1, param2, etc.</span>
+</span></code></pre></div>
+<hr />
+<h3 id="42-exemple"><strong>4.2 Exemple</strong><a class="headerlink" href="#42-exemple" title="Permanent link">&para;</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">afficher_somme</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;La somme de </span><span class="si">{</span><span class="n">a</span><span class="si">}</span><span class="s2"> et </span><span class="si">{</span><span class="n">b</span><span class="si">}</span><span class="s2"> est </span><span class="si">{</span><span class="n">a</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">b</span><span class="si">}</span><span class="s2">.&quot;</span><span class="p">)</span>
+</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>
+</span><span id="__span-10-4"><a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>
+</span><span id="__span-10-5"><a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a><span class="c1"># Appel</span>
+</span><span id="__span-10-6"><a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a><span class="n">afficher_somme</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+</span></code></pre></div>
+<p><strong>Sortie</strong> :</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>La somme de 5 et 3 est 8.
+</span></code></pre></div>
+<hr />
+<h2 id="5-fonctions-avec-retour-et-differents-nombres-de-parametres"><strong>5. Fonctions avec retour et différents nombres de paramètres</strong><a class="headerlink" href="#5-fonctions-avec-retour-et-differents-nombres-de-parametres" title="Permanent link">&para;</a></h2>
+<h3 id="51-retour-de-valeur"><strong>5.1 Retour de valeur</strong><a class="headerlink" href="#51-retour-de-valeur" title="Permanent link">&para;</a></h3>
+<p>Une fonction peut <strong>retourner une valeur</strong> avec le mot-clé <code>return</code>.</p>
+<p><strong>Syntaxe</strong> :</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">nom_de_la_fonction</span><span class="p">(</span><span class="n">param1</span><span class="p">,</span> <span class="n">param2</span><span class="p">,</span> <span class="o">...</span><span class="p">):</span>
+</span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>    <span class="c1"># Instructions</span>
+</span><span id="__span-12-3"><a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a>    <span class="k">return</span> <span class="n">valeur</span>
+</span></code></pre></div>
+<hr />
+<h3 id="52-exemples"><strong>5.2 Exemples</strong><a class="headerlink" href="#52-exemples" title="Permanent link">&para;</a></h3>
+<h4 id="521-fonction-avec-1-parametre-et-retour"><strong>5.2.1 Fonction avec 1 paramètre et retour</strong><a class="headerlink" href="#521-fonction-avec-1-parametre-et-retour" title="Permanent link">&para;</a></h4>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">carre</span><span class="p">(</span><span class="n">nombre</span><span class="p">):</span>
+</span><span id="__span-13-2"><a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>    <span class="k">return</span> <span class="n">nombre</span> <span class="o">**</span> <span class="mi">2</span>
+</span><span id="__span-13-3"><a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a>
+</span><span id="__span-13-4"><a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a>
+</span><span id="__span-13-5"><a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a><span class="c1"># Appel</span>
+</span><span id="__span-13-6"><a id="__codelineno-13-6" name="__codelineno-13-6" href="#__codelineno-13-6"></a><span class="n">resultat</span> <span class="o">=</span> <span class="n">carre</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
+</span><span id="__span-13-7"><a id="__codelineno-13-7" name="__codelineno-13-7" href="#__codelineno-13-7"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Le carré de 4 est </span><span class="si">{</span><span class="n">resultat</span><span class="si">}</span><span class="s2">.&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+<p><strong>Sortie</strong> :</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>Le carré de 4 est 16.
+</span></code></pre></div>
+<hr />
+<h4 id="522-fonction-avec-2-parametres-et-retour"><strong>5.2.2 Fonction avec 2 paramètres et retour</strong><a class="headerlink" href="#522-fonction-avec-2-parametres-et-retour" title="Permanent link">&para;</a></h4>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">produit</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+</span><span id="__span-15-2"><a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a>    <span class="k">return</span> <span class="n">a</span> <span class="o">*</span> <span class="n">b</span>
+</span><span id="__span-15-3"><a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a>
+</span><span id="__span-15-4"><a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a>
+</span><span id="__span-15-5"><a id="__codelineno-15-5" name="__codelineno-15-5" href="#__codelineno-15-5"></a><span class="c1"># Appel</span>
+</span><span id="__span-15-6"><a id="__codelineno-15-6" name="__codelineno-15-6" href="#__codelineno-15-6"></a><span class="n">resultat</span> <span class="o">=</span> <span class="n">produit</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">7</span><span class="p">)</span>
+</span><span id="__span-15-7"><a id="__codelineno-15-7" name="__codelineno-15-7" href="#__codelineno-15-7"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Le produit de 3 et 7 est </span><span class="si">{</span><span class="n">resultat</span><span class="si">}</span><span class="s2">.&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+<p><strong>Sortie</strong> :</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>Le produit de 3 et 7 est 21.
+</span></code></pre></div>
+<hr />
+<h4 id="523-fonction-avec-plusieurs-retours"><strong>5.2.3 Fonction avec plusieurs retours</strong><a class="headerlink" href="#523-fonction-avec-plusieurs-retours" title="Permanent link">&para;</a></h4>
+<p>Une fonction peut retourner <strong>plusieurs valeurs</strong> sous forme de tuple.</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">calculer_somme_et_produit</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+</span><span id="__span-17-2"><a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a>    <span class="n">somme</span> <span class="o">=</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
+</span><span id="__span-17-3"><a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a>    <span class="n">produit</span> <span class="o">=</span> <span class="n">a</span> <span class="o">*</span> <span class="n">b</span>
+</span><span id="__span-17-4"><a id="__codelineno-17-4" name="__codelineno-17-4" href="#__codelineno-17-4"></a>    <span class="k">return</span> <span class="n">somme</span><span class="p">,</span> <span class="n">produit</span>
+</span><span id="__span-17-5"><a id="__codelineno-17-5" name="__codelineno-17-5" href="#__codelineno-17-5"></a>
+</span><span id="__span-17-6"><a id="__codelineno-17-6" name="__codelineno-17-6" href="#__codelineno-17-6"></a>
+</span><span id="__span-17-7"><a id="__codelineno-17-7" name="__codelineno-17-7" href="#__codelineno-17-7"></a><span class="c1"># Appel</span>
+</span><span id="__span-17-8"><a id="__codelineno-17-8" name="__codelineno-17-8" href="#__codelineno-17-8"></a><span class="n">somme</span><span class="p">,</span> <span class="n">produit</span> <span class="o">=</span> <span class="n">calculer_somme_et_produit</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
+</span><span id="__span-17-9"><a id="__codelineno-17-9" name="__codelineno-17-9" href="#__codelineno-17-9"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Somme : </span><span class="si">{</span><span class="n">somme</span><span class="si">}</span><span class="s2">, Produit : </span><span class="si">{</span><span class="n">produit</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+<p><strong>Sortie</strong> :</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-18-1"><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>Somme : 9, Produit : 20
+</span></code></pre></div>
+<hr />
+<h2 id="6-erreurs-courantes-avec-les-fonctions"><strong>6. Erreurs courantes avec les fonctions</strong><a class="headerlink" href="#6-erreurs-courantes-avec-les-fonctions" title="Permanent link">&para;</a></h2>
+<h3 id="61-mauvaise-indentation"><strong>6.1 Mauvaise indentation</strong><a class="headerlink" href="#61-mauvaise-indentation" title="Permanent link">&para;</a></h3>
+<p><strong>Problème</strong> : Oublier d&rsquo;indenter le code à l&rsquo;intérieur de la fonction.
+<strong>Exemple incorrect</strong> :</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-19-1"><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">dire_bonjour</span><span class="p">():</span>
+</span><span id="__span-19-2"><a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Bonjour !&quot;</span><span class="p">)</span>  <span class="c1"># Erreur : pas d&#39;indentation</span>
+</span></code></pre></div>
+<p><strong>Correction</strong> :</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-20-1"><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">dire_bonjour</span><span class="p">():</span>
+</span><span id="__span-20-2"><a id="__codelineno-20-2" name="__codelineno-20-2" href="#__codelineno-20-2"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Bonjour !&quot;</span><span class="p">)</span>  <span class="c1"># Indentation correcte</span>
+</span></code></pre></div>
+<hr />
+<h3 id="62-utilisation-de-variables-exterieures-a-la-place-de-parametres"><strong>6.2 Utilisation de variables extérieures à la place de paramètres</strong><a class="headerlink" href="#62-utilisation-de-variables-exterieures-a-la-place-de-parametres" title="Permanent link">&para;</a></h3>
+<p><strong>Problème</strong> : Utiliser une variable définie <strong>en dehors</strong> de la fonction au lieu de passer un paramètre.
+<strong>Exemple incorrect</strong> :</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-21-1"><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a><span class="n">nom</span> <span class="o">=</span> <span class="s2">&quot;Alice&quot;</span>
+</span><span id="__span-21-2"><a id="__codelineno-21-2" name="__codelineno-21-2" href="#__codelineno-21-2"></a>
+</span><span id="__span-21-3"><a id="__codelineno-21-3" name="__codelineno-21-3" href="#__codelineno-21-3"></a>
+</span><span id="__span-21-4"><a id="__codelineno-21-4" name="__codelineno-21-4" href="#__codelineno-21-4"></a><span class="k">def</span><span class="w"> </span><span class="nf">dire_bonjour</span><span class="p">():</span>
+</span><span id="__span-21-5"><a id="__codelineno-21-5" name="__codelineno-21-5" href="#__codelineno-21-5"></a>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Bonjour, </span><span class="si">{</span><span class="n">nom</span><span class="si">}</span><span class="s2">!&quot;</span><span class="p">)</span>  <span class="c1"># Utilise une variable externe</span>
+</span><span id="__span-21-6"><a id="__codelineno-21-6" name="__codelineno-21-6" href="#__codelineno-21-6"></a>
+</span><span id="__span-21-7"><a id="__codelineno-21-7" name="__codelineno-21-7" href="#__codelineno-21-7"></a>
+</span><span id="__span-21-8"><a id="__codelineno-21-8" name="__codelineno-21-8" href="#__codelineno-21-8"></a><span class="n">dire_bonjour</span><span class="p">()</span>
+</span></code></pre></div>
+<p><strong>Problème</strong> : Si <code>nom</code> change, la fonction ne sera plus fiable.</p>
+<p><strong>Correction</strong> :</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-22-1"><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">dire_bonjour</span><span class="p">(</span><span class="n">nom</span><span class="p">):</span>
+</span><span id="__span-22-2"><a id="__codelineno-22-2" name="__codelineno-22-2" href="#__codelineno-22-2"></a>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Bonjour, </span><span class="si">{</span><span class="n">nom</span><span class="si">}</span><span class="s2">!&quot;</span><span class="p">)</span>
+</span><span id="__span-22-3"><a id="__codelineno-22-3" name="__codelineno-22-3" href="#__codelineno-22-3"></a>
+</span><span id="__span-22-4"><a id="__codelineno-22-4" name="__codelineno-22-4" href="#__codelineno-22-4"></a>
+</span><span id="__span-22-5"><a id="__codelineno-22-5" name="__codelineno-22-5" href="#__codelineno-22-5"></a><span class="n">dire_bonjour</span><span class="p">(</span><span class="s2">&quot;Alice&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+<hr />
+<h3 id="63-oublier-le-return"><strong>6.3 Oublier le <code>return</code></strong><a class="headerlink" href="#63-oublier-le-return" title="Permanent link">&para;</a></h3>
+<p><strong>Problème</strong> : Oublier de retourner une valeur quand c&rsquo;est nécessaire.
+<strong>Exemple incorrect</strong> :</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-23-1"><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">carre</span><span class="p">(</span><span class="n">nombre</span><span class="p">):</span>
+</span><span id="__span-23-2"><a id="__codelineno-23-2" name="__codelineno-23-2" href="#__codelineno-23-2"></a>    <span class="n">nombre</span> <span class="o">**</span> <span class="mi">2</span>  <span class="c1"># Oublie le return</span>
+</span><span id="__span-23-3"><a id="__codelineno-23-3" name="__codelineno-23-3" href="#__codelineno-23-3"></a>
+</span><span id="__span-23-4"><a id="__codelineno-23-4" name="__codelineno-23-4" href="#__codelineno-23-4"></a>
+</span><span id="__span-23-5"><a id="__codelineno-23-5" name="__codelineno-23-5" href="#__codelineno-23-5"></a><span class="n">resultat</span> <span class="o">=</span> <span class="n">carre</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
+</span><span id="__span-23-6"><a id="__codelineno-23-6" name="__codelineno-23-6" href="#__codelineno-23-6"></a><span class="nb">print</span><span class="p">(</span><span class="n">resultat</span><span class="p">)</span>  <span class="c1"># Affiche None</span>
+</span></code></pre></div>
+<p><strong>Correction</strong> :</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-24-1"><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">carre</span><span class="p">(</span><span class="n">nombre</span><span class="p">):</span>
+</span><span id="__span-24-2"><a id="__codelineno-24-2" name="__codelineno-24-2" href="#__codelineno-24-2"></a>    <span class="k">return</span> <span class="n">nombre</span> <span class="o">**</span> <span class="mi">2</span>  <span class="c1"># Retourne le résultat</span>
+</span></code></pre></div>
+<hr />
+<h3 id="64-nombre-incorrect-de-parametres"><strong>6.4 Nombre incorrect de paramètres</strong><a class="headerlink" href="#64-nombre-incorrect-de-parametres" title="Permanent link">&para;</a></h3>
+<p><strong>Problème</strong> : Appeler une fonction avec un nombre incorrect de paramètres.
+<strong>Exemple incorrect</strong> :</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-25-1"><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">afficher_somme</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+</span><span id="__span-25-2"><a id="__codelineno-25-2" name="__codelineno-25-2" href="#__codelineno-25-2"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">a</span> <span class="o">+</span> <span class="n">b</span><span class="p">)</span>
+</span><span id="__span-25-3"><a id="__codelineno-25-3" name="__codelineno-25-3" href="#__codelineno-25-3"></a>
+</span><span id="__span-25-4"><a id="__codelineno-25-4" name="__codelineno-25-4" href="#__codelineno-25-4"></a>
+</span><span id="__span-25-5"><a id="__codelineno-25-5" name="__codelineno-25-5" href="#__codelineno-25-5"></a><span class="n">afficher_somme</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>  <span class="c1"># Erreur : il manque un paramètre</span>
+</span></code></pre></div>
+<p><strong>Correction</strong> :</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-26-1"><a id="__codelineno-26-1" name="__codelineno-26-1" href="#__codelineno-26-1"></a><span class="n">afficher_somme</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>  <span class="c1"># Appel correct</span>
+</span></code></pre></div>
+<hr />
+<h2 id="7-resume-des-concepts-cles"><strong>7. Résumé des concepts clés</strong><a class="headerlink" href="#7-resume-des-concepts-cles" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th><strong>Type de fonction</strong></th>
+<th><strong>Exemple de définition</strong></th>
+<th><strong>Exemple d&rsquo;appel</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Sans paramètre ni retour</td>
+<td><code>def dire_bonjour():</code></td>
+<td><code>dire_bonjour()</code></td>
+</tr>
+<tr>
+<td>Avec 1 paramètre et sans retour</td>
+<td><code>def dire_bonjour_a(nom):</code></td>
+<td><code>dire_bonjour_a("Alice")</code></td>
+</tr>
+<tr>
+<td>Avec 2+ paramètres et sans retour</td>
+<td><code>def afficher_somme(a, b):</code></td>
+<td><code>afficher_somme(5, 3)</code></td>
+</tr>
+<tr>
+<td>Avec retour et 1 paramètre</td>
+<td><code>def carre(nombre): return nombre ** 2</code></td>
+<td><code>resultat = carre(4)</code></td>
+</tr>
+<tr>
+<td>Avec retour et 2+ paramètres</td>
+<td><code>def produit(a, b): return a * b</code></td>
+<td><code>resultat = produit(3, 7)</code></td>
+</tr>
+<tr>
+<td>Avec plusieurs retours</td>
+<td><code>def calculer(a, b): return a + b, a * b</code></td>
+<td><code>somme, produit = calculer(4, 5)</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="8-exemples-detailles"><strong>8. Exemples détaillés</strong><a class="headerlink" href="#8-exemples-detailles" title="Permanent link">&para;</a></h2>
+<h3 id="1-calcul-de-laire-dun-cercle"><strong>1. Calcul de l&rsquo;aire d&rsquo;un cercle</strong><a class="headerlink" href="#1-calcul-de-laire-dun-cercle" title="Permanent link">&para;</a></h3>
+<p><strong>Formule</strong> : <span class="arithmatex">\( \text{Aire} = \pi \times \text{rayon}^2 \)</span></p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-27-1"><a id="__codelineno-27-1" name="__codelineno-27-1" href="#__codelineno-27-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">math</span>
+</span><span id="__span-27-2"><a id="__codelineno-27-2" name="__codelineno-27-2" href="#__codelineno-27-2"></a>
+</span><span id="__span-27-3"><a id="__codelineno-27-3" name="__codelineno-27-3" href="#__codelineno-27-3"></a>
+</span><span id="__span-27-4"><a id="__codelineno-27-4" name="__codelineno-27-4" href="#__codelineno-27-4"></a><span class="k">def</span><span class="w"> </span><span class="nf">aire_cercle</span><span class="p">(</span><span class="n">rayon</span><span class="p">):</span>
+</span><span id="__span-27-5"><a id="__codelineno-27-5" name="__codelineno-27-5" href="#__codelineno-27-5"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;Calcule l&#39;aire d&#39;un cercle à partir de son rayon.&quot;&quot;&quot;</span>
+</span><span id="__span-27-6"><a id="__codelineno-27-6" name="__codelineno-27-6" href="#__codelineno-27-6"></a>    <span class="k">return</span> <span class="n">math</span><span class="o">.</span><span class="n">pi</span> <span class="o">*</span> <span class="n">rayon</span> <span class="o">**</span> <span class="mi">2</span>
+</span><span id="__span-27-7"><a id="__codelineno-27-7" name="__codelineno-27-7" href="#__codelineno-27-7"></a>
+</span><span id="__span-27-8"><a id="__codelineno-27-8" name="__codelineno-27-8" href="#__codelineno-27-8"></a>
+</span><span id="__span-27-9"><a id="__codelineno-27-9" name="__codelineno-27-9" href="#__codelineno-27-9"></a><span class="c1"># Appel de la fonction</span>
+</span><span id="__span-27-10"><a id="__codelineno-27-10" name="__codelineno-27-10" href="#__codelineno-27-10"></a><span class="n">rayon</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Entrez le rayon du cercle : &quot;</span><span class="p">))</span>
+</span><span id="__span-27-11"><a id="__codelineno-27-11" name="__codelineno-27-11" href="#__codelineno-27-11"></a><span class="n">aire</span> <span class="o">=</span> <span class="n">aire_cercle</span><span class="p">(</span><span class="n">rayon</span><span class="p">)</span>
+</span><span id="__span-27-12"><a id="__codelineno-27-12" name="__codelineno-27-12" href="#__codelineno-27-12"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;L&#39;aire du cercle de rayon </span><span class="si">{</span><span class="n">rayon</span><span class="si">}</span><span class="s2"> est </span><span class="si">{</span><span class="n">aire</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">.&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+<hr />
+<h3 id="2-calcul-de-laire-dun-rectangle"><strong>2. Calcul de l&rsquo;aire d&rsquo;un rectangle</strong><a class="headerlink" href="#2-calcul-de-laire-dun-rectangle" title="Permanent link">&para;</a></h3>
+<p><strong>Formule</strong> : <span class="arithmatex">\( \text{Aire} = \text{longueur} \times \text{largeur} \)</span></p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-28-1"><a id="__codelineno-28-1" name="__codelineno-28-1" href="#__codelineno-28-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">aire_rectangle</span><span class="p">(</span><span class="n">longueur</span><span class="p">,</span> <span class="n">largeur</span><span class="p">):</span>
+</span><span id="__span-28-2"><a id="__codelineno-28-2" name="__codelineno-28-2" href="#__codelineno-28-2"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;Calcule l&#39;aire d&#39;un rectangle à partir de sa longueur et de sa largeur.&quot;&quot;&quot;</span>
+</span><span id="__span-28-3"><a id="__codelineno-28-3" name="__codelineno-28-3" href="#__codelineno-28-3"></a>    <span class="k">return</span> <span class="n">longueur</span> <span class="o">*</span> <span class="n">largeur</span>
+</span><span id="__span-28-4"><a id="__codelineno-28-4" name="__codelineno-28-4" href="#__codelineno-28-4"></a>
+</span><span id="__span-28-5"><a id="__codelineno-28-5" name="__codelineno-28-5" href="#__codelineno-28-5"></a>
+</span><span id="__span-28-6"><a id="__codelineno-28-6" name="__codelineno-28-6" href="#__codelineno-28-6"></a><span class="c1"># Appel de la fonction</span>
+</span><span id="__span-28-7"><a id="__codelineno-28-7" name="__codelineno-28-7" href="#__codelineno-28-7"></a><span class="n">longueur</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Entrez la longueur du rectangle : &quot;</span><span class="p">))</span>
+</span><span id="__span-28-8"><a id="__codelineno-28-8" name="__codelineno-28-8" href="#__codelineno-28-8"></a><span class="n">largeur</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Entrez la largeur du rectangle : &quot;</span><span class="p">))</span>
+</span><span id="__span-28-9"><a id="__codelineno-28-9" name="__codelineno-28-9" href="#__codelineno-28-9"></a><span class="n">aire</span> <span class="o">=</span> <span class="n">aire_rectangle</span><span class="p">(</span><span class="n">longueur</span><span class="p">,</span> <span class="n">largeur</span><span class="p">)</span>
+</span><span id="__span-28-10"><a id="__codelineno-28-10" name="__codelineno-28-10" href="#__codelineno-28-10"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;L&#39;aire du rectangle est </span><span class="si">{</span><span class="n">aire</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">.&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+<hr />
+<h3 id="3-calcul-de-la-moyenne-de-trois-nombres"><strong>3. Calcul de la moyenne de trois nombres</strong><a class="headerlink" href="#3-calcul-de-la-moyenne-de-trois-nombres" title="Permanent link">&para;</a></h3>
+<p><strong>Formule</strong> : <span class="arithmatex">\( \text{Moyenne} = \frac{\text{nombre1} + \text{nombre2} + \text{nombre3}}{3} \)</span></p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-29-1"><a id="__codelineno-29-1" name="__codelineno-29-1" href="#__codelineno-29-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">moyenne_trois_nombres</span><span class="p">(</span><span class="n">nombre1</span><span class="p">,</span> <span class="n">nombre2</span><span class="p">,</span> <span class="n">nombre3</span><span class="p">):</span>
+</span><span id="__span-29-2"><a id="__codelineno-29-2" name="__codelineno-29-2" href="#__codelineno-29-2"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;Calcule la moyenne de trois nombres.&quot;&quot;&quot;</span>
+</span><span id="__span-29-3"><a id="__codelineno-29-3" name="__codelineno-29-3" href="#__codelineno-29-3"></a>    <span class="k">return</span> <span class="p">(</span><span class="n">nombre1</span> <span class="o">+</span> <span class="n">nombre2</span> <span class="o">+</span> <span class="n">nombre3</span><span class="p">)</span> <span class="o">/</span> <span class="mi">3</span>
+</span><span id="__span-29-4"><a id="__codelineno-29-4" name="__codelineno-29-4" href="#__codelineno-29-4"></a>
+</span><span id="__span-29-5"><a id="__codelineno-29-5" name="__codelineno-29-5" href="#__codelineno-29-5"></a>
+</span><span id="__span-29-6"><a id="__codelineno-29-6" name="__codelineno-29-6" href="#__codelineno-29-6"></a><span class="c1"># Appel de la fonction</span>
+</span><span id="__span-29-7"><a id="__codelineno-29-7" name="__codelineno-29-7" href="#__codelineno-29-7"></a><span class="n">nombre1</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Entrez le premier nombre : &quot;</span><span class="p">))</span>
+</span><span id="__span-29-8"><a id="__codelineno-29-8" name="__codelineno-29-8" href="#__codelineno-29-8"></a><span class="n">nombre2</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Entrez le deuxième nombre : &quot;</span><span class="p">))</span>
+</span><span id="__span-29-9"><a id="__codelineno-29-9" name="__codelineno-29-9" href="#__codelineno-29-9"></a><span class="n">nombre3</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Entrez le troisième nombre : &quot;</span><span class="p">))</span>
+</span><span id="__span-29-10"><a id="__codelineno-29-10" name="__codelineno-29-10" href="#__codelineno-29-10"></a><span class="n">moyenne</span> <span class="o">=</span> <span class="n">moyenne_trois_nombres</span><span class="p">(</span><span class="n">nombre1</span><span class="p">,</span> <span class="n">nombre2</span><span class="p">,</span> <span class="n">nombre3</span><span class="p">)</span>
+</span><span id="__span-29-11"><a id="__codelineno-29-11" name="__codelineno-29-11" href="#__codelineno-29-11"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;La moyenne des trois nombres est </span><span class="si">{</span><span class="n">moyenne</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">.&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+<hr />
+<h3 id="4-conversion-de-kilometres-en-miles"><strong>4. Conversion de kilomètres en miles</strong><a class="headerlink" href="#4-conversion-de-kilometres-en-miles" title="Permanent link">&para;</a></h3>
+<p><strong>Formule</strong> : <span class="arithmatex">\( \text{Miles} = \text{Kilomètres} \times 0.621371 \)</span></p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-30-1"><a id="__codelineno-30-1" name="__codelineno-30-1" href="#__codelineno-30-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">kilometres_vers_miles</span><span class="p">(</span><span class="n">kilometres</span><span class="p">):</span>
+</span><span id="__span-30-2"><a id="__codelineno-30-2" name="__codelineno-30-2" href="#__codelineno-30-2"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;Convertit une distance de kilomètres en miles.&quot;&quot;&quot;</span>
+</span><span id="__span-30-3"><a id="__codelineno-30-3" name="__codelineno-30-3" href="#__codelineno-30-3"></a>    <span class="k">return</span> <span class="n">kilometres</span> <span class="o">*</span> <span class="mf">0.621371</span>
+</span><span id="__span-30-4"><a id="__codelineno-30-4" name="__codelineno-30-4" href="#__codelineno-30-4"></a>
+</span><span id="__span-30-5"><a id="__codelineno-30-5" name="__codelineno-30-5" href="#__codelineno-30-5"></a>
+</span><span id="__span-30-6"><a id="__codelineno-30-6" name="__codelineno-30-6" href="#__codelineno-30-6"></a><span class="c1"># Appel de la fonction</span>
+</span><span id="__span-30-7"><a id="__codelineno-30-7" name="__codelineno-30-7" href="#__codelineno-30-7"></a><span class="n">kilometres</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Entrez la distance en kilomètres : &quot;</span><span class="p">))</span>
+</span><span id="__span-30-8"><a id="__codelineno-30-8" name="__codelineno-30-8" href="#__codelineno-30-8"></a><span class="n">miles</span> <span class="o">=</span> <span class="n">kilometres_vers_miles</span><span class="p">(</span><span class="n">kilometres</span><span class="p">)</span>
+</span><span id="__span-30-9"><a id="__codelineno-30-9" name="__codelineno-30-9" href="#__codelineno-30-9"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">kilometres</span><span class="si">}</span><span class="s2"> km équivaut à </span><span class="si">{</span><span class="n">miles</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2"> miles.&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+<hr />
 
 
 
@@ -1638,7 +1916,7 @@ pour résoudre une variété de problèmes en programmation.</p>
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../modules/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 3. Importation de modules en Python">
+          <a href="../modules/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 3. Importation de modules">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -1648,14 +1926,14 @@ pour résoudre une variété de problèmes en programmation.</p>
                 Previous
               </span>
               <div class="md-ellipsis">
-                3. Importation de modules en Python
+                3. Importation de modules
               </div>
             </div>
           </a>
         
         
           
-          <a href="../exercices1/" class="md-footer__link md-footer__link--next" aria-label="Next: Exercices 1 : Affichage sur la sortie standard">
+          <a href="../exercices/exercices1/" class="md-footer__link md-footer__link--next" aria-label="Next: Exercices 1 : Affichage sur la sortie standard">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
@@ -1695,13 +1973,10 @@ pour résoudre une variété de problèmes en programmation.</p>
     </div>
     
     
-    
-      
-      
-      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["content.code.copy", "content.code.select", "navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.expand", "navigation.path", "navigation.top", "navigation.footer", "search.suggest", "search.highlight"], "search": "../../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy", "content.code.select", "navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.expand", "navigation.path", "navigation.top", "navigation.footer", "search.suggest", "search.highlight"], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.e71a0d61.min.js"></script>
+      <script src="../../assets/javascripts/bundle.60a45f97.min.js"></script>
       
         <script src="../../javascripts/config.js"></script>
       
