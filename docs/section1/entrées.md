@@ -1,4 +1,4 @@
-# **2. L'entrée standard (`stdin`) en Python**
+# **2. Utilisation de l'entrée standard**
 
 ---
 

@@ -2,7 +2,7 @@
 
 ## Algorithmes : Définitions
 
-Commençons par quelques définitions du mot *algorithme* :
+Voici quelques définitions du mot *algorithme* :
 
 - [Cambridge Dictionary](https://dictionary.cambridge.org/dictionary/english/algorithm)
     - une liste d'instructions pour résoudre un problème
@@ -54,283 +54,77 @@ autre algorithme qui utilisera ces résultats pour effectuer ses propres calculs
 à être sortis ou renvoyés. En d'autres termes, les algorithmes pourraient être
 chaînés les uns à la suite des autres.
 
-## Notation sous forme de diagrammes
 
-Pour représenter les algorithmes graphiquement, nous allons utiliser *diagrammes
-d'états UML*, en utilisant la notation disponible dans le
-logiciel [PlantUML](https://plantuml.com/state-diagram).
+---
 
-Pour représenter les algorithmes de manière graphique, nous utiliserons les
-**Diagrammes d'Activité**, et nous utiliserons
-[PlantUML](https://plantuml.com/state-diagram)
-pour les dessiner. Nous représenterons également les algorithmes en pseudocode,
-dans une notation similaire à celle du langage de programmation Python. Plus
-tard, après avoir discuté des types de données et de certains autres sujets,
-nous écrirons directement les algorithmes dans le langage de programmation
-Python. Le diagramme suivant montre la notation pour les diagrammes d'activité
-les plus basiques.
+## **Origine du mot "algorithme"**
+
+Le mot **"algorithme"** a une origine fascinante qui remonte à plusieurs siècles et est lié à l'histoire des
+mathématiques et de l'informatique. Voici une explication détaillée de ses origines :
 
 
+### **1. Al-Khwarizmi**
 
-```puml
-@startuml
-skinparam defaultFontSize 16
-start
-note right 
-    noeud de départ
-end note
-:une action;
-note right
-   action simple : lire une valeur, faire un calcul, ...
-end note
-:une autre action;
-stop
-note right
-    noeud de fin
-end note
-@enduml
-```
+Le terme **"algorithme"** vient du nom d'un mathématicien persan du **IXᵉ siècle**, **Muhammad ibn Musa al-Khwarizmi**.
+Al-Khwarizmi (الخوارزمي) a vécu à Bagdad, alors un centre intellectuel majeur du monde islamique, et a travaillé à la **Maison de la
+Sagesse** (*Bayt al-Hikma*), une bibliothèque et un centre de traduction.
 
-??? note "Code PlantUML"
+### **2. Ses contributions**
 
-    ```plantuml
-    @startuml
-    skinparam defaultFontSize 16
-    start
-    note right 
-        noeud de départ
-    end note
-    :une action;
-    note right
-       action simple : lire une valeur, faire un calcul, ...
-    end note
-    :une autre action;
-    stop
-    note right
-        noeud de fin
-    end note
-    @enduml
-    ```
+Al-Khwarizmi est surtout connu pour deux ouvrages majeurs :
 
+- **"Kitab al-Jabr wa-l-Muqabala"** (*Le Livre de la Restauration et de la Comparaison*) :
+  Ce livre est considéré comme le **fondement de l'algèbre**. Le mot "algèbre" vient d'ailleurs du terme arabe *"
+  al-jabr"* présent dans le titre.
+  Al-Khwarizmi y décrit des méthodes systématiques pour résoudre des équations linéaires et quadratiques.
 
-## Exemples
+- **"Kitab al-Jam' wa-l-Tafriq bi-Hisab al-Hind"** (*Le Livre de l'Addition et de la Soustraction selon le Calcul des
+  Indiens*) :
+  Cet ouvrage introduit le **système de numération indienne** (incluant le chiffre zéro) dans le monde arabe, puis en
+  Europe. Ce système est à la base des chiffres que nous utilisons aujourd'hui (appelés "chiffres arabes").
 
-### Calcul de l'aire d'un rectangle
+---
 
-Commençons par un exemple simple : comment calculons-nous l'aire d'un
-rectangle ? Nous avons besoin de 2 valeurs pour calculer l'aire d'un rectangle :
-sa `largeur` et sa `hauteur`. Nous supposons pour l'instant que ces 2 valeurs
-seront entrées dans le programme par un utilisateur, à l'aide d'un dispositif
-d'entrée (probablement un clavier), et que les résultats seront affichés à
-l'utilisateur à l'aide d'un dispositif de sortie (probablement un écran). Nous
-verrons plus tard que les entrées et les sorties peuvent ne pas être prises ou
-données directement par/aux utilisateurs, mais pourraient plutôt être données à
-une fonction en tant que paramètres, ou renvoyées par une fonction.
+### **3. Du nom propre au terme générique**
 
-- *Entrées* : la `largeur` et la `hauteur` du rectangle
-- *Sortie* : l'`aire` du rectangle
+- Le nom d'al-Khwarizmi a été **latinisé** au Moyen Âge sous la forme **"Algorismi"** ou **"Algorismus"**, en référence
+  à ses méthodes de calcul.
+- Au fil du temps, ce terme a évolué pour désigner **toute méthode systématique de calcul ou de résolution de problèmes
+  **, puis plus tard, en informatique, une **séquence finie d'instructions pour accomplir une tâche**.
 
-#### Diagramme
+---
 
-```puml
-@startuml
-skinparam defaultFontSize 16
-start
-:entrer largeur;
-:entrer hauteur;
-:aire = largeur * hauteur;
-:afficher aire;
-stop
-@enduml
-```
+### **4. Évolution moderne**
 
-??? note "Code PlantUML" 
+- Au **XXᵉ siècle**, avec l'avènement de l'informatique, le mot **"algorithme"** a pris son sens actuel :
+  Une **suite finie et non ambiguë d'opérations ou d'instructions** permettant de résoudre un problème ou d'accomplir
+  une tâche.
+- Les algorithmes sont au cœur de la programmation et de l'informatique théorique.
 
-    ```plantuml
-    @startuml
-    skinparam defaultFontSize 16
-    start
-    :entrer largeur;
-    :entrer hauteur;
-    :aire = largeur * hauteur;
-    :afficher aire;
-    stop
-    @enduml
-    ```
+---
 
+## **Résumé des origines**
 
-#### Pseudocode
+| **Étape**                | **Description**                                                                                    |
+|--------------------------|----------------------------------------------------------------------------------------------------|
+| **Al-Khwarizmi**         | Mathématicien persan du IXᵉ siècle, auteur de traités sur l'algèbre et les chiffres indiens.       |
+| **Latinisation**         | Son nom devient "Algorismi" en latin médiéval, associé à ses méthodes de calcul.                   |
+| **Évolution du terme**   | "Algorismi" évolue en "algorithme", désignant une méthode systématique de résolution de problèmes. |
+| **Informatique moderne** | Le terme prend son sens actuel : une séquence d'instructions pour accomplir une tâche.             |
 
-```pseudocode
+---
 
-largeur = entrer()
-hauteur = entrer()
-aire = largeur * hauteur
-afficher(aire)
-```
+## **Pourquoi ce mot est-il important en informatique ?**
 
-#### Discussion
+- Les algorithmes sont **la base de la programmation** : ils décrivent comment résoudre un problème étape par étape.
+- Ils permettent de **structurer la pensée logique** et de concevoir des solutions efficaces.
+- Sans algorithmes, les ordinateurs ne pourraient pas fonctionner !
 
-Certaines actions concernent le calcul de certaines valeurs basées sur d'autres
-valeurs, comme `aire = largeur * hauteur`. Notez que nous utilisons `*` comme
-symbole de multiplication. Dans ce cas, le calcul `largeur * hauteur` est écrit
-à droite du signe égal (`=`), et le résultat est conservé dans `aire`, qui sera
-affiché dans l'étape suivante.
+---
 
-Dans cet exemple, il y a **3 variables** : `largeur`, `hauteur` et `aire`. Ces
-variables sont utilisées pour représenter ou retenir certaines valeurs qui
-seront entrées ou calculées, et qui seront réutilisées plus tard dans les
-calculs ou envoyées en sortie.
+## **Exemple historique**
 
-Les diagrammes d'activité sont *de haut niveau*, ce qui signifie qu'ils sont
-souvent un peu simplifiés, ils n'entrent pas dans chaque petit détail. Nous ne
-nous embêtons pas à définir chaque variable formellement, donc lorsque nous
-écrivons `entrer largeur`, il est sous-entendu qu'une variable nommée `largeur`
-sera définie, et sa valeur sera ce qui a été entré. De même, pour `afficher aire`,
-nous disons simplement que nous voulons que `aire` soit affichée en sortie,
-mais nous ne
-nous embêtons pas avec les détails d'où et comment `aire` sera affichée. Nous
-serons un peu plus précis dans le pseudocode, et beaucoup plus précis lorsque
-nous écrirons un programme pour faire les calculs pour de vrai. À ce stade, les
-diagrammes sont utilisés pour avoir une idée de ce qui doit être fait. Ils
-deviendront plus compliqués quand nous rencontrerons des algorithmes plus
-complexes. Avec un peu d'expérience, nous serons en mesure d'écrire du code
-directement sans créer d'abord des diagrammes d'activité ou écrire du
-pseudocode, mais même avec de l'expérience, lorsque nous rencontrons des
-problèmes plus complexes, les diagrammes aident souvent. De nombreux types de
-diagrammes seront utilisés lors de la conception et du développement de systèmes
-logiciels, tels que les diagrammes de *séquences*, de *cas d'utilisation*,
-d'*états*, de *classes*...
+Un exemple célèbre d'algorithme ancien est la **méthode d'Euclide** pour trouver le plus grand commun diviseur (PGCD) de
+deux nombres, décrite bien avant al-Khwarizmi, mais qui illustre parfaitement ce qu'est un algorithme.
 
-Les entrées et les sorties sont elles-mêmes des tâches complexes, et dépendront
-exactement de la façon dont nous voulons entrer et sortir (afficher) les
-valeurs. Nous
-résumons donc ces tâches et nous disons simplement pour l'instant que nous
-entrons et sortons des valeurs d'une certaine manière. Dans le pseudocode, nous
-écrivons ces 2 tâches un peu différemment par rapport aux diagrammes : nous
-utilisons la notation de fonction pour être un peu plus précis. La tâche
-d'entrer d'une valeur produit (ou donne ou retourne) une valeur, et nous
-stockons cette valeur dans une variable, comme dans `largeur = entrer()`. Nous
-utilisons les parenthèses`()` pour signifier que nous appelons, ou exécutons, la
-fonction `entrer`. La valeur produite est stockée dans la
-variable `largeur`. Nous disons aussi que la valeur renvoyée par la
-fonction `entrer` est assignée à la variable `largeur`.
-
-Pour pouvoir accomplir sa tâche, la fonction `afficher` a besoin de savoir
-quelle
-valeur afficher, donc nous lui donnons une valeur entre les `()` lorsque nous
-l'appelons. Dans notre exemple, nous lui avons donné la variable `aire`, alors
-elle affiche la valeur contenue dans la variable `aire`. `afficher` ne renvoie
-aucune valeur, c'est pourquoi nous ne l'assignons à rien.
-
-### Meilleures entrées et sorties
-
-Un problème lors de l'entrée d'une valeur dans l'exemple précédent est que nous
-ne donnons aucune information à l'utilisateur sur ce qui doit être entré. Dans
-ce cas, l'utilisateur devinera probablement que la largeur et la hauteur doivent
-être entrées pour pouvoir calculer l'aire d'un rectangle, mais laquelle doit
-être entrée en premier ? Dans ce cas, cela n'a pas vraiment d'importance, car
-nous obtiendrons les mêmes résultats, mais en général, l'inversion de 2 entrées
-peut changer considérablement les résultats. Nous avons donc besoin de donner
-plus d'informations à l'utilisateur.
-
-Voici deux versions faisant la même chose.
-
-#### Diagrammes
-
-```puml
-@startuml
-skinparam defaultFontSize 16
-start
-:afficher "Calcul de l'aire d'un rectangle";
-:afficher "Entrez la largeur du rectangle :";
-:entrer largeur;
-:afficher "Entrez la hauteur du rectangle :";
-:entrer hauteur;
-:aire = largeur * hauteur;
-:afficher "l'aire est";
-:afficher aire;
-stop
-@enduml
-```
-
-??? note "Code PlantUML"
-
-    ```plantuml
-    @startuml
-    skinparam defaultFontSize 16
-    start
-    :afficher "Calcul de l'aire d'un rectangle";
-    :afficher "Entrez la largeur du rectangle :";
-    :entrer largeur;
-    :afficher "Entrez la hauteur du rectangle :";
-    :entrer hauteur;
-    :aire = largeur * hauteur;
-    :afficher "l'aire est";
-    :afficher aire;
-    stop
-    @enduml
-    ```
-
-
-```puml
-@startuml
-skinparam defaultFontSize 16
-start
-:afficher("Calcul de l'aire d'un rectangle");
-:largeur = entrer("Entrez la largeur du rectangle :");
-:hauteur = entrer("Entrez la hauteur du rectangle :");
-:aire = largeur * hauteur;
-:afficher("l'aire est", aire);
-stop
-@enduml
-```
-
-??? note "Code PlantUML"
-
-    ```plantuml
-    @startuml
-    skinparam defaultFontSize 16
-    start
-    :afficher("Calcul de l'aire d'un rectangle");
-    :largeur = entrer("Entrez la largeur du rectangle :");
-    :hauteur = entrer("Entrez la hauteur du rectangle :");
-    :aire = largeur * hauteur;
-    :afficher("l'aire est", aire);
-    stop
-    @enduml
-    ```
-
-
-
-#### Discussion
-
-Le premier de ces deux diagrammes est correct, mais il serait généralement
-considéré comme trop verbeux. Nous laisserons de côté la sortie supplémentaire
-pour nous concentrer sur l'algorithme lui-même, ou nous utiliserons la deuxième
-version dans laquelle une nouvelle version de la fonction `entrer` est utilisée
-directement dans les diagrammes. Cette version de la fonction `entrer` accepte
-une chaîne de caractères en paramètre, qui sera affichée avant d'attendre qu'une
-valeur soit entrée. Une chaîne de caractères, pour la distinguer d'une ou de
-plusieurs variables, est donnée entre guillemets doubles `""`.
-
-La fonction `afficher` est également utilisée différemment. On lui donne 2 choses
-à afficher, une chaîne et une variable contenant les résultats. Elle les
-affichera l'une après l'autre.
-
-Nous aurons besoin de messages de sortie plus complets lors de l'écriture du
-code, et nous les inclurons souvent lors de l'écriture du pseudocode, mais pas
-lors de la création de diagrammes d'activité pour les garder plus petits et nous
-aider à nous concentrer sur l'algorithme lui-même, et non sur les détails des
-entrées et des sorties, à moins que l'algorithme devait traiter les entrées et
-les sorties d'une manière très spécifique.
-
-#### Pseudocode
-
-```pseudocode
-afficher("Calcul de l'aire d'un rectangle")
-largeur = entrer("Entrez la largeur du rectangle :")
-hauteur = entrer("Entrez la hauteur du rectangle :")
-aire = largeur * hauteur
-afficher("l'aire est", aire)
-```
+---

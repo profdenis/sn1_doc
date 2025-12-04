@@ -9,21 +9,38 @@ nav:
     - introduction/index.md
     - Histoire de la programmation: introduction/histoire.md
     - introduction/algorithmes.md
+    - introduction/exécution.md
   - Section 1:
-      - section1/affichage.md
-      - section1/entrées.md
-      - section1/modules.md
-      - section1/fonctions.md
-      - Exercices:
-        - section1/exercices/exercices1.md
-        - section1/exercices/exercices2.md
-        - section1/exercices/exercices3.md
-        - section1/exercices/exercices4.md
-      - Corrigés:
-        - section1/corrigés/exercices1-corrigés.md
-        - section1/corrigés/exercices2-corrigés.md
-        - section1/corrigés/exercices3-corrigés.md
-        - section1/corrigés/exercices4-corrigés.md
+    - section1/affichage.md
+    - section1/entrées.md
+    - section1/modules.md
+    - section1/fonctions.md
+    - Exercices:
+      - section1/exercices/exercices1.md
+      - section1/exercices/exercices2.md
+      - section1/exercices/exercices3.md
+      - section1/exercices/exercices4.md
+    - Corrigés:
+      - section1/corrigés/exercices1-corrigés.md
+      - section1/corrigés/exercices2-corrigés.md
+      - section1/corrigés/exercices3-corrigés.md
+      - section1/corrigés/exercices4-corrigés.md
+  - Section 2:
+    - section2/bool.md
+    - section2/conditionnelles.md
+    - section2/match.md
+    - section2/for.md
+    - section2/while.md
+    - section2/boucles-imbriquées.md
+  - Section 3:
+    - section3/exceptions.md
+    - section3/listes.md
+    - section3/fichiers.md
+    - section3/dictionnaires.md
+  - Section 4:
+    - section4/numpy.md
+    - section4/pyplot.md
+
 
 
 theme:
