@@ -74,8 +74,8 @@ Sagesse** (*Bayt al-Hikma*), une bibliothèque et un centre de traduction.
 Al-Khwarizmi est surtout connu pour deux ouvrages majeurs :
 
 - **"Kitab al-Jabr wa-l-Muqabala"** (*Le Livre de la Restauration et de la Comparaison*) :
-  Ce livre est considéré comme le **fondement de l'algèbre**. Le mot "algèbre" vient d'ailleurs du terme arabe *"
-  al-jabr"* présent dans le titre.
+  Ce livre est considéré comme le **fondement de l'algèbre**. Le mot "algèbre" vient d'ailleurs du terme arabe 
+  *"al-jabr"* présent dans le titre.
   Al-Khwarizmi y décrit des méthodes systématiques pour résoudre des équations linéaires et quadratiques.
 
 - **"Kitab al-Jam' wa-l-Tafriq bi-Hisab al-Hind"** (*Le Livre de l'Addition et de la Soustraction selon le Calcul des

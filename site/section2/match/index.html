@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://profdenis.github.io/sn1_doc/section2/conditionnelles/">
+        <link rel="canonical" href="https://profdenis.github.io/sn1_doc/section2/match/">
       
       
-        <link rel="prev" href="../bool/">
+        <link rel="prev" href="../conditionnelles/">
       
       
-        <link rel="next" href="../match/">
+        <link rel="next" href="../for/">
       
       
         
@@ -25,7 +25,7 @@
     
     
       
-        <title>Structures conditionnelles - Cours de programmation en sciences</title>
+        <title>L’instruction match - Cours de programmation en sciences</title>
       
     
     
@@ -82,7 +82,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#structures-conditionnelles" class="md-skip">
+        <a href="#linstruction-match" class="md-skip">
           Skip to content
         </a>
       
@@ -118,7 +118,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Structures conditionnelles
+              L&rsquo;instruction match
             
           </span>
         </div>
@@ -1211,6 +1211,34 @@
                 
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../conditionnelles/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Structures conditionnelles
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -1230,7 +1258,7 @@
   <span class="md-ellipsis">
     
   
-    Structures conditionnelles
+    L&rsquo;instruction match
   
 
     
@@ -1248,7 +1276,7 @@
   <span class="md-ellipsis">
     
   
-    Structures conditionnelles
+    L&rsquo;instruction match
   
 
     
@@ -1274,22 +1302,44 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1-structure-if-seule" class="md-nav__link">
+  <a href="#1-introduction-a-match" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1. Structure if seule
+        1. Introduction à match
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="1. Structure if seule">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-syntaxe-de-base-de-match" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Syntaxe de base de match
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-exemple-simple-comparaison-avec-ifelifelse" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Exemple simple : Comparaison avec if...elif...else
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Exemple simple : Comparaison avec if...elif...else">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#syntaxe" class="md-nav__link">
+  <a href="#31-avec-ifelifelse" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Syntaxe
+        3.1 Avec if...elif...else
       
     </span>
   </a>
@@ -1297,10 +1347,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#exemple-1-verification-dun-nombre-positif" class="md-nav__link">
+  <a href="#32-avec-match" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Exemple 1 : Vérification d&rsquo;un nombre positif
+        3.2 Avec match
       
     </span>
   </a>
@@ -1308,10 +1358,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#exemple-2-verification-de-legalite" class="md-nav__link">
+  <a href="#33-comparaison-des-deux-approches" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Exemple 2 : Vérification de l&rsquo;égalité
+        3.3 Comparaison des deux approches
       
     </span>
   </a>
@@ -1324,22 +1374,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-structure-if-else" class="md-nav__link">
+  <a href="#4-exemples-avances-de-match" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2. Structure if ... else ...
+        4. Exemples avancés de match
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="2. Structure if ... else ...">
+    <nav class="md-nav" aria-label="4. Exemples avancés de match">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#syntaxe_1" class="md-nav__link">
+  <a href="#41-correspondance-de-valeurs-litterales" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Syntaxe
+        4.1 Correspondance de valeurs littérales
       
     </span>
   </a>
@@ -1347,10 +1397,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#exemple-1-verification-de-la-majorite" class="md-nav__link">
+  <a href="#42-correspondance-avec-des-types" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Exemple 1 : Vérification de la majorité
+        4.2 Correspondance avec des types
       
     </span>
   </a>
@@ -1358,10 +1408,21 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#exemple-2-comparaison-de-deux-nombres" class="md-nav__link">
+  <a href="#43-correspondance-avec-des-structures-de-donnees" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Exemple 2 : Comparaison de deux nombres
+        4.3 Correspondance avec des structures de données
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#44-correspondance-avec-des-dictionnaires" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.4 Correspondance avec des dictionnaires
       
     </span>
   </a>
@@ -1374,82 +1435,21 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#3-structure-if-elif-else" class="md-nav__link">
+  <a href="#5-cas-dutilisation-recommandes" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3. Structure if ... elif ... else
+        5. Cas d&rsquo;utilisation recommandés
       
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="3. Structure if ... elif ... else">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#syntaxe_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Syntaxe
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#exemple-1-categorisation-dun-nombre" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Exemple 1 : Catégorisation d&rsquo;un nombre
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#exemple-2-evaluation-dune-note" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Exemple 2 : Évaluation d&rsquo;une note
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#exemple-3-verification-de-conditions-multiples" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Exemple 3 : Vérification de conditions multiples
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#exemple-4-utilisation-dexpressions-booleennes-complexes" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Exemple 4 : Utilisation d&rsquo;expressions booléennes complexes
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#4-resume-des-structures-conditionnelles" class="md-nav__link">
+  <a href="#6-limites-de-match" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4. Résumé des structures conditionnelles
+        6. Limites de match
       
     </span>
   </a>
@@ -1460,34 +1460,6 @@
   
 </nav>
       
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../match/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    L&rsquo;instruction match
-  
-
-    
-  </span>
-  
-  
-
-      </a>
     </li>
   
 
@@ -2311,22 +2283,44 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1-structure-if-seule" class="md-nav__link">
+  <a href="#1-introduction-a-match" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1. Structure if seule
+        1. Introduction à match
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="1. Structure if seule">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-syntaxe-de-base-de-match" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Syntaxe de base de match
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-exemple-simple-comparaison-avec-ifelifelse" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Exemple simple : Comparaison avec if...elif...else
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Exemple simple : Comparaison avec if...elif...else">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#syntaxe" class="md-nav__link">
+  <a href="#31-avec-ifelifelse" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Syntaxe
+        3.1 Avec if...elif...else
       
     </span>
   </a>
@@ -2334,10 +2328,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#exemple-1-verification-dun-nombre-positif" class="md-nav__link">
+  <a href="#32-avec-match" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Exemple 1 : Vérification d&rsquo;un nombre positif
+        3.2 Avec match
       
     </span>
   </a>
@@ -2345,10 +2339,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#exemple-2-verification-de-legalite" class="md-nav__link">
+  <a href="#33-comparaison-des-deux-approches" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Exemple 2 : Vérification de l&rsquo;égalité
+        3.3 Comparaison des deux approches
       
     </span>
   </a>
@@ -2361,22 +2355,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-structure-if-else" class="md-nav__link">
+  <a href="#4-exemples-avances-de-match" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2. Structure if ... else ...
+        4. Exemples avancés de match
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="2. Structure if ... else ...">
+    <nav class="md-nav" aria-label="4. Exemples avancés de match">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#syntaxe_1" class="md-nav__link">
+  <a href="#41-correspondance-de-valeurs-litterales" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Syntaxe
+        4.1 Correspondance de valeurs littérales
       
     </span>
   </a>
@@ -2384,10 +2378,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#exemple-1-verification-de-la-majorite" class="md-nav__link">
+  <a href="#42-correspondance-avec-des-types" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Exemple 1 : Vérification de la majorité
+        4.2 Correspondance avec des types
       
     </span>
   </a>
@@ -2395,10 +2389,21 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#exemple-2-comparaison-de-deux-nombres" class="md-nav__link">
+  <a href="#43-correspondance-avec-des-structures-de-donnees" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Exemple 2 : Comparaison de deux nombres
+        4.3 Correspondance avec des structures de données
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#44-correspondance-avec-des-dictionnaires" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.4 Correspondance avec des dictionnaires
       
     </span>
   </a>
@@ -2411,82 +2416,21 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#3-structure-if-elif-else" class="md-nav__link">
+  <a href="#5-cas-dutilisation-recommandes" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3. Structure if ... elif ... else
+        5. Cas d&rsquo;utilisation recommandés
       
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="3. Structure if ... elif ... else">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#syntaxe_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Syntaxe
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#exemple-1-categorisation-dun-nombre" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Exemple 1 : Catégorisation d&rsquo;un nombre
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#exemple-2-evaluation-dune-note" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Exemple 2 : Évaluation d&rsquo;une note
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#exemple-3-verification-de-conditions-multiples" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Exemple 3 : Vérification de conditions multiples
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#exemple-4-utilisation-dexpressions-booleennes-complexes" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Exemple 4 : Utilisation d&rsquo;expressions booléennes complexes
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#4-resume-des-structures-conditionnelles" class="md-nav__link">
+  <a href="#6-limites-de-match" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4. Résumé des structures conditionnelles
+        6. Limites de match
       
     </span>
   </a>
@@ -2561,164 +2505,200 @@
   
 
 
-<h1 id="structures-conditionnelles"><strong>Structures conditionnelles</strong><a class="headerlink" href="#structures-conditionnelles" title="Permanent link">&para;</a></h1>
-<p>Les structures conditionnelles permettent d&rsquo;exécuter des blocs de code en fonction de conditions spécifiques. Elles sont
-essentielles pour créer des programmes dynamiques et réactifs.</p>
+<h1 id="linstruction-match"><strong>L&rsquo;instruction <code>match</code></strong><a class="headerlink" href="#linstruction-match" title="Permanent link">&para;</a></h1>
 <hr />
-<h2 id="1-structure-if-seule"><strong>1. Structure <code>if</code> seule</strong><a class="headerlink" href="#1-structure-if-seule" title="Permanent link">&para;</a></h2>
-<p>La structure <code>if</code> permet d&rsquo;exécuter un bloc de code <strong>uniquement si une condition est vraie</strong>.</p>
-<h3 id="syntaxe"><strong>Syntaxe</strong><a class="headerlink" href="#syntaxe" title="Permanent link">&para;</a></h3>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">if</span> <span class="n">condition</span><span class="p">:</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="c1"># Instructions à exécuter si la condition est vraie</span>
+<h2 id="1-introduction-a-match"><strong>1. Introduction à <code>match</code></strong><a class="headerlink" href="#1-introduction-a-match" title="Permanent link">&para;</a></h2>
+<p>L&rsquo;instruction <strong><code>match</code></strong> est une fonctionnalité introduite dans <strong>Python 3.10</strong> pour simplifier les comparaisons
+multiples. Elle est inspirée du <strong>pattern matching</strong> présent dans d&rsquo;autres langages comme Rust ou Scala.</p>
+<ul>
+<li><strong>Avantage</strong> : Remplace avantageusement les longues séquences <code>if...elif...else</code> pour des comparaisons de valeurs
+  discrètes.</li>
+<li><strong>Utilisation</strong> : Permet de comparer une valeur à plusieurs motifs (<em>patterns</em>) et d&rsquo;exécuter le bloc de code
+  correspondant au motif qui correspond.</li>
+</ul>
+<hr />
+<h2 id="2-syntaxe-de-base-de-match"><strong>2. Syntaxe de base de <code>match</code></strong><a class="headerlink" href="#2-syntaxe-de-base-de-match" title="Permanent link">&para;</a></h2>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">match</span> <span class="n">variable</span><span class="p">:</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="k">case</span> <span class="n">motif1</span><span class="p">:</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>        <span class="c1"># Instructions si variable correspond à motif1</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    <span class="k">case</span> <span class="n">motif2</span><span class="p">:</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>        <span class="c1"># Instructions si variable correspond à motif2</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>    <span class="k">case</span><span class="w"> </span><span class="k">_</span><span class="p">:</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>        <span class="c1"># Instructions si aucun motif ne correspond (équivalent à `else`)</span>
 </span></code></pre></div>
-<h3 id="exemple-1-verification-dun-nombre-positif"><strong>Exemple 1 : Vérification d&rsquo;un nombre positif</strong><a class="headerlink" href="#exemple-1-verification-dun-nombre-positif" title="Permanent link">&para;</a></h3>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="n">nombre</span> <span class="o">=</span> <span class="mi">10</span>
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="k">if</span> <span class="n">nombre</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">nombre</span><span class="si">}</span><span class="s2"> est un nombre positif.&quot;</span><span class="p">)</span>
+<ul>
+<li><strong><code>case</code></strong> : Définit un motif à comparer.</li>
+<li><strong><code>_</code></strong> : Motif générique qui correspond à toute valeur (équivalent au <code>else</code> dans une structure <code>if...elif...else</code>).</li>
+</ul>
+<hr />
+<h2 id="3-exemple-simple-comparaison-avec-ifelifelse"><strong>3. Exemple simple : Comparaison avec <code>if...elif...else</code></strong><a class="headerlink" href="#3-exemple-simple-comparaison-avec-ifelifelse" title="Permanent link">&para;</a></h2>
+<h3 id="31-avec-ifelifelse"><strong>3.1 Avec <code>if...elif...else</code></strong><a class="headerlink" href="#31-avec-ifelifelse" title="Permanent link">&para;</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="n">note</span> <span class="o">=</span> <span class="mi">14</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="k">if</span> <span class="n">note</span> <span class="o">&gt;=</span> <span class="mi">16</span><span class="p">:</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Très bien !&quot;</span><span class="p">)</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="k">elif</span> <span class="n">note</span> <span class="o">&gt;=</span> <span class="mi">14</span><span class="p">:</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Bien.&quot;</span><span class="p">)</span>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="k">elif</span> <span class="n">note</span> <span class="o">&gt;=</span> <span class="mi">12</span><span class="p">:</span>
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Assez bien.&quot;</span><span class="p">)</span>
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="k">elif</span> <span class="n">note</span> <span class="o">&gt;=</span> <span class="mi">10</span><span class="p">:</span>
+</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Passable.&quot;</span><span class="p">)</span>
+</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="k">else</span><span class="p">:</span>
+</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Insuffisant.&quot;</span><span class="p">)</span>
 </span></code></pre></div>
 <p><strong>Sortie</strong> :</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>10 est un nombre positif.
+<div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>Bien.
 </span></code></pre></div>
 <hr />
-<h3 id="exemple-2-verification-de-legalite"><strong>Exemple 2 : Vérification de l&rsquo;égalité</strong><a class="headerlink" href="#exemple-2-verification-de-legalite" title="Permanent link">&para;</a></h3>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="n">mot_de_passe</span> <span class="o">=</span> <span class="s2">&quot;secret123&quot;</span>
-</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="n">entree_utilisateur</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Entrez le mot de passe : &quot;</span><span class="p">)</span>
-</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="k">if</span> <span class="n">mot_de_passe</span> <span class="o">==</span> <span class="n">entree_utilisateur</span><span class="p">:</span>
-</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Accès autorisé.&quot;</span><span class="p">)</span>
-</span></code></pre></div>
-<p><strong>Sortie possible</strong> :</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>Entrez le mot de passe : secret123
-</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>Accès autorisé.
-</span></code></pre></div>
-<hr />
-<h2 id="2-structure-if-else"><strong>2. Structure <code>if ... else ...</code></strong><a class="headerlink" href="#2-structure-if-else" title="Permanent link">&para;</a></h2>
-<p>La structure <code>if ... else ...</code> permet d&rsquo;exécuter un bloc de code si la condition est vraie, et un autre bloc si elle est
-fausse.</p>
-<h3 id="syntaxe_1"><strong>Syntaxe</strong><a class="headerlink" href="#syntaxe_1" title="Permanent link">&para;</a></h3>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="k">if</span> <span class="n">condition</span><span class="p">:</span>
-</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>    <span class="c1"># Instructions si la condition est vraie</span>
-</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="k">else</span><span class="p">:</span>
-</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>    <span class="c1"># Instructions si la condition est fausse</span>
-</span></code></pre></div>
-<hr />
-<h3 id="exemple-1-verification-de-la-majorite"><strong>Exemple 1 : Vérification de la majorité</strong><a class="headerlink" href="#exemple-1-verification-de-la-majorite" title="Permanent link">&para;</a></h3>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="n">age</span> <span class="o">=</span> <span class="mi">17</span>
-</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="k">if</span> <span class="n">age</span> <span class="o">&gt;=</span> <span class="mi">18</span><span class="p">:</span>
-</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Vous êtes majeur.&quot;</span><span class="p">)</span>
-</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="k">else</span><span class="p">:</span>
-</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Vous êtes mineur.&quot;</span><span class="p">)</span>
+<h3 id="32-avec-match"><strong>3.2 Avec <code>match</code></strong><a class="headerlink" href="#32-avec-match" title="Permanent link">&para;</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="n">note</span> <span class="o">=</span> <span class="mi">14</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="k">match</span> <span class="n">note</span><span class="p">:</span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>    <span class="k">case</span> <span class="n">n</span> <span class="k">if</span> <span class="n">n</span> <span class="o">&gt;=</span> <span class="mi">16</span><span class="p">:</span>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Très bien !&quot;</span><span class="p">)</span>
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>    <span class="k">case</span> <span class="n">n</span> <span class="k">if</span> <span class="n">n</span> <span class="o">&gt;=</span> <span class="mi">14</span><span class="p">:</span>
+</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Bien.&quot;</span><span class="p">)</span>
+</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>    <span class="k">case</span> <span class="n">n</span> <span class="k">if</span> <span class="n">n</span> <span class="o">&gt;=</span> <span class="mi">12</span><span class="p">:</span>
+</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a>        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Assez bien.&quot;</span><span class="p">)</span>
+</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a>    <span class="k">case</span> <span class="n">n</span> <span class="k">if</span> <span class="n">n</span> <span class="o">&gt;=</span> <span class="mi">10</span><span class="p">:</span>
+</span><span id="__span-3-11"><a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a>        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Passable.&quot;</span><span class="p">)</span>
+</span><span id="__span-3-12"><a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a>    <span class="k">case</span><span class="w"> </span><span class="k">_</span><span class="p">:</span>
+</span><span id="__span-3-13"><a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a>        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Insuffisant.&quot;</span><span class="p">)</span>
 </span></code></pre></div>
 <p><strong>Sortie</strong> :</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>Vous êtes mineur.
+<div class="language-text highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>Bien.
 </span></code></pre></div>
 <hr />
-<h3 id="exemple-2-comparaison-de-deux-nombres"><strong>Exemple 2 : Comparaison de deux nombres</strong><a class="headerlink" href="#exemple-2-comparaison-de-deux-nombres" title="Permanent link">&para;</a></h3>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="n">a</span> <span class="o">=</span> <span class="mi">10</span>
-</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="n">b</span> <span class="o">=</span> <span class="mi">20</span>
-</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="k">if</span> <span class="n">a</span> <span class="o">&gt;</span> <span class="n">b</span><span class="p">:</span>
-</span><span id="__span-8-4"><a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">a</span><span class="si">}</span><span class="s2"> est supérieur à </span><span class="si">{</span><span class="n">b</span><span class="si">}</span><span class="s2">.&quot;</span><span class="p">)</span>
-</span><span id="__span-8-5"><a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a><span class="k">else</span><span class="p">:</span>
-</span><span id="__span-8-6"><a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">a</span><span class="si">}</span><span class="s2"> n&#39;est pas supérieur à </span><span class="si">{</span><span class="n">b</span><span class="si">}</span><span class="s2">.&quot;</span><span class="p">)</span>
-</span></code></pre></div>
-<p><strong>Sortie</strong> :</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>10 n&#39;est pas supérieur à 20.
-</span></code></pre></div>
-<hr />
-<h2 id="3-structure-if-elif-else"><strong>3. Structure <code>if ... elif ... else</code></strong><a class="headerlink" href="#3-structure-if-elif-else" title="Permanent link">&para;</a></h2>
-<p>La structure <code>if ... elif ... else</code> permet de tester plusieurs conditions et d&rsquo;exécuter le bloc de code correspondant à
-la première condition vraie.</p>
-<h3 id="syntaxe_2"><strong>Syntaxe</strong><a class="headerlink" href="#syntaxe_2" title="Permanent link">&para;</a></h3>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="k">if</span> <span class="n">condition1</span><span class="p">:</span>
-</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>    <span class="c1"># Instructions si condition1 est vraie</span>
-</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a><span class="k">elif</span> <span class="n">condition2</span><span class="p">:</span>
-</span><span id="__span-10-4"><a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>    <span class="c1"># Instructions si condition2 est vraie</span>
-</span><span id="__span-10-5"><a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a><span class="k">else</span><span class="p">:</span>
-</span><span id="__span-10-6"><a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a>    <span class="c1"># Instructions si aucune condition n&#39;est vraie</span>
-</span></code></pre></div>
-<hr />
-<h3 id="exemple-1-categorisation-dun-nombre"><strong>Exemple 1 : Catégorisation d&rsquo;un nombre</strong><a class="headerlink" href="#exemple-1-categorisation-dun-nombre" title="Permanent link">&para;</a></h3>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="n">nombre</span> <span class="o">=</span> <span class="mi">0</span>
-</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="k">if</span> <span class="n">nombre</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
-</span><span id="__span-11-3"><a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">nombre</span><span class="si">}</span><span class="s2"> est positif.&quot;</span><span class="p">)</span>
-</span><span id="__span-11-4"><a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a><span class="k">elif</span> <span class="n">nombre</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
-</span><span id="__span-11-5"><a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">nombre</span><span class="si">}</span><span class="s2"> est négatif.&quot;</span><span class="p">)</span>
-</span><span id="__span-11-6"><a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a><span class="k">else</span><span class="p">:</span>
-</span><span id="__span-11-7"><a id="__codelineno-11-7" name="__codelineno-11-7" href="#__codelineno-11-7"></a>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">nombre</span><span class="si">}</span><span class="s2"> est nul.&quot;</span><span class="p">)</span>
-</span></code></pre></div>
-<p><strong>Sortie</strong> :</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>0 est nul.
-</span></code></pre></div>
-<hr />
-<h3 id="exemple-2-evaluation-dune-note"><strong>Exemple 2 : Évaluation d&rsquo;une note</strong><a class="headerlink" href="#exemple-2-evaluation-dune-note" title="Permanent link">&para;</a></h3>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="n">note</span> <span class="o">=</span> <span class="mi">14</span>
-</span><span id="__span-13-2"><a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a><span class="k">if</span> <span class="n">note</span> <span class="o">&gt;=</span> <span class="mi">16</span><span class="p">:</span>
-</span><span id="__span-13-3"><a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Très bien !&quot;</span><span class="p">)</span>
-</span><span id="__span-13-4"><a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a><span class="k">elif</span> <span class="n">note</span> <span class="o">&gt;=</span> <span class="mi">14</span><span class="p">:</span>
-</span><span id="__span-13-5"><a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Bien.&quot;</span><span class="p">)</span>
-</span><span id="__span-13-6"><a id="__codelineno-13-6" name="__codelineno-13-6" href="#__codelineno-13-6"></a><span class="k">elif</span> <span class="n">note</span> <span class="o">&gt;=</span> <span class="mi">12</span><span class="p">:</span>
-</span><span id="__span-13-7"><a id="__codelineno-13-7" name="__codelineno-13-7" href="#__codelineno-13-7"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Assez bien.&quot;</span><span class="p">)</span>
-</span><span id="__span-13-8"><a id="__codelineno-13-8" name="__codelineno-13-8" href="#__codelineno-13-8"></a><span class="k">elif</span> <span class="n">note</span> <span class="o">&gt;=</span> <span class="mi">10</span><span class="p">:</span>
-</span><span id="__span-13-9"><a id="__codelineno-13-9" name="__codelineno-13-9" href="#__codelineno-13-9"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Passable.&quot;</span><span class="p">)</span>
-</span><span id="__span-13-10"><a id="__codelineno-13-10" name="__codelineno-13-10" href="#__codelineno-13-10"></a><span class="k">else</span><span class="p">:</span>
-</span><span id="__span-13-11"><a id="__codelineno-13-11" name="__codelineno-13-11" href="#__codelineno-13-11"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Insuffisant.&quot;</span><span class="p">)</span>
-</span></code></pre></div>
-<p><strong>Sortie</strong> :</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>Bien.
-</span></code></pre></div>
-<hr />
-<h3 id="exemple-3-verification-de-conditions-multiples"><strong>Exemple 3 : Vérification de conditions multiples</strong><a class="headerlink" href="#exemple-3-verification-de-conditions-multiples" title="Permanent link">&para;</a></h3>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="n">a</span> <span class="o">=</span> <span class="mi">10</span>
-</span><span id="__span-15-2"><a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a><span class="n">b</span> <span class="o">=</span> <span class="mi">15</span>
-</span><span id="__span-15-3"><a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a><span class="n">c</span> <span class="o">=</span> <span class="mi">20</span>
-</span><span id="__span-15-4"><a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a><span class="k">if</span> <span class="n">a</span> <span class="o">&gt;</span> <span class="n">b</span> <span class="ow">and</span> <span class="n">a</span> <span class="o">&gt;</span> <span class="n">c</span><span class="p">:</span>
-</span><span id="__span-15-5"><a id="__codelineno-15-5" name="__codelineno-15-5" href="#__codelineno-15-5"></a>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">a</span><span class="si">}</span><span class="s2"> est le plus grand.&quot;</span><span class="p">)</span>
-</span><span id="__span-15-6"><a id="__codelineno-15-6" name="__codelineno-15-6" href="#__codelineno-15-6"></a><span class="k">elif</span> <span class="n">b</span> <span class="o">&gt;</span> <span class="n">a</span> <span class="ow">and</span> <span class="n">b</span> <span class="o">&gt;</span> <span class="n">c</span><span class="p">:</span>
-</span><span id="__span-15-7"><a id="__codelineno-15-7" name="__codelineno-15-7" href="#__codelineno-15-7"></a>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">b</span><span class="si">}</span><span class="s2"> est le plus grand.&quot;</span><span class="p">)</span>
-</span><span id="__span-15-8"><a id="__codelineno-15-8" name="__codelineno-15-8" href="#__codelineno-15-8"></a><span class="k">else</span><span class="p">:</span>
-</span><span id="__span-15-9"><a id="__codelineno-15-9" name="__codelineno-15-9" href="#__codelineno-15-9"></a>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">c</span><span class="si">}</span><span class="s2"> est le plus grand.&quot;</span><span class="p">)</span>
-</span></code></pre></div>
-<p><strong>Sortie</strong> :</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>20 est le plus grand.
-</span></code></pre></div>
-<hr />
-<h3 id="exemple-4-utilisation-dexpressions-booleennes-complexes"><strong>Exemple 4 : Utilisation d&rsquo;expressions booléennes complexes</strong><a class="headerlink" href="#exemple-4-utilisation-dexpressions-booleennes-complexes" title="Permanent link">&para;</a></h3>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="n">temperature</span> <span class="o">=</span> <span class="mi">25</span>
-</span><span id="__span-17-2"><a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a><span class="k">if</span> <span class="n">temperature</span> <span class="o">&gt;</span> <span class="mi">30</span><span class="p">:</span>
-</span><span id="__span-17-3"><a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Il fait très chaud.&quot;</span><span class="p">)</span>
-</span><span id="__span-17-4"><a id="__codelineno-17-4" name="__codelineno-17-4" href="#__codelineno-17-4"></a><span class="k">elif</span> <span class="n">temperature</span> <span class="o">&gt;</span> <span class="mi">20</span><span class="p">:</span>
-</span><span id="__span-17-5"><a id="__codelineno-17-5" name="__codelineno-17-5" href="#__codelineno-17-5"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Il fait chaud.&quot;</span><span class="p">)</span>
-</span><span id="__span-17-6"><a id="__codelineno-17-6" name="__codelineno-17-6" href="#__codelineno-17-6"></a><span class="k">elif</span> <span class="n">temperature</span> <span class="o">&gt;</span> <span class="mi">10</span><span class="p">:</span>
-</span><span id="__span-17-7"><a id="__codelineno-17-7" name="__codelineno-17-7" href="#__codelineno-17-7"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Il fait doux.&quot;</span><span class="p">)</span>
-</span><span id="__span-17-8"><a id="__codelineno-17-8" name="__codelineno-17-8" href="#__codelineno-17-8"></a><span class="k">else</span><span class="p">:</span>
-</span><span id="__span-17-9"><a id="__codelineno-17-9" name="__codelineno-17-9" href="#__codelineno-17-9"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Il fait froid.&quot;</span><span class="p">)</span>
-</span></code></pre></div>
-<p><strong>Sortie</strong> :</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-18-1"><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>Il fait chaud.
-</span></code></pre></div>
-<hr />
-<h2 id="4-resume-des-structures-conditionnelles"><strong>4. Résumé des structures conditionnelles</strong><a class="headerlink" href="#4-resume-des-structures-conditionnelles" title="Permanent link">&para;</a></h2>
+<h3 id="33-comparaison-des-deux-approches"><strong>3.3 Comparaison des deux approches</strong><a class="headerlink" href="#33-comparaison-des-deux-approches" title="Permanent link">&para;</a></h3>
 <table>
 <thead>
 <tr>
-<th><strong>Structure</strong></th>
-<th><strong>Utilisation</strong></th>
+<th><strong>Critère</strong></th>
+<th><strong><code>if...elif...else</code></strong></th>
+<th><strong><code>match</code></strong></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code>if</code></td>
-<td>Exécute un bloc de code si une condition est vraie.</td>
+<td><strong>Lisibilité</strong></td>
+<td>Peut devenir verbeux pour de nombreuses conditions.</td>
+<td>Plus clair et structuré pour des comparaisons multiples.</td>
 </tr>
 <tr>
-<td><code>if ... else ...</code></td>
-<td>Exécute un bloc de code si une condition est vraie, sinon exécute un autre bloc.</td>
+<td><strong>Flexibilité</strong></td>
+<td>Permet des conditions complexes.</td>
+<td>Idéal pour des comparaisons de valeurs discrètes.</td>
 </tr>
 <tr>
-<td><code>if ... elif ... else</code></td>
-<td>Teste plusieurs conditions et exécute le bloc correspondant à la première condition vraie.</td>
+<td><strong>Performance</strong></td>
+<td>Aucune différence significative.</td>
+<td>Aucune différence significative.</td>
 </tr>
 </tbody>
 </table>
+<hr />
+<h2 id="4-exemples-avances-de-match"><strong>4. Exemples avancés de <code>match</code></strong><a class="headerlink" href="#4-exemples-avances-de-match" title="Permanent link">&para;</a></h2>
+<h3 id="41-correspondance-de-valeurs-litterales"><strong>4.1 Correspondance de valeurs littérales</strong><a class="headerlink" href="#41-correspondance-de-valeurs-litterales" title="Permanent link">&para;</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="n">jour</span> <span class="o">=</span> <span class="s2">&quot;lundi&quot;</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="k">match</span> <span class="n">jour</span><span class="p">:</span>
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>    <span class="k">case</span> <span class="s2">&quot;lundi&quot;</span><span class="p">:</span>
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Début de la semaine.&quot;</span><span class="p">)</span>
+</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>    <span class="k">case</span> <span class="s2">&quot;vendredi&quot;</span><span class="p">:</span>
+</span><span id="__span-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Fin de la semaine.&quot;</span><span class="p">)</span>
+</span><span id="__span-5-8"><a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a>    <span class="k">case</span> <span class="s2">&quot;samedi&quot;</span> <span class="o">|</span> <span class="s2">&quot;dimanche&quot;</span><span class="p">:</span>
+</span><span id="__span-5-9"><a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a>        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Week-end !&quot;</span><span class="p">)</span>
+</span><span id="__span-5-10"><a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a>    <span class="k">case</span><span class="w"> </span><span class="k">_</span><span class="p">:</span>
+</span><span id="__span-5-11"><a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a>        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Milieu de la semaine.&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+<p><strong>Sortie</strong> :</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>Début de la semaine.
+</span></code></pre></div>
+<hr />
+<h3 id="42-correspondance-avec-des-types"><strong>4.2 Correspondance avec des types</strong><a class="headerlink" href="#42-correspondance-avec-des-types" title="Permanent link">&para;</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">traiter_valeur</span><span class="p">(</span><span class="n">valeur</span><span class="p">):</span>
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>    <span class="k">match</span> <span class="n">valeur</span><span class="p">:</span>
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>        <span class="k">case</span> <span class="nb">int</span><span class="p">():</span>
+</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;C&#39;est un entier.&quot;</span><span class="p">)</span>
+</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>        <span class="k">case</span> <span class="nb">float</span><span class="p">():</span>
+</span><span id="__span-7-6"><a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a>            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;C&#39;est un flottant.&quot;</span><span class="p">)</span>
+</span><span id="__span-7-7"><a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a>        <span class="k">case</span> <span class="nb">str</span><span class="p">():</span>
+</span><span id="__span-7-8"><a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a>            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;C&#39;est une chaîne de caractères.&quot;</span><span class="p">)</span>
+</span><span id="__span-7-9"><a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a>        <span class="k">case</span><span class="w"> </span><span class="k">_</span><span class="p">:</span>
+</span><span id="__span-7-10"><a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a>            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Type non reconnu.&quot;</span><span class="p">)</span>
+</span><span id="__span-7-11"><a id="__codelineno-7-11" name="__codelineno-7-11" href="#__codelineno-7-11"></a>
+</span><span id="__span-7-12"><a id="__codelineno-7-12" name="__codelineno-7-12" href="#__codelineno-7-12"></a>
+</span><span id="__span-7-13"><a id="__codelineno-7-13" name="__codelineno-7-13" href="#__codelineno-7-13"></a><span class="n">traiter_valeur</span><span class="p">(</span><span class="mi">42</span><span class="p">)</span>
+</span><span id="__span-7-14"><a id="__codelineno-7-14" name="__codelineno-7-14" href="#__codelineno-7-14"></a><span class="n">traiter_valeur</span><span class="p">(</span><span class="mf">3.14</span><span class="p">)</span>
+</span><span id="__span-7-15"><a id="__codelineno-7-15" name="__codelineno-7-15" href="#__codelineno-7-15"></a><span class="n">traiter_valeur</span><span class="p">(</span><span class="s2">&quot;Bonjour&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+<p><strong>Sortie</strong> :</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>C&#39;est un entier.
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>C&#39;est un flottant.
+</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>C&#39;est une chaîne de caractères.
+</span></code></pre></div>
+<hr />
+<h3 id="43-correspondance-avec-des-structures-de-donnees"><strong>4.3 Correspondance avec des structures de données</strong><a class="headerlink" href="#43-correspondance-avec-des-structures-de-donnees" title="Permanent link">&para;</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">traiter_liste</span><span class="p">(</span><span class="n">liste</span><span class="p">):</span>
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>    <span class="k">match</span> <span class="n">liste</span><span class="p">:</span>
+</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>        <span class="k">case</span> <span class="p">[]:</span>
+</span><span id="__span-9-4"><a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a>            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;La liste est vide.&quot;</span><span class="p">)</span>
+</span><span id="__span-9-5"><a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a>        <span class="k">case</span> <span class="p">[</span><span class="n">x</span><span class="p">]:</span>
+</span><span id="__span-9-6"><a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a>            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;La liste contient un seul élément : </span><span class="si">{</span><span class="n">x</span><span class="si">}</span><span class="s2">.&quot;</span><span class="p">)</span>
+</span><span id="__span-9-7"><a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a>        <span class="k">case</span> <span class="p">[</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">]:</span>
+</span><span id="__span-9-8"><a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a>            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;La liste contient deux éléments : </span><span class="si">{</span><span class="n">x</span><span class="si">}</span><span class="s2"> et </span><span class="si">{</span><span class="n">y</span><span class="si">}</span><span class="s2">.&quot;</span><span class="p">)</span>
+</span><span id="__span-9-9"><a id="__codelineno-9-9" name="__codelineno-9-9" href="#__codelineno-9-9"></a>        <span class="k">case</span><span class="w"> </span><span class="k">_</span><span class="p">:</span>
+</span><span id="__span-9-10"><a id="__codelineno-9-10" name="__codelineno-9-10" href="#__codelineno-9-10"></a>            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;La liste contient plus de deux éléments.&quot;</span><span class="p">)</span>
+</span><span id="__span-9-11"><a id="__codelineno-9-11" name="__codelineno-9-11" href="#__codelineno-9-11"></a>
+</span><span id="__span-9-12"><a id="__codelineno-9-12" name="__codelineno-9-12" href="#__codelineno-9-12"></a>
+</span><span id="__span-9-13"><a id="__codelineno-9-13" name="__codelineno-9-13" href="#__codelineno-9-13"></a><span class="n">traiter_liste</span><span class="p">([])</span>
+</span><span id="__span-9-14"><a id="__codelineno-9-14" name="__codelineno-9-14" href="#__codelineno-9-14"></a><span class="n">traiter_liste</span><span class="p">([</span><span class="mi">1</span><span class="p">])</span>
+</span><span id="__span-9-15"><a id="__codelineno-9-15" name="__codelineno-9-15" href="#__codelineno-9-15"></a><span class="n">traiter_liste</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">])</span>
+</span><span id="__span-9-16"><a id="__codelineno-9-16" name="__codelineno-9-16" href="#__codelineno-9-16"></a><span class="n">traiter_liste</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">])</span>
+</span></code></pre></div>
+<p><strong>Sortie</strong> :</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>La liste est vide.
+</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>La liste contient un seul élément : 1.
+</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>La liste contient deux éléments : 1 et 2.
+</span><span id="__span-10-4"><a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>La liste contient plus de deux éléments.
+</span></code></pre></div>
+<hr />
+<h3 id="44-correspondance-avec-des-dictionnaires"><strong>4.4 Correspondance avec des dictionnaires</strong><a class="headerlink" href="#44-correspondance-avec-des-dictionnaires" title="Permanent link">&para;</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">traiter_dictionnaire</span><span class="p">(</span><span class="n">dico</span><span class="p">):</span>
+</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>    <span class="k">match</span> <span class="n">dico</span><span class="p">:</span>
+</span><span id="__span-11-3"><a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a>        <span class="k">case</span> <span class="p">{</span><span class="s2">&quot;nom&quot;</span><span class="p">:</span> <span class="n">nom</span><span class="p">,</span> <span class="s2">&quot;âge&quot;</span><span class="p">:</span> <span class="n">age</span><span class="p">}:</span>
+</span><span id="__span-11-4"><a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a>            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Nom : </span><span class="si">{</span><span class="n">nom</span><span class="si">}</span><span class="s2">, Âge : </span><span class="si">{</span><span class="n">age</span><span class="si">}</span><span class="s2">.&quot;</span><span class="p">)</span>
+</span><span id="__span-11-5"><a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a>        <span class="k">case</span> <span class="p">{</span><span class="s2">&quot;nom&quot;</span><span class="p">:</span> <span class="n">nom</span><span class="p">}:</span>
+</span><span id="__span-11-6"><a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a>            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Nom : </span><span class="si">{</span><span class="n">nom</span><span class="si">}</span><span class="s2">, Âge non spécifié.&quot;</span><span class="p">)</span>
+</span><span id="__span-11-7"><a id="__codelineno-11-7" name="__codelineno-11-7" href="#__codelineno-11-7"></a>        <span class="k">case</span><span class="w"> </span><span class="k">_</span><span class="p">:</span>
+</span><span id="__span-11-8"><a id="__codelineno-11-8" name="__codelineno-11-8" href="#__codelineno-11-8"></a>            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Format de dictionnaire non reconnu.&quot;</span><span class="p">)</span>
+</span><span id="__span-11-9"><a id="__codelineno-11-9" name="__codelineno-11-9" href="#__codelineno-11-9"></a>
+</span><span id="__span-11-10"><a id="__codelineno-11-10" name="__codelineno-11-10" href="#__codelineno-11-10"></a>
+</span><span id="__span-11-11"><a id="__codelineno-11-11" name="__codelineno-11-11" href="#__codelineno-11-11"></a><span class="n">traiter_dictionnaire</span><span class="p">({</span><span class="s2">&quot;nom&quot;</span><span class="p">:</span> <span class="s2">&quot;Alice&quot;</span><span class="p">,</span> <span class="s2">&quot;âge&quot;</span><span class="p">:</span> <span class="mi">30</span><span class="p">})</span>
+</span><span id="__span-11-12"><a id="__codelineno-11-12" name="__codelineno-11-12" href="#__codelineno-11-12"></a><span class="n">traiter_dictionnaire</span><span class="p">({</span><span class="s2">&quot;nom&quot;</span><span class="p">:</span> <span class="s2">&quot;Bob&quot;</span><span class="p">})</span>
+</span><span id="__span-11-13"><a id="__codelineno-11-13" name="__codelineno-11-13" href="#__codelineno-11-13"></a><span class="n">traiter_dictionnaire</span><span class="p">({</span><span class="s2">&quot;ville&quot;</span><span class="p">:</span> <span class="s2">&quot;Paris&quot;</span><span class="p">})</span>
+</span></code></pre></div>
+<p><strong>Sortie</strong> :</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>Nom : Alice, Âge : 30.
+</span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>Nom : Bob, Âge non spécifié.
+</span><span id="__span-12-3"><a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a>Format de dictionnaire non reconnu.
+</span></code></pre></div>
+<hr />
+<h2 id="5-cas-dutilisation-recommandes"><strong>5. Cas d&rsquo;utilisation recommandés</strong><a class="headerlink" href="#5-cas-dutilisation-recommandes" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>Comparaisons de valeurs discrètes</strong> : <code>match</code> est idéal pour comparer une variable à plusieurs valeurs possibles.</li>
+<li><strong>Filtrage de types</strong> : Utile pour vérifier le type d&rsquo;une variable et agir en conséquence.</li>
+<li><strong>Décomposition de structures de données</strong> : Permet de décomposer des listes, dictionnaires, ou objets de manière
+  élégante.</li>
+</ul>
+<hr />
+<h2 id="6-limites-de-match"><strong>6. Limites de <code>match</code></strong><a class="headerlink" href="#6-limites-de-match" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>Pas adapté pour des plages de valeurs</strong> : Pour des comparaisons de plages (ex. : <code>if 10 &lt;= x &lt; 20</code>),
+  <code>if...elif...else</code> reste plus adapté.</li>
+<li><strong>Moins flexible pour des conditions complexes</strong> : <code>match</code> est conçu pour des comparaisons de motifs, pas pour des
+  expressions booléennes complexes.</li>
+</ul>
 <hr />
 
 
@@ -2755,7 +2735,7 @@ la première condition vraie.</p>
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../bool/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Les expressions booléennes">
+          <a href="../conditionnelles/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Structures conditionnelles">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -2765,20 +2745,20 @@ la première condition vraie.</p>
                 Previous
               </span>
               <div class="md-ellipsis">
-                Les expressions booléennes
+                Structures conditionnelles
               </div>
             </div>
           </a>
         
         
           
-          <a href="../match/" class="md-footer__link md-footer__link--next" aria-label="Next: L&amp;rsquo;instruction match">
+          <a href="../for/" class="md-footer__link md-footer__link--next" aria-label="Next: Boucles for">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                L&rsquo;instruction match
+                Boucles for
               </div>
             </div>
             <div class="md-footer__button md-icon">

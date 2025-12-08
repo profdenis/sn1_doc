@@ -32,6 +32,18 @@ nav:
     - section2/for.md
     - section2/while.md
     - section2/boucles-imbriquées.md
+    - Exercices:
+      - section2/exercices/exercices1.md
+      - section2/exercices/exercices2.md
+      - section2/exercices/exercices3.md
+      - section2/exercices/exercices4.md
+      - section2/exercices/exercices5.md
+    - Corrigés:
+      - section2/corrigés/exercices1-corrigés.md
+      - section2/corrigés/exercices2-corrigés.md
+      - section2/corrigés/exercices3-corrigés.md
+      - section2/corrigés/exercices4-corrigés.md
+      - section2/corrigés/exercices5-corrigés.md
   - Section 3:
     - section3/exceptions.md
     - section3/listes.md
