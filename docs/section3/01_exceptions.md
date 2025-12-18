@@ -1,4 +1,4 @@
-# **Gestion des exceptions et validation d'entrées**
+# **1. Gestion des exceptions et validation d'entrées**
 
 ---
 

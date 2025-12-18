@@ -328,9 +328,4 @@ while i < 5:
 ```
 
 ---
-**Conseils pédagogiques** :
 
-- Encouragez les étudiants à **tester chaque programme** avec différentes valeurs pour vérifier leur bon fonctionnement.
-- Ils peuvent aussi **modifier les exercices** pour explorer d'autres cas ou ajouter des fonctionnalités.
-
----

@@ -47,29 +47,29 @@ nav:
       - section2/corrigés/05_corrigés.md
       - section2/corrigés/06_corrigés.md
   - Section 3:
-    - section3/exceptions.md
-    - section3/listes.md
-    - section3/fichiers.md
-    - section3/dictionnaires.md
+    - section3/01_exceptions.md
+    - section3/02_listes.md
+    - section3/03_fichiers.md
+    - section3/04_dictionnaires.md
     - Exercices:
-      - section1/exercices/01_exercices.md
-      - section1/exercices/02_exercices.md
-      - section1/exercices/03_exercices.md
-      - section1/exercices/04_exercices.md
+      - section3/exercices/01_exercices.md
+      - section3/exercices/02_exercices.md
+      - section3/exercices/03_exercices.md
+      - section3/exercices/04_exercices.md
     - Corrigés:
-      - section1/corrigés/01_corrigés.md
-      - section1/corrigés/02_corrigés.md
-      - section1/corrigés/03_corrigés.md
-      - section1/corrigés/04_corrigés.md
+      - section3/corrigés/01_corrigés.md
+      - section3/corrigés/02_corrigés.md
+      - section3/corrigés/03_corrigés.md
+      - section3/corrigés/04_corrigés.md
   - Section 4:
     - section4/numpy.md
     - section4/pyplot.md
     - Exercices:
-      - section1/exercices/01_exercices.md
-      - section1/exercices/02_exercices.md
+      - section4/exercices/01_exercices.md
+      - section4/exercices/02_exercices.md
     - Corrigés:
-      - section1/corrigés/01_corrigés.md
-      - section1/corrigés/02_corrigés.md
+      - section4/corrigés/01_corrigés.md
+      - section4/corrigés/02_corrigés.md
 
 
 theme:

@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://profdenis.github.io/sn1_doc/section3/dictionnaires/">
+        <link rel="canonical" href="https://profdenis.github.io/sn1_doc/section3/03_fichiers/">
       
       
-        <link rel="prev" href="../fichiers/">
+        <link rel="prev" href="../02_listes/">
       
       
-        <link rel="next" href="../../section1/exercices/01_exercices/">
+        <link rel="next" href="../04_dictionnaires/">
       
       
         
@@ -25,7 +25,7 @@
     
     
       
-        <title>Dictionnaires - Cours de programmation en sciences</title>
+        <title>3. Lecture et écriture de fichiers - Cours de programmation en sciences</title>
       
     
     
@@ -81,6 +81,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#3-lecture-et-ecriture-de-fichiers" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -113,7 +118,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Dictionnaires
+              3. Lecture et écriture de fichiers
             
           </span>
         </div>
@@ -313,7 +318,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="../exceptions/" class="md-tabs__link">
+        <a href="../01_exceptions/" class="md-tabs__link">
           
   
   
@@ -1870,14 +1875,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../exceptions/" class="md-nav__link">
+      <a href="../01_exceptions/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Gestion des exceptions et validation d&rsquo;entrées
+    1. Gestion des exceptions et validation d&rsquo;entrées
   
 
     
@@ -1898,42 +1903,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../listes/" class="md-nav__link">
+      <a href="../02_listes/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Listes
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../fichiers/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Fichiers
+    2. Listes
   
 
     
@@ -1960,6 +1937,26 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3. Lecture et écriture de fichiers
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -1968,7 +1965,7 @@
   <span class="md-ellipsis">
     
   
-    Dictionnaires
+    3. Lecture et écriture de fichiers
   
 
     
@@ -1978,6 +1975,309 @@
 
       </a>
       
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-introduction-aux-fichiers-texte" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Introduction aux fichiers texte
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Introduction aux fichiers texte">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-chemins-de-fichiers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.1 Chemins de fichiers
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-ouverture-et-lecture-dun-fichier" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Ouverture et lecture d&rsquo;un fichier
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Ouverture et lecture d’un fichier">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-ouverture-dun-fichier-sans-with" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1 Ouverture d&rsquo;un fichier sans with
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-ouverture-dun-fichier-avec-with" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2 Ouverture d&rsquo;un fichier avec with
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-lecture-complete-dun-fichier" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3 Lecture complète d&rsquo;un fichier
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24-lecture-ligne-par-ligne" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.4 Lecture ligne par ligne
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-lecture-dun-fichier-avec-un-float-par-ligne" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Lecture d&rsquo;un fichier avec un float par ligne
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Lecture d’un fichier avec un float par ligne">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-sans-gestion-derreurs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 Sans gestion d&rsquo;erreurs
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-avec-gestion-complete-des-erreurs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2 Avec gestion complète des erreurs
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-fonction-qui-retourne-une-liste-de-nombres" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Fonction qui retourne une liste de nombres
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Fonction qui retourne une liste de nombres">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-fonction-lire_nombres" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1 Fonction lire_nombres
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-ecriture-dans-un-fichier" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Écriture dans un fichier
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Écriture dans un fichier">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-mode-w-ecrasement" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1 Mode "w" (écrasement)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-mode-a-ajout" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.2 Mode "a" (ajout)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53-ecrire-une-liste-de-nombres-dans-un-fichier" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.3 Écrire une liste de nombres dans un fichier
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-exemples-avec-chaines-de-caracteres" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Exemples avec chaînes de caractères
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Exemples avec chaînes de caractères">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61-lire-un-fichier-de-chaines-de-caracteres" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.1 Lire un fichier de chaînes de caractères
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62-ecrire-une-liste-de-chaines-dans-un-fichier" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.2 Écrire une liste de chaînes dans un fichier
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#63-lire-et-afficher-les-lignes-dun-fichier-de-chaines" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.3 Lire et afficher les lignes d&rsquo;un fichier de chaînes
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04_dictionnaires/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4. Les dictionnaires
+  
+
+    
+  </span>
+  
+  
+
+      </a>
     </li>
   
 
@@ -2047,14 +2347,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../../section1/exercices/01_exercices/" class="md-nav__link">
+      <a href="../exercices/01_exercices/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Exercices 1 : Affichage sur la sortie standard
+    Exercices 1 : Gestion des exceptions et validation d&rsquo;entrées
   
 
     
@@ -2075,14 +2375,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../../section1/exercices/02_exercices/" class="md-nav__link">
+      <a href="../exercices/02_exercices/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Exercices 2 : Utilisation de l&rsquo;entrée standard
+    Exercices 2 : Listes
   
 
     
@@ -2103,14 +2403,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../../section1/exercices/03_exercices/" class="md-nav__link">
+      <a href="../exercices/03_exercices/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Exercices pratiques 3 : Importation de modules
+    Exercices 3 : Lecture et écriture de fichiers
   
 
     
@@ -2131,14 +2431,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../../section1/exercices/04_exercices/" class="md-nav__link">
+      <a href="../exercices/04_exercices/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Exercices 4 : Définition et utilisation des fonctions
+    Exercices 4 : Les dictionnaires
   
 
     
@@ -2224,14 +2524,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../../section1/corrig%C3%A9s/01_corrig%C3%A9s/" class="md-nav__link">
+      <a href="../corrig%C3%A9s/01_corrig%C3%A9s/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Corrigés 1 : Affichage sur la sortie standard
+    Corrigés 1 : Gestion des exceptions et validation d&rsquo;entrées
   
 
     
@@ -2252,14 +2552,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../../section1/corrig%C3%A9s/02_corrig%C3%A9s/" class="md-nav__link">
+      <a href="../corrig%C3%A9s/02_corrig%C3%A9s/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Corrigés 2 : Utilisation de l&rsquo;entrée standard
+    Corrigés 2 : Listes
   
 
     
@@ -2280,14 +2580,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../../section1/corrig%C3%A9s/03_corrig%C3%A9s/" class="md-nav__link">
+      <a href="../corrig%C3%A9s/03_corrig%C3%A9s/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Corrigés 3 : Importation de modules
+    Corrigés 3 : Lecture et écriture de fichiers
   
 
     
@@ -2308,14 +2608,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../../section1/corrig%C3%A9s/04_corrig%C3%A9s/" class="md-nav__link">
+      <a href="../corrig%C3%A9s/04_corrig%C3%A9s/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Corrigés 4: Définition et utilisation des fonctions
+    Corrigés 4 : Les dictionnaires
   
 
     
@@ -2515,14 +2815,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../../section1/exercices/01_exercices/" class="md-nav__link">
+      <a href="../../section4/exercices/01_exercices.md" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Exercices 1 : Affichage sur la sortie standard
+    None
   
 
     
@@ -2543,14 +2843,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../../section1/exercices/02_exercices/" class="md-nav__link">
+      <a href="../../section4/exercices/02_exercices.md" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Exercices 2 : Utilisation de l&rsquo;entrée standard
+    None
   
 
     
@@ -2633,14 +2933,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../../section1/corrig%C3%A9s/01_corrig%C3%A9s/" class="md-nav__link">
+      <a href="../../section4/corrigés/01_corrigés.md" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Corrigés 1 : Affichage sur la sortie standard
+    None
   
 
     
@@ -2661,14 +2961,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../../section1/corrig%C3%A9s/02_corrig%C3%A9s/" class="md-nav__link">
+      <a href="../../section4/corrigés/02_corrigés.md" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Corrigés 2 : Utilisation de l&rsquo;entrée standard
+    None
   
 
     
@@ -2714,6 +3014,272 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-introduction-aux-fichiers-texte" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Introduction aux fichiers texte
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Introduction aux fichiers texte">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-chemins-de-fichiers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.1 Chemins de fichiers
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-ouverture-et-lecture-dun-fichier" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Ouverture et lecture d&rsquo;un fichier
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Ouverture et lecture d’un fichier">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-ouverture-dun-fichier-sans-with" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1 Ouverture d&rsquo;un fichier sans with
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-ouverture-dun-fichier-avec-with" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2 Ouverture d&rsquo;un fichier avec with
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-lecture-complete-dun-fichier" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3 Lecture complète d&rsquo;un fichier
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24-lecture-ligne-par-ligne" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.4 Lecture ligne par ligne
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-lecture-dun-fichier-avec-un-float-par-ligne" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Lecture d&rsquo;un fichier avec un float par ligne
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Lecture d’un fichier avec un float par ligne">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-sans-gestion-derreurs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 Sans gestion d&rsquo;erreurs
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-avec-gestion-complete-des-erreurs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2 Avec gestion complète des erreurs
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-fonction-qui-retourne-une-liste-de-nombres" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Fonction qui retourne une liste de nombres
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Fonction qui retourne une liste de nombres">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-fonction-lire_nombres" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1 Fonction lire_nombres
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-ecriture-dans-un-fichier" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Écriture dans un fichier
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Écriture dans un fichier">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-mode-w-ecrasement" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1 Mode "w" (écrasement)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-mode-a-ajout" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.2 Mode "a" (ajout)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53-ecrire-une-liste-de-nombres-dans-un-fichier" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.3 Écrire une liste de nombres dans un fichier
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-exemples-avec-chaines-de-caracteres" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Exemples avec chaînes de caractères
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Exemples avec chaînes de caractères">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61-lire-un-fichier-de-chaines-de-caracteres" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.1 Lire un fichier de chaînes de caractères
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62-ecrire-une-liste-de-chaines-dans-un-fichier" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.2 Écrire une liste de chaînes dans un fichier
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#63-lire-et-afficher-les-lignes-dun-fichier-de-chaines" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.3 Lire et afficher les lignes d&rsquo;un fichier de chaînes
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -2756,7 +3322,7 @@
     
     
       <li class="md-path__item">
-        <a href="../exceptions/" class="md-path__link">
+        <a href="../01_exceptions/" class="md-path__link">
           
   <span class="md-ellipsis">
     Section 3
@@ -2781,9 +3347,130 @@
   
 
 
-  <h1>Dictionnaires</h1>
-
-
+<h1 id="3-lecture-et-ecriture-de-fichiers">3. <strong>Lecture et écriture de fichiers</strong><a class="headerlink" href="#3-lecture-et-ecriture-de-fichiers" title="Permanent link">&para;</a></h1>
+<hr />
+<h2 id="1-introduction-aux-fichiers-texte"><strong>1. Introduction aux fichiers texte</strong><a class="headerlink" href="#1-introduction-aux-fichiers-texte" title="Permanent link">&para;</a></h2>
+<h3 id="11-chemins-de-fichiers"><strong>1.1 Chemins de fichiers</strong><a class="headerlink" href="#11-chemins-de-fichiers" title="Permanent link">&para;</a></h3>
+<p>En Python, vous pouvez spécifier le chemin d&rsquo;un fichier de deux manières :
+- <strong>Chemin relatif</strong> : Relatif au répertoire de travail actuel.
+  - Exemple : <code>fichier.txt</code>, <code>dossier/fichier.txt</code>
+- <strong>Chemin absolu</strong> : Chemin complet depuis la racine du système de fichiers.
+  - Exemple : <code>/home/utilisateur/fichier.txt</code> (Linux/Mac) ou <code>C:\Users\utilisateur\fichier.txt</code> (Windows).</p>
+<hr />
+<h2 id="2-ouverture-et-lecture-dun-fichier"><strong>2. Ouverture et lecture d&rsquo;un fichier</strong><a class="headerlink" href="#2-ouverture-et-lecture-dun-fichier" title="Permanent link">&para;</a></h2>
+<h3 id="21-ouverture-dun-fichier-sans-with"><strong>2.1 Ouverture d&rsquo;un fichier sans <code>with</code></strong><a class="headerlink" href="#21-ouverture-dun-fichier-sans-with" title="Permanent link">&para;</a></h3>
+<p>Si vous n&rsquo;utilisez pas <code>with</code>, vous devez <strong>fermer le fichier manuellement</strong> avec <code>fichier.close()</code>.</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">fichier</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;fichier.txt&quot;</span><span class="p">,</span> <span class="s2">&quot;r&quot;</span><span class="p">)</span>  <span class="c1"># &quot;r&quot; pour le mode lecture</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="n">contenu</span> <span class="o">=</span> <span class="n">fichier</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="nb">print</span><span class="p">(</span><span class="n">contenu</span><span class="p">)</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="n">fichier</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>  <span class="c1"># Important pour libérer les ressources</span>
+</span></code></pre></div>
+<hr />
+<h3 id="22-ouverture-dun-fichier-avec-with"><strong>2.2 Ouverture d&rsquo;un fichier avec <code>with</code></strong><a class="headerlink" href="#22-ouverture-dun-fichier-avec-with" title="Permanent link">&para;</a></h3>
+<p>L&rsquo;instruction <code>with</code> <strong>ferme automatiquement le fichier</strong> à la fin du bloc, même si une erreur survient.</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;fichier.txt&quot;</span><span class="p">,</span> <span class="s2">&quot;r&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">fichier</span><span class="p">:</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>    <span class="n">contenu</span> <span class="o">=</span> <span class="n">fichier</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">contenu</span><span class="p">)</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="c1"># Le fichier est automatiquement fermé ici</span>
+</span></code></pre></div>
+<hr />
+<h3 id="23-lecture-complete-dun-fichier"><strong>2.3 Lecture complète d&rsquo;un fichier</strong><a class="headerlink" href="#23-lecture-complete-dun-fichier" title="Permanent link">&para;</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;fichier.txt&quot;</span><span class="p">,</span> <span class="s2">&quot;r&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">fichier</span><span class="p">:</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>    <span class="n">contenu</span> <span class="o">=</span> <span class="n">fichier</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>  <span class="c1"># Lit tout le contenu d&#39;un coup</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">contenu</span><span class="p">)</span>
+</span></code></pre></div>
+<hr />
+<h3 id="24-lecture-ligne-par-ligne"><strong>2.4 Lecture ligne par ligne</strong><a class="headerlink" href="#24-lecture-ligne-par-ligne" title="Permanent link">&para;</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;fichier.txt&quot;</span><span class="p">,</span> <span class="s2">&quot;r&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">fichier</span><span class="p">:</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>    <span class="k">for</span> <span class="n">ligne</span> <span class="ow">in</span> <span class="n">fichier</span><span class="p">:</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>        <span class="nb">print</span><span class="p">(</span><span class="n">ligne</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">)</span>  <span class="c1"># `end=&quot;&quot;` pour éviter les sauts de ligne supplémentaires</span>
+</span></code></pre></div>
+<hr />
+<h2 id="3-lecture-dun-fichier-avec-un-float-par-ligne"><strong>3. Lecture d&rsquo;un fichier avec un float par ligne</strong><a class="headerlink" href="#3-lecture-dun-fichier-avec-un-float-par-ligne" title="Permanent link">&para;</a></h2>
+<h3 id="31-sans-gestion-derreurs"><strong>3.1 Sans gestion d&rsquo;erreurs</strong><a class="headerlink" href="#31-sans-gestion-derreurs" title="Permanent link">&para;</a></h3>
+<p><div class="language-python highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;nombres.txt&quot;</span><span class="p">,</span> <span class="s2">&quot;r&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">fichier</span><span class="p">:</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>    <span class="n">somme</span> <span class="o">=</span> <span class="mf">0.0</span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>    <span class="k">for</span> <span class="n">ligne</span> <span class="ow">in</span> <span class="n">fichier</span><span class="p">:</span>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>        <span class="n">nombre</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">ligne</span><span class="p">)</span>
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>        <span class="n">somme</span> <span class="o">+=</span> <span class="n">nombre</span>
+</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;La somme est </span><span class="si">{</span><span class="n">somme</span><span class="si">}</span><span class="s2">.&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+<strong>Problème</strong> : Si une ligne ne contient pas un nombre valide, le programme plante avec une erreur <code>ValueError</code>.</p>
+<hr />
+<h3 id="32-avec-gestion-complete-des-erreurs"><strong>3.2 Avec gestion complète des erreurs</strong><a class="headerlink" href="#32-avec-gestion-complete-des-erreurs" title="Permanent link">&para;</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;nombres.txt&quot;</span><span class="p">,</span> <span class="s2">&quot;r&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">fichier</span><span class="p">:</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>    <span class="n">somme</span> <span class="o">=</span> <span class="mf">0.0</span>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>    <span class="k">for</span> <span class="n">ligne</span> <span class="ow">in</span> <span class="n">fichier</span><span class="p">:</span>
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>        <span class="k">try</span><span class="p">:</span>
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>            <span class="n">nombre</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">ligne</span><span class="p">)</span>
+</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>            <span class="n">somme</span> <span class="o">+=</span> <span class="n">nombre</span>
+</span><span id="__span-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>        <span class="k">except</span> <span class="ne">ValueError</span><span class="p">:</span>
+</span><span id="__span-5-8"><a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a>            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Ligne ignorée : </span><span class="si">{</span><span class="n">ligne</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span><span class="si">}</span><span class="s2"> (n&#39;est pas un nombre)&quot;</span><span class="p">)</span>
+</span><span id="__span-5-9"><a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;La somme est </span><span class="si">{</span><span class="n">somme</span><span class="si">}</span><span class="s2">.&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+<hr />
+<h2 id="4-fonction-qui-retourne-une-liste-de-nombres"><strong>4. Fonction qui retourne une liste de nombres</strong><a class="headerlink" href="#4-fonction-qui-retourne-une-liste-de-nombres" title="Permanent link">&para;</a></h2>
+<h3 id="41-fonction-lire_nombres"><strong>4.1 Fonction <code>lire_nombres</code></strong><a class="headerlink" href="#41-fonction-lire_nombres" title="Permanent link">&para;</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">lire_nombres</span><span class="p">(</span><span class="n">nom_fichier</span><span class="p">):</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>    <span class="n">nombres</span> <span class="o">=</span> <span class="p">[]</span>
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">nom_fichier</span><span class="p">,</span> <span class="s2">&quot;r&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">fichier</span><span class="p">:</span>
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>        <span class="k">for</span> <span class="n">ligne</span> <span class="ow">in</span> <span class="n">fichier</span><span class="p">:</span>
+</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>            <span class="k">try</span><span class="p">:</span>
+</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>                <span class="n">nombre</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">ligne</span><span class="p">)</span>
+</span><span id="__span-6-7"><a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a>                <span class="n">nombres</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">nombre</span><span class="p">)</span>
+</span><span id="__span-6-8"><a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a>            <span class="k">except</span> <span class="ne">ValueError</span><span class="p">:</span>
+</span><span id="__span-6-9"><a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a>                <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Ligne ignorée : </span><span class="si">{</span><span class="n">ligne</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span><span class="si">}</span><span class="s2"> (n&#39;est pas un nombre)&quot;</span><span class="p">)</span>
+</span><span id="__span-6-10"><a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a>    <span class="k">return</span> <span class="n">nombres</span>
+</span><span id="__span-6-11"><a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a>
+</span><span id="__span-6-12"><a id="__codelineno-6-12" name="__codelineno-6-12" href="#__codelineno-6-12"></a><span class="n">nombres</span> <span class="o">=</span> <span class="n">lire_nombres</span><span class="p">(</span><span class="s2">&quot;nombres.txt&quot;</span><span class="p">)</span>
+</span><span id="__span-6-13"><a id="__codelineno-6-13" name="__codelineno-6-13" href="#__codelineno-6-13"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Liste des nombres : </span><span class="si">{</span><span class="n">nombres</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</span><span id="__span-6-14"><a id="__codelineno-6-14" name="__codelineno-6-14" href="#__codelineno-6-14"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Somme : </span><span class="si">{</span><span class="nb">sum</span><span class="p">(</span><span class="n">nombres</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+<hr />
+<h2 id="5-ecriture-dans-un-fichier"><strong>5. Écriture dans un fichier</strong><a class="headerlink" href="#5-ecriture-dans-un-fichier" title="Permanent link">&para;</a></h2>
+<h3 id="51-mode-w-ecrasement"><strong>5.1 Mode <code>"w"</code> (écrasement)</strong><a class="headerlink" href="#51-mode-w-ecrasement" title="Permanent link">&para;</a></h3>
+<p>Le mode <code>"w"</code> <strong>écrase le contenu existant</strong> du fichier.</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;sortie.txt&quot;</span><span class="p">,</span> <span class="s2">&quot;w&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">fichier</span><span class="p">:</span>
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>    <span class="n">fichier</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;Première ligne</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>    <span class="n">fichier</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;Deuxième ligne</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+<hr />
+<h3 id="52-mode-a-ajout"><strong>5.2 Mode <code>"a"</code> (ajout)</strong><a class="headerlink" href="#52-mode-a-ajout" title="Permanent link">&para;</a></h3>
+<p>Le mode <code>"a"</code> <strong>ajoute</strong> du contenu à la fin du fichier sans écraser le contenu existant.</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;sortie.txt&quot;</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">fichier</span><span class="p">:</span>
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>    <span class="n">fichier</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;Troisième ligne</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>    <span class="n">fichier</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;Quatrième ligne</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+<hr />
+<h3 id="53-ecrire-une-liste-de-nombres-dans-un-fichier"><strong>5.3 Écrire une liste de nombres dans un fichier</strong><a class="headerlink" href="#53-ecrire-une-liste-de-nombres-dans-un-fichier" title="Permanent link">&para;</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="n">nombres</span> <span class="o">=</span> <span class="p">[</span><span class="mf">1.5</span><span class="p">,</span> <span class="mf">2.5</span><span class="p">,</span> <span class="mf">3.5</span><span class="p">,</span> <span class="mf">4.5</span><span class="p">]</span>
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;nombres_sortie.txt&quot;</span><span class="p">,</span> <span class="s2">&quot;w&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">fichier</span><span class="p">:</span>
+</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>    <span class="k">for</span> <span class="n">nombre</span> <span class="ow">in</span> <span class="n">nombres</span><span class="p">:</span>
+</span><span id="__span-9-4"><a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a>        <span class="n">fichier</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">nombre</span><span class="si">}</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+<hr />
+<h2 id="6-exemples-avec-chaines-de-caracteres"><strong>6. Exemples avec chaînes de caractères</strong><a class="headerlink" href="#6-exemples-avec-chaines-de-caracteres" title="Permanent link">&para;</a></h2>
+<h3 id="61-lire-un-fichier-de-chaines-de-caracteres"><strong>6.1 Lire un fichier de chaînes de caractères</strong><a class="headerlink" href="#61-lire-un-fichier-de-chaines-de-caracteres" title="Permanent link">&para;</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;mots.txt&quot;</span><span class="p">,</span> <span class="s2">&quot;r&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">fichier</span><span class="p">:</span>
+</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>    <span class="k">for</span> <span class="n">ligne</span> <span class="ow">in</span> <span class="n">fichier</span><span class="p">:</span>
+</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>        <span class="n">mot</span> <span class="o">=</span> <span class="n">ligne</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>  <span class="c1"># Supprime les sauts de ligne et espaces</span>
+</span><span id="__span-10-4"><a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Mot lu : </span><span class="si">{</span><span class="n">mot</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+<hr />
+<h3 id="62-ecrire-une-liste-de-chaines-dans-un-fichier"><strong>6.2 Écrire une liste de chaînes dans un fichier</strong><a class="headerlink" href="#62-ecrire-une-liste-de-chaines-dans-un-fichier" title="Permanent link">&para;</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="n">mots</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;pomme&quot;</span><span class="p">,</span> <span class="s2">&quot;banane&quot;</span><span class="p">,</span> <span class="s2">&quot;cerise&quot;</span><span class="p">,</span> <span class="s2">&quot;datte&quot;</span><span class="p">]</span>
+</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;mots_sortie.txt&quot;</span><span class="p">,</span> <span class="s2">&quot;w&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">fichier</span><span class="p">:</span>
+</span><span id="__span-11-3"><a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a>    <span class="k">for</span> <span class="n">mot</span> <span class="ow">in</span> <span class="n">mots</span><span class="p">:</span>
+</span><span id="__span-11-4"><a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a>        <span class="n">fichier</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">mot</span><span class="si">}</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+<hr />
+<h3 id="63-lire-et-afficher-les-lignes-dun-fichier-de-chaines"><strong>6.3 Lire et afficher les lignes d&rsquo;un fichier de chaînes</strong><a class="headerlink" href="#63-lire-et-afficher-les-lignes-dun-fichier-de-chaines" title="Permanent link">&para;</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;mots.txt&quot;</span><span class="p">,</span> <span class="s2">&quot;r&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">fichier</span><span class="p">:</span>
+</span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>    <span class="n">lignes</span> <span class="o">=</span> <span class="n">fichier</span><span class="o">.</span><span class="n">readlines</span><span class="p">()</span>  <span class="c1"># Lit toutes les lignes dans une liste</span>
+</span><span id="__span-12-3"><a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a>    <span class="k">for</span> <span class="n">ligne</span> <span class="ow">in</span> <span class="n">lignes</span><span class="p">:</span>
+</span><span id="__span-12-4"><a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a>        <span class="nb">print</span><span class="p">(</span><span class="n">ligne</span><span class="o">.</span><span class="n">strip</span><span class="p">())</span>
+</span></code></pre></div>
+<hr />
 
 
 
@@ -2819,7 +3506,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../fichiers/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Fichiers">
+          <a href="../02_listes/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 2. Listes">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -2829,20 +3516,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Fichiers
+                2. Listes
               </div>
             </div>
           </a>
         
         
           
-          <a href="../../section1/exercices/01_exercices/" class="md-footer__link md-footer__link--next" aria-label="Next: Exercices 1 : Affichage sur la sortie standard">
+          <a href="../04_dictionnaires/" class="md-footer__link md-footer__link--next" aria-label="Next: 4. Les dictionnaires">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Exercices 1 : Affichage sur la sortie standard
+                4. Les dictionnaires
               </div>
             </div>
             <div class="md-footer__button md-icon">

@@ -1,5 +1,5 @@
 
-# **Corrigés : Gestion des exceptions et validation d'entrées**
+# **Corrigés 1 : Gestion des exceptions et validation d'entrées**
 
 ---
 
@@ -292,8 +292,4 @@ print(f"Numéro de téléphone valide : {numero}.")
 ```
 
 ---
-**Conseils pédagogiques** :
-- Encouragez les étudiants à **tester chaque programme** avec différentes valeurs pour vérifier leur bon fonctionnement.
-- Ils peuvent aussi **modifier les exercices** pour explorer d'autres cas ou ajouter des fonctionnalités.
 
----

@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://profdenis.github.io/sn1_doc/section3/listes/">
+        <link rel="canonical" href="https://profdenis.github.io/sn1_doc/section3/04_dictionnaires/">
       
       
-        <link rel="prev" href="../exceptions/">
+        <link rel="prev" href="../03_fichiers/">
       
       
-        <link rel="next" href="../fichiers/">
+        <link rel="next" href="../exercices/01_exercices/">
       
       
         
@@ -25,7 +25,7 @@
     
     
       
-        <title>Listes - Cours de programmation en sciences</title>
+        <title>4. Les dictionnaires - Cours de programmation en sciences</title>
       
     
     
@@ -81,6 +81,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#4-les-dictionnaires" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -113,7 +118,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Listes
+              4. Les dictionnaires
             
           </span>
         </div>
@@ -313,7 +318,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="../exceptions/" class="md-tabs__link">
+        <a href="../01_exceptions/" class="md-tabs__link">
           
   
   
@@ -1870,14 +1875,70 @@
   
   
     <li class="md-nav__item">
-      <a href="../exceptions/" class="md-nav__link">
+      <a href="../01_exceptions/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Gestion des exceptions et validation d&rsquo;entrées
+    1. Gestion des exceptions et validation d&rsquo;entrées
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02_listes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2. Listes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03_fichiers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3. Lecture et écriture de fichiers
   
 
     
@@ -1904,6 +1965,26 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4. Les dictionnaires
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -1912,7 +1993,7 @@
   <span class="md-ellipsis">
     
   
-    Listes
+    4. Les dictionnaires
   
 
     
@@ -1922,62 +2003,264 @@
 
       </a>
       
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../fichiers/" class="md-nav__link">
         
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
-  <span class="md-ellipsis">
+  
     
   
-    Fichiers
   
-
-    
-  </span>
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-introduction-aux-dictionnaires" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Introduction aux dictionnaires
+      
+    </span>
+  </a>
   
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../dictionnaires/" class="md-nav__link">
+    <nav class="md-nav" aria-label="1. Introduction aux dictionnaires">
+      <ul class="md-nav__list">
         
+          <li class="md-nav__item">
+  <a href="#11-pourquoi-utiliser-un-dictionnaire" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.1 Pourquoi utiliser un dictionnaire ?
+      
+    </span>
+  </a>
   
+</li>
+        
+      </ul>
+    </nav>
   
-  <span class="md-ellipsis">
-    
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-creation-et-acces-aux-elements" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Création et accès aux éléments
+      
+    </span>
+  </a>
   
-    Dictionnaires
+    <nav class="md-nav" aria-label="2. Création et accès aux éléments">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-creer-un-dictionnaire" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1 Créer un dictionnaire
+      
+    </span>
+  </a>
   
-
-    
-  </span>
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-acceder-a-une-valeur" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2 Accéder à une valeur
+      
+    </span>
+  </a>
   
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-ajouter-ou-modifier-une-valeur" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3 Ajouter ou modifier une valeur
+      
+    </span>
+  </a>
   
-
-      </a>
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24-supprimer-une-paire-cle-valeur" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.4 Supprimer une paire clé-valeur
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-parcourir-un-dictionnaire" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Parcourir un dictionnaire
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Parcourir un dictionnaire">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-parcourir-les-cles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 Parcourir les clés
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-parcourir-les-valeurs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2 Parcourir les valeurs
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-parcourir-les-paires-cle-valeur" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.3 Parcourir les paires clé-valeur
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-verifier-lexistence-dune-cle" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Vérifier l&rsquo;existence d&rsquo;une clé
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Vérifier l’existence d’une clé">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-avec-loperateur-in" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1 Avec l&rsquo;opérateur in
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-methode-get-pour-eviter-les-erreurs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2 Méthode get() pour éviter les erreurs
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-exemples-pratiques" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Exemples pratiques
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Exemples pratiques">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-compter-les-occurrences-de-mots" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1 Compter les occurrences de mots
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-stocker-des-informations-sur-des-etudiants" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.2 Stocker des informations sur des étudiants
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53-fusionner-deux-dictionnaires" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.3 Fusionner deux dictionnaires
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-methodes-utiles-des-dictionnaires" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Méthodes utiles des dictionnaires
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -2047,14 +2330,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../../section1/exercices/01_exercices/" class="md-nav__link">
+      <a href="../exercices/01_exercices/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Exercices 1 : Affichage sur la sortie standard
+    Exercices 1 : Gestion des exceptions et validation d&rsquo;entrées
   
 
     
@@ -2075,14 +2358,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../../section1/exercices/02_exercices/" class="md-nav__link">
+      <a href="../exercices/02_exercices/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Exercices 2 : Utilisation de l&rsquo;entrée standard
+    Exercices 2 : Listes
   
 
     
@@ -2103,14 +2386,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../../section1/exercices/03_exercices/" class="md-nav__link">
+      <a href="../exercices/03_exercices/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Exercices pratiques 3 : Importation de modules
+    Exercices 3 : Lecture et écriture de fichiers
   
 
     
@@ -2131,14 +2414,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../../section1/exercices/04_exercices/" class="md-nav__link">
+      <a href="../exercices/04_exercices/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Exercices 4 : Définition et utilisation des fonctions
+    Exercices 4 : Les dictionnaires
   
 
     
@@ -2224,14 +2507,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../../section1/corrig%C3%A9s/01_corrig%C3%A9s/" class="md-nav__link">
+      <a href="../corrig%C3%A9s/01_corrig%C3%A9s/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Corrigés 1 : Affichage sur la sortie standard
+    Corrigés 1 : Gestion des exceptions et validation d&rsquo;entrées
   
 
     
@@ -2252,14 +2535,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../../section1/corrig%C3%A9s/02_corrig%C3%A9s/" class="md-nav__link">
+      <a href="../corrig%C3%A9s/02_corrig%C3%A9s/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Corrigés 2 : Utilisation de l&rsquo;entrée standard
+    Corrigés 2 : Listes
   
 
     
@@ -2280,14 +2563,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../../section1/corrig%C3%A9s/03_corrig%C3%A9s/" class="md-nav__link">
+      <a href="../corrig%C3%A9s/03_corrig%C3%A9s/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Corrigés 3 : Importation de modules
+    Corrigés 3 : Lecture et écriture de fichiers
   
 
     
@@ -2308,14 +2591,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../../section1/corrig%C3%A9s/04_corrig%C3%A9s/" class="md-nav__link">
+      <a href="../corrig%C3%A9s/04_corrig%C3%A9s/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Corrigés 4: Définition et utilisation des fonctions
+    Corrigés 4 : Les dictionnaires
   
 
     
@@ -2515,14 +2798,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../../section1/exercices/01_exercices/" class="md-nav__link">
+      <a href="../../section4/exercices/01_exercices.md" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Exercices 1 : Affichage sur la sortie standard
+    None
   
 
     
@@ -2543,14 +2826,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../../section1/exercices/02_exercices/" class="md-nav__link">
+      <a href="../../section4/exercices/02_exercices.md" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Exercices 2 : Utilisation de l&rsquo;entrée standard
+    None
   
 
     
@@ -2633,14 +2916,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../../section1/corrig%C3%A9s/01_corrig%C3%A9s/" class="md-nav__link">
+      <a href="../../section4/corrigés/01_corrigés.md" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Corrigés 1 : Affichage sur la sortie standard
+    None
   
 
     
@@ -2661,14 +2944,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../../section1/corrig%C3%A9s/02_corrig%C3%A9s/" class="md-nav__link">
+      <a href="../../section4/corrigés/02_corrigés.md" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Corrigés 2 : Utilisation de l&rsquo;entrée standard
+    None
   
 
     
@@ -2714,6 +2997,255 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-introduction-aux-dictionnaires" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Introduction aux dictionnaires
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Introduction aux dictionnaires">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-pourquoi-utiliser-un-dictionnaire" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.1 Pourquoi utiliser un dictionnaire ?
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-creation-et-acces-aux-elements" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Création et accès aux éléments
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Création et accès aux éléments">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-creer-un-dictionnaire" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1 Créer un dictionnaire
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-acceder-a-une-valeur" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2 Accéder à une valeur
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-ajouter-ou-modifier-une-valeur" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3 Ajouter ou modifier une valeur
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24-supprimer-une-paire-cle-valeur" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.4 Supprimer une paire clé-valeur
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-parcourir-un-dictionnaire" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Parcourir un dictionnaire
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Parcourir un dictionnaire">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-parcourir-les-cles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 Parcourir les clés
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-parcourir-les-valeurs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2 Parcourir les valeurs
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-parcourir-les-paires-cle-valeur" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.3 Parcourir les paires clé-valeur
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-verifier-lexistence-dune-cle" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Vérifier l&rsquo;existence d&rsquo;une clé
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Vérifier l’existence d’une clé">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-avec-loperateur-in" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1 Avec l&rsquo;opérateur in
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-methode-get-pour-eviter-les-erreurs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2 Méthode get() pour éviter les erreurs
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-exemples-pratiques" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Exemples pratiques
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Exemples pratiques">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-compter-les-occurrences-de-mots" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1 Compter les occurrences de mots
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-stocker-des-informations-sur-des-etudiants" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.2 Stocker des informations sur des étudiants
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53-fusionner-deux-dictionnaires" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.3 Fusionner deux dictionnaires
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-methodes-utiles-des-dictionnaires" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Méthodes utiles des dictionnaires
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -2756,7 +3288,7 @@
     
     
       <li class="md-path__item">
-        <a href="../exceptions/" class="md-path__link">
+        <a href="../01_exceptions/" class="md-path__link">
           
   <span class="md-ellipsis">
     Section 3
@@ -2781,9 +3313,202 @@
   
 
 
-  <h1>Listes</h1>
-
-
+<h1 id="4-les-dictionnaires"><strong>4. Les dictionnaires</strong><a class="headerlink" href="#4-les-dictionnaires" title="Permanent link">&para;</a></h1>
+<hr />
+<h2 id="1-introduction-aux-dictionnaires"><strong>1. Introduction aux dictionnaires</strong><a class="headerlink" href="#1-introduction-aux-dictionnaires" title="Permanent link">&para;</a></h2>
+<p>Un <strong>dictionnaire</strong> est une collection <strong>non ordonnée</strong>, <strong>modifiable</strong> et <strong>indexée</strong> par des <strong>clés</strong>. Chaque élément
+d&rsquo;un dictionnaire est une paire <strong>clé-valeur</strong>.</p>
+<h3 id="11-pourquoi-utiliser-un-dictionnaire"><strong>1.1 Pourquoi utiliser un dictionnaire ?</strong><a class="headerlink" href="#11-pourquoi-utiliser-un-dictionnaire" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Accès rapide</strong> : Les dictionnaires permettent un accès rapide aux valeurs via des clés.</li>
+<li><strong>Flexibilité</strong> : Les clés et les valeurs peuvent être de n&rsquo;importe quel type (mais les clés doivent être
+  <strong>immuables</strong>).</li>
+<li><strong>Efficacité</strong> : Les opérations de recherche, d&rsquo;insertion et de suppression sont très rapides.</li>
+</ul>
+<hr />
+<h2 id="2-creation-et-acces-aux-elements"><strong>2. Création et accès aux éléments</strong><a class="headerlink" href="#2-creation-et-acces-aux-elements" title="Permanent link">&para;</a></h2>
+<h3 id="21-creer-un-dictionnaire"><strong>2.1 Créer un dictionnaire</strong><a class="headerlink" href="#21-creer-un-dictionnaire" title="Permanent link">&para;</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1"># Dictionnaire vide</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="n">mon_dictionnaire</span> <span class="o">=</span> <span class="p">{}</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="c1"># Dictionnaire avec des éléments</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="n">etudiant</span> <span class="o">=</span> <span class="p">{</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>    <span class="s2">&quot;nom&quot;</span><span class="p">:</span> <span class="s2">&quot;Alice&quot;</span><span class="p">,</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>    <span class="s2">&quot;âge&quot;</span><span class="p">:</span> <span class="mi">25</span><span class="p">,</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>    <span class="s2">&quot;cours&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;Maths&quot;</span><span class="p">,</span> <span class="s2">&quot;Informatique&quot;</span><span class="p">,</span> <span class="s2">&quot;Physique&quot;</span><span class="p">]</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="p">}</span>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="c1"># Autre exemple</span>
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="n">capitales</span> <span class="o">=</span> <span class="p">{</span>
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>    <span class="s2">&quot;France&quot;</span><span class="p">:</span> <span class="s2">&quot;Paris&quot;</span><span class="p">,</span>
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>    <span class="s2">&quot;Canada&quot;</span><span class="p">:</span> <span class="s2">&quot;Ottawa&quot;</span><span class="p">,</span>
+</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>    <span class="s2">&quot;Japon&quot;</span><span class="p">:</span> <span class="s2">&quot;Tokyo&quot;</span>
+</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="p">}</span>
+</span></code></pre></div>
+<hr />
+<h3 id="22-acceder-a-une-valeur"><strong>2.2 Accéder à une valeur</strong><a class="headerlink" href="#22-acceder-a-une-valeur" title="Permanent link">&para;</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nb">print</span><span class="p">(</span><span class="n">etudiant</span><span class="p">[</span><span class="s2">&quot;nom&quot;</span><span class="p">])</span>  <span class="c1"># Affiche &quot;Alice&quot;</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="nb">print</span><span class="p">(</span><span class="n">capitales</span><span class="p">[</span><span class="s2">&quot;Canada&quot;</span><span class="p">])</span>  <span class="c1"># Affiche &quot;Ottawa&quot;</span>
+</span></code></pre></div>
+<hr />
+<h3 id="23-ajouter-ou-modifier-une-valeur"><strong>2.3 Ajouter ou modifier une valeur</strong><a class="headerlink" href="#23-ajouter-ou-modifier-une-valeur" title="Permanent link">&para;</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c1"># Ajouter une nouvelle paire clé-valeur</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="n">etudiant</span><span class="p">[</span><span class="s2">&quot;ville&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;Montréal&quot;</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="c1"># Modifier une valeur existante</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="n">etudiant</span><span class="p">[</span><span class="s2">&quot;âge&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">26</span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="nb">print</span><span class="p">(</span><span class="n">etudiant</span><span class="p">)</span>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="c1"># Affiche : {&#39;nom&#39;: &#39;Alice&#39;, &#39;âge&#39;: 26, &#39;cours&#39;: [&#39;Maths&#39;, &#39;Informatique&#39;, &#39;Physique&#39;], &#39;ville&#39;: &#39;Montréal&#39;}</span>
+</span></code></pre></div>
+<hr />
+<h3 id="24-supprimer-une-paire-cle-valeur"><strong>2.4 Supprimer une paire clé-valeur</strong><a class="headerlink" href="#24-supprimer-une-paire-cle-valeur" title="Permanent link">&para;</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="k">del</span> <span class="n">etudiant</span><span class="p">[</span><span class="s2">&quot;ville&quot;</span><span class="p">]</span>  <span class="c1"># Supprime la clé &quot;ville&quot; et sa valeur</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="nb">print</span><span class="p">(</span><span class="n">etudiant</span><span class="p">)</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="c1"># Affiche : {&#39;nom&#39;: &#39;Alice&#39;, &#39;âge&#39;: 26, &#39;cours&#39;: [&#39;Maths&#39;, &#39;Informatique&#39;, &#39;Physique&#39;]}</span>
+</span></code></pre></div>
+<hr />
+<h2 id="3-parcourir-un-dictionnaire"><strong>3. Parcourir un dictionnaire</strong><a class="headerlink" href="#3-parcourir-un-dictionnaire" title="Permanent link">&para;</a></h2>
+<h3 id="31-parcourir-les-cles"><strong>3.1 Parcourir les clés</strong><a class="headerlink" href="#31-parcourir-les-cles" title="Permanent link">&para;</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="k">for</span> <span class="n">cle</span> <span class="ow">in</span> <span class="n">capitales</span><span class="p">:</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">cle</span><span class="p">)</span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="c1"># Affiche :</span>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="c1"># France</span>
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="c1"># Canada</span>
+</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="c1"># Japon</span>
+</span></code></pre></div>
+<hr />
+<h3 id="32-parcourir-les-valeurs"><strong>3.2 Parcourir les valeurs</strong><a class="headerlink" href="#32-parcourir-les-valeurs" title="Permanent link">&para;</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="k">for</span> <span class="n">valeur</span> <span class="ow">in</span> <span class="n">capitales</span><span class="o">.</span><span class="n">values</span><span class="p">():</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">valeur</span><span class="p">)</span>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="c1"># Affiche :</span>
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="c1"># Paris</span>
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="c1"># Ottawa</span>
+</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="c1"># Tokyo</span>
+</span></code></pre></div>
+<hr />
+<h3 id="33-parcourir-les-paires-cle-valeur"><strong>3.3 Parcourir les paires clé-valeur</strong><a class="headerlink" href="#33-parcourir-les-paires-cle-valeur" title="Permanent link">&para;</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="k">for</span> <span class="n">cle</span><span class="p">,</span> <span class="n">valeur</span> <span class="ow">in</span> <span class="n">capitales</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">cle</span><span class="si">}</span><span class="s2"> : </span><span class="si">{</span><span class="n">valeur</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="c1"># Affiche :</span>
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="c1"># France : Paris</span>
+</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="c1"># Canada : Ottawa</span>
+</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="c1"># Japon : Tokyo</span>
+</span></code></pre></div>
+<hr />
+<h2 id="4-verifier-lexistence-dune-cle"><strong>4. Vérifier l&rsquo;existence d&rsquo;une clé</strong><a class="headerlink" href="#4-verifier-lexistence-dune-cle" title="Permanent link">&para;</a></h2>
+<h3 id="41-avec-loperateur-in"><strong>4.1 Avec l&rsquo;opérateur <code>in</code></strong><a class="headerlink" href="#41-avec-loperateur-in" title="Permanent link">&para;</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="k">if</span> <span class="s2">&quot;France&quot;</span> <span class="ow">in</span> <span class="n">capitales</span><span class="p">:</span>
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;La France est dans le dictionnaire.&quot;</span><span class="p">)</span>
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="c1"># Affiche : La France est dans le dictionnaire.</span>
+</span></code></pre></div>
+<hr />
+<h3 id="42-methode-get-pour-eviter-les-erreurs"><strong>4.2 Méthode <code>get()</code> pour éviter les erreurs</strong><a class="headerlink" href="#42-methode-get-pour-eviter-les-erreurs" title="Permanent link">&para;</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="n">pays</span> <span class="o">=</span> <span class="s2">&quot;Allemagne&quot;</span>
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="n">capitale</span> <span class="o">=</span> <span class="n">capitales</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">pays</span><span class="p">,</span> <span class="s2">&quot;Inconnu&quot;</span><span class="p">)</span>
+</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;La capitale de </span><span class="si">{</span><span class="n">pays</span><span class="si">}</span><span class="s2"> est </span><span class="si">{</span><span class="n">capitale</span><span class="si">}</span><span class="s2">.&quot;</span><span class="p">)</span>
+</span><span id="__span-8-4"><a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="c1"># Affiche : La capitale de Allemagne est Inconnu.</span>
+</span></code></pre></div>
+<hr />
+<h2 id="5-exemples-pratiques"><strong>5. Exemples pratiques</strong><a class="headerlink" href="#5-exemples-pratiques" title="Permanent link">&para;</a></h2>
+<h3 id="51-compter-les-occurrences-de-mots"><strong>5.1 Compter les occurrences de mots</strong><a class="headerlink" href="#51-compter-les-occurrences-de-mots" title="Permanent link">&para;</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="n">texte</span> <span class="o">=</span> <span class="s2">&quot;bonjour tout le monde bonjour&quot;</span>
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="n">mots</span> <span class="o">=</span> <span class="n">texte</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
+</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="n">occurrences</span> <span class="o">=</span> <span class="p">{}</span>
+</span><span id="__span-9-4"><a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a>
+</span><span id="__span-9-5"><a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a><span class="k">for</span> <span class="n">mot</span> <span class="ow">in</span> <span class="n">mots</span><span class="p">:</span>
+</span><span id="__span-9-6"><a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a>    <span class="k">if</span> <span class="n">mot</span> <span class="ow">in</span> <span class="n">occurrences</span><span class="p">:</span>
+</span><span id="__span-9-7"><a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a>        <span class="n">occurrences</span><span class="p">[</span><span class="n">mot</span><span class="p">]</span> <span class="o">+=</span> <span class="mi">1</span>
+</span><span id="__span-9-8"><a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a>    <span class="k">else</span><span class="p">:</span>
+</span><span id="__span-9-9"><a id="__codelineno-9-9" name="__codelineno-9-9" href="#__codelineno-9-9"></a>        <span class="n">occurrences</span><span class="p">[</span><span class="n">mot</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
+</span><span id="__span-9-10"><a id="__codelineno-9-10" name="__codelineno-9-10" href="#__codelineno-9-10"></a>
+</span><span id="__span-9-11"><a id="__codelineno-9-11" name="__codelineno-9-11" href="#__codelineno-9-11"></a><span class="nb">print</span><span class="p">(</span><span class="n">occurrences</span><span class="p">)</span>
+</span><span id="__span-9-12"><a id="__codelineno-9-12" name="__codelineno-9-12" href="#__codelineno-9-12"></a><span class="c1"># Affiche : {&#39;bonjour&#39;: 2, &#39;tout&#39;: 1, &#39;le&#39;: 1, &#39;monde&#39;: 1}</span>
+</span></code></pre></div>
+<hr />
+<h3 id="52-stocker-des-informations-sur-des-etudiants"><strong>5.2 Stocker des informations sur des étudiants</strong><a class="headerlink" href="#52-stocker-des-informations-sur-des-etudiants" title="Permanent link">&para;</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="n">etudiants</span> <span class="o">=</span> <span class="p">{</span>
+</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>    <span class="s2">&quot;Alice&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;âge&quot;</span><span class="p">:</span> <span class="mi">25</span><span class="p">,</span> <span class="s2">&quot;cours&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;Maths&quot;</span><span class="p">,</span> <span class="s2">&quot;Informatique&quot;</span><span class="p">]},</span>
+</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>    <span class="s2">&quot;Bob&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;âge&quot;</span><span class="p">:</span> <span class="mi">22</span><span class="p">,</span> <span class="s2">&quot;cours&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;Physique&quot;</span><span class="p">,</span> <span class="s2">&quot;Chimie&quot;</span><span class="p">]},</span>
+</span><span id="__span-10-4"><a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>    <span class="s2">&quot;Charlie&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;âge&quot;</span><span class="p">:</span> <span class="mi">24</span><span class="p">,</span> <span class="s2">&quot;cours&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;Biologie&quot;</span><span class="p">,</span> <span class="s2">&quot;Maths&quot;</span><span class="p">]}</span>
+</span><span id="__span-10-5"><a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a><span class="p">}</span>
+</span><span id="__span-10-6"><a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a>
+</span><span id="__span-10-7"><a id="__codelineno-10-7" name="__codelineno-10-7" href="#__codelineno-10-7"></a><span class="k">for</span> <span class="n">nom</span><span class="p">,</span> <span class="n">infos</span> <span class="ow">in</span> <span class="n">etudiants</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+</span><span id="__span-10-8"><a id="__codelineno-10-8" name="__codelineno-10-8" href="#__codelineno-10-8"></a>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">nom</span><span class="si">}</span><span class="s2"> a </span><span class="si">{</span><span class="n">infos</span><span class="p">[</span><span class="s1">&#39;âge&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2"> ans et suit les cours : </span><span class="si">{</span><span class="s1">&#39;, &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">infos</span><span class="p">[</span><span class="s1">&#39;cours&#39;</span><span class="p">])</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</span><span id="__span-10-9"><a id="__codelineno-10-9" name="__codelineno-10-9" href="#__codelineno-10-9"></a><span class="c1"># Affiche :</span>
+</span><span id="__span-10-10"><a id="__codelineno-10-10" name="__codelineno-10-10" href="#__codelineno-10-10"></a><span class="c1"># Alice a 25 ans et suit les cours : Maths, Informatique</span>
+</span><span id="__span-10-11"><a id="__codelineno-10-11" name="__codelineno-10-11" href="#__codelineno-10-11"></a><span class="c1"># Bob a 22 ans et suit les cours : Physique, Chimie</span>
+</span><span id="__span-10-12"><a id="__codelineno-10-12" name="__codelineno-10-12" href="#__codelineno-10-12"></a><span class="c1"># Charlie a 24 ans et suit les cours : Biologie, Maths</span>
+</span></code></pre></div>
+<hr />
+<h3 id="53-fusionner-deux-dictionnaires"><strong>5.3 Fusionner deux dictionnaires</strong><a class="headerlink" href="#53-fusionner-deux-dictionnaires" title="Permanent link">&para;</a></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="n">dictionnaire1</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;a&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;b&quot;</span><span class="p">:</span> <span class="mi">2</span><span class="p">}</span>
+</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="n">dictionnaire2</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;b&quot;</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span> <span class="s2">&quot;c&quot;</span><span class="p">:</span> <span class="mi">4</span><span class="p">}</span>
+</span><span id="__span-11-3"><a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a>
+</span><span id="__span-11-4"><a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a><span class="c1"># Méthode 1 : Utiliser update()</span>
+</span><span id="__span-11-5"><a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a><span class="n">dictionnaire_fusionne</span> <span class="o">=</span> <span class="n">dictionnaire1</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+</span><span id="__span-11-6"><a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a><span class="n">dictionnaire_fusionne</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">dictionnaire2</span><span class="p">)</span>
+</span><span id="__span-11-7"><a id="__codelineno-11-7" name="__codelineno-11-7" href="#__codelineno-11-7"></a><span class="nb">print</span><span class="p">(</span><span class="n">dictionnaire_fusionne</span><span class="p">)</span>
+</span><span id="__span-11-8"><a id="__codelineno-11-8" name="__codelineno-11-8" href="#__codelineno-11-8"></a><span class="c1"># Affiche : {&#39;a&#39;: 1, &#39;b&#39;: 3, &#39;c&#39;: 4}</span>
+</span><span id="__span-11-9"><a id="__codelineno-11-9" name="__codelineno-11-9" href="#__codelineno-11-9"></a>
+</span><span id="__span-11-10"><a id="__codelineno-11-10" name="__codelineno-11-10" href="#__codelineno-11-10"></a><span class="c1"># Méthode 2 : Utiliser {**d1, **d2} (Python 3.5+)</span>
+</span><span id="__span-11-11"><a id="__codelineno-11-11" name="__codelineno-11-11" href="#__codelineno-11-11"></a><span class="n">dictionnaire_fusionne</span> <span class="o">=</span> <span class="p">{</span><span class="o">**</span><span class="n">dictionnaire1</span><span class="p">,</span> <span class="o">**</span><span class="n">dictionnaire2</span><span class="p">}</span>
+</span><span id="__span-11-12"><a id="__codelineno-11-12" name="__codelineno-11-12" href="#__codelineno-11-12"></a><span class="nb">print</span><span class="p">(</span><span class="n">dictionnaire_fusionne</span><span class="p">)</span>
+</span><span id="__span-11-13"><a id="__codelineno-11-13" name="__codelineno-11-13" href="#__codelineno-11-13"></a><span class="c1"># Affiche : {&#39;a&#39;: 1, &#39;b&#39;: 3, &#39;c&#39;: 4}</span>
+</span></code></pre></div>
+<hr />
+<h2 id="6-methodes-utiles-des-dictionnaires"><strong>6. Méthodes utiles des dictionnaires</strong><a class="headerlink" href="#6-methodes-utiles-des-dictionnaires" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th><strong>Méthode</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>clear()</code></td>
+<td>Supprime tous les éléments du dictionnaire.</td>
+</tr>
+<tr>
+<td><code>copy()</code></td>
+<td>Retourne une copie du dictionnaire.</td>
+</tr>
+<tr>
+<td><code>get(clé, valeur)</code></td>
+<td>Retourne la valeur associée à la clé. Si la clé n&rsquo;existe pas, retourne <code>valeur</code>.</td>
+</tr>
+<tr>
+<td><code>items()</code></td>
+<td>Retourne une vue des paires clé-valeur.</td>
+</tr>
+<tr>
+<td><code>keys()</code></td>
+<td>Retourne une vue des clés du dictionnaire.</td>
+</tr>
+<tr>
+<td><code>pop(clé)</code></td>
+<td>Supprime la paire clé-valeur et retourne la valeur.</td>
+</tr>
+<tr>
+<td><code>popitem()</code></td>
+<td>Supprime et retourne une paire clé-valeur aléatoire.</td>
+</tr>
+<tr>
+<td><code>setdefault(clé, valeur)</code></td>
+<td>Retourne la valeur associée à la clé. Si la clé n&rsquo;existe pas, l&rsquo;ajoute avec <code>valeur</code>.</td>
+</tr>
+<tr>
+<td><code>update(dictionnaire)</code></td>
+<td>Met à jour le dictionnaire avec les paires clé-valeur d&rsquo;un autre dictionnaire.</td>
+</tr>
+<tr>
+<td><code>values()</code></td>
+<td>Retourne une vue des valeurs du dictionnaire.</td>
+</tr>
+</tbody>
+</table>
+<hr />
 
 
 
@@ -2819,7 +3544,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../exceptions/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Gestion des exceptions et validation d&amp;rsquo;entrées">
+          <a href="../03_fichiers/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 3. Lecture et écriture de fichiers">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -2829,20 +3554,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Gestion des exceptions et validation d&rsquo;entrées
+                3. Lecture et écriture de fichiers
               </div>
             </div>
           </a>
         
         
           
-          <a href="../fichiers/" class="md-footer__link md-footer__link--next" aria-label="Next: Fichiers">
+          <a href="../exercices/01_exercices/" class="md-footer__link md-footer__link--next" aria-label="Next: Exercices 1 : Gestion des exceptions et validation d&amp;rsquo;entrées">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Fichiers
+                Exercices 1 : Gestion des exceptions et validation d&rsquo;entrées
               </div>
             </div>
             <div class="md-footer__button md-icon">
