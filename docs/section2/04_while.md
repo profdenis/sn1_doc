@@ -2,15 +2,27 @@
 
 ---
 
-## **1. Boucle `for` vs boucle `while`**
+## **1. Pourquoi utiliser des boucles ?**
 
-| **Type de boucle** | **Utilisation**                                                                  | **Exemple**          |
-|--------------------|----------------------------------------------------------------------------------|----------------------|
-| **`for`**          | Utilisée pour des **itérations comptées** (nombre de répétitions connu).         | `for i in range(5):` |
-| **`while`**        | Utilisée pour des **itérations non comptées** (tant qu'une condition est vraie). | `while condition:`   |
+### **1.1 Illustration du besoin d'une boucle**
 
-- **`for`** : Idéale pour parcourir des séquences (listes, `range`, etc.).
-- **`while`** : Idéale pour des répétitions basées sur une **condition** plutôt qu'un compteur.
+Imaginons que nous voulons calculer la somme de plusieurs nombres :
+
+- **Sans boucle** :
+    - Pour 3 nombres, on peut écrire :
+      ```python
+      somme = nombre1 + nombre2 + nombre3
+      ```
+    - Mais pour **100 nombres**, il faudrait écrire une ligne très longue et répétitive :
+      ```python
+      somme = nombre1 + nombre2 + nombre3 + ... + nombre100
+      ```
+    - Cela devient **fastidieux, long et source d'erreurs**.
+
+- **Avec une boucle** :
+    - On peut écrire un code **concis et réutilisable** pour additionner 100 nombres (ou même 1000 !) sans répéter
+      manuellement chaque addition.
+
 
 ---
 
@@ -18,9 +30,9 @@
 
 ### **2.1 Syntaxe de base**
 
-```python
+```
 while condition:
-# Instructions à répéter tant que la condition est vraie
+    # Instructions à répéter tant que la condition est vraie
 ```
 
 ---
@@ -67,7 +79,7 @@ Accès autorisé.
 
 ## **3. Boucle `while` avec sentinelle**
 
-Une **sentinelle** est une valeur spéciale qui indique la fin d'une entrée.
+Une **sentinelle** est une valeur spéciale qui indique la fin d'une boucle.
 
 ### **3.1 Exemple : Somme de nombres jusqu'à une sentinelle**
 
@@ -89,6 +101,46 @@ Entrez un nombre (ou -1 pour arrêter) : 10
 Entrez un nombre (ou -1 pour arrêter) : -1
 La somme est 15.
 ```
+
+### **3.2 Variations sur l'exemple précédent**
+
+Un léger problème avec le problème précédent est que la condition `nombre != -1` doit être utilisée deux fois : la
+première pour la condition de la boucle, et l'autre pour s'assurer de ne pas ajouter `-1` à la somme. Une
+alternative serait de remplacer la condition `nombre != -1` par `nombre != 0`, parce qu'ajouter 0 à une somme ne
+change pas sa valeur de toute façon. Dans ce cas, la sentinelle devient 0 et le `if` dans la boucle devient inutile.
+
+```python
+somme = 0
+nombre = -1
+while nombre != 0:  # 0 est la sentinelle
+    nombre = int(input("Entrez un nombre (ou 0 pour arrêter) : "))
+    somme += nombre
+print(f"La somme est {somme}.")
+```
+
+Une autre alternative serait de remplacer la condition de la boucle par `not terminé`, avec `terminé` initialisée à
+`False` avant la boucle, comme dans le code suivant :
+
+```python
+somme = 0
+terminé = False
+while not terminé:
+    nombre = int(input("Entrez un nombre (ou 0 pour arrêter) : "))
+    if nombre == 0:
+        terminé = True
+    else:
+        somme += nombre
+print(f"La somme est {somme}.")
+```
+
+!!! warning "Nom des variables"
+    Même s'il est possible d'utiliser des caractères accentués dans les noms de variables en Python, il est 
+    généralement préférable d'utiliser des noms sans accents et sans caractères autres que les lettres de l'alphabet 
+    (minuscules ou majuscules, de `a` à `z`) et le souligné (`_`), pour s'assurer que le code est facile à lire et à 
+    comprendre, et qu'il n'y aie pas de problèmes d'encodage des caractères.
+
+!!! note "Erreurs d'entrée"
+    La gestion des erreurs d'entrée sera présentée dans une section ultérieure.
 
 ---
 
@@ -140,10 +192,11 @@ while compteur < 5:
 
 ---
 
-### **4.3 Remarque sur `while True`**
-
-- **À utiliser avec parcimonie** : Peut rendre le code moins lisible.
-- **Préférer une condition claire** quand c'est possible.
+!!! warning "Remarque sur `while True`"
+    - **À utiliser avec parcimonie** : Peut rendre le code moins lisible.
+    - **Préférer une condition claire** quand c'est possible.
+    - En général, **if faut donc éviter les boucles `while True`, et essayer d'utiliser `break` et `continue` le moins 
+    possible**, pour écrire du code plus lisible et moins complexe.
 
 ---
 
@@ -219,11 +272,11 @@ print(f"Nombre trouvé : {trouve}")
 Nombre trouvé : True
 ```
 
----
-
-Voici une sous-section détaillée sur la structure **`while ... else ...`** en Python, qui est une particularité peu
-commune dans d'autres langages. Cette structure permet d'exécuter un bloc de code **une fois que la boucle `while` s'est
-terminée normalement** (sans `break`).
+!!! note "Remarque"
+    Dans cet exemple, il est justifié d'utiliser `break`, car nous voulons sortir de la boucle dès que nous trouvons le 
+    nombre recherché. De cette façon, nous évitons de parcourir la liste entière, potentiellement très grande, 
+    inutilement si le nombre est trouvé rapidement. Également, en sortant immédiatement de la boucle, on trouvera la 
+    première occurrence du nombre recherché.
 
 ---
 
@@ -234,7 +287,7 @@ boucle `while` se termine sans rencontrer de `break`**.
 
 ### **Syntaxe**
 
-```python
+```
 while condition:
     # Instructions à exécuter tant que la condition est vraie
 else:

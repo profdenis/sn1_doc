@@ -92,6 +92,7 @@ Les **index négatifs** permettent d'accéder aux éléments d'une liste en part
   nombres = [10, 20, 30, 40, 50]
   print(nombres[-1])  # Affiche 50
   print(nombres[-3])  # Affiche 30
+  print(nombres[-6])  # Lève une erreur IndexError: list index out of range
   ```
 
 #### **Slicing avec des index négatifs**
@@ -118,6 +119,16 @@ for nombre in nombres:
     somme += nombre
 print(f"La somme est {somme}.")  # Affiche "La somme est 150."
 ```
+
+!!! note "Remarques"
+    - Si la liste est vide, le résultat de la somme est `0`.
+    - Il existe une fonction pour faire exactement ce calcul : la fonction `sum()`. Elle effectue la même 
+    boucle que l'exemple précédent.
+    ```python
+    nombres = [10, 20, 30, 40, 50]
+    somme = sum(nombres)
+    print(f"La somme est {somme}.")  # Affiche "La somme est 150."
+    ```
 
 ---
 
@@ -192,14 +203,50 @@ print(nombres)  # Affiche [10, 20, 30, 40]
 ### **4.2 Supprimer un élément**
 
 ```python
-nombres = [10, 20, 30, 40]
+nombres = [10, 20, 30, 20, 40]
 nombres.remove(20)
-print(nombres)  # Affiche [10, 30, 40]
+print(nombres)  # Affiche [10, 30, 20, 40]
+nombres.remove(123) # Lève une erreur ValueError: list.remove(x): x not in list
 ```
+
+!!! note "Remarque"
+    Si la valeur n'est pas dans la liste, une erreur `ValueError` est levée par `remove`. Il faut donc soit utiliser un 
+    `try/except`, soit vérifier l'existence de la valeur avant de la supprimer.
+    ```python
+    if 123 in nombres:
+        nombres.remove(123)
+    ```
+
+!!! note "Remarque"
+    La méthode `remove()` supprime la première occurrence de la valeur spécifiée. Si la valeur est présente plusieurs
+    fois, il faut utiliser une boucle pour supprimer toutes les occurrences.
+    ```python
+    nombres = [10, 20, 30, 20, 40]
+    cible = 20
+    while cible in nombres:
+        nombres.remove(cible)
+    print(nombres)  # Affiche [10, 30, 40]
+    ```
+    Cette méthode peut être inefficace pour les grandes listes car elle peut être coûteuse en temps de calcul. 
+    Il existe une autre méthode plus efficace pour supprimer toutes les occurrences d'une valeur dans une liste
+    en Python, mais elle utilise les _compréhensions de liste_, une technique avancée qui n'est pas présentée dans ce
+    cours.
+
 
 ---
 
-### **4.3 Trier une liste**
+### **4.3 Supprimer un élément à un index donné**
+
+```python
+nombres = [10, 20, 30, 20, 40]
+del nombres[1]
+print(nombres)  # Affiche [10, 30, 20, 40]
+```
+
+
+---
+
+### **4.4 Trier une liste**
 
 ```python
 nombres = [30, 10, 40, 20]
@@ -209,7 +256,7 @@ print(nombres)  # Affiche [10, 20, 30, 40]
 
 ---
 
-### **4.4 Inverser une liste**
+### **4.5 Inverser une liste**
 
 ```python
 nombres = [10, 20, 30, 40]
@@ -219,13 +266,19 @@ print(nombres)  # Affiche [40, 30, 20, 10]
 
 ---
 
-### **4.5 Trouver l'index d'un élément**
+### **4.6 Trouver l'index d'un élément**
 
 ```python
 jours = ["lundi", "mardi", "mercredi", "jeudi"]
 index = jours.index("mercredi")
 print(index)  # Affiche 2
 ```
+
+!!! note "Remarque"
+    - Tout comme `remove()`, si l'élément n'est pas dans la liste, une erreur `ValueError` est levée. Il faut donc soit
+    utiliser un `try/except`, soit vérifier l'existence de l'élément avant de le chercher.
+    - Également comme `remove()`, si l'élément est dans la liste plusieurs fois, il faut utiliser une boucle pour trouver
+    tous les index, ou une compréhension de liste.
 
 ---
 
@@ -235,14 +288,24 @@ print(index)  # Affiche 2
 
 ```python
 nombres = [10, 20, 30, 40, 50]
-recherche = 30
+cible = 30
 trouve = False
 for nombre in nombres:
-    if nombre == recherche:
+    if nombre == cible:
         trouve = True
         break
-print(f"L'élément {recherche} est présent : {trouve}")  # Affiche "L'élément 30 est présent : True"
+print(f"L'élément {cible} est présent : {trouve}")  # Affiche "L'élément 30 est présent : True"
 ```
+
+!!! note "Remarque"
+    Cet exemple utilise une boucle `for` pour parcourir la liste pour donner un exemple simple de parcours de liste.
+    Dans ce cas-ci particulier, il serait plus simple d'utiliser `in` comme dans un exemple précédent.
+    ```python
+    nombres = [10, 20, 30, 40, 50]
+    cible = 30
+    trouve = cible in nombres
+    print(f"L'élément {cible} est présent : {trouve}")  # Affiche "L'élément 30 est présent : True"
+    ```
 
 ---
 
@@ -270,6 +333,9 @@ for nombre in nombres:
 print(f"Le maximum est {maximum}.")  # Affiche "Le maximum est 50."
 ```
 
+!!! note "Remarque"
+    La boucle précédente pourrait être remplacée par un appel à la fonction `max()`, avec la liste de nombres en argument.
+
 ---
 
 ### **5.4 Trouver le minimum d'une liste**
@@ -282,6 +348,10 @@ for nombre in nombres:
         minimum = nombre
 print(f"Le minimum est {minimum}.")  # Affiche "Le minimum est 10."
 ```
+
+!!! note "Remarque"
+    La boucle précédente pourrait être remplacée par un appel à la fonction `min()`, avec la liste de nombres en argument.
+
 
 ---
 
@@ -298,4 +368,10 @@ print(f"La moyenne est {moyenne}.")  # Affiche "La moyenne est 30.0."
 
 ---
 
+----------
+
+??? info "Utilisation de l'IA"
+    Page rédigée en partie avec l'aide d'un assistant IA. L'IA a été utilisée pour générer des 
+    explications, des exemples et/ou des suggestions de structure. Toutes les informations ont 
+    été vérifiées, éditées et complétées par l'auteur.
 

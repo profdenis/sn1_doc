@@ -1,4 +1,4 @@
-# **Structures conditionnelles**
+# **Les structures conditionnelles**
 
 Les structures conditionnelles permettent d'exécuter des blocs de code en fonction de conditions spécifiques. Elles sont
 essentielles pour créer des programmes dynamiques et réactifs.
@@ -11,7 +11,7 @@ La structure `if` permet d'exécuter un bloc de code **uniquement si une conditi
 
 ### **Syntaxe**
 
-```python
+```
 if condition:
     # Instructions à exécuter si la condition est vraie
 ```
@@ -57,7 +57,7 @@ fausse.
 
 ### **Syntaxe**
 
-```python
+```
 if condition:
     # Instructions si la condition est vraie
 else:
@@ -110,7 +110,7 @@ la première condition vraie.
 
 ### **Syntaxe**
 
-```python
+```
 if condition1:
     # Instructions si condition1 est vraie
 elif condition2:
@@ -144,14 +144,14 @@ else:
 ### **Exemple 2 : Évaluation d'une note**
 
 ```python
-note = 14
-if note >= 16:
+note = 85
+if note >= 90:
     print("Très bien !")
-elif note >= 14:
+elif note >= 80:
     print("Bien.")
-elif note >= 12:
+elif note >= 70:
     print("Assez bien.")
-elif note >= 10:
+elif note >= 60:
     print("Passable.")
 else:
     print("Insuffisant.")
@@ -219,3 +219,9 @@ Il fait chaud.
 
 ---
 
+----------
+
+??? info "Utilisation de l'IA"
+    Page rédigée en partie avec l'aide d'un assistant IA. L'IA a été utilisée pour générer des 
+    explications, des exemples et/ou des suggestions de structure. Toutes les informations ont 
+    été vérifiées, éditées et complétées par l'auteur.

@@ -84,30 +84,17 @@ print(f"Votre IMC est {imc:.1f}.")
 
 ---
 
-### **Exercice 8 : Lecture de plusieurs valeurs en une ligne**
+### **Exercice 8 : Calcul de périmètre**
 
 ```python
-nombres = input("Entrez trois nombres séparés par des espaces : ")
-a, b, c = map(int, nombres.split())
-somme = a + b + c
-print(f"La somme est {somme}.")
-```
-
----
-
-### **Exercice 9 : Calcul de périmètre**
-
-```python
-import math
-
 rayon = float(input("Entrez le rayon du cercle (en mètres) : "))
-perimetre = 2 * math.pi * rayon
+perimetre = 2 * 3.1416 * rayon
 print(f"Le périmètre du cercle est {perimetre:.2f} mètres.")
 ```
 
 ---
 
-### **Exercice 10 : Gestion de temps**
+### **Exercice 9 : Gestion de temps**
 
 ```python
 minutes = int(input("Entrez un nombre de minutes : "))
@@ -118,112 +105,9 @@ print(f"{minutes} minutes équivaut à {heures}h{restantes:02d}.")
 
 ---
 
----
+----------
 
-## **Exercices avancés**
-
-### **Exercice 11 : Calcul de factorielle**
-
-```python
-n = int(input("Entrez un nombre entier positif : "))
-factorielle = 1
-for i in range(1, n + 1):
-    factorielle *= i
-print(f"La factorielle de {n} est {factorielle}.")
-```
-
----
-
-### **Exercice 12 : Lecture et traitement de liste**
-
-```python
-nombres_str = input("Entrez 5 nombres séparés par des virgules : ")
-nombres = [int(n) for n in nombres_str.split(",")]
-somme = sum(nombres)
-moyenne = somme / len(nombres)
-print(f"Somme : {somme}, Moyenne : {moyenne:.2f}.")
-```
-
----
-
-### **Exercice 13 : Conversion de temps en secondes**
-
-```python
-temps = input("Entrez une durée sous la forme HH:MM:SS : ")
-heures, minutes, secondes = map(int, temps.split(":"))
-total_secondes = heures * 3600 + minutes * 60 + secondes
-print(f"{temps} équivaut à {total_secondes} secondes.")
-```
-
----
-
-### **Exercice 14 : Calcul de distance**
-
-```python
-vitesse = float(input("Entrez la vitesse (en km/h) : "))
-temps = float(input("Entrez le temps (en heures) : "))
-distance = vitesse * temps
-print(f"La distance parcourue est {distance:.2f} km.")
-```
-
----
-
-### **Exercice 15 : Jeu de devinette**
-
-```python
-import random
-
-nombre_a_deviner = random.randint(1, 100)
-while True:
-    devine = int(input("Devinez le nombre entre 1 et 100 : "))
-    if devine < nombre_a_deviner:
-        print("Trop petit !")
-    elif devine > nombre_a_deviner:
-        print("Trop grand !")
-    else:
-        print(f"Bravo ! Vous avez trouvé {nombre_a_deviner}.")
-        break
-```
-
----
-
----
-
-## **Exercices bonus**
-
-### **Exercice 16 : Calcul de pourcentage**
-
-```python
-total = float(input("Entrez le nombre total : "))
-partiel = float(input("Entrez le nombre partiel : "))
-pourcentage = (partiel / total) * 100
-print(f"{partiel} représente {pourcentage:.2f}% de {total}.")
-```
-
----
-
-### **Exercice 17 : Lecture et validation**
-
-```python
-while True:
-    nombre = int(input("Entrez un nombre entre 1 et 100 : "))
-    if 1 <= nombre <= 100:
-        print(f"Nombre valide : {nombre}.")
-        break
-    else:
-        print("Nombre invalide. Réessayez.")
-```
-
----
-
-### **Exercice 18 : Calcul de volume**
-
-```python
-import math
-
-rayon = float(input("Entrez le rayon de la sphère (en mètres) : "))
-volume = (4 / 3) * math.pi * (rayon ** 3)
-print(f"Le volume de la sphère est {volume:.2f} m³.")
-```
-
----
+??? info "Utilisation de l'IA"
+    Page rédigée en partie avec l'aide d'un assistant IA. L'IA a été utilisée pour générer des 
+    explications, des exemples et/ou des suggestions de structure. Toutes les informations ont 
+    été vérifiées, éditées et complétées par l'auteur.

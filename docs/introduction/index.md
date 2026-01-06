@@ -113,7 +113,7 @@ print(f"La vitesse est de {vitesse} m/s.")
 
 ---
 
-## **4. Applications en sciences naturelles**
+## **4. Applications en sciences de la nature**
 
 **Objectif** : Montrer l’utilité concrète de la programmation.
 
@@ -151,12 +151,6 @@ print(f"Le pH moyen est {moyenne:.2f}.")
 
 ---
 
-Voici une section que tu peux ajouter à ton introduction, après les exemples d'applications en sciences naturelles. Elle
-couvre divers domaines d'application de la programmation, avec des exemples concrets et accessibles pour des étudiants
-en sciences de la nature.
-
----
-
 ## **5. Applications de la programmation dans d'autres domaines**
 
 La programmation n'est pas limitée aux sciences naturelles. Elle est un outil polyvalent utilisé dans de nombreux
@@ -171,13 +165,6 @@ secteurs. Voici quelques exemples d'applications dans d'autres domaines :
     - **Exemple** : Un jeu de plateforme où le joueur doit sauter pour éviter des obstacles.
     - **Concepts clés** : Boucles pour les animations, conditions pour les collisions, variables pour les scores.
 
-```python
-# Exemple simplifié : Gestion du score dans un jeu
-score = 0
-score += 10  # Le joueur gagne 10 points
-print(f"Score actuel : {score}")
-```
-
 ---
 
 ### **5.2 Développement web**
@@ -186,13 +173,6 @@ print(f"Score actuel : {score}")
     - **Exemple** : Un site de commerce en ligne où les utilisateurs peuvent ajouter des produits à un panier.
     - **Concepts clés** : Gestion des événements (clics, soumissions de formulaires), communication avec des bases de
       données.
-
-```python
-# Exemple simplifié : Affichage dynamique d'un produit
-nom_produit = "Ordinateur portable"
-prix = 999.99
-print(f"Produit : {nom_produit}, Prix : {prix:.2f} $")
-```
 
 ---
 
@@ -240,12 +220,6 @@ print(f"Salaire mensuel : {salaire:.2f} $")
     - **Exemple** : Un programme qui prédit les tendances du marché boursier.
     - **Concepts clés** : Traitement des données, algorithmes d'apprentissage, évaluation des modèles.
 
-```python
-# Exemple simplifié : Prédiction de tendance (pseudo-code)
-tendance = "hausse"  # Résultat d'un modèle d'IA
-print(f"Prédiction du marché : {tendance}")
-```
-
 ---
 
 ### **5.6 Art et design**
@@ -256,15 +230,6 @@ print(f"Prédiction du marché : {tendance}")
     - **Concepts clés** : Boucles pour les répétitions, fonctions mathématiques pour les formes, aléatoire pour la
       variété.
 
-```python
-# Exemple simplifié : Génération d'un motif simple
-import random
-
-couleurs = ["rouge", "bleu", "vert", "jaune"]
-couleur_aleatoire = random.choice(couleurs)
-print(f"Motif généré avec la couleur : {couleur_aleatoire}")
-```
-
 ---
 
 ### **5.7 Résumé des applications par domaine**
@@ -274,7 +239,7 @@ print(f"Motif généré avec la couleur : {couleur_aleatoire}")
 | Jeux vidéo                | Développement de jeux, simulations   | C++, C#, Unity, Unreal Engine          |
 | Développement web         | Sites web, applications interactives | HTML, CSS, JavaScript, Python (Django) |
 | Finances et banques       | Gestion des comptes, transactions    | Java, Python, SQL                      |
-| Ressources humaines       | Gestion des employés, paie           | Python, SQL, Excel (VBA)               |
+| Ressources humaines       | Gestion des employés, paie           | Python, SQL, Excel                     |
 | Intelligence artificielle | Prédictions, automatisation          | Python (TensorFlow, PyTorch)           |
 | Art et design             | Œuvres génératives, animations       | Processing, Python (Pygame)            |
 
@@ -301,5 +266,11 @@ print(f"Motif généré avec la couleur : {couleur_aleatoire}")
 
 ---
 
+----------
+
+??? info "Utilisation de l'IA"
+    Page rédigée en partie avec l'aide d'un assistant IA. L'IA a été utilisée pour générer des 
+    explications, des exemples et/ou des suggestions de structure. Toutes les informations ont 
+    été vérifiées, éditées et complétées par l'auteur.
 
 

@@ -1,4 +1,4 @@
-# **Exercices 2 : Structures conditionnelles**
+# **Exercices 2 : Les structures conditionnelles**
 
 ---
 

@@ -128,3 +128,10 @@ Un exemple célèbre d'algorithme ancien est la **méthode d'Euclide** pour trou
 deux nombres, décrite bien avant al-Khwarizmi, mais qui illustre parfaitement ce qu'est un algorithme.
 
 ---
+
+----------
+
+??? info "Utilisation de l'IA"
+    Page rédigée en partie avec l'aide d'un assistant IA. L'IA a été utilisée pour générer des 
+    explications, des exemples et/ou des suggestions de structure. Toutes les informations ont 
+    été vérifiées, éditées et complétées par l'auteur.

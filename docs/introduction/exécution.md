@@ -182,3 +182,10 @@ Bonjour, Alice !
 - **PyCharm** offre une interface conviviale pour écrire, exécuter et déboguer du code Python.
 
 ---
+
+----------
+
+??? info "Utilisation de l'IA"
+    Page rédigée en partie avec l'aide d'un assistant IA. L'IA a été utilisée pour générer des 
+    explications, des exemples et/ou des suggestions de structure. Toutes les informations ont 
+    été vérifiées, éditées et complétées par l'auteur.

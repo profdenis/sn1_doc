@@ -16,7 +16,7 @@ multiples. Elle est inspirée du **pattern matching** présent dans d'autres lan
 
 ## **2. Syntaxe de base de `match`**
 
-```python
+```
 match variable:
     case motif1:
         # Instructions si variable correspond à motif1
@@ -36,15 +36,14 @@ match variable:
 ### **3.1 Avec `if...elif...else`**
 
 ```python
-note = 14
-
-if note >= 16:
+note = 85
+if note >= 90:
     print("Très bien !")
-elif note >= 14:
+elif note >= 80:
     print("Bien.")
-elif note >= 12:
+elif note >= 70:
     print("Assez bien.")
-elif note >= 10:
+elif note >= 60:
     print("Passable.")
 else:
     print("Insuffisant.")
@@ -61,16 +60,16 @@ Bien.
 ### **3.2 Avec `match`**
 
 ```python
-note = 14
+note = 85
 
 match note:
-    case n if n >= 16:
+    case n if n >= 90:
         print("Très bien !")
-    case n if n >= 14:
+    case n if n >= 80:
         print("Bien.")
-    case n if n >= 12:
+    case n if n >= 70:
         print("Assez bien.")
-    case n if n >= 10:
+    case n if n >= 60:
         print("Passable.")
     case _:
         print("Insuffisant.")
@@ -99,15 +98,15 @@ Bien.
 ### **4.1 Correspondance de valeurs littérales**
 
 ```python
-jour = "lundi"
+jour = "samedi"
 
 match jour:
     case "lundi":
-        print("Début de la semaine.")
+        print("Première journée de travail.")
     case "vendredi":
-        print("Fin de la semaine.")
+        print("Dernière journée de travail.")
     case "samedi" | "dimanche":
-        print("Week-end !")
+        print("Fin de semaine !")
     case _:
         print("Milieu de la semaine.")
 ```
@@ -115,7 +114,7 @@ match jour:
 **Sortie** :
 
 ```
-Début de la semaine.
+Fin de semaine !
 ```
 
 ---
@@ -227,3 +226,10 @@ Format de dictionnaire non reconnu.
   expressions booléennes complexes.
 
 ---
+
+----------
+
+??? info "Utilisation de l'IA"
+    Page rédigée en partie avec l'aide d'un assistant IA. L'IA a été utilisée pour générer des 
+    explications, des exemples et/ou des suggestions de structure. Toutes les informations ont 
+    été vérifiées, éditées et complétées par l'auteur.

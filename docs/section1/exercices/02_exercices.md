@@ -78,17 +78,9 @@ Demandez à l’utilisateur :
 
 ---
 
-### **Exercice 8 : Lecture de plusieurs valeurs en une ligne**
 
-Demandez à l’utilisateur d’entrer **trois nombres séparés par des espaces** (ex. : `10 20 30`).
 
-- Lisez ces nombres en une seule ligne avec `input().split()`.
-- Convertissez-les en entiers.
-- Affichez leur somme.
-
----
-
-### **Exercice 9 : Calcul de périmètre**
+### **Exercice 8 : Calcul de périmètre**
 
 Demandez à l’utilisateur le rayon d’un cercle, puis :
 
@@ -97,7 +89,7 @@ Demandez à l’utilisateur le rayon d’un cercle, puis :
 
 ---
 
-### **Exercice 10 : Gestion de temps**
+### **Exercice 9 : Gestion de temps**
 
 Demandez à l’utilisateur un nombre de minutes, puis :
 
@@ -106,87 +98,9 @@ Demandez à l’utilisateur un nombre de minutes, puis :
 
 ---
 
----
+----------
 
-## **Exercices avancés**
-
-### **Exercice 11 : Calcul de factorielle**
-
-Demandez à l’utilisateur un nombre entier positif, puis :
-
-- Calculez sa factorielle (ex. : `5! = 5 * 4 * 3 * 2 * 1 = 120`).
-- Affichez le résultat.
-
----
-
-### **Exercice 12 : Lecture et traitement de liste**
-
-Demandez à l’utilisateur d’entrer **5 nombres séparés par des virgules** (ex. : `1,2,3,4,5`).
-
-- Convertissez ces nombres en une liste d’entiers.
-- Calculez et affichez la **somme** et la **moyenne** de ces nombres.
-
----
-
-### **Exercice 13 : Conversion de temps en secondes**
-
-Demandez à l’utilisateur une durée sous la forme `HH:MM:SS` (ex. : `01:30:45`), puis :
-
-- Convertissez cette durée en **secondes**.
-- Affichez le résultat.
-
----
-
-### **Exercice 14 : Calcul de distance**
-
-Demandez à l’utilisateur :
-
-- La vitesse (en km/h).
-- Le temps (en heures).
-  Calculez et affichez la distance parcourue (formule : `distance = vitesse * temps`).
-
----
-
-### **Exercice 15 : Jeu de devinette**
-
-Générez un nombre aléatoire entre 1 et 100.
-Demandez à l’utilisateur de deviner ce nombre.
-
-- Si le nombre est trop grand ou trop petit, donnez un indice.
-- Répétez jusqu’à ce que l’utilisateur trouve le bon nombre.
-
----
-
----
-
-## **Exercices bonus (pour aller plus loin)**
-
-### **Exercice 16 : Calcul de pourcentage**
-
-Demandez à l’utilisateur :
-
-- Un nombre total (ex. : 500).
-- Un nombre partiel (ex. : 125).
-  Calculez et affichez le pourcentage que représente le nombre partiel par rapport au total.
-
----
-
-### **Exercice 17 : Lecture et validation**
-
-Demandez à l’utilisateur un nombre entre 1 et 100.
-
-- Tant que l’entrée n’est pas un nombre valide dans cet intervalle, redemandez-lui.
-- Affichez le nombre une fois qu’il est valide.
-
-*(Note : Cet exercice nécessite une boucle `while`, mais sans gestion d’exceptions pour l’instant.)*
-
----
-
-### **Exercice 18 : Calcul de volume**
-
-Demandez à l’utilisateur :
-
-- Le rayon d’une sphère.
-  Calculez et affichez son volume (formule : `V = (4/3) * π * r^3`).
-
----
+??? info "Utilisation de l'IA"
+    Page rédigée en partie avec l'aide d'un assistant IA. L'IA a été utilisée pour générer des 
+    explications, des exemples et/ou des suggestions de structure. Toutes les informations ont 
+    été vérifiées, éditées et complétées par l'auteur.

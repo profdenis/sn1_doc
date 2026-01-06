@@ -60,9 +60,9 @@ print(f"{nom} habite à {ville}.")
 **Sortie possible** :
 
 ```
-Entrez votre nom : Rinfret
-Entrez votre ville : Montréal
-Rinfret habite à Montréal.
+Entrez votre nom : Alice
+Entrez votre ville : Drummondville
+Alice habite à Montréal.
 ```
 
 ---
@@ -86,8 +86,8 @@ pi = 3.14159  # Variable de type flottant (float)
 
 ### **Utilisation avec `input()`**
 
-Toute valeur lue avec `input()` est une **chaîne de caractères**. Pour l’utiliser comme un nombre, il faut la *
-*convertir**.
+Toute valeur lue avec `input()` est une **chaîne de caractères**. Pour l’utiliser comme un nombre, il faut la
+**convertir**.
 
 ---
 
@@ -182,7 +182,7 @@ print(pi_arrondi)  # Affiche : 3.14
 
 ### **5.2 Formatage de sortie avec `:.2f`**
 
-Le formatage (avec `.format()` ou f-strings) permet d’afficher un nombre avec un certain nombre de décimales **sans
+Le formatage (avec `.format()` ou _f-strings_) permet d’afficher un nombre avec un certain nombre de décimales **sans
 modifier sa valeur réelle**.
 **Exemple** :
 
@@ -203,3 +203,9 @@ print(pi)  # Affiche toujours : 3.14159 (valeur non modifiée)
 
 ---
 
+----------
+
+??? info "Utilisation de l'IA"
+    Page rédigée en partie avec l'aide d'un assistant IA. L'IA a été utilisée pour générer des 
+    explications, des exemples et/ou des suggestions de structure. Toutes les informations ont 
+    été vérifiées, éditées et complétées par l'auteur.

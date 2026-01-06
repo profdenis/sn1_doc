@@ -1,5 +1,8 @@
 # **Exercices 4 : Définition et utilisation des fonctions**
 
+Testez chacune des fonctions pour vérifier qu'elles fonctionnent correctement. Utilisez `input` pour lire des valeurs,
+ensuite appelez les fonctions, et ensuite affichez les résultats avec `print`.
+
 ## **Exercice 1 : Calcul du volume d'un cylindre**
 
 Écrivez une fonction `volume_cylindre(rayon, hauteur)` qui calcule le volume d'un cylindre à partir de son rayon et de
@@ -14,7 +17,9 @@ sa hauteur.
 Écrivez une fonction `aire_triangle(base, hauteur)` qui calcule l'aire d'un triangle à partir de sa base et de sa
 hauteur.
 
-**Formule** : \( \text{Aire} = \frac{\text{base} \times \text{hauteur}}{2} \)
+**Formule** : 
+
+\[ \text{Aire} = \frac{\text{base} \times \text{hauteur}}{2} \]
 
 ---
 

@@ -1,4 +1,4 @@
-# **Exercices 1 : Expressions booléennes**
+# **Exercices 1 : Les expressions booléennes**
 
 ---
 

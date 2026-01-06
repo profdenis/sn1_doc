@@ -1,4 +1,4 @@
-# **Exercices 5 : Boucles `for`**
+# **Exercices 5 : Les boucles `for`**
 
 ---
 

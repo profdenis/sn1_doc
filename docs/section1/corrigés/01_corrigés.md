@@ -5,6 +5,7 @@
 ## **Partie 1 : Utilisation de `print()`**
 
 ### **Exercice 1 : Affichage simple**
+
 ```python
 # 1.
 print("Bonjour, monde !")
@@ -19,6 +20,7 @@ print("Python", "est", "génial", sep="-")
 ---
 
 ### **Exercice 2 : Paramètres `sep` et `end`**
+
 ```python
 # 1.
 print("Science", "Nature", "Programmation", sep="/")
@@ -38,6 +40,7 @@ print(2025)
 ---
 
 ### **Exercice 3 : Combinaison de `sep` et `end`**
+
 ```python
 # 1.
 print("Les notes :", 15, 18, 12, sep=", ", end=".\n")
@@ -51,9 +54,10 @@ print("Décollage !")
 
 ---
 
-## **Partie 2 : Utilisation de `.format()` et des f-strings**
+## **Partie 2 : Utilisation de `.format()` et des _f-strings_**
 
 ### **Exercice 4 : Formatage de base**
+
 ```python
 prenom = "Denis"
 
@@ -77,11 +81,13 @@ print(f"Le résultat de {a} + {b} est {resultat}.")
 
 ---
 **Réponse bonus** :
-Les f-strings sont souvent préférées pour leur lisibilité et leur concision, surtout quand on utilise des variables existantes.
+Les _f-strings_ sont souvent préférées pour leur lisibilité et leur concision, surtout quand on utilise des variables
+existantes.
 
 ---
 
 ### **Exercice 5 : Formatage avancé**
+
 ```python
 prix = 12.3456
 
@@ -92,16 +98,18 @@ print("Le prix est {:.2f} $".format(prix))
 print(f"Le prix est {prix:.2f} $")
 
 # 2. (f-strings uniquement)
-print(f"Le carré de 5 est {5**2}.")
+print(f"Le carré de 5 est {5 ** 2}.")
 ```
 
 ---
 **Réponse bonus** :
-Les f-strings permettent d’insérer directement des expressions (comme `5**2`), ce qui les rend plus pratiques pour les calculs dans la chaîne.
+Les _f-strings_ permettent d’insérer directement des expressions (comme `5**2`), ce qui les rend plus pratiques pour les
+calculs dans la chaîne.
 
 ---
 
 ### **Exercice 6 : Alignement et remplissage**
+
 ```python
 # Avec .format()
 print("{:#^20}".format("Python"))
@@ -112,13 +120,15 @@ print(f"{'Python':#^20}")
 
 ---
 **Réponse bonus** :
-Les deux méthodes sont aussi intuitives l’une que l’autre pour cet exercice, mais les f-strings évitent d’appeler une méthode supplémentaire.
+Les deux méthodes sont aussi intuitives l’une que l’autre pour cet exercice, mais les _f-strings_ évitent d’appeler une
+méthode supplémentaire.
 
 ---
 
 ### **Exercice 7 : Choix personnel**
+
 ```python
-nom = "Denis Rinfret"
+nom = "Jean Tremblay"
 note = 18
 
 # Exemple avec f-strings (choix personnel)
@@ -136,11 +146,12 @@ print(f"La température moyenne est de {temperature}°C.")
 
 ---
 **Réponse bonus** :
-Les f-strings sont souvent choisies pour leur simplicité, surtout quand on utilise des variables déjà définies.
+Les _f-strings_ sont souvent choisies pour leur simplicité, surtout quand on utilise des variables déjà définies.
 
 ---
 
 ### **Exercice 8 : Conversion et formatage**
+
 ```python
 minutes = 125
 heures = minutes // 60
@@ -159,34 +170,200 @@ print(f"Notes : {notes[0]}, {notes[1]}, {notes[2]}.")
 
 ---
 **Réponse bonus** :
-Les f-strings sont plus adaptées pour formater des listes dynamiques, car elles permettent d’accéder directement aux éléments et d’insérer des expressions.
+Les _f-strings_ sont plus adaptées pour formater des listes dynamiques, car elles permettent d’accéder directement aux
+éléments et d’insérer des expressions.
 
 ---
 
-## **Partie 3 : Défis combinés**
+## **Partie 3 : Exercices de base sur les _f-strings_**
 
-### **Exercice 9 : Tableau de multiplication**
-```python
-for i in range(1, 6):
-    for j in range(1, 6):
-        print(f"{i} x {j} = {i * j}")
-```
+Fichier Python contenant tout le code : [formatage.py](formatage.py)
 
----
-**Réponse bonus** :
-Pour aligner les résultats à droite, on peut utiliser :
+### **Exercice 1 : Affichage simple**
+
 ```python
-for i in range(1, 6):
-    for j in range(1, 6):
-        print(f"{i} x {j} = {i * j:2d}")
+nom = "Alice"
+age = 25
+print(f"{nom} a {age} ans.")
+# Résultat : "Alice a 25 ans."
 ```
 
 ---
 
-### **Exercice 10 : Menu interactif**
-```python
-print("Menu :", "1. Afficher la date", "2. Calculer une moyenne", "3. Quitter", sep="\n")
+### **Exercice 2 : Calculs dans les _f-strings_**
 
-choix = 1  # Exemple
-print(f"Vous avez choisi l'option {choix}.")
+```python
+a = 10
+b = 3
+print(f"{a} divisé par {b} est égal à {a / b}.")
+# Résultat : "10 divisé par 3 est égal à 3.3333333333333335."
 ```
+
+---
+
+### **Exercice 3 : Formatage des flottants**
+
+```python
+prix = 12.3456789
+taux = 0.123456789
+print(f"Prix : {prix:.2f} $")
+print(f"Taux : {taux:.2%}")
+# Résultat :
+# Prix : 12.35 $
+# Taux : 12.35 %
+```
+
+---
+
+### **Exercice 4 : Formatage des entiers**
+
+```python
+jour = 5
+mois = 12
+annee = 2023
+print(f"{jour:03d}/{mois:03d}/{annee}")
+# Résultat : "005/012/2023"
+```
+
+---
+
+### **Exercice 5 : Alignement du texte**
+
+```python
+mot = "Bonjour"
+print(f"{mot:<15}")  # Aligné à gauche
+print(f"{mot:^15}")  # Centré
+print(f"{mot:>15}")  # Aligné à droite
+# Résultat :
+# Bonjour______
+# ___Bonjour___
+# ______Bonjour
+```
+
+### **Exercice 6 : Formatage scientifique**
+
+```python
+grand_nombre = 123456789
+print(f"{grand_nombre:.3e}")
+# Résultat : "1.235e+08"
+```
+
+---
+
+### **Exercice 7 : Formatage binaire, octal et hexadécimal**
+
+```python
+nombre = 255
+print(f"Binaire : {nombre:b}")
+print(f"Octal : {nombre:o}")
+print(f"Hexadécimal : {nombre:#x}")
+# Résultat :
+# Binaire : 11111111
+# Octal : 377
+# Hexadécimal : 0xff
+```
+
+---
+
+### **Exercice 8 : Séparateurs de milliers**
+
+```python
+grand_nombre = 1000000
+print(f"{grand_nombre:,}")
+# Résultat : "1,000,000"
+```
+
+---
+
+### **Exercice 9 : Affichage des signes**
+
+```python
+positif = 123
+negatif = -456
+print(f"Positif : {positif:+d}")
+print(f"Négatif : {negatif: d}")
+# Résultat :
+# Positif : +123
+# Négatif : -456
+```
+
+!!! note "Note"
+    Le signe `+` est obligatoire pour les nombres positifs. Pour les nombres négatifs, il est optionnel : on pourrait 
+    écrire `negatif:d` ou `negatif:+d`, ou même `negatif: d`. Il n'y aura pas de différence de sortie pour un nombre 
+    négatif. Mais pour un nombre positif, il y aura une différence : le signe `+` sera affiché seulement avec 
+    `positif:+d`. Pas de signe avec `positif:d` ni avec `positif: d`. Il y aura un espace inséré à la place du signe avec
+    `positif: d`, mais pas avec `positif:d`. 
+
+---
+
+### **Exercice 10 : Formatage des pourcentages**
+
+```python
+taux = 0.7563
+print(f"{taux:.2%}")
+# Résultat : "75.63%"
+```
+
+---
+
+### **Exercice 11 : Formatage des durées**
+
+```python
+secondes = 3661
+heures = secondes // 3600
+minutes = (secondes % 3600) // 60
+secondes_restantes = secondes % 60
+print(f"{heures:02d}:{minutes:02d}:{secondes_restantes:02d}")
+# Résultat : "01:01:01"
+```
+
+---
+
+### **Exercice 12 : Formatage monétaire**
+
+```python
+prix = 1234.56789
+print(f"{prix:,.2f} $")
+# Résultat : "1,234.57 $"
+```
+
+---
+
+### **Exercice 13 : Combinaison de spécificateurs**
+
+```python
+nombre = 12345.6789
+print(f"{nombre:+15,.2f}")
+# Résultat : "   +12,345.68"
+```
+
+
+---
+
+### **Exercice 14 : Formatage personnalisé**
+
+```python
+client = "Jean Dupont"
+montant_ht = 123.456
+taux_tva = 0.15
+montant_ttc = montant_ht * (1 + taux_tva)
+
+print(f"Facture pour {client}")
+print(f"Montant HT : {montant_ht:.2f} $")
+print(f"Taxes ({taux_tva:.2%}) : {montant_ht * taux_tva:.2f} $")
+print(f"Montant TTC : {montant_ttc:.2f} $")
+# Résultat :
+# Facture pour Jean Dupont
+# Montant HT : 123.46 $
+# Taxes (15.00 %) : 18.52 $
+# Montant TTC : 141.98 $
+```
+
+---
+
+----------
+
+??? info "Utilisation de l'IA"
+    Page rédigée en partie avec l'aide d'un assistant IA. L'IA a été utilisée pour générer des 
+    explications, des exemples et/ou des suggestions de structure. Toutes les informations ont 
+    été vérifiées, éditées et complétées par l'auteur.

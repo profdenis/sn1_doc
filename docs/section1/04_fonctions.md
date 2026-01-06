@@ -10,7 +10,7 @@ Une **fonction** est un bloc de code qui effectue une tâche spécifique. Elle e
 
 **Syntaxe** :
 
-```python
+```
 def nom_de_la_fonction():
     # Instructions
 ```
@@ -63,8 +63,10 @@ Une fonction **sans paramètre** et **sans retour** effectue une tâche sans rec
 **Exemple** :
 
 ```python
+from datetime import datetime
+
+
 def afficher_date_du_jour():
-    from datetime import datetime
     aujourdhui = datetime.now()
     print(f"Aujourd'hui, nous sommes le {aujourdhui.strftime('%d/%m/%Y')}.")
 
@@ -76,7 +78,7 @@ afficher_date_du_jour()
 **Sortie possible** :
 
 ```
-Aujourd'hui, nous sommes le 04/12/2025.
+Aujourd'hui, nous sommes le 02/01/2026.
 ```
 
 ---
@@ -85,11 +87,12 @@ Aujourd'hui, nous sommes le 04/12/2025.
 
 ### **3.1 Définition**
 
-Une fonction avec **1 paramètre** reçoit une valeur lors de l'appel.
+Une fonction avec **1 paramètre** reçoit une valeur lors de l'appel. Le paramètre est utilisé comme une variable locale
+dans la fonction.
 
 **Syntaxe** :
 
-```python
+```
 def nom_de_la_fonction(parametre):
     # Instructions utilisant parametre
 ```
@@ -113,6 +116,16 @@ dire_bonjour_a("Alice")
 Bonjour, Alice !
 ```
 
+!!! note "Note"
+    Si on appelle (ou utilise) une fonction une seule fois, alors on peut avoir de la difficulté à voir l'utilité de
+    définir une fonction. Mais si on l'utilise plusieurs fois, on peut voir l'avantage de la réutilisation du code 
+    plus facilement. Comme ici, si on veut dire bonjour à plusieurs personnes, on peut appeler la fonction plusieurs 
+    fois, mais avec des noms différents.
+
+    Si on définit une fonction qui fait un calcul compliqué, alors on pourra répéter le calcul compliqué en appelant la 
+    fonction plusieurs fois avec des paramètres différents, sans avoir besoin de répéter tout le code (voir exemples
+    plus bas). 
+
 ---
 
 ## **4. Fonctions avec 2 paramètres ou plus et sans retour**
@@ -123,7 +136,7 @@ Une fonction peut recevoir **plusieurs paramètres**, séparés par des virgules
 
 **Syntaxe** :
 
-```python
+```
 def nom_de_la_fonction(param1, param2, ...):
     # Instructions utilisant param1, param2, etc.
 ```
@@ -229,6 +242,11 @@ print(f"Somme : {somme}, Produit : {produit}")
 Somme : 9, Produit : 20
 ```
 
+!!! warning "Attention"
+    Bien qu'il soit possible de retourner plusieurs valeurs d'une fonction, il est souvent préférable de séparer
+    les calculs en plusieurs fonctions, pour qu'une fonction ne soit pas trop complexe et facile à comprendre.
+    Idéalement, une fonction devrait se concentrer sur une tâche spécifique et retourner un résultat clair.
+
 ---
 
 ## **6. Erreurs courantes avec les fonctions**
@@ -238,9 +256,9 @@ Somme : 9, Produit : 20
 **Problème** : Oublier d'indenter le code à l'intérieur de la fonction.
 **Exemple incorrect** :
 
-```python
+```
 def dire_bonjour():
-    print("Bonjour !")  # Erreur : pas d'indentation
+print("Bonjour !")  # Erreur : pas d'indentation
 ```
 
 **Correction** :
@@ -255,6 +273,7 @@ def dire_bonjour():
 ### **6.2 Utilisation de variables extérieures à la place de paramètres**
 
 **Problème** : Utiliser une variable définie **en dehors** de la fonction au lieu de passer un paramètre.
+
 **Exemple incorrect** :
 
 ```python
@@ -280,11 +299,17 @@ def dire_bonjour(nom):
 dire_bonjour("Alice")
 ```
 
+!!! tip "Astuce"
+    Une fonction ne devrait pas dépendre de variables globales pour fonctionner correctement. Cela peut rendre le code
+    difficile à maintenir et à comprendre. Il est préférable de passer les valeurs nécessaires en tant que paramètres à
+    la fonction.
+
 ---
 
 ### **6.3 Oublier le `return`**
 
 **Problème** : Oublier de retourner une valeur quand c'est nécessaire.
+
 **Exemple incorrect** :
 
 ```python
@@ -293,7 +318,7 @@ def carre(nombre):
 
 
 resultat = carre(4)
-print(resultat)  # Affiche None
+print(resultat)  # Affiche None car il n'y a pas de retour
 ```
 
 **Correction** :
@@ -383,7 +408,9 @@ print(f"L'aire du rectangle est {aire:.2f}.")
 
 ### **3. Calcul de la moyenne de trois nombres**
 
-**Formule** : \( \text{Moyenne} = \frac{\text{nombre1} + \text{nombre2} + \text{nombre3}}{3} \)
+**Formule** :
+
+\[\text{Moyenne} = \frac{\text{nombre1} + \text{nombre2} + \text{nombre3}}{3}\]
 
 ```python
 def moyenne_trois_nombres(nombre1, nombre2, nombre3):
@@ -418,3 +445,10 @@ print(f"{kilometres} km équivaut à {miles:.2f} miles.")
 ```
 
 ---
+
+----------
+
+??? info "Utilisation de l'IA"
+    Page rédigée en partie avec l'aide d'un assistant IA. L'IA a été utilisée pour générer des
+    explications, des exemples et/ou des suggestions de structure. Toutes les informations ont
+    été vérifiées, éditées et complétées par l'auteur.

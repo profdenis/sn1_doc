@@ -1,4 +1,4 @@
-# **Exercices 4 : Les dictionnaires**
+# **Exercices 4 : Lecture et écriture de fichiers**
 
 ---
 
@@ -12,211 +12,169 @@ code.
 1.
 
 ```python
-mon_dictionnaire = {"a": 1, "b": 2, "c": 3}
-print(mon_dictionnaire["b"])
+with open("test.txt", "w") as fichier:
+    fichier.write("Bonjour\n")
+    fichier.write("Python\n")
+
+with open("test.txt", "r") as fichier:
+    contenu = fichier.read()
+    print(contenu)
 ```
 
 2.
 
 ```python
-capitales = {"France": "Paris", "Canada": "Ottawa"}
-capitales["Japon"] = "Tokyo"
-print(capitales)
+with open("nombres.txt", "w") as fichier:
+    fichier.write("10\n")
+    fichier.write("20\n")
+    fichier.write("30\n")
+
+with open("nombres.txt", "r") as fichier:
+    for ligne in fichier:
+        print(int(ligne) * 2)
 ```
 
 ---
 
-## **Exercices de base**
+## **Exercices de lecture de fichiers**
 
-### **Exercice 2 : Créer un dictionnaire**
+### **Exercice 2 : Lire un fichier texte**
 
-Créez un dictionnaire `etudiant` contenant les informations suivantes :
-
-- Nom : "Alice"
-- Âge : 25
-- Cours : ["Maths", "Informatique", "Physique"]
-
-Affichez le dictionnaire.
+Écrivez un programme qui lit le contenu d'un fichier nommé `poeme.txt` et l'affiche à l'écran.
 
 ---
 
-### **Exercice 3 : Accéder aux valeurs**
+### **Exercice 3 : Lire un fichier ligne par ligne**
 
-À partir du dictionnaire `etudiant` créé dans l'exercice 2, affichez :
-
-- Le nom de l'étudiant.
-- Le deuxième cours suivi par l'étudiant.
+Écrivez un programme qui lit un fichier nommé `villes.txt` ligne par ligne et affiche chaque ligne avec un numéro de
+ligne.
 
 ---
 
-### **Exercice 4 : Ajouter et modifier des éléments**
+### **Exercice 4 : Calculer la somme des nombres dans un fichier**
 
-À partir du dictionnaire `etudiant` :
-
-- Ajoutez une clé `"ville"` avec la valeur `"Montréal"`.
-- Modifiez la valeur de la clé `"âge"` pour qu'elle soit `26`.
-
-Affichez le dictionnaire modifié.
+Écrivez un programme qui lit un fichier nommé `nombres.txt` contenant un nombre par ligne, calcule la somme de ces
+nombres et affiche le résultat. **Gérez les erreurs** si une ligne ne contient pas un nombre valide.
 
 ---
 
-### **Exercice 5 : Supprimer un élément**
+### **Exercice 5 : Lire une liste de nombres**
 
-À partir du dictionnaire `etudiant` :
-
-- Supprimez la clé `"ville"`.
-
-Affichez le dictionnaire après suppression.
+Écrivez une fonction `lire_nombres(nom_fichier)` qui lit un fichier contenant un nombre par ligne et retourne une liste
+de ces nombres. **Gérez les erreurs** pour ignorer les lignes non valides.
 
 ---
 
-### **Exercice 6 : Parcourir un dictionnaire**
+### **Exercice 6 : Compter les mots dans un fichier**
 
-Créez un dictionnaire `capitales` contenant les paires suivantes :
-
-- "France" : "Paris"
-- "Canada" : "Ottawa"
-- "Japon" : "Tokyo"
-
-Parcourez le dictionnaire et affichez chaque paire clé-valeur sous la forme : `Pays : Capitale`.
+Écrivez un programme qui lit un fichier nommé `texte.txt` et compte le nombre de mots qu'il contient.
 
 ---
 
-### **Exercice 7 : Vérifier l'existence d'une clé**
+### **Exercice 7 : Trouver le mot le plus long**
 
-À partir du dictionnaire `capitales` de l'exercice 6, vérifiez si la clé `"Allemagne"` existe. Si elle n'existe pas,
-ajoutez-la avec la valeur `"Berlin"`.
-
----
-
-### **Exercice 8 : Utiliser la méthode `get()`**
-
-À partir du dictionnaire `capitales`, utilisez la méthode `get()` pour obtenir la capitale de `"Italie"`. Si la clé
-n'existe pas, retournez `"Inconnu"`.
+Écrivez un programme qui lit un fichier nommé `mots.txt` contenant un mot par ligne et trouve le mot le plus long.
 
 ---
 
-## **Exercices intermédiaires**
+## **Exercices d'écriture de fichiers**
 
-### **Exercice 9 : Compter les occurrences de mots**
+### **Exercice 8 : Écrire dans un fichier**
 
-Écrivez un programme qui compte les occurrences de chaque mot dans la phrase suivante :
-`"le chat est sur le tapis le chat est noir"`
-
-Affichez le dictionnaire des occurrences.
+Écrivez un programme qui demande à l'utilisateur d'entrer trois lignes de texte et écrit ces lignes dans un fichier
+nommé `utilisateur.txt`.
 
 ---
 
-### **Exercice 10 : Fusionner deux dictionnaires**
+### **Exercice 9 : Ajouter à un fichier**
 
-Créez deux dictionnaires :
-
-- `dictionnaire1 = {"a": 1, "b": 2}`
-- `dictionnaire2 = {"b": 3, "c": 4}`
-
-Fusionnez-les en un seul dictionnaire. En cas de conflit de clés, conservez la valeur du deuxième dictionnaire.
+Écrivez un programme qui ajoute trois lignes de texte à la fin d'un fichier existant nommé `journal.txt`.
 
 ---
 
-### **Exercice 11 : Inverser un dictionnaire**
+### **Exercice 10 : Écrire une liste de nombres**
 
-Créez un dictionnaire `capitales` comme dans l'exercice 6, puis créez un nouveau dictionnaire où les capitales
-deviennent les clés et les pays deviennent les valeurs.
-
----
-
-### **Exercice 12 : Trouver la clé avec la valeur maximale**
-
-Créez un dictionnaire `notes` contenant les paires suivantes :
-
-- "Alice" : 15
-- "Bob" : 12
-- "Charlie" : 18
-- "David" : 14
-
-Trouvez le nom de l'étudiant avec la note la plus élevée.
+Écrivez un programme qui écrit une liste de nombres `[1.5, 2.5, 3.5, 4.5]` dans un fichier nommé `nombres_sortie.txt`,
+un nombre par ligne.
 
 ---
 
-## **Exercices avancés**
+### **Exercice 11 : Écrire une liste de chaînes**
 
-### **Exercice 13 : Créer un dictionnaire à partir de deux listes**
-
-Vous avez deux listes :
-
-- `cles = ["nom", "âge", "ville"]`
-- `valeurs = ["Alice", 25, "Montréal"]`
-
-Créez un dictionnaire `personne` à partir de ces deux listes.
+Écrivez un programme qui écrit une liste de chaînes `["pomme", "banane", "cerise", "datte"]` dans un fichier nommé
+`fruits.txt`, une chaîne par ligne.
 
 ---
 
-### **Exercice 14 : Filtrer un dictionnaire**
+## **Exercices combinés (lecture et écriture)**
 
-À partir du dictionnaire `notes` de l'exercice 12, créez un nouveau dictionnaire contenant uniquement les étudiants avec
-une note supérieure ou égale à 15.
+### **Exercice 12 : Copier un fichier**
 
----
-
-### **Exercice 15 : Calculer la moyenne des valeurs**
-
-À partir du dictionnaire `notes` de l'exercice 12, calculez la moyenne des notes.
+Écrivez un programme qui copie le contenu d'un fichier `source.txt` vers un fichier `destination.txt`.
 
 ---
 
-### **Exercice 16 : Dictionnaire imbriqué**
+### **Exercice 13 : Inverser les lignes d'un fichier**
 
-Créez un dictionnaire `ecole` contenant les informations suivantes :
-
-- "Classe A" : {"nombre_etudiants" : 25, "professeur" : "M. Dupont"}
-- "Classe B" : {"nombre_etudiants" : 22, "professeur" : "Mme Martin"}
-
-Affichez le nombre total d'étudiants dans l'école.
+Écrivez un programme qui lit un fichier `entree.txt` et écrit ses lignes dans un fichier `sortie.txt` dans l'ordre
+inverse.
 
 ---
 
-### **Exercice 17 : Mettre à jour un dictionnaire imbriqué**
+### **Exercice 14 : Filtrer les nombres pairs**
 
-À partir du dictionnaire `ecole` de l'exercice 16, modifiez le professeur de la "Classe B" pour qu'il soit "M. Bernard".
-
----
-
-### **Exercice 18 : Parcourir un dictionnaire imbriqué**
-
-À partir du dictionnaire `ecole` de l'exercice 16, parcourez-le et affichez chaque classe avec son nombre d'étudiants et
-son professeur.
+Écrivez un programme qui lit un fichier `nombres.txt` contenant un nombre par ligne, filtre les nombres pairs, et écrit
+ces nombres pairs dans un fichier `pairs.txt`.
 
 ---
 
-### **Exercice 19 : Créer un dictionnaire de listes**
+### **Exercice 15 : Compter les occurrences de mots**
 
-Créez un dictionnaire `cours` où chaque clé est un nom de cours et chaque valeur est une liste d'étudiants inscrits à ce
-cours. Par exemple :
-
-```python
-cours = {
-    "Maths": ["Alice", "Bob", "Charlie"],
-    "Informatique": ["Alice", "David"],
-    "Physique": ["Bob", "Charlie", "David"]
-}
-```
-
-Affichez tous les étudiants inscrits au cours de "Maths".
+Écrivez un programme qui lit un fichier `texte.txt`, compte les occurrences de chaque mot, et écrit les résultats dans
+un fichier `occurrences.txt`.
 
 ---
 
-### **Exercice 20 : Trouver les étudiants communs à deux cours**
+### **Exercice 16 : Fusionner deux fichiers**
 
-À partir du dictionnaire `cours` de l'exercice 19, trouvez les étudiants inscrits à la fois en "Maths" et en "
-Informatique".
+Écrivez un programme qui lit le contenu de deux fichiers `fichier1.txt` et `fichier2.txt`, et écrit leur contenu
+fusionné dans un fichier `fusion.txt`.
+
+---
+
+### **Exercice 17 : Lire et écrire des chaînes formatées**
+
+Écrivez un programme qui lit un fichier `noms.txt` contenant un nom par ligne, et écrit dans un fichier
+`salutations.txt` une ligne de salutation pour chaque nom (ex. : "Bonjour Alice").
+
+---
+
+### **Exercice 18 : Calculer la moyenne des nombres dans un fichier**
+
+Écrivez un programme qui lit un fichier `notes.txt` contenant une note par ligne, calcule la moyenne de ces notes, et
+écrit le résultat dans un fichier `moyenne.txt`.
+
+---
+
+### **Exercice 19 : Lire et écrire des données structurées**
+
+Écrivez un programme qui lit un fichier `etudiants.txt` contenant des lignes au format `nom,note`, calcule la moyenne
+des notes, et écrit le résultat dans un fichier `resultats.txt`.
+
+---
+
+### **Exercice 20 : Gestion des erreurs de fichier**
+
+Écrivez un programme qui tente de lire un fichier `inexistant.txt` et gère les erreurs `FileNotFoundError` et
+`PermissionError`.
 
 ---
 
 ---
 **Conseils pour les exercices** :
 
-- Utilisez les méthodes des dictionnaires comme `keys()`, `values()`, et `items()` pour parcourir les éléments.
-- Utilisez `get()` pour éviter les erreurs lors de l'accès à des clés inexistantes.
-- Testez vos programmes avec différentes valeurs pour vérifier leur bon fonctionnement.
+- Utilisez `with open(...)` pour garantir la fermeture des fichiers.
+- Gérez les erreurs potentielles avec `try`/`except`.
+- Testez vos programmes avec des fichiers existants et inexistants.
 
 ---

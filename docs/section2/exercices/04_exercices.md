@@ -1,4 +1,4 @@
-# **Exercices 4 : Boucles `while`**
+# **Exercices 4 : Les boucles `while`**
 
 ---
 

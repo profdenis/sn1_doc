@@ -1,27 +1,16 @@
-# **Boucles `for`**
+# **Les boucles `for`**
 
 ---
 
-## **1. Pourquoi utiliser des boucles ?**
+## **1. Boucle `for` vs boucle `while`**
 
-### **1.1 Illustration du besoin d'une boucle**
+| **Type de boucle** | **Utilisation**                                                                  | **Exemple**          |
+|--------------------|----------------------------------------------------------------------------------|----------------------|
+| **`while`**        | Utilisée pour des **itérations non comptées** (tant qu'une condition est vraie). | `while condition:`   |
+| **`for`**          | Utilisée pour des **itérations comptées** (nombre de répétitions connu).         | `for i in range(5):` |
 
-Imaginons que nous voulons calculer la somme de plusieurs nombres :
-
-- **Sans boucle** :
-    - Pour 3 nombres, on peut écrire :
-      ```python
-      somme = nombre1 + nombre2 + nombre3
-      ```
-    - Mais pour **100 nombres**, il faudrait écrire une ligne très longue et répétitive :
-      ```python
-      somme = nombre1 + nombre2 + nombre3 + ... + nombre100
-      ```
-    - Cela devient **fastidieux, long et source d'erreurs**.
-
-- **Avec une boucle** :
-    - On peut écrire un code **concise et réutilisable** pour additionner 100 nombres (ou même 1000 !) sans répéter
-      manuellement chaque addition.
+- **`for`** : Idéale pour parcourir des séquences (listes, `range`, etc.) et répéter un nombre connu de fois.
+- **`while`** : Idéale pour des répétitions basées sur une **condition** plutôt qu'un compteur.
 
 ---
 
@@ -53,7 +42,7 @@ code pour chaque élément.
 
 **Syntaxe** :
 
-```python
+```
 for element in liste:
     # Instructions à exécuter pour chaque élément
 ```
@@ -100,16 +89,17 @@ La somme est 15.
 
 ### **4.1 Qu'est-ce que `range()` ?**
 
-- `range()` est une fonction qui génère une **séquence de nombres**.
+- `range()` est une fonction qui génère une **séquence de nombres entiers**.
 - Elle est souvent utilisée avec les boucles `for` pour répéter une action un certain nombre de fois.
 
 ---
 
 ### **4.2 Syntaxe de `range()`**
 
-- **`range(stop)`** : Génère une séquence de nombres de `0` à `stop - 1`.
+- **`range(stop)`** : Génère une séquence de nombres entiers de `0` à `stop - 1`.
 - **`range(start, stop)`** : Génère une séquence de nombres de `start` à `stop - 1`.
 - **`range(start, stop, step)`** : Génère une séquence de nombres de `start` à `stop - 1`, en incrémentant de `step`.
+- Par défaut, la valeur de step est `1`, et la valeur de start est `0`.
 
 ---
 
@@ -199,17 +189,16 @@ La somme des nombres de 1 à 100 est 5050.
 
 ---
 
-### **5.3 Afficher les nombres pairs de 0 à 20**
+### **5.3 Afficher les nombres pairs de 2 à 20**
 
 ```python
-for i in range(0, 21, 2):
+for i in range(2, 21, 2):
     print(i)
 ```
 
 **Sortie** :
 
 ```
-0
 2
 4
 6
@@ -259,3 +248,10 @@ for i in range(10, 0, -1):
 | **`range(start, stop, step)`** | Génère une séquence de `start` à `stop - 1`, avec un incrément de `step`. |
 
 ---
+
+----------
+
+??? info "Utilisation de l'IA"
+    Page rédigée en partie avec l'aide d'un assistant IA. L'IA a été utilisée pour générer des 
+    explications, des exemples et/ou des suggestions de structure. Toutes les informations ont 
+    été vérifiées, éditées et complétées par l'auteur.

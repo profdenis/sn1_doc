@@ -1,4 +1,4 @@
-# **Corrigés 4 : Les dictionnaires**
+# **Corrigés 4 : Lecture et écriture de fichiers**
 
 ---
 
@@ -9,278 +9,301 @@
 1.
 
 ```python
-mon_dictionnaire = {"a": 1, "b": 2, "c": 3}
-print(mon_dictionnaire["b"])
+with open("test.txt", "w") as fichier:
+    fichier.write("Bonjour\n")
+    fichier.write("Python\n")
+
+with open("test.txt", "r") as fichier:
+    contenu = fichier.read()
+    print(contenu)
 ```
 
 **Sortie** :
 
 ```
-2
+Bonjour
+Python
 ```
 
 2.
 
 ```python
-capitales = {"France": "Paris", "Canada": "Ottawa"}
-capitales["Japon"] = "Tokyo"
-print(capitales)
+with open("nombres.txt", "w") as fichier:
+    fichier.write("10\n")
+    fichier.write("20\n")
+    fichier.write("30\n")
+
+with open("nombres.txt", "r") as fichier:
+    for ligne in fichier:
+        print(int(ligne) * 2)
 ```
 
 **Sortie** :
 
 ```
-{'France': 'Paris', 'Canada': 'Ottawa', 'Japon': 'Tokyo'}
+20
+40
+60
 ```
 
 ---
 
-## **Exercices de base**
+## **Exercices de lecture de fichiers**
 
-### **Exercice 2 : Créer un dictionnaire**
+### **Exercice 2 : Lire un fichier texte**
 
 ```python
-etudiant = {
-    "nom": "Alice",
-    "âge": 25,
-    "cours": ["Maths", "Informatique", "Physique"]
-}
-print(etudiant)
+with open("poeme.txt", "r") as fichier:
+    contenu = fichier.read()
+    print(contenu)
 ```
 
 ---
 
-### **Exercice 3 : Accéder aux valeurs**
+### **Exercice 3 : Lire un fichier ligne par ligne**
 
 ```python
-print(etudiant["nom"])  # Affiche "Alice"
-print(etudiant["cours"][1])  # Affiche "Informatique"
+with open("villes.txt", "r") as fichier:
+    for index, ligne in enumerate(fichier, start=1):
+        print(f"{index}: {ligne.strip()}")
 ```
 
 ---
 
-### **Exercice 4 : Ajouter et modifier des éléments**
+### **Exercice 4 : Calculer la somme des nombres dans un fichier**
 
 ```python
-etudiant["ville"] = "Montréal"  # Ajoute la clé "ville"
-etudiant["âge"] = 26  # Modifie la valeur de la clé "âge"
-print(etudiant)
+somme = 0.0
+with open("nombres.txt", "r") as fichier:
+    for ligne in fichier:
+        try:
+            nombre = float(ligne)
+            somme += nombre
+        except ValueError:
+            print(f"Ligne ignorée : {ligne.strip()} (n'est pas un nombre)")
+print(f"La somme est {somme}.")
 ```
 
 ---
 
-### **Exercice 5 : Supprimer un élément**
+### **Exercice 5 : Lire une liste de nombres**
 
 ```python
-del etudiant["ville"]  # Supprime la clé "ville"
-print(etudiant)
+def lire_nombres(nom_fichier):
+    nombres = []
+    with open(nom_fichier, "r") as fichier:
+        for ligne in fichier:
+            try:
+                nombre = float(ligne)
+                nombres.append(nombre)
+            except ValueError:
+                print(f"Ligne ignorée : {ligne.strip()} (n'est pas un nombre)")
+    return nombres
+
+
+nombres = lire_nombres("nombres.txt")
+print(f"Liste des nombres : {nombres}")
 ```
 
 ---
 
-### **Exercice 6 : Parcourir un dictionnaire**
+### **Exercice 6 : Compter les mots dans un fichier**
 
 ```python
-capitales = {"France": "Paris", "Canada": "Ottawa", "Japon": "Tokyo"}
-for pays in capitales:
-    capitale = capitales[pays]
-    print(f"{pays} : {capitale}")
+with open("texte.txt", "r") as fichier:
+    contenu = fichier.read()
+    mots = contenu.split()
+    print(f"Nombre de mots : {len(mots)}")
 ```
 
 ---
 
-### **Exercice 7 : Vérifier l'existence d'une clé**
+### **Exercice 7 : Trouver le mot le plus long**
 
 ```python
-if "Allemagne" not in capitales:
-    capitales["Allemagne"] = "Berlin"
-print(capitales)
+mot_le_plus_long = ""
+with open("mots.txt", "r") as fichier:
+    for ligne in fichier:
+        mot = ligne.strip()
+        if len(mot) > len(mot_le_plus_long):
+            mot_le_plus_long = mot
+print(f"Mot le plus long : {mot_le_plus_long}")
 ```
 
 ---
 
-### **Exercice 8 : Utiliser la méthode `get()`**
+## **Exercices d'écriture de fichiers**
+
+### **Exercice 8 : Écrire dans un fichier**
 
 ```python
-capitale = capitales.get("Italie", "Inconnu")
-print(f"La capitale de l'Italie est {capitale}.")
+with open("utilisateur.txt", "w") as fichier:
+    for i in range(3):
+        ligne = input(f"Entrez la ligne {i + 1} : ")
+        fichier.write(ligne + "\n")
 ```
 
 ---
 
-## **Exercices intermédiaires**
-
-### **Exercice 9 : Compter les occurrences de mots**
+### **Exercice 9 : Ajouter à un fichier**
 
 ```python
-phrase = "le chat est sur le tapis le chat est noir"
-mots = phrase.split()
-occurrences = {}
-
-for mot in mots:
-    if mot in occurrences:
-        occurrences[mot] += 1
-    else:
-        occurrences[mot] = 1
-
-print(occurrences)
+with open("journal.txt", "a") as fichier:
+    for i in range(3):
+        ligne = input(f"Entrez la ligne {i + 1} à ajouter : ")
+        fichier.write(ligne + "\n")
 ```
 
 ---
 
-### **Exercice 10 : Fusionner deux dictionnaires**
+### **Exercice 10 : Écrire une liste de nombres**
 
 ```python
-dictionnaire1 = {"a": 1, "b": 2}
-dictionnaire2 = {"b": 3, "c": 4}
-
-dictionnaire_fusionne = dictionnaire1.copy()
-for cle, valeur in dictionnaire2.items():
-    dictionnaire_fusionne[cle] = valeur
-
-print(dictionnaire_fusionne)
+nombres = [1.5, 2.5, 3.5, 4.5]
+with open("nombres_sortie.txt", "w") as fichier:
+    for nombre in nombres:
+        fichier.write(f"{nombre}\n")
 ```
 
 ---
 
-### **Exercice 11 : Inverser un dictionnaire**
+### **Exercice 11 : Écrire une liste de chaînes**
 
 ```python
-capitales = {"France": "Paris", "Canada": "Ottawa", "Japon": "Tokyo"}
-capitales_inversees = {}
-
-for pays, capitale in capitales.items():
-    capitales_inversees[capitale] = pays
-
-print(capitales_inversees)
+mots = ["pomme", "banane", "cerise", "datte"]
+with open("fruits.txt", "w") as fichier:
+    for mot in mots:
+        fichier.write(f"{mot}\n")
 ```
 
 ---
 
-### **Exercice 12 : Trouver la clé avec la valeur maximale**
+## **Exercices combinés (lecture et écriture)**
+
+### **Exercice 12 : Copier un fichier**
 
 ```python
-notes = {"Alice": 15, "Bob": 12, "Charlie": 18, "David": 14}
-
-nom_max = None
-note_max = -1
-
-for nom, note in notes.items():
-    if note > note_max:
-        note_max = note
-        nom_max = nom
-
-print(f"L'étudiant avec la note la plus élevée est {nom_max}.")
+with open("source.txt", "r") as source, open("destination.txt", "w") as destination:
+    contenu = source.read()
+    destination.write(contenu)
 ```
 
 ---
 
-## **Exercices avancés**
-
-### **Exercice 13 : Créer un dictionnaire à partir de deux listes**
+### **Exercice 13 : Inverser les lignes d'un fichier**
 
 ```python
-cles = ["nom", "âge", "ville"]
-valeurs = ["Alice", 25, "Montréal"]
+with open("entree.txt", "r") as entree:
+    lignes = entree.readlines()
 
-personne = {}
-for i in range(len(cles)):
-    personne[cles[i]] = valeurs[i]
-
-print(personne)
+with open("sortie.txt", "w") as sortie:
+    for ligne in reversed(lignes):
+        sortie.write(ligne)
 ```
 
 ---
 
-### **Exercice 14 : Filtrer un dictionnaire**
+### **Exercice 14 : Filtrer les nombres pairs**
 
 ```python
-notes = {"Alice": 15, "Bob": 12, "Charlie": 18, "David": 14}
-notes_filtrees = {}
-
-for nom, note in notes.items():
-    if note >= 15:
-        notes_filtrees[nom] = note
-
-print(notes_filtrees)
+with open("nombres.txt", "r") as entree, open("pairs.txt", "w") as sortie:
+    for ligne in entree:
+        try:
+            nombre = int(ligne)
+            if nombre % 2 == 0:
+                sortie.write(ligne)
+        except ValueError:
+            continue
 ```
 
 ---
 
-### **Exercice 15 : Calculer la moyenne des valeurs**
+### **Exercice 15 : Compter les occurrences de mots**
 
 ```python
-somme = 0
-for note in notes.values():
-    somme += note
+from collections import defaultdict
 
-moyenne = somme / len(notes)
-print(f"La moyenne des notes est {moyenne:.2f}.")
+occurrences = defaultdict(int)
+with open("texte.txt", "r") as fichier:
+    for ligne in fichier:
+        mots = ligne.strip().split()
+        for mot in mots:
+            occurrences[mot] += 1
+
+with open("occurrences.txt", "w") as fichier:
+    for mot, count in occurrences.items():
+        fichier.write(f"{mot}: {count}\n")
 ```
 
 ---
 
-### **Exercice 16 : Dictionnaire imbriqué**
+### **Exercice 16 : Fusionner deux fichiers**
 
 ```python
-ecole = {
-    "Classe A": {"nombre_etudiants": 25, "professeur": "M. Dupont"},
-    "Classe B": {"nombre_etudiants": 22, "professeur": "Mme Martin"}
-}
-
-total_etudiants = 0
-for classe in ecole.values():
-    total_etudiants += classe["nombre_etudiants"]
-
-print(f"Nombre total d'étudiants : {total_etudiants}.")
+with open("fichier1.txt", "r") as f1, open("fichier2.txt", "r") as f2, open("fusion.txt", "w") as fusion:
+    fusion.write(f1.read())
+    fusion.write(f2.read())
 ```
 
 ---
 
-### **Exercice 17 : Mettre à jour un dictionnaire imbriqué**
+### **Exercice 17 : Lire et écrire des chaînes formatées**
 
 ```python
-ecole["Classe B"]["professeur"] = "M. Bernard"
-print(ecole)
+with open("noms.txt", "r") as entree, open("salutations.txt", "w") as sortie:
+    for ligne in entree:
+        nom = ligne.strip()
+        sortie.write(f"Bonjour {nom}\n")
 ```
 
 ---
 
-### **Exercice 18 : Parcourir un dictionnaire imbriqué**
+### **Exercice 18 : Calculer la moyenne des nombres dans un fichier**
 
 ```python
-for classe, infos in ecole.items():
-    print(f"{classe} : {infos['nombre_etudiants']} étudiants, professeur : {infos['professeur']}")
+nombres = []
+with open("notes.txt", "r") as fichier:
+    for ligne in fichier:
+        try:
+            nombre = float(ligne)
+            nombres.append(nombre)
+        except ValueError:
+            continue
+
+moyenne = sum(nombres) / len(nombres) if nombres else 0
+with open("moyenne.txt", "w") as fichier:
+    fichier.write(f"Moyenne : {moyenne:.2f}\n")
 ```
 
 ---
 
-### **Exercice 19 : Créer un dictionnaire de listes**
+### **Exercice 19 : Lire et écrire des données structurées**
 
 ```python
-cours = {
-    "Maths": ["Alice", "Bob", "Charlie"],
-    "Informatique": ["Alice", "David"],
-    "Physique": ["Bob", "Charlie", "David"]
-}
+notes = []
+with open("etudiants.txt", "r") as fichier:
+    for ligne in fichier:
+        nom, note = ligne.strip().split(",")
+        notes.append(float(note))
 
-print("Étudiants en Maths :", cours["Maths"])
+moyenne = sum(notes) / len(notes) if notes else 0
+with open("resultats.txt", "w") as fichier:
+    fichier.write(f"Moyenne des notes : {moyenne:.2f}\n")
 ```
 
 ---
 
-### **Exercice 20 : Trouver les étudiants communs à deux cours**
+### **Exercice 20 : Gestion des erreurs de fichier**
 
 ```python
-maths = cours["Maths"]
-informatique = cours["Informatique"]
-
-communs = []
-for etudiant in maths:
-    if etudiant in informatique:
-        communs.append(etudiant)
-
-print("Étudiants communs :", communs)
+try:
+    with open("inexistant.txt", "r") as fichier:
+        contenu = fichier.read()
+        print(contenu)
+except FileNotFoundError:
+    print("Erreur : Le fichier n'existe pas.")
+except PermissionError:
+    print("Erreur : Permission refusée.")
 ```
 
 ---

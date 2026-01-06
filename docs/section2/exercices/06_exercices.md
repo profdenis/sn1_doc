@@ -1,4 +1,4 @@
-# **Exercices 6 : Boucles imbriquées**
+# **Exercices 6 : Les boucles imbriquées**
 
 ---
 

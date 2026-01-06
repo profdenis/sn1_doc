@@ -24,10 +24,11 @@ Les opérateurs de comparaison permettent de comparer des valeurs. Ils retournen
 | `<=`          | Inférieur ou égal à | `5 <= 5`    | `True`       |
 | `>=`          | Supérieur ou égal à | `5 >= 10`   | `False`      |
 
-**Remarque importante** :
-
-- **`=`** est un opérateur d'**affectation** (ex. : `x = 5`).
-- **`==`** est un opérateur de **comparaison** (ex. : `x == 5`).
+!!! warning "Remarque importante"
+    1. **`=`** est un opérateur d'**affectation** 
+        - exemple : `x = 5` -> la variable `x` obtient la valeur `5`
+    2. **`==`** est un opérateur de **comparaison** 
+        - exemple : `x == 5` -> la valeur de `x` est égale à `5` (vrai ou faux)
 
 ---
 
@@ -53,7 +54,7 @@ Les opérateurs logiques permettent de combiner des expressions booléennes.
 
 | **Opérateur** | **Description**                                                | **Exemple**             | **Résultat** |
 |---------------|----------------------------------------------------------------|-------------------------|--------------|
-| `and`         | **ET** logique : `True` si les deux expressions sont `True`.   | `(5 < 10) and (10 > 5)` | `True`       |
+| `and`         | **ET** logique : `True` si les deux expressions sont `True`.   | `(5 < 10) and (10 > 3)` | `True`       |
 | `or`          | **OU** logique : `True` si au moins une expression est `True`. | `(5 < 3) or (10 > 5)`   | `True`       |
 | `not`         | **NON** logique : Inverse le booléen.                          | `not (5 == 5)`          | `False`      |
 
@@ -135,9 +136,9 @@ print(est_chaud and not est_froid)  # True
 
 ```python
 mot_de_passe = "secret123"
-entree_utilisateur = "secret123"
+entree_utilisateur = input("Entrez votre mot de passe : ")
 acces_autorise = mot_de_passe == entree_utilisateur
-print(acces_autorise)  # True
+print(acces_autorise)  # True si l'entrée utilisateur est "secret123", False sinon
 ```
 
 ---
@@ -145,10 +146,11 @@ print(acces_autorise)  # True
 ### **Exemple 4 : Vérification de valeurs multiples**
 
 ```python
-note = 15
-reussi = note >= 10
-mention_bien = note >= 14
-print(reussi and mention_bien)  # True
+note = 85
+reussi = note >= 60
+bien = note >= 75
+tres_bien = note >= 90
+print(bien or tres_bien)  # True
 ```
 
 ---
@@ -156,9 +158,10 @@ print(reussi and mention_bien)  # True
 ### **Exemple 5 : Utilisation de `not`**
 
 ```python
-est_pluie = False
-sortie_possible = not est_pluie
-print(sortie_possible)  # True
+note = 85
+reussi = note >= 60
+echec = not reussi
+print(echec)  # False
 ```
 
 ---
@@ -176,6 +179,14 @@ print(resultat)  # True
 ---
 
 ---
+
 **Remarque** : Ces exemples montrent comment utiliser les expressions booléennes pour évaluer des conditions. Dans les
 prochaines sections, nous verrons comment utiliser ces expressions dans des **structures conditionnelles** et des
 **boucles**.
+
+----------
+
+??? info "Utilisation de l'IA"
+    Page rédigée en partie avec l'aide d'un assistant IA. L'IA a été utilisée pour générer des 
+    explications, des exemples et/ou des suggestions de structure. Toutes les informations ont 
+    été vérifiées, éditées et complétées par l'auteur.

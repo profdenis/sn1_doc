@@ -139,10 +139,6 @@ Chronologie de la programmation
     - *The Imitation Game* (film sur Alan Turing).
     - *Lo and Behold: Reveries of the Connected World* (Werner Herzog).
 
-Voici une **structure claire et efficace** pour un tableau récapitulatif comparant les langages de programmation par
-époque. Ce format est adapté à un cours d’introduction et permet aux étudiants de visualiser rapidement les évolutions,
-les usages et les caractéristiques clés.
-
 ---
 
 ## **8. Tableau récapitulatif : Évolution des langages de programmation**
@@ -151,17 +147,25 @@ les usages et les caractéristiques clés.
 
 Comparaison des langages de programmation par époque
 
-| **Époque**      | **Langage**        | **Année** | **Niveau**           | **Usage principal**                    | **Caractéristiques clés**                                               | **Exemple de code**                    |
-|-----------------|--------------------|-----------|----------------------|----------------------------------------|-------------------------------------------------------------------------|----------------------------------------|
-| **Précurseurs** | Cartes perforées   | 1801      | Mécanique            | Automatisation des métiers à tisser    | Premier "programme" physique, pas de syntaxe.                           | (Image d’une carte perforée)           |
-| **Années 1940** | Assembleur         | 1949      | Bas niveau           | Programmation des premiers ordinateurs | Instructions mnémoniques (ex. : `MOV`, `ADD`), dépendant du processeur. | `MOV AX, 1`                            |
-| **Années 1950** | FORTRAN            | 1957      | Haut niveau          | Calculs scientifiques et ingénierie    | Premier langage "moderne", syntaxe mathématique.                        | `DO 10 I=1,10`                         |
-|                 | COBOL              | 1959      | Haut niveau          | Gestion et affaires                    | Langage verbeux, conçu pour les entreprises.                            | `ADD A TO B GIVING C`                  |
-| **Années 1970** | C                  | 1972      | Niveau intermédiaire | Systèmes d’exploitation et logiciels   | Rapide, portable, accès bas niveau à la mémoire.                        | `printf("Hello, World!");`             |
-|                 | Pascal             | 1970      | Haut niveau          | Enseignement de la programmation       | Structuré, typage strict, conçu pour la clarté.                         | `writeln('Bonjour');`                  |
-| **Années 1980** | C++                | 1985      | Niveau intermédiaire | Programmation orientée objet           | Ajoute les classes et objets au langage C.                              | `cout << "Hello, World!" << endl;`     |
-| **Années 1990** | Python             | 1991      | Haut niveau          | Polyvalence (science, web, IA)         | Syntaxe simple, lisible, bibliothèques riches.                          | `print("Hello, World!")`               |
-|                 | JavaScript         | 1995      | Haut niveau          | Développement web (interactivité)      | Exécuté dans les navigateurs, dynamique.                                | `console.log("Hello, World!");`        |
-| **Années 2000** | Java (suite)       | 2000s     | Haut niveau          | Applications mobiles et entreprises    | "Write once, run anywhere", orienté objet.                              | `System.out.println("Hello, World!");` |
-| **Années 2020** | Python (dominance) | 2020s     | Haut niveau          | IA, data science, automatisation       | Bibliothèques puissantes (NumPy, TensorFlow), communauté open source.   | `import numpy as np`                   |
+| **Époque**      | **Langage**        | **Année** | **Niveau**           | **Usage principal**                    | **Caractéristiques clés**                                               | **Exemple de code**                                                                                                                            |
+|-----------------|--------------------|-----------|----------------------|----------------------------------------|-------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Précurseurs** | Cartes perforées   | 1801      | Mécanique            | Automatisation des métiers à tisser    | Premier "programme" physique, pas de syntaxe.                           | ![Carte perforée (Gwern, Public domain, via Wikimedia Commons)](https://upload.wikimedia.org/wikipedia/commons/8/8a/Blue-punch-card-front.png) |
+| **Années 1940** | Assembleur         | 1949      | Bas niveau           | Programmation des premiers ordinateurs | Instructions mnémoniques (ex. : `MOV`, `ADD`), dépendant du processeur. | `MOV AX, 1`                                                                                                                                    |
+| **Années 1950** | FORTRAN            | 1957      | Haut niveau          | Calculs scientifiques et ingénierie    | Premier langage "moderne", syntaxe mathématique.                        | `DO 10 I=1,10`                                                                                                                                 |
+|                 | COBOL              | 1959      | Haut niveau          | Gestion et affaires                    | Langage verbeux, conçu pour les entreprises.                            | `ADD A TO B GIVING C`                                                                                                                          |
+| **Années 1970** | C                  | 1972      | Niveau intermédiaire | Systèmes d’exploitation et logiciels   | Rapide, portable, accès bas niveau à la mémoire.                        | `printf("Hello, World!");`                                                                                                                     |
+|                 | Pascal             | 1970      | Haut niveau          | Enseignement de la programmation       | Structuré, typage strict, conçu pour la clarté.                         | `writeln('Bonjour');`                                                                                                                          |
+| **Années 1980** | C++                | 1985      | Niveau intermédiaire | Programmation orientée objet           | Ajoute les classes et objets au langage C.                              | `cout << "Hello, World!" << endl;`                                                                                                             |
+| **Années 1990** | Python             | 1991      | Haut niveau          | Polyvalence (science, web, IA)         | Syntaxe simple, lisible, bibliothèques riches.                          | `print("Hello, World!")`                                                                                                                       |
+|                 | JavaScript         | 1995      | Haut niveau          | Développement web (interactivité)      | Exécuté dans les navigateurs, dynamique.                                | `console.log("Hello, World!");`                                                                                                                |
+| **Années 2000** | Java (suite)       | 2000s     | Haut niveau          | Applications mobiles et entreprises    | "Write once, run anywhere", orienté objet.                              | `System.out.println("Hello, World!");`                                                                                                         |
+| **Années 2020** | Python (dominance) | 2020s     | Haut niveau          | IA, data science, automatisation       | Bibliothèques puissantes (NumPy, TensorFlow), communauté open source.   | `import numpy as np`                                                                                                                           |
 
+---
+
+----------
+
+??? info "Utilisation de l'IA"
+    Page rédigée en partie avec l'aide d'un assistant IA. L'IA a été utilisée pour générer des 
+    explications, des exemples et/ou des suggestions de structure. Toutes les informations ont 
+    été vérifiées, éditées et complétées par l'auteur.
