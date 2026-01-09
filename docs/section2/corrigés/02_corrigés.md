@@ -101,9 +101,9 @@ else:
 temperature = float(input("Entrez la température actuelle (en °C) : "))
 if temperature > 30:
     print("Il fait très chaud.")
-elif 20 <= temperature <= 30:
+elif temperature >= 20:
     print("Il fait chaud.")
-elif 10 <= temperature < 20:
+elif temperature >= 10:
     print("Il fait doux.")
 else:
     print("Il fait froid.")
@@ -130,3 +130,10 @@ else:
 ```
 
 ---
+
+-------
+
+??? info "Utilisation de l'IA"
+      Page rédigée en partie avec l'aide d'un assistant IA, principalement à l'aide de Perplexity AI. L'IA a été 
+      utilisée pour générer des explications, des exemples et/ou des suggestions de structure. Toutes les informations 
+      ont été vérifiées, éditées et complétées par l'auteur.

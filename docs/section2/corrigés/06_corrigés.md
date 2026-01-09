@@ -199,39 +199,7 @@ while compteur_externe > 0:
 
 ---
 
-## **Exercice 9 : Recherche dans une matrice**
-
-```python
-matrice = [
-    [1, 2, 3],
-    [4, 5, 6],
-    [7, 8, 9]
-]
-recherche = int(input("Entrez un nombre à rechercher : "))
-trouve = False
-for i in range(3):
-    for j in range(3):
-        if matrice[i][j] == recherche:
-            trouve = True
-            break
-    if trouve:
-        break
-if trouve:
-    print(f"Le nombre {recherche} a été trouvé.")
-else:
-    print(f"Le nombre {recherche} n'a pas été trouvé.")
-```
-
-**Exemple d'exécution** :
-
-```
-Entrez un nombre à rechercher : 5
-Le nombre 5 a été trouvé.
-```
-
----
-
-## **Exercice 10 : Débogage d'une boucle imbriquée**
+## **Exercice 9 : Débogage d'une boucle imbriquée**
 
 **Problème** : Le code affiche un triangle rectangle de hauteur `n-1` au lieu de `n`.
 **Correction** : La boucle interne doit aller jusqu'à `i+1` pour inclure la dernière ligne.
@@ -255,7 +223,7 @@ for i in range(n):
 
 ---
 
-## **Exercice 11 : Tester et corriger**
+## **Exercice 10 : Tester et corriger**
 
 **Problème** : La boucle interne n'incrémente pas `j`, ce qui crée une boucle infinie.
 **Correction** : Ajouter `j += 1` dans la boucle interne.
@@ -282,7 +250,7 @@ while i < n:
 
 ---
 
-## **Exercice 12 : Ajouter des `print` de débogage**
+## **Exercice 11 : Ajouter des `print` de débogage**
 
 ```python
 for i in range(2):
@@ -301,7 +269,7 @@ for i in range(2):
 
 ---
 
-## **Exercice 13 : Vérifier les conditions de sortie**
+## **Exercice 12 : Vérifier les conditions de sortie**
 
 **Problème** : La boucle interne n'incrémente pas `j`, ce qui crée une boucle infinie.
 **Correction** : Ajouter `j += 1` dans la boucle interne.
@@ -329,3 +297,9 @@ while i < 5:
 
 ---
 
+-------
+
+??? info "Utilisation de l'IA"
+      Page rédigée en partie avec l'aide d'un assistant IA, principalement à l'aide de Perplexity AI. L'IA a été 
+      utilisée pour générer des explications, des exemples et/ou des suggestions de structure. Toutes les informations 
+      ont été vérifiées, éditées et complétées par l'auteur.

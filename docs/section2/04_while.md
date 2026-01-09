@@ -1,4 +1,8 @@
-# **Les boucles `while`**
+---
+icon: material/checkbox-outline
+---
+
+# **4. Les boucles `while`**
 
 ---
 
@@ -133,11 +137,16 @@ while not terminé:
 print(f"La somme est {somme}.")
 ```
 
+Dans ce dernier exemple, on pourrait facilement remplacer la condition d'arrêt par une autre condition, comme 
+`nombre <= 0` si on voulait accepter seulement les nombres positifs, et arrêter la boucle lorsqu'un nombre négatif est 
+entré. Ce ne serait évidemment pas équivalent à la première version, qui accepte tous les nombres sauf zéro, mais il 
+serait facile de modifier le code si les besoins sont différents.
+
 !!! warning "Nom des variables"
     Même s'il est possible d'utiliser des caractères accentués dans les noms de variables en Python, il est 
     généralement préférable d'utiliser des noms sans accents et sans caractères autres que les lettres de l'alphabet 
     (minuscules ou majuscules, de `a` à `z`) et le souligné (`_`), pour s'assurer que le code est facile à lire et à 
-    comprendre, et qu'il n'y aie pas de problèmes d'encodage des caractères.
+    comprendre, et qu'il n'y aie pas de problèmes d'encodage de caractères.
 
 !!! note "Erreurs d'entrée"
     La gestion des erreurs d'entrée sera présentée dans une section ultérieure.
@@ -192,11 +201,12 @@ while compteur < 5:
 
 ---
 
-!!! warning "Remarque sur `while True`"
+!!! warning "Évitez `while True`"
     - **À utiliser avec parcimonie** : Peut rendre le code moins lisible.
     - **Préférer une condition claire** quand c'est possible.
     - En général, **if faut donc éviter les boucles `while True`, et essayer d'utiliser `break` et `continue` le moins 
-    possible**, pour écrire du code plus lisible et moins complexe.
+    possible**, pour écrire du code plus lisible et moins complexe. Le code peut rapidement devenir trop complexe et
+    illisible si on utilise des boucles `while True`.
 
 ---
 
@@ -280,7 +290,7 @@ Nombre trouvé : True
 
 ---
 
-## **6. Boucle `while ... else ...`**
+## :material-checkbox-blank-outline: **6. Boucle `while ... else ...`**
 
 En Python, la boucle `while` peut être suivie d'un bloc `else`. Ce bloc `else` est exécuté **uniquement si la
 boucle `while` se termine sans rencontrer de `break`**.
@@ -321,6 +331,52 @@ else:
 
 ```
 Le nombre 10 n'a pas été trouvé dans la liste.
+```
+
+Le `else` associé à la boucle `while` est possible en Python, mais pas dans la plupart des autres langages de
+programmation. Sans `else`, on pourrait écrire :
+```python
+nombres = [2, 5, 8, 12, 16]
+recherche = 10
+index = 0
+trouve = False
+
+# La boucle s'occupe uniquement de la recherche
+while index < len(nombres):
+    if nombres[index] == recherche:
+        trouve = True
+        print(f"Le nombre {recherche} a été trouvé à l'index {index}.")
+        break
+    index += 1
+
+# On utilise la variable 'trouve' pour savoir si on a réussi ou non
+if not trouve:
+    print(f"Le nombre {recherche} n'a pas été trouvé dans la liste.")
+```
+
+La variable `trouve` n'était pas nécessaire dans la première version avec `else`. On pourrait également déplacer le
+`print` à l'intérieur de la boucle vers le `else` du `if` à la fin. On pourrait aussi inverser la condition de ce 
+dernier `if`, comme démontré dans le code suivant :
+
+```python
+nombres = [2, 5, 8, 12, 16]
+recherche = 10
+index = 0
+trouve = False
+
+while index < len(nombres):
+    if nombres[index] == recherche:
+        trouve = True
+        # On sauvegarde l'index si on veut l'utiliser après la boucle
+        index = index
+        break
+    index += 1
+
+# On a inversé la condition : on vérifie si trouve est True
+if trouve:
+    print(f"Le nombre {recherche} a été trouvé à l'index {index}.")
+else:
+    print(f"Le nombre {recherche} n'a pas été trouvé dans la liste.")
 ```
 
 ---
@@ -365,3 +421,10 @@ Merci ! 4 est un nombre pair.
 - Cette structure est **unique à Python** et n'existe pas dans la plupart des autres langages de programmation.
 
 ---
+
+-------
+
+??? info "Utilisation de l'IA"
+      Page rédigée en partie avec l'aide d'un assistant IA, principalement à l'aide de Perplexity AI. L'IA a été 
+      utilisée pour générer des explications, des exemples et/ou des suggestions de structure. Toutes les informations 
+      ont été vérifiées, éditées et complétées par l'auteur.

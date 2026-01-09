@@ -2,12 +2,11 @@ site_name: Cours de programmation en sciences
 site_url: https://profdenis.github.io/sn1_doc
 repo_name: profdenis/sn1_doc
 repo_url: https://github.com/profdenis/sn1_doc
-
 nav:
   - Accueil: index.md
   - Introduction:
     - introduction/index.md
-    - Histoire de la programmation: introduction/histoire.md
+    - 2. Histoire de la programmation: introduction/histoire.md
     - introduction/algorithmes.md
     - introduction/exécution.md
   - Section 1:
@@ -36,8 +35,8 @@ nav:
       - section2/exercices/01_exercices.md
       - section2/exercices/02_exercices.md
       - section2/exercices/03_exercices.md
-      - section2/exercices/05_exercices.md
       - section2/exercices/04_exercices.md
+      - section2/exercices/05_exercices.md
       - section2/exercices/06_exercices.md
     - Corrigés:
       - section2/corrigés/01_corrigés.md
@@ -77,11 +76,12 @@ nav:
 
 theme:
   name: material
-  locale: en
-  language: en
+  locale: fr
+  language: fr
   color_mode: auto
   user_color_mode_toggle: true
   icon:
+    logo: material/language-python
     repo: fontawesome/brands/github
   features:
     - content.code.copy
@@ -128,6 +128,10 @@ markdown_extensions:
       permalink: true
     sane_lists: { }
     admonition: { }
+    attr_list: {}
+    pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
     pymdownx.highlight:
       anchor_linenums: true
       line_spans: __span

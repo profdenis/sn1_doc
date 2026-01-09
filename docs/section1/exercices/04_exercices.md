@@ -73,3 +73,10 @@ cartésien.
 **Formule** : \( \text{Distance} = \sqrt{(x2 - x1)^2 + (y2 - y1)^2} \)
 
 ---
+
+-------
+
+??? info "Utilisation de l'IA"
+      Page rédigée en partie avec l'aide d'un assistant IA, principalement à l'aide de Perplexity AI. L'IA a été 
+      utilisée pour générer des explications, des exemples et/ou des suggestions de structure. Toutes les informations 
+      ont été vérifiées, éditées et complétées par l'auteur.

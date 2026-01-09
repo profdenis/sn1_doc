@@ -1,3 +1,7 @@
+---
+icon: material/checkbox-outline
+---
+
 # **1. Affichage sur la sortie standard**
 
 ---
@@ -13,8 +17,8 @@ associée à l’écran (le terminal ou la console).
 ### **Caractéristiques principales**
 
 - **Destination par défaut** : Affiche le texte dans le terminal ou la console.
-- **Utilisation universelle** : Tous les langages de programmation offrent un moyen d’écrire sur la sortie standard (
-  ex. : `printf` en C, `console.log` en JavaScript, `print` en Python).
+- **Utilisation universelle** : Tous les langages de programmation offrent un moyen d’écrire sur la sortie standard
+  (ex. : `printf` en C, `console.log` en JavaScript, `print` en Python).
 - **Redirection possible** : La sortie standard peut être redirigée vers un fichier ou un autre programme (ex. :
   `mon_programme > sortie.txt` dans un terminal).
 

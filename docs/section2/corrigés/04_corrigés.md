@@ -84,18 +84,18 @@ Entrez un nombre : 5
 ### **Exercice 3 : Validation d'entrée**
 
 ```python
-nombre = int(input("Entrez un nombre entre 1 et 10 : "))
+nombre = int(input("Entrez un nombre entier entre 1 et 10 : "))
 while nombre < 1 or nombre > 10:
-    nombre = int(input("Nombre invalide. Entrez un nombre entre 1 et 10 : "))
+    nombre = int(input("Nombre invalide. Entrez un nombre entier entre 1 et 10 : "))
 print(f"Nombre valide : {nombre}.")
 ```
 
 **Exemple d'exécution** :
 
 ```
-Entrez un nombre entre 1 et 10 : 15
-Nombre invalide. Entrez un nombre entre 1 et 10 : 0
-Nombre invalide. Entrez un nombre entre 1 et 10 : 5
+Entrez un nombre entier entre 1 et 10 : 15
+Nombre invalide. Entrez un nombre entier entre 1 et 10 : 0
+Nombre invalide. Entrez un nombre entier entre 1 et 10 : 5
 Nombre valide : 5.
 ```
 
@@ -178,8 +178,11 @@ somme = 0
 compteur = 0
 note = float(input("Entrez une note (ou -1 pour arrêter) : "))
 while note != -1:
-    somme += note
-    compteur += 1
+    if 0 <= note <= 100:
+        somme += note
+        compteur += 1
+    else:
+        print("Note invalide. Veuillez entrer une note entre 0 et 100.")
     note = float(input("Entrez une note (ou -1 pour arrêter) : "))
 if compteur > 0:
     moyenne = somme / compteur
@@ -193,6 +196,8 @@ else:
 ```
 Entrez une note (ou -1 pour arrêter) : 12
 Entrez une note (ou -1 pour arrêter) : 15
+Entrez une note (ou -1 pour arrêter) : 123
+Note invalide. Veuillez entrer une note entre 0 et 100.
 Entrez une note (ou -1 pour arrêter) : 18
 Entrez une note (ou -1 pour arrêter) : -1
 La moyenne est 15.00.
@@ -225,30 +230,7 @@ Entrez un nombre : 10
 
 ---
 
-### **Exercice 9 : Boucle `while True` avec `break`**
-
-```python
-noms = []
-while True:
-    nom = input("Entrez un nom (ou 'fin' pour arrêter) : ")
-    if nom == "fin":
-        break
-    noms.append(nom)
-print("Liste des noms saisis :", noms)
-```
-
-**Exemple d'exécution** :
-
-```
-Entrez un nom (ou 'fin' pour arrêter) : Alice
-Entrez un nom (ou 'fin' pour arrêter) : Bob
-Entrez un nom (ou 'fin' pour arrêter) : fin
-Liste des noms saisis : ['Alice', 'Bob']
-```
-
----
-
-### **Exercice 10 : Saisie de nombres positifs**
+### **Exercice 9 : Saisie de nombres positifs**
 
 ```python
 somme = 0
@@ -270,58 +252,9 @@ La somme des nombres positifs est 15.0.
 
 ---
 
-### **Exercice 11 : Utilisation de `continue`**
+-------
 
-```python
-i = 1
-while i <= 10:
-    if i == 5:
-        i += 1
-        continue
-    print(i)
-    i += 1
-```
-
-**Sortie** :
-
-```
-1
-2
-3
-4
-6
-7
-8
-9
-10
-```
-
----
-
-### **Exercice 12 : Recherche dans une liste**
-
-```python
-nombres = [3, 7, 2, 8, 5, 1, 9]
-recherche = int(input("Entrez un nombre à rechercher : "))
-trouve = False
-index = 0
-while index < len(nombres):
-    if nombres[index] == recherche:
-        trouve = True
-        break
-    index += 1
-if trouve:
-    print(f"Le nombre {recherche} a été trouvé.")
-else:
-    print(f"Le nombre {recherche} n'a pas été trouvé.")
-```
-
-**Exemple d'exécution** :
-
-```
-Entrez un nombre à rechercher : 8
-Le nombre 8 a été trouvé.
-```
-
----
-
+??? info "Utilisation de l'IA"
+      Page rédigée en partie avec l'aide d'un assistant IA, principalement à l'aide de Perplexity AI. L'IA a été 
+      utilisée pour générer des explications, des exemples et/ou des suggestions de structure. Toutes les informations 
+      ont été vérifiées, éditées et complétées par l'auteur.

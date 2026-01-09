@@ -1,4 +1,8 @@
-# **Les structures de contrôle imbriquées**
+---
+icon: material/checkbox-outline
+---
+
+# **6. Les structures de contrôle imbriquées**
 
 Les boucles imbriquées consistent à placer une boucle **à l'intérieur d'une autre boucle**. Elles sont utiles pour
 traiter des structures de données en deux dimensions, comme des matrices, ou pour générer des motifs complexes. Il 
@@ -102,17 +106,17 @@ for i in range(1, n + 1):
 ```
 
 !!! note "Alternative"
-On aurait pu écrire le code suivant à la place pour obtenir le même résultat.
-```python
-n = 5  # Hauteur du triangle
-for i in range(n):
-    for j in range(i+1):
-        print("*", end=" ")
-    print()
-```
-Laquelle des 2 versions est la meilleure ? Il s'agit d'une question de goût, les deux sont correctes. En général,
-sauf pour des cas très simples ou très précis, il y a plusieurs versions possibles, et la meilleure dépend souvent des
-préférences personnelles et des besoins spécifiques du projet.
+    On aurait pu écrire le code suivant à la place pour obtenir le même résultat.
+    ```python
+    n = 5  # Hauteur du triangle
+    for i in range(n):
+        for j in range(i+1):
+            print("*", end=" ")
+        print()
+    ```
+    Laquelle des 2 versions est la meilleure ? Il s'agit d'une question de goût, les deux sont correctes. En général,
+    sauf pour des cas très simples ou très précis, il y a plusieurs versions possibles, et la meilleure dépend souvent des
+    préférences personnelles et des besoins spécifiques du projet.
 
 ---
 
@@ -221,9 +225,9 @@ while tentatives < tentatives_max and not trouve:
         print("Trop petit !")
     else:
         print("Trop grand !")
-else:
-    if not trouve:
-        print(f"Désolé, vous avez épuisé vos {tentatives_max} tentatives. Le nombre était {nombre_a_deviner}.")
+        
+if not trouve:
+    print(f"Désolé, vous avez épuisé vos {tentatives_max} tentatives. Le nombre était {nombre_a_deviner}.")
 ```
 
 **Exemple d'exécution** :

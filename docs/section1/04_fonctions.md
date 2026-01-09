@@ -1,3 +1,7 @@
+---
+icon: material/checkbox-outline
+---
+
 # **4. Définition et utilisation des fonctions**
 
 ---

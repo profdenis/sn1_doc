@@ -1,4 +1,8 @@
-# Qu’est-ce que la programmation ?
+---
+icon: material/checkbox-outline
+---
+
+# 1. Qu’est-ce que la programmation ?
 
 ## **1. Définitions et analogies**
 

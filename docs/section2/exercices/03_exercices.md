@@ -62,10 +62,7 @@ Complétez les blocs `match` suivants pour obtenir la sortie indiquée.
    ```python
    note = "A"
    match note:
-       case "A":
-           print("C'est un A.")
-       case "B":
-           print("C'est un B.")
+
        case _:
            print("Autre note.")
    ```
@@ -80,10 +77,7 @@ Complétez les blocs `match` suivants pour obtenir la sortie indiquée.
    match liste:
        case []:
            print("La liste est vide.")
-       case [x]:
-           print(f"La liste contient un seul élément : {x}.")
-       case [x, y]:
-           print(f"La liste contient deux éléments : {x} et {y}.")
+
        case _:
            print("La liste contient plus de deux éléments.")
    ```
@@ -170,3 +164,11 @@ fonction doit afficher un message indiquant l'action effectuée.
 
 - Utilisez `match` pour simplifier les comparaisons multiples.
 - Testez vos programmes avec différentes valeurs pour vérifier leur bon fonctionnement.
+
+
+-------
+
+??? info "Utilisation de l'IA"
+      Page rédigée en partie avec l'aide d'un assistant IA, principalement à l'aide de Perplexity AI. L'IA a été 
+      utilisée pour générer des explications, des exemples et/ou des suggestions de structure. Toutes les informations 
+      ont été vérifiées, éditées et complétées par l'auteur.

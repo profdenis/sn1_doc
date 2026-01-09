@@ -1,4 +1,8 @@
-# **Histoire de la programmation : des machines aux algorithmes modernes**
+---
+icon: material/checkbox-blank-outline
+---
+
+#  2. **Histoire de la programmation : des machines aux algorithmes modernes**
 
 **Objectif** : Montrer comment la programmation est née de besoins pratiques et scientifiques, et comment elle a évolué
 jusqu’à aujourd’hui.

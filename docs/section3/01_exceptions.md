@@ -1,3 +1,7 @@
+---
+icon: material/checkbox-outline
+---
+
 # **1. Gestion des exceptions et validation d'entrées**
 
 ---
@@ -30,13 +34,8 @@ référer à ce tableau au besoin, ou à la documentation officielle ou aux ress
 | **`PermissionError`**     | Permission refusée (ex. : écriture dans un fichier en lecture seule).     | `open("/fichier_protégé.txt", "w")`                                 | Vérifier les permissions ou utiliser `try/except`.                           |
 | **`ImportError`**         | Module ou bibliothèque introuvable.                                       | `import module_inexistant`                                          | Installer le module (`pip install module`) ou vérifier l'orthographe.        |
 | **`KeyboardInterrupt`**   | Interruption par l'utilisateur (Ctrl+C).                                  | Appuyez sur `Ctrl+C` pendant l'exécution.                           | Gérer avec `try/except` si nécessaire.                                       |
-| **`OverflowError`**       | Résultat d'une opération trop grand pour être représenté.                 | Calculs avec des entiers très grands.                               | Utiliser des types adaptés (ex. : `float` au lieu de `int`).                 |
-| **`MemoryError`**         | Manque de mémoire.                                                        | Création d'une liste ou d'un tableau trop grand.                    | Optimiser l'utilisation de la mémoire ou diviser les tâches.                 |
-| **`AssertionError`**      | Échec d'une assertion (`assert`).                                         | `assert 1 == 2, "1 n'est pas égal à 2"`                             | Corriger la condition ou supprimer l'assertion.                              |
 | **`OSError`**             | Erreur liée au système d'exploitation (ex. : chemin invalide).            | `os.remove("fichier_inexistant.txt")`                               | Vérifier l'existence du fichier ou utiliser `try/except`.                    |
 | **`RuntimeError`**        | Erreur générique pendant l'exécution.                                     | Erreur interne dans un module.                                      | Vérifier la documentation ou le code source.                                 |
-| **`NotImplementedError`** | Méthode ou fonction non implémentée.                                      | Appel à une méthode abstraite.                                      | Implémenter la méthode ou utiliser une alternative.                          |
-| **`UnicodeError`**        | Erreur de codage/decodage Unicode.                                        | `b'\xff'.decode('utf-8')`                                           | Spécifier le bon encodage (ex. : `'latin-1'`).                               |
 
 ---
 
@@ -45,7 +44,7 @@ référer à ce tableau au besoin, ou à la documentation officielle ou aux ress
 1. **Utilisez `try/except`** pour gérer les erreurs prévisibles (ex. : division par zéro, fichiers introuvables).
 2. **Lisez les messages d'erreur** : Ils indiquent généralement la nature du problème et la ligne concernée.
 3. **Validez les entrées** : Utilisez des conditionnelles pour vérifier les types et les valeurs avant de les utiliser.
-4. **Documentez vos fonctions** : Utilisez des docstrings pour expliquer les paramètres attendus et les exceptions
+4. **Documentez vos fonctions** : Utilisez des _docstrings_ pour expliquer les paramètres attendus et les exceptions
    possibles.
 5. **Testez votre code** : Utilisez des cas de test pour couvrir les scénarios d'erreur.
 
@@ -181,7 +180,7 @@ print(f"Votre âge est {age}.")
 
 ---
 
-## **5. Fonction avec un prompt personnalisable**
+## **5. Fonction avec un _prompt_ personnalisable**
 
 ```python
 def demander_entier(prompt="Entrez un nombre entier : "):
@@ -406,7 +405,7 @@ Quel est votre âge ? 25
 Votre âge est 25.
 ```
 
-### **8.2. Validation d'une note (float entre 0 et 100)**
+### **8.2. Validation d'une note (`float` entre 0 et 100)**
 
 #### **8.2.1 Avec boucle `while` et conditionnelles (sans gestion d'exception)**
 

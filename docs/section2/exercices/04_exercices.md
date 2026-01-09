@@ -50,7 +50,7 @@ while compteur < 5:
 
 ### **Exercice 3 : Validation d'entrée**
 
-Écrivez un programme qui demande à l'utilisateur d'entrer un nombre entre 1 et 10. Le programme doit continuer à
+Écrivez un programme qui demande à l'utilisateur d'entrer un nombre entier entre 1 et 10. Le programme doit continuer à
 demander jusqu'à ce que l'utilisateur entre une valeur valide.
 
 ---
@@ -78,8 +78,10 @@ jusqu'à ce que l'utilisateur entre le mot de passe correct (`"python123"`).
 
 ### **Exercice 7 : Calcul de la moyenne**
 
-Écrivez un programme qui demande à l'utilisateur d'entrer des notes (entre 0 et 20). Le programme doit calculer et
-afficher la moyenne des notes entrées. L'utilisateur entre `-1` pour indiquer qu'il a fini de saisir les notes.
+Écrivez un programme qui demande à l'utilisateur d'entrer des notes (entre 0 et 100). Le programme doit calculer et
+afficher la moyenne des notes entrées. L'utilisateur entre `-1` pour indiquer qu'il a fini de saisir les notes. Les 
+notes doivent être validées pour être comprises entre 0 et 100. Si une note est invalide, alors elle est ignorée et 
+le programme doit demander à l'utilisateur de réessayer.
 
 ---
 
@@ -90,33 +92,15 @@ une boucle `while`.
 
 ---
 
-### **Exercice 9 : Boucle `while True` avec `break`**
 
-Écrivez un programme qui utilise une boucle `while True` pour demander à l'utilisateur d'entrer des noms. Le programme
-doit s'arrêter lorsque l'utilisateur entre `"fin"` et afficher la liste des noms saisis.
 
----
+### **Exercice 9 : Saisie de nombres positifs**
 
-### **Exercice 10 : Saisie de nombres positifs**
-
-Écrivez un programme qui demande à l'utilisateur d'entrer des nombres positifs. Le programme doit s'arrêter lorsque l'
-utilisateur entre un nombre négatif et afficher la somme des nombres positifs saisis.
+Écrivez un programme qui demande à l'utilisateur d'entrer des nombres positifs. Le programme doit s'arrêter lorsque 
+l'utilisateur entre un nombre négatif et afficher la somme des nombres positifs saisis.
 
 ---
 
-### **Exercice 11 : Utilisation de `continue`**
-
-Écrivez un programme qui affiche tous les nombres de 1 à 10, sauf le nombre 5, en utilisant `continue`.
-
----
-
-### **Exercice 12 : Recherche dans une liste**
-
-Écrivez un programme qui recherche un nombre dans une liste prédéfinie (`[3, 7, 2, 8, 5, 1, 9]`). Le programme doit
-demander à l'utilisateur d'entrer un nombre et utiliser une boucle `while` pour vérifier si ce nombre est dans la liste.
-Le programme doit afficher un message indiquant si le nombre a été trouvé ou non.
-
----
 
 ---
 **Conseils pour les exercices** :
@@ -125,3 +109,11 @@ Le programme doit afficher un message indiquant si le nombre a été trouvé ou 
 - Testez vos programmes avec différentes valeurs pour vérifier leur bon fonctionnement.
 
 ---
+
+-------
+
+??? info "Utilisation de l'IA"
+      Page rédigée en partie avec l'aide d'un assistant IA, principalement à l'aide de Perplexity AI. L'IA a été 
+      utilisée pour générer des explications, des exemples et/ou des suggestions de structure. Toutes les informations 
+      ont été vérifiées, éditées et complétées par l'auteur.
+

@@ -1,4 +1,8 @@
-# **Les expressions booléennes**
+---
+icon: material/checkbox-outline
+---
+
+# **1. Les expressions booléennes**
 
 ---
 
@@ -26,9 +30,9 @@ Les opérateurs de comparaison permettent de comparer des valeurs. Ils retournen
 
 !!! warning "Remarque importante"
     1. **`=`** est un opérateur d'**affectation** 
-        - exemple : `x = 5` -> la variable `x` obtient la valeur `5`
+        - exemple : `x = 5` ➡ la variable `x` obtient la valeur `5`
     2. **`==`** est un opérateur de **comparaison** 
-        - exemple : `x == 5` -> la valeur de `x` est égale à `5` (vrai ou faux)
+        - exemple : `x == 5` ➡ la valeur de `x` est égale à `5` (vrai ou faux)
 
 ---
 
@@ -178,11 +182,10 @@ print(resultat)  # True
 
 ---
 
----
-
-**Remarque** : Ces exemples montrent comment utiliser les expressions booléennes pour évaluer des conditions. Dans les
-prochaines sections, nous verrons comment utiliser ces expressions dans des **structures conditionnelles** et des
-**boucles**.
+!!! note "Remarque"
+    Ces exemples montrent comment utiliser les expressions booléennes pour évaluer des conditions. Dans les
+    prochaines sections, nous verrons comment utiliser ces expressions dans des **structures conditionnelles** et des
+    **boucles**.
 
 ----------
 

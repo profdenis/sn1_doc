@@ -1,4 +1,8 @@
-# **Exécution de code Python**
+---
+icon: material/checkbox-outline
+---
+
+# 4. **Exécution de code Python**
 
 ---
 

@@ -1,6 +1,6 @@
 
 <!doctype html>
-<html lang="en" class="no-js">
+<html lang="fr" class="no-js">
   <head>
     
       <meta charset="utf-8">
@@ -17,19 +17,22 @@
         <link rel="next" href="../exercices/01_exercices/">
       
       
+        
+      
+      
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.50">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
     
     
       
-        <title>Les structures de contrôle imbriquées - Cours de programmation en sciences</title>
+        <title>6. Les structures de contrôle imbriquées - Cours de programmation en sciences</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.a40c8224.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -60,7 +63,6 @@
 
     
     
-    
   </head>
   
   
@@ -80,8 +82,8 @@
     <div data-md-component="skip">
       
         
-        <a href="#les-structures-de-controle-imbriquees" class="md-skip">
-          Skip to content
+        <a href="#6-les-structures-de-controle-imbriquees" class="md-skip">
+          Aller au contenu
         </a>
       
     </div>
@@ -95,11 +97,11 @@
   
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
-  <nav class="md-header__inner md-grid" aria-label="Header">
+  <nav class="md-header__inner md-grid" aria-label="En-tête">
     <a href="../.." title="Cours de programmation en sciences" class="md-header__button md-logo" aria-label="Cours de programmation en sciences" data-md-component="logo">
       
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19.14 7.5A2.86 2.86 0 0 1 22 10.36v3.78A2.86 2.86 0 0 1 19.14 17H12c0 .39.32.96.71.96H17v1.68a2.86 2.86 0 0 1-2.86 2.86H9.86A2.86 2.86 0 0 1 7 19.64v-3.75a2.85 2.85 0 0 1 2.86-2.85h5.25a2.85 2.85 0 0 0 2.85-2.86V7.5zm-4.28 11.79c-.4 0-.72.3-.72.89s.32.71.72.71a.71.71 0 0 0 .71-.71c0-.59-.32-.89-.71-.89m-10-1.79A2.86 2.86 0 0 1 2 14.64v-3.78A2.86 2.86 0 0 1 4.86 8H12c0-.39-.32-.96-.71-.96H7V5.36A2.86 2.86 0 0 1 9.86 2.5h4.28A2.86 2.86 0 0 1 17 5.36v3.75a2.85 2.85 0 0 1-2.86 2.85H8.89a2.85 2.85 0 0 0-2.85 2.86v2.68zM9.14 5.71c.4 0 .72-.3.72-.89s-.32-.71-.72-.71c-.39 0-.71.12-.71.71s.32.89.71.89"/></svg>
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -116,7 +118,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Les structures de contrôle imbriquées
+              6. Les structures de contrôle imbriquées
             
           </span>
         </div>
@@ -164,24 +166,26 @@
     
     
     
-      <label class="md-header__button md-icon" for="__search">
-        
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
-      </label>
-      <div class="md-search" data-md-component="search" role="dialog">
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <input type="text" class="md-search__input" name="query" aria-label="Rechercher" placeholder="Rechercher" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
         
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
         
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
       </label>
-      <nav class="md-search__options" aria-label="Search">
+      <nav class="md-search__options" aria-label="Recherche">
         
-        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+        <button type="reset" class="md-search__icon md-icon" title="Effacer" aria-label="Effacer" tabindex="-1">
           
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
         </button>
@@ -194,7 +198,7 @@
       <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
         <div class="md-search-result" data-md-component="search-result">
           <div class="md-search-result__meta">
-            Initializing search
+            Initialisation de la recherche
           </div>
           <ol class="md-search-result__list" role="presentation"></ol>
         </div>
@@ -202,13 +206,14 @@
     </div>
   </div>
 </div>
+      
     
     
       <div class="md-header__source">
-        <a href="https://github.com/profdenis/sn1_doc" title="Go to repository" class="md-source" data-md-component="source">
+        <a href="https://github.com/profdenis/sn1_doc" title="Aller au dépôt" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
   </div>
   <div class="md-source__repository">
     profdenis/sn1_doc
@@ -220,7 +225,7 @@
   
     
       
-<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+<nav class="md-tabs" aria-label="Onglets" data-md-component="tabs">
   <div class="md-grid">
     <ul class="md-tabs__list">
       
@@ -228,9 +233,11 @@
   
   
   
+  
     <li class="md-tabs__item">
       <a href="../.." class="md-tabs__link">
         
+  
   
     
   
@@ -245,11 +252,13 @@
   
   
   
+  
     
     
       <li class="md-tabs__item">
         <a href="../../introduction/" class="md-tabs__link">
           
+  
   
   Introduction
 
@@ -263,11 +272,13 @@
   
   
   
+  
     
     
       <li class="md-tabs__item">
         <a href="../../section1/01_affichage/" class="md-tabs__link">
           
+  
   
   Section 1
 
@@ -280,6 +291,7 @@
         
   
   
+  
     
   
   
@@ -288,6 +300,7 @@
       <li class="md-tabs__item md-tabs__item--active">
         <a href="../01_bool/" class="md-tabs__link">
           
+  
   
   Section 2
 
@@ -301,11 +314,13 @@
   
   
   
+  
     
     
       <li class="md-tabs__item">
         <a href="../../section3/01_exceptions/" class="md-tabs__link">
           
+  
   
   Section 3
 
@@ -319,11 +334,13 @@
   
   
   
+  
     
     
       <li class="md-tabs__item">
         <a href="../../section4/01_numpy/" class="md-tabs__link">
           
+  
   
   Section 4
 
@@ -364,17 +381,17 @@
     <a href="../.." title="Cours de programmation en sciences" class="md-nav__button md-logo" aria-label="Cours de programmation en sciences" data-md-component="logo">
       
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19.14 7.5A2.86 2.86 0 0 1 22 10.36v3.78A2.86 2.86 0 0 1 19.14 17H12c0 .39.32.96.71.96H17v1.68a2.86 2.86 0 0 1-2.86 2.86H9.86A2.86 2.86 0 0 1 7 19.64v-3.75a2.85 2.85 0 0 1 2.86-2.85h5.25a2.85 2.85 0 0 0 2.85-2.86V7.5zm-4.28 11.79c-.4 0-.72.3-.72.89s.32.71.72.71a.71.71 0 0 0 .71-.71c0-.59-.32-.89-.71-.89m-10-1.79A2.86 2.86 0 0 1 2 14.64v-3.78A2.86 2.86 0 0 1 4.86 8H12c0-.39-.32-.96-.71-.96H7V5.36A2.86 2.86 0 0 1 9.86 2.5h4.28A2.86 2.86 0 0 1 17 5.36v3.75a2.85 2.85 0 0 1-2.86 2.85H8.89a2.85 2.85 0 0 0-2.85 2.86v2.68zM9.14 5.71c.4 0 .72-.3.72-.89s-.32-.71-.72-.71c-.39 0-.71.12-.71.71s.32.89.71.89"/></svg>
 
     </a>
     Cours de programmation en sciences
   </label>
   
     <div class="md-nav__source">
-      <a href="https://github.com/profdenis/sn1_doc" title="Go to repository" class="md-source" data-md-component="source">
+      <a href="https://github.com/profdenis/sn1_doc" title="Aller au dépôt" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
   </div>
   <div class="md-source__repository">
     profdenis/sn1_doc
@@ -394,9 +411,16 @@
       <a href="../.." class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Accueil
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -410,6 +434,7 @@
   
   
   
+    
     
     
     
@@ -431,9 +456,16 @@
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
             
   
+  
   <span class="md-ellipsis">
+    
+  
     Introduction
+  
+
+    
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -442,7 +474,11 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
-            Introduction
+            
+  
+    Introduction
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -456,9 +492,18 @@
       <a href="../../introduction/" class="md-nav__link">
         
   
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2m0 2v14H5V5zm-9 12-4-4 1.41-1.42L10 14.17l6.59-6.59L18 9"/></svg>
+  
   <span class="md-ellipsis">
-    Qu’est-ce que la programmation ?
+    
+  
+    1. Qu’est-ce que la programmation ?
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -477,9 +522,18 @@
       <a href="../../introduction/histoire/" class="md-nav__link">
         
   
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2m0 2v14H5V5z"/></svg>
+  
   <span class="md-ellipsis">
-    Histoire de la programmation
+    
+  
+    2. Histoire de la programmation
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -498,9 +552,18 @@
       <a href="../../introduction/algorithmes/" class="md-nav__link">
         
   
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2m0 2v14H5V5zm-9 12-4-4 1.41-1.42L10 14.17l6.59-6.59L18 9"/></svg>
+  
   <span class="md-ellipsis">
-    Qu&rsquo;est-ce qu&rsquo;un algorithme ?
+    
+  
+    3. Qu&rsquo;est-ce qu&rsquo;un algorithme ?
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -519,9 +582,18 @@
       <a href="../../introduction/ex%C3%A9cution/" class="md-nav__link">
         
   
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2m0 2v14H5V5zm-9 12-4-4 1.41-1.42L10 14.17l6.59-6.59L18 9"/></svg>
+  
   <span class="md-ellipsis">
-    Exécution de code Python
+    
+  
+    4. Exécution de code Python
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -543,6 +615,7 @@
   
   
   
+    
     
     
     
@@ -564,9 +637,16 @@
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
             
   
+  
   <span class="md-ellipsis">
+    
+  
     Section 1
+  
+
+    
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -575,7 +655,11 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
-            Section 1
+            
+  
+    Section 1
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -589,9 +673,18 @@
       <a href="../../section1/01_affichage/" class="md-nav__link">
         
   
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2m0 2v14H5V5zm-9 12-4-4 1.41-1.42L10 14.17l6.59-6.59L18 9"/></svg>
+  
   <span class="md-ellipsis">
+    
+  
     1. Affichage sur la sortie standard
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -610,9 +703,18 @@
       <a href="../../section1/02_entr%C3%A9es/" class="md-nav__link">
         
   
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2m0 2v14H5V5zm-9 12-4-4 1.41-1.42L10 14.17l6.59-6.59L18 9"/></svg>
+  
   <span class="md-ellipsis">
+    
+  
     2. Utilisation de l&rsquo;entrée standard
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -631,9 +733,18 @@
       <a href="../../section1/03_modules/" class="md-nav__link">
         
   
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2m0 2v14H5V5zm-9 12-4-4 1.41-1.42L10 14.17l6.59-6.59L18 9"/></svg>
+  
   <span class="md-ellipsis">
+    
+  
     3. Importation de modules
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -652,9 +763,18 @@
       <a href="../../section1/04_fonctions/" class="md-nav__link">
         
   
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2m0 2v14H5V5zm-9 12-4-4 1.41-1.42L10 14.17l6.59-6.59L18 9"/></svg>
+  
   <span class="md-ellipsis">
+    
+  
     4. Définition et utilisation des fonctions
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -669,6 +789,7 @@
   
   
   
+    
     
     
     
@@ -690,9 +811,16 @@
           <label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="0">
             
   
+  
   <span class="md-ellipsis">
+    
+  
     Exercices
+  
+
+    
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -701,7 +829,11 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3_5">
             <span class="md-nav__icon md-icon"></span>
-            Exercices
+            
+  
+    Exercices
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -715,9 +847,16 @@
       <a href="../../section1/exercices/01_exercices/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Exercices 1 : Affichage sur la sortie standard
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -736,9 +875,16 @@
       <a href="../../section1/exercices/02_exercices/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Exercices 2 : Utilisation de l&rsquo;entrée standard
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -757,9 +903,16 @@
       <a href="../../section1/exercices/03_exercices/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Exercices pratiques 3 : Importation de modules
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -778,9 +931,16 @@
       <a href="../../section1/exercices/04_exercices/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Exercices 4 : Définition et utilisation des fonctions
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -803,6 +963,7 @@
   
   
   
+    
     
     
     
@@ -824,9 +985,16 @@
           <label class="md-nav__link" for="__nav_3_6" id="__nav_3_6_label" tabindex="0">
             
   
+  
   <span class="md-ellipsis">
+    
+  
     Corrigés
+  
+
+    
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -835,7 +1003,11 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_6_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3_6">
             <span class="md-nav__icon md-icon"></span>
-            Corrigés
+            
+  
+    Corrigés
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -849,9 +1021,16 @@
       <a href="../../section1/corrig%C3%A9s/01_corrig%C3%A9s/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Corrigés 1 : Affichage sur la sortie standard
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -870,9 +1049,16 @@
       <a href="../../section1/corrig%C3%A9s/02_corrig%C3%A9s/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Corrigés 2 : Utilisation de l&rsquo;entrée standard
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -891,9 +1077,16 @@
       <a href="../../section1/corrig%C3%A9s/03_corrig%C3%A9s/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Corrigés 3 : Importation de modules
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -912,9 +1105,16 @@
       <a href="../../section1/corrig%C3%A9s/04_corrig%C3%A9s/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Corrigés 4: Définition et utilisation des fonctions
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -946,6 +1146,7 @@
   
   
   
+    
     
     
     
@@ -968,9 +1169,16 @@
           <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
             
   
+  
   <span class="md-ellipsis">
+    
+  
     Section 2
+  
+
+    
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -979,7 +1187,11 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
-            Section 2
+            
+  
+    Section 2
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -993,9 +1205,18 @@
       <a href="../01_bool/" class="md-nav__link">
         
   
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2m0 2v14H5V5zm-9 12-4-4 1.41-1.42L10 14.17l6.59-6.59L18 9"/></svg>
+  
   <span class="md-ellipsis">
-    Les expressions booléennes
+    
+  
+    1. Les expressions booléennes
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1014,9 +1235,18 @@
       <a href="../02_conditionnelles/" class="md-nav__link">
         
   
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2m0 2v14H5V5zm-9 12-4-4 1.41-1.42L10 14.17l6.59-6.59L18 9"/></svg>
+  
   <span class="md-ellipsis">
-    Les structures conditionnelles
+    
+  
+    2. Les structures conditionnelles
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1035,9 +1265,18 @@
       <a href="../03_match/" class="md-nav__link">
         
   
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2m0 2v14H5V5z"/></svg>
+  
   <span class="md-ellipsis">
-    L&rsquo;instruction match
+    
+  
+    3. L&rsquo;instruction match
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1056,9 +1295,18 @@
       <a href="../04_while/" class="md-nav__link">
         
   
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2m0 2v14H5V5zm-9 12-4-4 1.41-1.42L10 14.17l6.59-6.59L18 9"/></svg>
+  
   <span class="md-ellipsis">
-    Les boucles while
+    
+  
+    4. Les boucles while
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1077,9 +1325,18 @@
       <a href="../05_for/" class="md-nav__link">
         
   
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2m0 2v14H5V5zm-9 12-4-4 1.41-1.42L10 14.17l6.59-6.59L18 9"/></svg>
+  
   <span class="md-ellipsis">
-    Les boucles for
+    
+  
+    5. Les boucles for
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1107,9 +1364,18 @@
         <label class="md-nav__link md-nav__link--active" for="__toc">
           
   
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2m0 2v14H5V5zm-9 12-4-4 1.41-1.42L10 14.17l6.59-6.59L18 9"/></svg>
+  
   <span class="md-ellipsis">
-    Les structures de contrôle imbriquées
+    
+  
+    6. Les structures de contrôle imbriquées
+  
+
+    
   </span>
+  
   
 
           <span class="md-nav__icon md-icon"></span>
@@ -1118,16 +1384,25 @@
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2m0 2v14H5V5zm-9 12-4-4 1.41-1.42L10 14.17l6.59-6.59L18 9"/></svg>
+  
   <span class="md-ellipsis">
-    Les structures de contrôle imbriquées
+    
+  
+    6. Les structures de contrôle imbriquées
+  
+
+    
   </span>
+  
   
 
       </a>
       
         
 
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
   
   
   
@@ -1136,14 +1411,16 @@
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
-      Table of contents
+      Table des matières
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
   <a href="#1-boucles-for-imbriquees" class="md-nav__link">
     <span class="md-ellipsis">
-      1. Boucles for imbriquées
+      
+        1. Boucles for imbriquées
+      
     </span>
   </a>
   
@@ -1153,7 +1430,9 @@
           <li class="md-nav__item">
   <a href="#11-table-de-multiplication" class="md-nav__link">
     <span class="md-ellipsis">
-      1.1 Table de multiplication
+      
+        1.1 Table de multiplication
+      
     </span>
   </a>
   
@@ -1162,7 +1441,9 @@
           <li class="md-nav__item">
   <a href="#12-affichage-dun-carre-avec-des" class="md-nav__link">
     <span class="md-ellipsis">
-      1.2 Affichage d&rsquo;un carré avec des *
+      
+        1.2 Affichage d&rsquo;un carré avec des *
+      
     </span>
   </a>
   
@@ -1171,7 +1452,9 @@
           <li class="md-nav__item">
   <a href="#13-affichage-dun-rectangle-avec-des" class="md-nav__link">
     <span class="md-ellipsis">
-      1.3 Affichage d&rsquo;un rectangle avec des *
+      
+        1.3 Affichage d&rsquo;un rectangle avec des *
+      
     </span>
   </a>
   
@@ -1180,7 +1463,9 @@
           <li class="md-nav__item">
   <a href="#14-affichage-dun-triangle-rectangle" class="md-nav__link">
     <span class="md-ellipsis">
-      1.4 Affichage d&rsquo;un triangle rectangle
+      
+        1.4 Affichage d&rsquo;un triangle rectangle
+      
     </span>
   </a>
   
@@ -1189,7 +1474,9 @@
           <li class="md-nav__item">
   <a href="#15-affichage-dun-triangle-isocele" class="md-nav__link">
     <span class="md-ellipsis">
-      1.5 Affichage d&rsquo;un triangle isocèle
+      
+        1.5 Affichage d&rsquo;un triangle isocèle
+      
     </span>
   </a>
   
@@ -1198,7 +1485,9 @@
           <li class="md-nav__item">
   <a href="#16-affichage-dun-losange" class="md-nav__link">
     <span class="md-ellipsis">
-      1.6 Affichage d&rsquo;un losange
+      
+        1.6 Affichage d&rsquo;un losange
+      
     </span>
   </a>
   
@@ -1212,7 +1501,9 @@
         <li class="md-nav__item">
   <a href="#2-boucles-while-imbriquees" class="md-nav__link">
     <span class="md-ellipsis">
-      2. Boucles while imbriquées
+      
+        2. Boucles while imbriquées
+      
     </span>
   </a>
   
@@ -1222,7 +1513,9 @@
           <li class="md-nav__item">
   <a href="#21-table-de-multiplication-avec-while" class="md-nav__link">
     <span class="md-ellipsis">
-      2.1 Table de multiplication avec while
+      
+        2.1 Table de multiplication avec while
+      
     </span>
   </a>
   
@@ -1231,7 +1524,9 @@
           <li class="md-nav__item">
   <a href="#22-jeu-de-devinette-avec-tentatives-limitees" class="md-nav__link">
     <span class="md-ellipsis">
-      2.2 Jeu de devinette avec tentatives limitées
+      
+        2.2 Jeu de devinette avec tentatives limitées
+      
     </span>
   </a>
   
@@ -1245,7 +1540,9 @@
         <li class="md-nav__item">
   <a href="#3-exemples-avances" class="md-nav__link">
     <span class="md-ellipsis">
-      3. Exemples avancés
+      
+        3. Exemples avancés
+      
     </span>
   </a>
   
@@ -1255,7 +1552,9 @@
           <li class="md-nav__item">
   <a href="#31-matrice-dentiers" class="md-nav__link">
     <span class="md-ellipsis">
-      3.1 Matrice d&rsquo;entiers
+      
+        3.1 Matrice d&rsquo;entiers
+      
     </span>
   </a>
   
@@ -1264,7 +1563,9 @@
           <li class="md-nav__item">
   <a href="#32-affichage-dun-damier" class="md-nav__link">
     <span class="md-ellipsis">
-      3.2 Affichage d&rsquo;un damier
+      
+        3.2 Affichage d&rsquo;un damier
+      
     </span>
   </a>
   
@@ -1273,7 +1574,9 @@
           <li class="md-nav__item">
   <a href="#33-generation-de-combinaisons" class="md-nav__link">
     <span class="md-ellipsis">
-      3.3 Génération de combinaisons
+      
+        3.3 Génération de combinaisons
+      
     </span>
   </a>
   
@@ -1287,7 +1590,9 @@
         <li class="md-nav__item">
   <a href="#4-conseils-pour-utiliser-les-boucles-imbriquees" class="md-nav__link">
     <span class="md-ellipsis">
-      4. Conseils pour utiliser les boucles imbriquées
+      
+        4. Conseils pour utiliser les boucles imbriquées
+      
     </span>
   </a>
   
@@ -1297,7 +1602,9 @@
           <li class="md-nav__item">
   <a href="#41-indentation-et-lisibilite" class="md-nav__link">
     <span class="md-ellipsis">
-      4.1 Indentation et lisibilité
+      
+        4.1 Indentation et lisibilité
+      
     </span>
   </a>
   
@@ -1306,7 +1613,9 @@
           <li class="md-nav__item">
   <a href="#42-complexite-algorithmique" class="md-nav__link">
     <span class="md-ellipsis">
-      4.2 Complexité algorithmique
+      
+        4.2 Complexité algorithmique
+      
     </span>
   </a>
   
@@ -1315,7 +1624,9 @@
           <li class="md-nav__item">
   <a href="#43-eviter-les-boucles-imbriquees-profondes" class="md-nav__link">
     <span class="md-ellipsis">
-      4.3 Éviter les boucles imbriquées profondes
+      
+        4.3 Éviter les boucles imbriquées profondes
+      
     </span>
   </a>
   
@@ -1329,7 +1640,9 @@
         <li class="md-nav__item">
   <a href="#5-recommandations-pour-tester-et-deboguer-les-boucles-imbriquees" class="md-nav__link">
     <span class="md-ellipsis">
-      5. Recommandations pour tester et déboguer les boucles imbriquées
+      
+        5. Recommandations pour tester et déboguer les boucles imbriquées
+      
     </span>
   </a>
   
@@ -1339,7 +1652,9 @@
           <li class="md-nav__item">
   <a href="#51-tester-avec-des-cas-simples" class="md-nav__link">
     <span class="md-ellipsis">
-      5.1 Tester avec des cas simples
+      
+        5.1 Tester avec des cas simples
+      
     </span>
   </a>
   
@@ -1348,7 +1663,9 @@
           <li class="md-nav__item">
   <a href="#52-utiliser-des-print-pour-le-debogage" class="md-nav__link">
     <span class="md-ellipsis">
-      5.2 Utiliser des print pour le débogage
+      
+        5.2 Utiliser des print pour le débogage
+      
     </span>
   </a>
   
@@ -1357,7 +1674,9 @@
           <li class="md-nav__item">
   <a href="#53-utiliser-un-debogueur" class="md-nav__link">
     <span class="md-ellipsis">
-      5.3 Utiliser un débogueur
+      
+        5.3 Utiliser un débogueur
+      
     </span>
   </a>
   
@@ -1366,7 +1685,9 @@
           <li class="md-nav__item">
   <a href="#54-verifier-les-conditions-de-sortie" class="md-nav__link">
     <span class="md-ellipsis">
-      5.4 Vérifier les conditions de sortie
+      
+        5.4 Vérifier les conditions de sortie
+      
     </span>
   </a>
   
@@ -1375,7 +1696,9 @@
           <li class="md-nav__item">
   <a href="#55-tester-les-cas-limites" class="md-nav__link">
     <span class="md-ellipsis">
-      5.5 Tester les cas limites
+      
+        5.5 Tester les cas limites
+      
     </span>
   </a>
   
@@ -1384,7 +1707,9 @@
           <li class="md-nav__item">
   <a href="#56-documenter-les-boucles-complexes" class="md-nav__link">
     <span class="md-ellipsis">
-      5.6 Documenter les boucles complexes
+      
+        5.6 Documenter les boucles complexes
+      
     </span>
   </a>
   
@@ -1413,6 +1738,7 @@
     
     
     
+    
       
       
         
@@ -1434,9 +1760,16 @@
           <label class="md-nav__link" for="__nav_4_7" id="__nav_4_7_label" tabindex="">
             
   
+  
   <span class="md-ellipsis">
+    
+  
     Exercices
+  
+
+    
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -1445,7 +1778,11 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_7_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4_7">
             <span class="md-nav__icon md-icon"></span>
-            Exercices
+            
+  
+    Exercices
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -1459,9 +1796,16 @@
       <a href="../exercices/01_exercices/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Exercices 1 : Les expressions booléennes
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1480,9 +1824,16 @@
       <a href="../exercices/02_exercices/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Exercices 2 : Les structures conditionnelles
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1501,30 +1852,16 @@
       <a href="../exercices/03_exercices/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Exercices 3 : L&rsquo;instruction match
-  </span>
   
 
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../exercices/05_exercices/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Exercices 5 : Les boucles for
+    
   </span>
+  
   
 
       </a>
@@ -1543,9 +1880,44 @@
       <a href="../exercices/04_exercices/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Exercices 4 : Les boucles while
+  
+
+    
   </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../exercices/05_exercices/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Exercices 5 : Les boucles for
+  
+
+    
+  </span>
+  
   
 
       </a>
@@ -1564,9 +1936,16 @@
       <a href="../exercices/06_exercices/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Exercices 6 : Les boucles imbriquées
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1589,6 +1968,7 @@
   
   
   
+    
     
     
     
@@ -1613,9 +1993,16 @@
           <label class="md-nav__link" for="__nav_4_8" id="__nav_4_8_label" tabindex="">
             
   
+  
   <span class="md-ellipsis">
+    
+  
     Corrigés
+  
+
+    
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -1624,7 +2011,11 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_8_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4_8">
             <span class="md-nav__icon md-icon"></span>
-            Corrigés
+            
+  
+    Corrigés
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -1638,9 +2029,16 @@
       <a href="../corrig%C3%A9s/01_corrig%C3%A9s/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Corrigés 1 : Expressions booléennes
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1659,9 +2057,16 @@
       <a href="../corrig%C3%A9s/02_corrig%C3%A9s/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Corrigés : Structures conditionnelles
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1680,9 +2085,16 @@
       <a href="../corrig%C3%A9s/03_corrig%C3%A9s/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Corrigés 3 : L&rsquo;instruction match
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1701,9 +2113,16 @@
       <a href="../corrig%C3%A9s/04_corrig%C3%A9s/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Corrigés 4 : Boucles while
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1722,9 +2141,16 @@
       <a href="../corrig%C3%A9s/05_corrig%C3%A9s/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Corrigés 5 : Boucles for
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1743,9 +2169,16 @@
       <a href="../corrig%C3%A9s/06_corrig%C3%A9s/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Corrigés 6 : Boucles imbriquées
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1775,6 +2208,7 @@
   
   
   
+    
     
     
     
@@ -1796,9 +2230,16 @@
           <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
             
   
+  
   <span class="md-ellipsis">
+    
+  
     Section 3
+  
+
+    
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -1807,7 +2248,11 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
-            Section 3
+            
+  
+    Section 3
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -1821,9 +2266,18 @@
       <a href="../../section3/01_exceptions/" class="md-nav__link">
         
   
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2m0 2v14H5V5zm-9 12-4-4 1.41-1.42L10 14.17l6.59-6.59L18 9"/></svg>
+  
   <span class="md-ellipsis">
+    
+  
     1. Gestion des exceptions et validation d&rsquo;entrées
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1842,9 +2296,18 @@
       <a href="../../section3/02_listes/" class="md-nav__link">
         
   
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2m0 2v14H5V5zm-9 12-4-4 1.41-1.42L10 14.17l6.59-6.59L18 9"/></svg>
+  
   <span class="md-ellipsis">
+    
+  
     2. Listes
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1863,9 +2326,18 @@
       <a href="../../section3/03_chaines/" class="md-nav__link">
         
   
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2m0 2v14H5V5zm-9 12-4-4 1.41-1.42L10 14.17l6.59-6.59L18 9"/></svg>
+  
   <span class="md-ellipsis">
+    
+  
     3. Les chaînes de caractères
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1884,9 +2356,18 @@
       <a href="../../section3/04_fichiers/" class="md-nav__link">
         
   
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2m0 2v14H5V5zm-9 12-4-4 1.41-1.42L10 14.17l6.59-6.59L18 9"/></svg>
+  
   <span class="md-ellipsis">
+    
+  
     4. Lecture et écriture de fichiers
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1905,9 +2386,18 @@
       <a href="../../section3/05_dictionnaires/" class="md-nav__link">
         
   
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2m0 2v14H5V5z"/></svg>
+  
   <span class="md-ellipsis">
+    
+  
     5. Les dictionnaires
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1922,6 +2412,7 @@
   
   
   
+    
     
     
     
@@ -1943,9 +2434,16 @@
           <label class="md-nav__link" for="__nav_5_6" id="__nav_5_6_label" tabindex="0">
             
   
+  
   <span class="md-ellipsis">
+    
+  
     Exercices
+  
+
+    
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -1954,7 +2452,11 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_6_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5_6">
             <span class="md-nav__icon md-icon"></span>
-            Exercices
+            
+  
+    Exercices
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -1968,9 +2470,16 @@
       <a href="../../section3/exercices/01_exercices/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Exercices 1 : Gestion des exceptions et validation d&rsquo;entrées
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1989,9 +2498,16 @@
       <a href="../../section3/exercices/02_exercices/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Exercices 2 : Listes
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -2010,9 +2526,16 @@
       <a href="../../section3/exercices/03_exercices/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
-    03 exercices
+    
+  
+    Exercices pratiques : Chaînes de caractères
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -2031,9 +2554,16 @@
       <a href="../../section3/exercices/04_exercices/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Exercices 4 : Lecture et écriture de fichiers
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -2052,9 +2582,16 @@
       <a href="../../section3/exercices/05_exercices/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Exercices 5 : Les dictionnaires
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -2077,6 +2614,7 @@
   
   
   
+    
     
     
     
@@ -2098,9 +2636,16 @@
           <label class="md-nav__link" for="__nav_5_7" id="__nav_5_7_label" tabindex="0">
             
   
+  
   <span class="md-ellipsis">
+    
+  
     Corrigés
+  
+
+    
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -2109,7 +2654,11 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_7_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5_7">
             <span class="md-nav__icon md-icon"></span>
-            Corrigés
+            
+  
+    Corrigés
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -2123,9 +2672,16 @@
       <a href="../../section3/corrig%C3%A9s/01_corrig%C3%A9s/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Corrigés 1 : Gestion des exceptions et validation d&rsquo;entrées
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -2144,9 +2700,16 @@
       <a href="../../section3/corrig%C3%A9s/02_corrig%C3%A9s/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Corrigés 2 : Listes
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -2165,9 +2728,16 @@
       <a href="../../section3/corrig%C3%A9s/03_corrig%C3%A9s/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
-    03 corrigés
+    
+  
+    Corrigés : Chaînes de caractères et notions précédentes
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -2186,9 +2756,16 @@
       <a href="../../section3/corrig%C3%A9s/04_corrig%C3%A9s/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Corrigés 4 : Lecture et écriture de fichiers
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -2207,9 +2784,16 @@
       <a href="../../section3/corrig%C3%A9s/05_corrig%C3%A9s/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Corrigés 5 : Les dictionnaires
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -2239,6 +2823,7 @@
   
   
   
+    
     
     
     
@@ -2260,9 +2845,16 @@
           <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
             
   
+  
   <span class="md-ellipsis">
+    
+  
     Section 4
+  
+
+    
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -2271,7 +2863,11 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
-            Section 4
+            
+  
+    Section 4
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -2285,9 +2881,18 @@
       <a href="../../section4/01_numpy/" class="md-nav__link">
         
   
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2m0 2v14H5V5zm-9 12-4-4 1.41-1.42L10 14.17l6.59-6.59L18 9"/></svg>
+  
   <span class="md-ellipsis">
+    
+  
     1. Introduction à NumPy
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -2306,9 +2911,18 @@
       <a href="../../section4/02_pyplot/" class="md-nav__link">
         
   
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2m0 2v14H5V5zm-9 12-4-4 1.41-1.42L10 14.17l6.59-6.59L18 9"/></svg>
+  
   <span class="md-ellipsis">
+    
+  
     2. Introduction à matplotlib.pyplot
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -2323,6 +2937,7 @@
   
   
   
+    
     
     
     
@@ -2344,9 +2959,16 @@
           <label class="md-nav__link" for="__nav_6_3" id="__nav_6_3_label" tabindex="0">
             
   
+  
   <span class="md-ellipsis">
+    
+  
     Exercices
+  
+
+    
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -2355,7 +2977,11 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_6_3">
             <span class="md-nav__icon md-icon"></span>
-            Exercices
+            
+  
+    Exercices
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -2369,9 +2995,16 @@
       <a href="../../section4/exercices/01_exercices/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Exercices 1 : Introduction à NumPy
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -2390,9 +3023,16 @@
       <a href="../../section4/exercices/02_exercices/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Exercices 2 : matplotlib.pyplot
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -2418,6 +3058,7 @@
     
     
     
+    
       
       
         
@@ -2436,9 +3077,16 @@
           <label class="md-nav__link" for="__nav_6_4" id="__nav_6_4_label" tabindex="0">
             
   
+  
   <span class="md-ellipsis">
+    
+  
     Corrigés
+  
+
+    
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -2447,7 +3095,11 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_6_4">
             <span class="md-nav__icon md-icon"></span>
-            Corrigés
+            
+  
+    Corrigés
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -2461,9 +3113,16 @@
       <a href="../../section4/corrig%C3%A9s/01_corrig%C3%A9s/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Corrigés 1 : Introduction à NumPy
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -2482,9 +3141,16 @@
       <a href="../../section4/corrig%C3%A9s/02_corrig%C3%A9s/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Corrigés 2 : Exercices pratiques sur matplotlib.pyplot
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -2521,7 +3187,7 @@
                   <div class="md-sidebar__inner">
                     
 
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
   
   
   
@@ -2530,14 +3196,16 @@
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
-      Table of contents
+      Table des matières
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
   <a href="#1-boucles-for-imbriquees" class="md-nav__link">
     <span class="md-ellipsis">
-      1. Boucles for imbriquées
+      
+        1. Boucles for imbriquées
+      
     </span>
   </a>
   
@@ -2547,7 +3215,9 @@
           <li class="md-nav__item">
   <a href="#11-table-de-multiplication" class="md-nav__link">
     <span class="md-ellipsis">
-      1.1 Table de multiplication
+      
+        1.1 Table de multiplication
+      
     </span>
   </a>
   
@@ -2556,7 +3226,9 @@
           <li class="md-nav__item">
   <a href="#12-affichage-dun-carre-avec-des" class="md-nav__link">
     <span class="md-ellipsis">
-      1.2 Affichage d&rsquo;un carré avec des *
+      
+        1.2 Affichage d&rsquo;un carré avec des *
+      
     </span>
   </a>
   
@@ -2565,7 +3237,9 @@
           <li class="md-nav__item">
   <a href="#13-affichage-dun-rectangle-avec-des" class="md-nav__link">
     <span class="md-ellipsis">
-      1.3 Affichage d&rsquo;un rectangle avec des *
+      
+        1.3 Affichage d&rsquo;un rectangle avec des *
+      
     </span>
   </a>
   
@@ -2574,7 +3248,9 @@
           <li class="md-nav__item">
   <a href="#14-affichage-dun-triangle-rectangle" class="md-nav__link">
     <span class="md-ellipsis">
-      1.4 Affichage d&rsquo;un triangle rectangle
+      
+        1.4 Affichage d&rsquo;un triangle rectangle
+      
     </span>
   </a>
   
@@ -2583,7 +3259,9 @@
           <li class="md-nav__item">
   <a href="#15-affichage-dun-triangle-isocele" class="md-nav__link">
     <span class="md-ellipsis">
-      1.5 Affichage d&rsquo;un triangle isocèle
+      
+        1.5 Affichage d&rsquo;un triangle isocèle
+      
     </span>
   </a>
   
@@ -2592,7 +3270,9 @@
           <li class="md-nav__item">
   <a href="#16-affichage-dun-losange" class="md-nav__link">
     <span class="md-ellipsis">
-      1.6 Affichage d&rsquo;un losange
+      
+        1.6 Affichage d&rsquo;un losange
+      
     </span>
   </a>
   
@@ -2606,7 +3286,9 @@
         <li class="md-nav__item">
   <a href="#2-boucles-while-imbriquees" class="md-nav__link">
     <span class="md-ellipsis">
-      2. Boucles while imbriquées
+      
+        2. Boucles while imbriquées
+      
     </span>
   </a>
   
@@ -2616,7 +3298,9 @@
           <li class="md-nav__item">
   <a href="#21-table-de-multiplication-avec-while" class="md-nav__link">
     <span class="md-ellipsis">
-      2.1 Table de multiplication avec while
+      
+        2.1 Table de multiplication avec while
+      
     </span>
   </a>
   
@@ -2625,7 +3309,9 @@
           <li class="md-nav__item">
   <a href="#22-jeu-de-devinette-avec-tentatives-limitees" class="md-nav__link">
     <span class="md-ellipsis">
-      2.2 Jeu de devinette avec tentatives limitées
+      
+        2.2 Jeu de devinette avec tentatives limitées
+      
     </span>
   </a>
   
@@ -2639,7 +3325,9 @@
         <li class="md-nav__item">
   <a href="#3-exemples-avances" class="md-nav__link">
     <span class="md-ellipsis">
-      3. Exemples avancés
+      
+        3. Exemples avancés
+      
     </span>
   </a>
   
@@ -2649,7 +3337,9 @@
           <li class="md-nav__item">
   <a href="#31-matrice-dentiers" class="md-nav__link">
     <span class="md-ellipsis">
-      3.1 Matrice d&rsquo;entiers
+      
+        3.1 Matrice d&rsquo;entiers
+      
     </span>
   </a>
   
@@ -2658,7 +3348,9 @@
           <li class="md-nav__item">
   <a href="#32-affichage-dun-damier" class="md-nav__link">
     <span class="md-ellipsis">
-      3.2 Affichage d&rsquo;un damier
+      
+        3.2 Affichage d&rsquo;un damier
+      
     </span>
   </a>
   
@@ -2667,7 +3359,9 @@
           <li class="md-nav__item">
   <a href="#33-generation-de-combinaisons" class="md-nav__link">
     <span class="md-ellipsis">
-      3.3 Génération de combinaisons
+      
+        3.3 Génération de combinaisons
+      
     </span>
   </a>
   
@@ -2681,7 +3375,9 @@
         <li class="md-nav__item">
   <a href="#4-conseils-pour-utiliser-les-boucles-imbriquees" class="md-nav__link">
     <span class="md-ellipsis">
-      4. Conseils pour utiliser les boucles imbriquées
+      
+        4. Conseils pour utiliser les boucles imbriquées
+      
     </span>
   </a>
   
@@ -2691,7 +3387,9 @@
           <li class="md-nav__item">
   <a href="#41-indentation-et-lisibilite" class="md-nav__link">
     <span class="md-ellipsis">
-      4.1 Indentation et lisibilité
+      
+        4.1 Indentation et lisibilité
+      
     </span>
   </a>
   
@@ -2700,7 +3398,9 @@
           <li class="md-nav__item">
   <a href="#42-complexite-algorithmique" class="md-nav__link">
     <span class="md-ellipsis">
-      4.2 Complexité algorithmique
+      
+        4.2 Complexité algorithmique
+      
     </span>
   </a>
   
@@ -2709,7 +3409,9 @@
           <li class="md-nav__item">
   <a href="#43-eviter-les-boucles-imbriquees-profondes" class="md-nav__link">
     <span class="md-ellipsis">
-      4.3 Éviter les boucles imbriquées profondes
+      
+        4.3 Éviter les boucles imbriquées profondes
+      
     </span>
   </a>
   
@@ -2723,7 +3425,9 @@
         <li class="md-nav__item">
   <a href="#5-recommandations-pour-tester-et-deboguer-les-boucles-imbriquees" class="md-nav__link">
     <span class="md-ellipsis">
-      5. Recommandations pour tester et déboguer les boucles imbriquées
+      
+        5. Recommandations pour tester et déboguer les boucles imbriquées
+      
     </span>
   </a>
   
@@ -2733,7 +3437,9 @@
           <li class="md-nav__item">
   <a href="#51-tester-avec-des-cas-simples" class="md-nav__link">
     <span class="md-ellipsis">
-      5.1 Tester avec des cas simples
+      
+        5.1 Tester avec des cas simples
+      
     </span>
   </a>
   
@@ -2742,7 +3448,9 @@
           <li class="md-nav__item">
   <a href="#52-utiliser-des-print-pour-le-debogage" class="md-nav__link">
     <span class="md-ellipsis">
-      5.2 Utiliser des print pour le débogage
+      
+        5.2 Utiliser des print pour le débogage
+      
     </span>
   </a>
   
@@ -2751,7 +3459,9 @@
           <li class="md-nav__item">
   <a href="#53-utiliser-un-debogueur" class="md-nav__link">
     <span class="md-ellipsis">
-      5.3 Utiliser un débogueur
+      
+        5.3 Utiliser un débogueur
+      
     </span>
   </a>
   
@@ -2760,7 +3470,9 @@
           <li class="md-nav__item">
   <a href="#54-verifier-les-conditions-de-sortie" class="md-nav__link">
     <span class="md-ellipsis">
-      5.4 Vérifier les conditions de sortie
+      
+        5.4 Vérifier les conditions de sortie
+      
     </span>
   </a>
   
@@ -2769,7 +3481,9 @@
           <li class="md-nav__item">
   <a href="#55-tester-les-cas-limites" class="md-nav__link">
     <span class="md-ellipsis">
-      5.5 Tester les cas limites
+      
+        5.5 Tester les cas limites
+      
     </span>
   </a>
   
@@ -2778,7 +3492,9 @@
           <li class="md-nav__item">
   <a href="#56-documenter-les-boucles-complexes" class="md-nav__link">
     <span class="md-ellipsis">
-      5.6 Documenter les boucles complexes
+      
+        5.6 Documenter les boucles complexes
+      
     </span>
   </a>
   
@@ -2799,15 +3515,65 @@
           
           
             <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+  
+
+
+  <nav class="md-path" aria-label="Navigation" >
+    <ol class="md-path__list">
+      
+        
+  
+  
+    <li class="md-path__item">
+      <a href="../.." class="md-path__link">
+        
+  <span class="md-ellipsis">
+    Accueil
+  </span>
+
+      </a>
+    </li>
+  
+
+      
+      
+        
+  
+  
+    
+    
+      <li class="md-path__item">
+        <a href="../01_bool/" class="md-path__link">
+          
+  <span class="md-ellipsis">
+    Section 2
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ol>
+  </nav>
+
+              
               <article class="md-content__inner md-typeset">
                 
                   
 
+
   
   
 
 
-<h1 id="les-structures-de-controle-imbriquees"><strong>Les structures de contrôle imbriquées</strong><a class="headerlink" href="#les-structures-de-controle-imbriquees" title="Permanent link">&para;</a></h1>
+<h1 id="6-les-structures-de-controle-imbriquees"><strong>6. Les structures de contrôle imbriquées</strong><a class="headerlink" href="#6-les-structures-de-controle-imbriquees" title="Permanent link">&para;</a></h1>
 <p>Les boucles imbriquées consistent à placer une boucle <strong>à l&rsquo;intérieur d&rsquo;une autre boucle</strong>. Elles sont utiles pour
 traiter des structures de données en deux dimensions, comme des matrices, ou pour générer des motifs complexes. Il 
 est aussi très courant d&rsquo;utiliser d&rsquo;autres structures de contrôle, comme des conditionnelles, à l&rsquo;intérieur d&rsquo;une 
@@ -2880,7 +3646,6 @@ boucle.</p>
 </span></code></pre></div>
 <div class="admonition note">
 <p class="admonition-title">Alternative</p>
-</div>
 <p>On aurait pu écrire le code suivant à la place pour obtenir le même résultat.
 <div class="language-python highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="n">n</span> <span class="o">=</span> <span class="mi">5</span>  <span class="c1"># Hauteur du triangle</span>
 </span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
@@ -2891,6 +3656,7 @@ boucle.</p>
 Laquelle des 2 versions est la meilleure ? Il s&rsquo;agit d&rsquo;une question de goût, les deux sont correctes. En général,
 sauf pour des cas très simples ou très précis, il y a plusieurs versions possibles, et la meilleure dépend souvent des
 préférences personnelles et des besoins spécifiques du projet.</p>
+</div>
 <hr />
 <h3 id="15-affichage-dun-triangle-isocele"><strong>1.5 Affichage d&rsquo;un triangle isocèle</strong><a class="headerlink" href="#15-affichage-dun-triangle-isocele" title="Permanent link">&para;</a></h3>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="n">n</span> <span class="o">=</span> <span class="mi">5</span>  <span class="c1"># Hauteur du triangle</span>
@@ -2975,9 +3741,9 @@ on ne connait pas d&rsquo;avance le nombre de répétitions de la boucle. </p>
 </span><span id="__span-14-15"><a id="__codelineno-14-15" name="__codelineno-14-15" href="#__codelineno-14-15"></a>        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Trop petit !&quot;</span><span class="p">)</span>
 </span><span id="__span-14-16"><a id="__codelineno-14-16" name="__codelineno-14-16" href="#__codelineno-14-16"></a>    <span class="k">else</span><span class="p">:</span>
 </span><span id="__span-14-17"><a id="__codelineno-14-17" name="__codelineno-14-17" href="#__codelineno-14-17"></a>        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Trop grand !&quot;</span><span class="p">)</span>
-</span><span id="__span-14-18"><a id="__codelineno-14-18" name="__codelineno-14-18" href="#__codelineno-14-18"></a><span class="k">else</span><span class="p">:</span>
-</span><span id="__span-14-19"><a id="__codelineno-14-19" name="__codelineno-14-19" href="#__codelineno-14-19"></a>    <span class="k">if</span> <span class="ow">not</span> <span class="n">trouve</span><span class="p">:</span>
-</span><span id="__span-14-20"><a id="__codelineno-14-20" name="__codelineno-14-20" href="#__codelineno-14-20"></a>        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Désolé, vous avez épuisé vos </span><span class="si">{</span><span class="n">tentatives_max</span><span class="si">}</span><span class="s2"> tentatives. Le nombre était </span><span class="si">{</span><span class="n">nombre_a_deviner</span><span class="si">}</span><span class="s2">.&quot;</span><span class="p">)</span>
+</span><span id="__span-14-18"><a id="__codelineno-14-18" name="__codelineno-14-18" href="#__codelineno-14-18"></a>
+</span><span id="__span-14-19"><a id="__codelineno-14-19" name="__codelineno-14-19" href="#__codelineno-14-19"></a><span class="k">if</span> <span class="ow">not</span> <span class="n">trouve</span><span class="p">:</span>
+</span><span id="__span-14-20"><a id="__codelineno-14-20" name="__codelineno-14-20" href="#__codelineno-14-20"></a>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Désolé, vous avez épuisé vos </span><span class="si">{</span><span class="n">tentatives_max</span><span class="si">}</span><span class="s2"> tentatives. Le nombre était </span><span class="si">{</span><span class="n">nombre_a_deviner</span><span class="si">}</span><span class="s2">.&quot;</span><span class="p">)</span>
 </span></code></pre></div>
 <p><strong>Exemple d&rsquo;exécution</strong> :</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>Devinez le nombre entre 1 et 20 : 10
@@ -3160,6 +3926,9 @@ explications, des exemples et/ou des suggestions de structure. Toutes les inform
 
 
 
+  
+  
+
 
 
 
@@ -3176,7 +3945,7 @@ explications, des exemples et/ou des suggestions de structure. Toutes les inform
           <button type="button" class="md-top md-icon" data-md-component="top" hidden>
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
-  Back to top
+  Retour en haut de la page
 </button>
         
       </main>
@@ -3185,30 +3954,30 @@ explications, des exemples et/ou des suggestions de structure. Toutes les inform
   
     
       
-      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      <nav class="md-footer__inner md-grid" aria-label="Pied de page" >
         
           
-          <a href="../05_for/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Les boucles for">
+          <a href="../05_for/" class="md-footer__link md-footer__link--prev" aria-label="Précédent: 5. Les boucles for">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
             </div>
             <div class="md-footer__title">
               <span class="md-footer__direction">
-                Previous
+                Précédent
               </span>
               <div class="md-ellipsis">
-                Les boucles for
+                5. Les boucles for
               </div>
             </div>
           </a>
         
         
           
-          <a href="../exercices/01_exercices/" class="md-footer__link md-footer__link--next" aria-label="Next: Exercices 1 : Les expressions booléennes">
+          <a href="../exercices/01_exercices/" class="md-footer__link md-footer__link--next" aria-label="Suivant: Exercices 1 : Les expressions booléennes">
             <div class="md-footer__title">
               <span class="md-footer__direction">
-                Next
+                Suivant
               </span>
               <div class="md-ellipsis">
                 Exercices 1 : Les expressions booléennes
@@ -3245,10 +4014,13 @@ explications, des exemples et/ou des suggestions de structure. Toutes les inform
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy", "content.code.select", "navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.expand", "navigation.path", "navigation.top", "navigation.footer", "search.suggest", "search.highlight"], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["content.code.copy", "content.code.select", "navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.expand", "navigation.path", "navigation.top", "navigation.footer", "search.suggest", "search.highlight"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copi\u00e9 dans le presse-papier", "clipboard.copy": "Copier dans le presse-papier", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.term.missing": "Non trouv\u00e9", "select.version": "S\u00e9lectionner la version"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.60a45f97.min.js"></script>
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
       
         <script src="../../javascripts/config.js"></script>
       

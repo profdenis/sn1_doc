@@ -1,3 +1,7 @@
+---
+icon: material/checkbox-outline
+---
+
 # 2. **Introduction à `matplotlib.pyplot`**
 
 `matplotlib.pyplot` est un module de `matplotlib` qui fournit une interface simple pour créer des **graphiques 2D**. Il

@@ -1,3 +1,7 @@
+---
+icon: material/checkbox-outline
+---
+
 # **2. Utilisation de l'entrée standard**
 
 ---

@@ -108,6 +108,7 @@ Utilisez une boucle `for` et `range()` pour afficher tous les nombres pairs de 0
 
 Écrivez un programme qui demande un nombre entier positif à l'utilisateur et calcule sa factorielle en utilisant une
 boucle `for`.
+
 **Rappel** : La factorielle de `n` est \( n! = n \times (n-1) \times (n-2) \times ... \times 1 \).
 
 ---
@@ -200,3 +201,10 @@ fruits = ["pomme", "banane", "cerise", "orange"]
 - Testez vos programmes avec différentes valeurs pour vérifier leur bon fonctionnement.
 
 ---
+
+-------
+
+??? info "Utilisation de l'IA"
+      Page rédigée en partie avec l'aide d'un assistant IA, principalement à l'aide de Perplexity AI. L'IA a été 
+      utilisée pour générer des explications, des exemples et/ou des suggestions de structure. Toutes les informations 
+      ont été vérifiées, éditées et complétées par l'auteur.

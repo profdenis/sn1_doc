@@ -1,3 +1,7 @@
+---
+icon: material/checkbox-outline
+---
+
 # 1. **Introduction à NumPy**
 
 NumPy (*Numerical Python*) est une bibliothèque fondamentale pour le calcul scientifique en Python. Elle fournit des

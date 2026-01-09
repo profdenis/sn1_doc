@@ -1,3 +1,7 @@
+---
+icon: material/checkbox-blank-outline
+---
+
 # **5. Les dictionnaires**
 
 ---

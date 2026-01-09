@@ -1,4 +1,8 @@
-# Qu'est-ce qu'un algorithme ?
+---
+icon: material/checkbox-outline
+---
+
+# 3. Qu'est-ce qu'un algorithme ?
 
 ## Algorithmes : Définitions
 

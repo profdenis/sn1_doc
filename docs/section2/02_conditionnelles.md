@@ -1,4 +1,8 @@
-# **Les structures conditionnelles**
+---
+icon: material/checkbox-outline
+---
+
+# **2. Les structures conditionnelles**
 
 Les structures conditionnelles permettent d'exécuter des blocs de code en fonction de conditions spécifiques. Elles sont
 essentielles pour créer des programmes dynamiques et réactifs.

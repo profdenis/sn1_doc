@@ -2,7 +2,7 @@
 
 ---
 
-## **Exercices de compréhension (calculs "à la main")**
+## **Exercices de compréhension**
 
 ---
 
@@ -176,3 +176,10 @@ print((nombre1 + nombre2 + nombre3) > 50)
 ```
 
 ---
+
+-------
+
+??? info "Utilisation de l'IA"
+      Page rédigée en partie avec l'aide d'un assistant IA, principalement à l'aide de Perplexity AI. L'IA a été 
+      utilisée pour générer des explications, des exemples et/ou des suggestions de structure. Toutes les informations 
+      ont été vérifiées, éditées et complétées par l'auteur.

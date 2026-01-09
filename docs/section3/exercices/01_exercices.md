@@ -21,10 +21,11 @@ except ValueError:
 2.
 
 ```python
-while True:
+valeur_valide = False
+while not valeur_valide:
     try:
         age = int(input("Entrez votre âge : "))
-        break
+        valeur_valide = True  # La boucle s'arrête si la conversion réussit
     except ValueError:
         print("Erreur : Vous devez entrer un nombre entier.")
 print(f"Votre âge est {age}.")
@@ -64,75 +65,15 @@ Utilisez une boucle et une gestion d'exception pour valider l'entrée.
 
 ---
 
-### **Exercice 6 : Validation d'un code postal**
 
-Écrivez une fonction `demander_code_postal()` qui demande à l'utilisateur d'entrer un code postal de 5 chiffres.
-Utilisez une boucle et une gestion d'exception pour valider l'entrée.
-
----
-
-### **Exercice 7 : Validation d'une adresse e-mail**
-
-Écrivez une fonction `demander_email()` qui demande à l'utilisateur d'entrer une adresse e-mail valide (contenant un `@`
-et un `.`). Utilisez une boucle et une gestion d'exception pour valider l'entrée.
-
----
-
-### **Exercice 8 : Division sécurisée**
+### **Exercice 6 : Division sécurisée**
 
 Écrivez une fonction `division_securisee()` qui demande à l'utilisateur d'entrer deux nombres et effectue la division du
 premier par le second. Gérez les exceptions possibles (`ValueError` et `ZeroDivisionError`).
 
 ---
 
-### **Exercice 9 : Lecture sécurisée d'un fichier**
 
-Écrivez une fonction `lire_fichier()` qui demande à l'utilisateur d'entrer le nom d'un fichier et tente de lire son
-contenu. Gérez l'exception `FileNotFoundError`.
-
----
-
-### **Exercice 10 : Validation d'une liste d'entiers**
-
-Écrivez une fonction `demander_liste_entiers()` qui demande à l'utilisateur d'entrer une liste d'entiers séparés par des
-espaces. Validez chaque entier et retournez la liste.
-
----
-
-### **Exercice 11 : Validation d'une date**
-
-Écrivez une fonction `demander_date()` qui demande à l'utilisateur d'entrer une date sous la forme `JJ/MM/AAAA`. Validez
-que la date est correcte (ex. : le jour est entre 1 et 31, le mois entre 1 et 12, etc.).
-
----
-
-### **Exercice 12 : Validation d'un mot de passe**
-
-Écrivez une fonction `demander_mot_de_passe()` qui demande à l'utilisateur d'entrer un mot de passe contenant au moins 8
-caractères, une majuscule et un chiffre. Utilisez une boucle et des conditionnelles pour valider l'entrée.
-
----
-
-### **Exercice 13 : Validation d'une heure**
-
-Écrivez une fonction `demander_heure()` qui demande à l'utilisateur d'entrer une heure sous la forme `HH:MM`. Validez
-que l'heure est correcte (ex. : les heures entre 0 et 23, les minutes entre 0 et 59).
-
----
-
-### **Exercice 14 : Validation d'une liste de notes**
-
-Écrivez une fonction `demander_liste_notes()` qui demande à l'utilisateur d'entrer une liste de notes (entre 0 et 100)
-séparées par des virgules. Validez chaque note et retournez la liste.
-
----
-
-### **Exercice 15 : Validation d'un numéro de téléphone**
-
-Écrivez une fonction `demander_numero_telephone()` qui demande à l'utilisateur d'entrer un numéro de téléphone de 10
-chiffres. Utilisez une boucle et des conditionnelles pour valider l'entrée.
-
----
 
 ---
 **Conseils pour les exercices** :
@@ -142,3 +83,10 @@ chiffres. Utilisez une boucle et des conditionnelles pour valider l'entrée.
 - Utilisez des exceptions (`try`/`except`) pour gérer les erreurs de conversion ou d'accès.
 
 ---
+
+-------
+
+??? info "Utilisation de l'IA"
+      Page rédigée en partie avec l'aide d'un assistant IA, principalement à l'aide de Perplexity AI. L'IA a été 
+      utilisée pour générer des explications, des exemples et/ou des suggestions de structure. Toutes les informations 
+      ont été vérifiées, éditées et complétées par l'auteur.

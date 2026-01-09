@@ -1,3 +1,7 @@
+---
+icon: material/checkbox-outline
+---
+
 # **3. Importation de modules**
 
 ---

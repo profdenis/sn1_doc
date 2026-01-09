@@ -1,3 +1,7 @@
+---
+icon: material/checkbox-outline
+---
+
 # **2. Listes**
 
 ---
@@ -30,15 +34,15 @@ print(nombres[2])  # Affiche 30
 
 ---
 
-### **2.2 Accéder à une sous-liste (slicing)**
+### **2.2 Accéder à une sous-liste (_slicing_)**
 
-Le **slicing** permet d'extraire une partie d'une liste en utilisant la syntaxe `[début:fin:pas]`. Voici les détails des
+Le **_slicing_** permet d'extraire une partie d'une liste en utilisant la syntaxe `[début:fin:pas]`. Voici les détails des
 différentes options avec le `:` :
 
 - **`liste[debut:fin]`** :
     - Extrait les éléments de l'index `début` (inclus) à l'index `fin` (exclus).
-    - Si `début` est omis, le slicing commence au début de la liste.
-    - Si `fin` est omis, le slicing va jusqu'à la fin de la liste.
+    - Si `début` est omis, le _slicing_ commence au début de la liste.
+    - Si `fin` est omis, le _slicing_ va jusqu'à la fin de la liste.
     - **Exemple** :
       ```python
       nombres = [10, 20, 30, 40, 50]
@@ -95,7 +99,7 @@ Les **index négatifs** permettent d'accéder aux éléments d'une liste en part
   print(nombres[-6])  # Lève une erreur IndexError: list index out of range
   ```
 
-#### **Slicing avec des index négatifs**
+#### **_slicing_ avec des index négatifs**
 
 Vous pouvez également utiliser des index négatifs dans le **slicing** :
 
@@ -188,7 +192,7 @@ for index in range(len(jours)):
 
 ---
 
-## **4. Fonctions sur les listes**
+## **4. Fonctions (méthodes) sur les listes**
 
 ### **4.1 Ajouter un élément**
 

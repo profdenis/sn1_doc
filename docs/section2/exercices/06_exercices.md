@@ -82,14 +82,8 @@ de suite.
 
 ---
 
-### **Exercice 9 : Recherche dans une matrice**
 
-Écrivez un programme qui recherche un nombre dans une matrice 3x3 prédéfinie. Le programme doit demander à l'utilisateur
-d'entrer un nombre et utiliser des boucles imbriquées pour vérifier si ce nombre est présent dans la matrice.
-
----
-
-### **Exercice 10 : Débogage d'une boucle imbriquée**
+### **Exercice 9 : Débogage d'une boucle imbriquée**
 
 Le code suivant est censé afficher un triangle rectangle de hauteur 4, mais il contient une erreur. Trouvez et corrigez
 l'erreur.
@@ -106,7 +100,7 @@ for i in range(n):
 
 ## **Exercices de débogage**
 
-### **Exercice 11 : Tester et corriger**
+### **Exercice 10 : Tester et corriger**
 
 Le code suivant est censé afficher un carré de 3x3 étoiles, mais il ne fonctionne pas correctement. Trouvez et corrigez
 l'erreur.
@@ -123,7 +117,7 @@ while i < n:
 
 ---
 
-### **Exercice 12 : Ajouter des `print` de débogage**
+### **Exercice 11 : Ajouter des `print` de débogage**
 
 Ajoutez des instructions `print` dans le code suivant pour afficher les valeurs de `i` et `j` à chaque itération. Cela
 vous aidera à comprendre comment les boucles imbriquées fonctionnent.
@@ -137,7 +131,7 @@ for i in range(2):
 
 ---
 
-### **Exercice 13 : Vérifier les conditions de sortie**
+### **Exercice 12 : Vérifier les conditions de sortie**
 
 Le code suivant contient une boucle infinie. Trouvez et corrigez l'erreur.
 
@@ -159,3 +153,10 @@ while i < 5:
 - Utilisez des `print` de débogage pour suivre l'exécution des boucles imbriquées.
 
 ---
+
+-------
+
+??? info "Utilisation de l'IA"
+      Page rédigée en partie avec l'aide d'un assistant IA, principalement à l'aide de Perplexity AI. L'IA a été 
+      utilisée pour générer des explications, des exemples et/ou des suggestions de structure. Toutes les informations 
+      ont été vérifiées, éditées et complétées par l'auteur.

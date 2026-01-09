@@ -1,3 +1,7 @@
+---
+icon: material/checkbox-outline
+---
+
 # **3. Les chaînes de caractères**
 
 Les **chaînes de caractères** (ou *strings*) sont des séquences **immuables** de caractères utilisées pour représenter

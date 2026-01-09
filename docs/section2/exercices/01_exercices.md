@@ -6,7 +6,7 @@
 
 ### **Exercice 1 : Évaluation d'expressions de comparaison**
 
-Calculez "à la main" la valeur des expressions suivantes, puis vérifiez vos réponses en utilisant Python si nécessaire.
+Calculez mentalement la valeur des expressions suivantes, puis vérifiez vos réponses en utilisant Python si nécessaire.
 
 1. `5 == 5`
 2. `10 != 10`
@@ -19,7 +19,7 @@ Calculez "à la main" la valeur des expressions suivantes, puis vérifiez vos r�
 
 ### **Exercice 2 : Évaluation d'expressions logiques**
 
-Calculez "à la main" la valeur des expressions suivantes, puis vérifiez vos réponses en utilisant Python si nécessaire.
+Calculez mentalement la valeur des expressions suivantes, puis vérifiez vos réponses en utilisant Python si nécessaire.
 
 1. `True and False`
 2. `True or False`
@@ -32,7 +32,7 @@ Calculez "à la main" la valeur des expressions suivantes, puis vérifiez vos r�
 
 ### **Exercice 3 : Tables de vérité**
 
-Complétez les tables de vérité suivantes "à la main", puis vérifiez vos réponses en utilisant Python si nécessaire.
+Complétez les tables de vérité suivantes, puis vérifiez vos réponses en utilisant Python si nécessaire.
 
 #### **Table de vérité pour `A and B`**
 
@@ -63,7 +63,7 @@ Complétez les tables de vérité suivantes "à la main", puis vérifiez vos ré
 
 ### **Exercice 4 : Combinaisons d'expressions**
 
-Évaluez les expressions suivantes "à la main", puis vérifiez vos réponses en utilisant Python si nécessaire.
+Évaluez les expressions suivantes mentalement, puis vérifiez vos réponses en utilisant Python si nécessaire.
 
 1. `(5 < 10) and (10 < 15)`
 2. `(5 > 10) or (10 == 10)`
@@ -78,7 +78,7 @@ Complétez les tables de vérité suivantes "à la main", puis vérifiez vos ré
 ### **Exercice 5 : Vérification des réponses**
 
 Écrivez un programme Python qui évalue les expressions des exercices 1 à 4 et affiche les résultats. Comparez-les avec
-vos réponses "à la main".
+vos réponses sans Python.
 
 ```python
 # Exemple de code pour vérifier les réponses
@@ -91,7 +91,7 @@ print(10 != 10)  # False
 
 ### **Exercice 6 : Évaluation d'expressions personnalisées**
 
-Créez vos propres expressions booléennes (au moins 5) et évaluez-les "à la main". Ensuite, vérifiez vos réponses en
+Créez vos propres expressions booléennes (au moins 5) et évaluez-les mentalement. Ensuite, vérifiez vos réponses en
 utilisant Python.
 
 ---
@@ -118,7 +118,7 @@ possibles de `A and B`, `A or B`, et `not A` en utilisant Python.
 ### **Exercice 9 : Expressions booléennes complexes**
 
 Créez des expressions booléennes complexes (au moins 3) en utilisant les opérateurs `and`, `or`, et `not`. Évaluez-les
-"à la main", puis vérifiez vos réponses en utilisant Python.
+mentalement, puis vérifiez vos réponses en utilisant Python.
 
 ---
 
@@ -133,3 +133,10 @@ suivantes :
 4. La somme des trois nombres est supérieure à 50.
 
 ---
+
+-------
+
+??? info "Utilisation de l'IA"
+      Page rédigée en partie avec l'aide d'un assistant IA, principalement à l'aide de Perplexity AI. L'IA a été 
+      utilisée pour générer des explications, des exemples et/ou des suggestions de structure. Toutes les informations 
+      ont été vérifiées, éditées et complétées par l'auteur.

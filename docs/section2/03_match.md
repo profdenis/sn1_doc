@@ -1,4 +1,8 @@
-# **L'instruction `match`**
+---
+icon: material/checkbox-blank-outline
+---
+
+# **3. L'instruction `match`**
 
 ---
 

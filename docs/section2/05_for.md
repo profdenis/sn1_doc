@@ -1,4 +1,8 @@
-# **Les boucles `for`**
+---
+icon: material/checkbox-outline
+---
+
+# **5. Les boucles `for`**
 
 ---
 

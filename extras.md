@@ -583,3 +583,481 @@ while True:
 ```
 
 ---
+
+
+### **Exercice 9 : Recherche dans une matrice**
+
+Écrivez un programme qui recherche un nombre dans une matrice 3x3 prédéfinie. Le programme doit demander à l'utilisateur
+d'entrer un nombre et utiliser des boucles imbriquées pour vérifier si ce nombre est présent dans la matrice.
+
+---
+
+## **Exercice 9 : Recherche dans une matrice**
+
+```python
+matrice = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+]
+recherche = int(input("Entrez un nombre à rechercher : "))
+trouve = False
+for i in range(3):
+    for j in range(3):
+        if matrice[i][j] == recherche:
+            trouve = True
+            break
+    if trouve:
+        break
+if trouve:
+    print(f"Le nombre {recherche} a été trouvé.")
+else:
+    print(f"Le nombre {recherche} n'a pas été trouvé.")
+```
+
+**Exemple d'exécution** :
+
+```
+Entrez un nombre à rechercher : 5
+Le nombre 5 a été trouvé.
+```
+
+---
+
+### **Exercice 6 : Validation d'un code postal**
+
+Écrivez une fonction `demander_code_postal()` qui demande à l'utilisateur d'entrer un code postal de 5 chiffres.
+Utilisez une boucle et une gestion d'exception pour valider l'entrée.
+
+---
+
+
+## **Exercice 6 : Validation d'un code postal**
+```python
+def demander_code_postal():
+    code_valide = False
+    while not code_valide:
+        code_postal = input("Entrez un code postal (5 chiffres) : ")
+        if len(code_postal) == 5 and code_postal.isdigit():
+            code_valide = True
+        else:
+            print("Erreur : Le code postal doit être une chaîne de 5 chiffres.")
+    return code_postal
+
+code_postal = demander_code_postal()
+print(f"Code postal valide : {code_postal}.")
+```
+
+---
+
+
+
+### **Exercice 7 : Validation d'une adresse e-mail**
+
+Écrivez une fonction `demander_email()` qui demande à l'utilisateur d'entrer une adresse e-mail valide (contenant un `@`
+et un `.`). Utilisez une boucle et une gestion d'exception pour valider l'entrée.
+
+---
+
+## **Exercice 7 : Validation d'une adresse e-mail**
+```python
+def demander_email():
+    email_valide = False
+    while not email_valide:
+        email = input("Entrez une adresse e-mail : ")
+        if "@" in email and "." in email.split("@")[-1]:
+            email_valide = True
+        else:
+            print("Erreur : L'adresse e-mail doit contenir un '@' et un '.'.")
+    return email
+
+email = demander_email()
+print(f"Adresse e-mail valide : {email}.")
+```
+
+
+
+### **Exercice 9 : Lecture sécurisée d'un fichier**
+
+Écrivez une fonction `lire_fichier()` qui demande à l'utilisateur d'entrer le nom d'un fichier et tente de lire son
+contenu. Gérez l'exception `FileNotFoundError`.
+
+---
+
+### **Exercice 10 : Validation d'une liste d'entiers**
+
+Écrivez une fonction `demander_liste_entiers()` qui demande à l'utilisateur d'entrer une liste d'entiers séparés par des
+espaces. Validez chaque entier et retournez la liste.
+
+---
+
+### **Exercice 11 : Validation d'une date**
+
+Écrivez une fonction `demander_date()` qui demande à l'utilisateur d'entrer une date sous la forme `JJ/MM/AAAA`. Validez
+que la date est correcte (ex. : le jour est entre 1 et 31, le mois entre 1 et 12, etc.).
+
+---
+
+
+## **Exercice 9 : Lecture sécurisée d'un fichier**
+```python
+def lire_fichier():
+    fichier_valide = False
+    while not fichier_valide:
+        try:
+            nom_fichier = input("Entrez le nom du fichier : ")
+            with open(nom_fichier, "r") as fichier:
+                contenu = fichier.read()
+                fichier_valide = True
+        except FileNotFoundError:
+            print("Erreur : Le fichier n'existe pas.")
+    return contenu
+
+contenu = lire_fichier()
+print(f"Contenu du fichier : {contenu}")
+```
+
+---
+
+## **Exercice 10 : Validation d'une liste d'entiers**
+```python
+def demander_liste_entiers():
+    liste_valide = False
+    while not liste_valide:
+        try:
+            entree = input("Entrez une liste d'entiers séparés par des espaces : ")
+            liste_entiers = [int(nombre) for nombre in entree.split()]
+            liste_valide = True
+        except ValueError:
+            print("Erreur : Tous les éléments doivent être des entiers.")
+    return liste_entiers
+
+liste_entiers = demander_liste_entiers()
+print(f"Liste d'entiers valide : {liste_entiers}.")
+```
+
+---
+
+## **Exercice 11 : Validation d'une date**
+```python
+def demander_date():
+    date_valide = False
+    while not date_valide:
+        date = input("Entrez une date (JJ/MM/AAAA) : ")
+        try:
+            jour, mois, annee = map(int, date.split("/"))
+            if 1 <= jour <= 31 and 1 <= mois <= 12 and 1900 <= annee <= 2100:
+                date_valide = True
+            else:
+                print("Erreur : Date invalide.")
+        except ValueError:
+            print("Erreur : Format de date incorrect.")
+    return date
+
+date = demander_date()
+print(f"Date valide : {date}.")
+```
+
+---
+
+
+### **Exercice 12 : Validation d'un mot de passe**
+
+Écrivez une fonction `demander_mot_de_passe()` qui demande à l'utilisateur d'entrer un mot de passe contenant au moins 8
+caractères, une majuscule et un chiffre. Utilisez une boucle et des conditionnelles pour valider l'entrée.
+
+---
+
+### **Exercice 13 : Validation d'une heure**
+
+Écrivez une fonction `demander_heure()` qui demande à l'utilisateur d'entrer une heure sous la forme `HH:MM`. Validez
+que l'heure est correcte (ex. : les heures entre 0 et 23, les minutes entre 0 et 59).
+
+---
+
+### **Exercice 14 : Validation d'une liste de notes**
+
+Écrivez une fonction `demander_liste_notes()` qui demande à l'utilisateur d'entrer une liste de notes (entre 0 et 100)
+séparées par des virgules. Validez chaque note et retournez la liste.
+
+---
+
+### **Exercice 15 : Validation d'un numéro de téléphone**
+
+Écrivez une fonction `demander_numero_telephone()` qui demande à l'utilisateur d'entrer un numéro de téléphone de 10
+chiffres. Utilisez une boucle et des conditionnelles pour valider l'entrée.
+
+---
+
+
+
+## **Exercice 12 : Validation d'un mot de passe**
+```python
+def demander_mot_de_passe():
+    mot_de_passe_valide = False
+    while not mot_de_passe_valide:
+        mot_de_passe = input("Entrez un mot de passe (au moins 8 caractères, une majuscule et un chiffre) : ")
+        if len(mot_de_passe) >= 8 and any(c.isupper() for c in mot_de_passe) and any(c.isdigit() for c in mot_de_passe):
+            mot_de_passe_valide = True
+        else:
+            print("Erreur : Le mot de passe doit contenir au moins 8 caractères, une majuscule et un chiffre.")
+    return mot_de_passe
+
+mot_de_passe = demander_mot_de_passe()
+print(f"Mot de passe valide : {mot_de_passe}.")
+```
+
+---
+
+## **Exercice 13 : Validation d'une heure**
+```python
+def demander_heure():
+    heure_valide = False
+    while not heure_valide:
+        heure = input("Entrez une heure (HH:MM) : ")
+        try:
+            heures, minutes = map(int, heure.split(":"))
+            if 0 <= heures <= 23 and 0 <= minutes <= 59:
+                heure_valide = True
+            else:
+                print("Erreur : Heure invalide.")
+        except ValueError:
+            print("Erreur : Format d'heure incorrect.")
+    return heure
+
+heure = demander_heure()
+print(f"Heure valide : {heure}.")
+```
+
+---
+
+## **Exercice 14 : Validation d'une liste de notes**
+```python
+def demander_liste_notes():
+    liste_notes_valide = False
+    while not liste_notes_valide:
+        try:
+            entree = input("Entrez une liste de notes (entre 0 et 100) séparées par des virgules : ")
+            liste_notes = [float(note) for note in entree.split(",")]
+            if all(0 <= note <= 100 for note in liste_notes):
+                liste_notes_valide = True
+            else:
+                print("Erreur : Toutes les notes doivent être entre 0 et 100.")
+        except ValueError:
+            print("Erreur : Toutes les notes doivent être des nombres.")
+    return liste_notes
+
+liste_notes = demander_liste_notes()
+print(f"Liste de notes valide : {liste_notes}.")
+```
+
+---
+
+## **Exercice 15 : Validation d'un numéro de téléphone**
+```python
+def demander_numero_telephone():
+    numero_valide = False
+    while not numero_valide:
+        numero = input("Entrez un numéro de téléphone (10 chiffres) : ")
+        if len(numero) == 10 and numero.isdigit():
+            numero_valide = True
+        else:
+            print("Erreur : Le numéro de téléphone doit être une chaîne de 10 chiffres.")
+    return numero
+
+numero = demander_numero_telephone()
+print(f"Numéro de téléphone valide : {numero}.")
+```
+
+---
+
+---
+
+### **Exercice 6 : Initiales**
+```python
+def initiales(nom_complet):
+    mots = nom_complet.split()
+    return " ".join([f"{mot[0]}." for mot in mots])
+
+print(initiales("Jean Tremblay"))  # "J. T."
+```
+
+---
+
+### **Exercice 7 : Valider un code postal**
+
+Écrivez une fonction qui valide un code postal canadien (format : `A1A 1A1`).
+**Exemple** : `est_code_postal_valide("H3T 1J4")` → `True`
+
+---
+
+### **Exercice 8 : Extraire les nombres d'une chaîne**
+
+Écrivez une fonction qui extrait tous les nombres d'une chaîne et les retourne dans une liste.
+**Exemple** : `"Il a 3 pommes et 5 bananes."` → `[3, 5]`
+
+---
+
+### **Exercice 7 : Valider un code postal**
+```python
+import re
+
+def est_code_postal_valide(code):
+    return bool(re.match(r'^[A-Za-z]\d[A-Za-z] \d[A-Za-z]\d$', code))
+
+print(est_code_postal_valide("H3T 1J4"))  # True
+print(est_code_postal_valide("H3T1J4"))   # False
+```
+
+---
+
+### **Exercice 8 : Extraire les nombres d'une chaîne**
+```python
+import re
+
+def extraire_nombres(chaine):
+    return [int(nombre) for nombre in re.findall(r'\d+', chaine)]
+
+print(extraire_nombres("Il a 3 pommes et 5 bananes."))  # [3, 5]
+```
+
+---
+
+### **Exercice 16 : Compter les occurrences de chaque lettre**
+
+Écrivez une fonction qui prend une chaîne et retourne une liste de tuples, chaque tuple contenant une lettre et son
+nombre d'occurrences (sans distinction de casse et en ignorant les espaces).
+**Exemple** : `"Bonjour"` → `[('b', 1), ('o', 2), ('n', 1), ('j', 1), ('u', 1), ('r', 1)]`
+
+---
+
+### **Exercice 16 : Compter les occurrences de chaque lettre**
+```python
+def compter_occurrences(chaine):
+    chaine = chaine.lower().replace(" ", "")
+    occurrences = {}
+    for lettre in chaine:
+        if lettre in occurrences:
+            occurrences[lettre] += 1
+        else:
+            occurrences[lettre] = 1
+    return sorted(occurrences.items())
+
+print(compter_occurrences("Bonjour"))  # [('b', 1), ('j', 1), ('n', 1), ('o', 2), ('r', 1), ('u', 1)]
+```
+
+---
+
+
+
+### **Exercice 17 : Trouver les anagrammes**
+
+Écrivez une fonction qui prend une liste de mots et retourne une liste de groupes d'anagrammes (mots formés des mêmes
+lettres).
+**Exemple** : `["écoute", "couteau", "tac", "cat", "acte"]` → `[["écoute"], ["couteau"], ["tac", "cat"], ["acte"]]`
+
+---
+
+
+
+### **Exercice 17 : Trouver les anagrammes**
+```python
+def trouver_anagrammes(mots):
+    groupes = {}
+    for mot in mots:
+        cle = "".join(sorted(mot.lower()))
+        if cle in groupes:
+            groupes[cle].append(mot)
+        else:
+            groupes[cle] = [mot]
+    return list(groupes.values())
+
+print(trouver_anagrammes(["écoute", "couteau", "tac", "cat", "acte"]))
+# [['écoute'], ['couteau'], ['tac', 'cat'], ['acte']]
+```
+
+---
+
+
+## **Exercices combinant chaînes et fonctions**
+
+### **Exercice 18 : Fonction de césar**
+
+Écrivez une fonction qui applique un chiffrement de César (décalage de `n` lettres) à une chaîne.
+**Exemple** : `cesar("Bonjour", 3)` → `"Erqmrxu"`
+
+---
+
+### **Exercice 19 : Fonction de capitalisation personnalisée**
+
+Écrivez une fonction qui capitalise chaque mot d'une chaîne sauf une liste de mots exclus.
+**Exemple** : `capitaliser("bonjour tout le monde", ["le"])` → `"Bonjour Tout le Monde"`
+
+---
+
+### **Exercice 20 : Fonction de troncature**
+
+Écrivez une fonction qui tronque une chaîne à une longueur donnée et ajoute `"..."` si elle est plus longue.
+**Exemple** : `tronquer("Bonjour tout le monde", 10)` → `"Bonjour..."`
+
+---
+
+---
+**Conseils pour les exercices** :
+
+- Utilisez les **méthodes de chaînes** (`split`, `join`, `replace`, etc.) et les **boucles/conditionnelles** pour
+  résoudre les problèmes.
+- Testez vos fonctions avec différents cas pour vérifier leur robustesse.
+
+
+## **Exercices combinant chaînes et fonctions**
+
+### **Exercice 18 : Fonction de césar**
+```python
+def cesar(chaine, decalage):
+    resultat = []
+    for lettre in chaine:
+        if lettre.isalpha():
+            base = ord('A') if lettre.isupper() else ord('a')
+            nouvelle_lettre = chr((ord(lettre) - base + decalage) % 26 + base)
+            resultat.append(nouvelle_lettre)
+        else:
+            resultat.append(lettre)
+    return "".join(resultat)
+
+print(cesar("Bonjour", 3))  # "Erqmrxu"
+```
+
+---
+
+### **Exercice 19 : Fonction de capitalisation personnalisée**
+```python
+def capitaliser(chaine, exclus):
+    mots = chaine.split()
+    resultat = []
+    for mot in mots:
+        if mot.lower() in [e.lower() for e in exclus]:
+            resultat.append(mot.lower())
+        else:
+            resultat.append(mot.capitalize())
+    return " ".join(resultat)
+
+print(capitaliser("bonjour tout le monde", ["le"]))  # "Bonjour Tout le Monde"
+```
+
+---
+
+### **Exercice 20 : Fonction de troncature**
+```python
+def tronquer(chaine, longueur):
+    if len(chaine) <= longueur:
+        return chaine
+    return chaine[:longueur] + "..."
+
+print(tronquer("Bonjour tout le monde", 10))  # "Bonjour..."
+```
+
+---
+
+
+e
