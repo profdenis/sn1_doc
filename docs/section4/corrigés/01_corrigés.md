@@ -275,17 +275,9 @@ print("y = x^2 :", y)  # Affiche [  0   1   4   9  16  25  36  49  64  81 100]
 
 ---
 
-### **Exercice 14 : Masques et conditions**
+----------
 
-```python
-# 1. Masque pour les valeurs > 15
-valeurs = np.array([5, 10, 15, 20, 25])
-masque = valeurs > 15
-print("Valeurs > 15 :", valeurs[masque])  # Affiche [20 25]
-
-# 2. Notes >= 15
-notes = np.array([12, 15, 18, 9, 14])
-notes_filtrees = notes[notes >= 15]
-print("Notes >= 15 :", notes_filtrees)  # Affiche [15 18]
-```
-
+??? info "Utilisation de l'IA"
+    Page rédigée en partie avec l'aide d'un assistant IA. L'IA a été utilisée pour générer des 
+    explications, des exemples et/ou des suggestions de structure. Toutes les informations ont 
+    été vérifiées, éditées et complétées par l'auteur.

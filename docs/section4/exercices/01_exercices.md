@@ -137,14 +137,6 @@ Pour chaque tableau créé dans l'exercice 5 :
 
 ---
 
-### **Exercice 14 : Masques et conditions**
-
-1. Créez un tableau `valeurs` contenant `[5, 10, 15, 20, 25]`.
-    - Créez un masque pour sélectionner les valeurs supérieures à 15.
-    - Affichez les valeurs qui satisfont cette condition.
-2. À partir du tableau `notes` de l'exercice 9, sélectionnez les notes supérieures ou égales à 15.
-
----
 
 ---
 **Conseils pour les exercices** :
@@ -154,3 +146,11 @@ Pour chaque tableau créé dans l'exercice 5 :
 - Utilisez les fonctions NumPy présentées dans la section précédente.
 
 ---
+
+
+----------
+
+??? info "Utilisation de l'IA"
+    Page rédigée en partie avec l'aide d'un assistant IA. L'IA a été utilisée pour générer des 
+    explications, des exemples et/ou des suggestions de structure. Toutes les informations ont 
+    été vérifiées, éditées et complétées par l'auteur.

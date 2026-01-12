@@ -118,7 +118,18 @@ print(f"Somme : {sum(nombres)}")
 ```
 
 !!! note "Remarque"
-    Si on tente d'accéder
+    Si on tente d'accéder à un fichier qui n'existe pas, une exception `FileNotFoundError` est levée. Il est important de
+    gérer ces exceptions pour éviter les erreurs de programme. La fonction `lire_nombres` ne sait pas si le fichier 
+    existe ou non, et ne sait pas quoi faire si le fichier n'existe pas. Donc, il serait plus naturel de faire la 
+    gestion de l'exception dans le code qui appelle la fonction.
+    ```python
+    try:
+        nombres = lire_nombres("nombres.txt")
+        print(f"Liste des nombres : {nombres}")
+        print(f"Somme : {sum(nombres)}")
+    except FileNotFoundError:
+        print("Le fichier nombres.txt n'existe pas.")
+    ```
 
 ---
 
@@ -157,6 +168,10 @@ with open("nombres_sortie.txt", "w") as fichier:
         fichier.write(f"{nombre}\n")
 ```
 
+!!! note "Remarque'
+    `write()` n'ajoute pas automatiquement un saut ligne à chaque appel de la fonction, donc il faut écrire un "\n"
+    manuellement pour forcer l'ajout d'un saut de ligne.
+
 ---
 
 ## **6. Exemples avec chaînes de caractères**
@@ -166,7 +181,7 @@ with open("nombres_sortie.txt", "w") as fichier:
 ```python
 with open("mots.txt", "r") as fichier:
     for ligne in fichier:
-        mot = ligne.strip()  # Supprime les sauts de ligne et espaces
+        mot = ligne.strip()  # Supprime les sauts de ligne et espaces au début et à la fin de chaque ligne
         print(f"Mot lu : {mot}")
 ```
 
@@ -193,3 +208,10 @@ with open("mots.txt", "r") as fichier:
 ```
 
 ---
+
+----------
+
+??? info "Utilisation de l'IA"
+    Page rédigée en partie avec l'aide d'un assistant IA. L'IA a été utilisée pour générer des 
+    explications, des exemples et/ou des suggestions de structure. Toutes les informations ont 
+    été vérifiées, éditées et complétées par l'auteur.

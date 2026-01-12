@@ -34,6 +34,20 @@ with open("nombres.txt", "r") as fichier:
         print(int(ligne) * 2)
 ```
 
+3
+
+```python
+with open("nombres.txt", "w") as fichier:
+    fichier.write("10\n")
+    fichier.write("20\n")
+    fichier.write("30\n")
+
+with open("nombres.txt", "r") as fichier:
+    for ligne in fichier:
+        print(ligne * 2)
+```
+
+
 ---
 
 ## **Exercices de lecture de fichiers**
@@ -53,7 +67,7 @@ ligne.
 
 ### **Exercice 4 : Calculer la somme des nombres dans un fichier**
 
-Écrivez un programme qui lit un fichier nommé `nombres.txt` contenant un nombre par ligne, calcule la somme de ces
+Écrivez un programme qui lit un fichier nommé `nombres.txt` contenant un nombre par ligne, calcule la moyenne de ces
 nombres et affiche le résultat. **Gérez les erreurs** si une ligne ne contient pas un nombre valide.
 
 ---
@@ -128,45 +142,18 @@ ces nombres pairs dans un fichier `pairs.txt`.
 
 ---
 
-### **Exercice 15 : Compter les occurrences de mots**
 
-Écrivez un programme qui lit un fichier `texte.txt`, compte les occurrences de chaque mot, et écrit les résultats dans
-un fichier `occurrences.txt`.
-
----
-
-### **Exercice 16 : Fusionner deux fichiers**
+### **Exercice 15 : Fusionner deux fichiers**
 
 Écrivez un programme qui lit le contenu de deux fichiers `fichier1.txt` et `fichier2.txt`, et écrit leur contenu
 fusionné dans un fichier `fusion.txt`.
 
 ---
 
-### **Exercice 17 : Lire et écrire des chaînes formatées**
+### **Exercice 16 : Lire et écrire des chaînes formatées**
 
 Écrivez un programme qui lit un fichier `noms.txt` contenant un nom par ligne, et écrit dans un fichier
 `salutations.txt` une ligne de salutation pour chaque nom (ex. : "Bonjour Alice").
-
----
-
-### **Exercice 18 : Calculer la moyenne des nombres dans un fichier**
-
-Écrivez un programme qui lit un fichier `notes.txt` contenant une note par ligne, calcule la moyenne de ces notes, et
-écrit le résultat dans un fichier `moyenne.txt`.
-
----
-
-### **Exercice 19 : Lire et écrire des données structurées**
-
-Écrivez un programme qui lit un fichier `etudiants.txt` contenant des lignes au format `nom,note`, calcule la moyenne
-des notes, et écrit le résultat dans un fichier `resultats.txt`.
-
----
-
-### **Exercice 20 : Gestion des erreurs de fichier**
-
-Écrivez un programme qui tente de lire un fichier `inexistant.txt` et gère les erreurs `FileNotFoundError` et
-`PermissionError`.
 
 ---
 
@@ -178,3 +165,10 @@ des notes, et écrit le résultat dans un fichier `resultats.txt`.
 - Testez vos programmes avec des fichiers existants et inexistants.
 
 ---
+
+----------
+
+??? info "Utilisation de l'IA"
+    Page rédigée en partie avec l'aide d'un assistant IA. L'IA a été utilisée pour générer des 
+    explications, des exemples et/ou des suggestions de structure. Toutes les informations ont 
+    été vérifiées, éditées et complétées par l'auteur.

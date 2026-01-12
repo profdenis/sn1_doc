@@ -46,6 +46,38 @@ with open("nombres.txt", "r") as fichier:
 60
 ```
 
+3.
+
+```python
+with open("nombres.txt", "w") as fichier:
+    fichier.write("10\n")
+    fichier.write("20\n")
+    fichier.write("30\n")
+
+with open("nombres.txt", "r") as fichier:
+    for ligne in fichier:
+        print(ligne * 2)
+```
+
+**Sortie** :
+
+```
+10
+10
+
+20
+20
+
+30
+30
+
+```
+
+!!! note "Remarque"
+    Sans conversion en entier, `ligne * 2` double la chaîne de caractères `ligne`, qui est `10\n` pour la première 
+    ligne, donc qui devient `10\n10\n`. Avec le `\n` supplémentaire ajouté à la fin par `print`, chaque appel à `print`
+    affiche 3 lignes sur la sortie standard.
+
 ---
 
 ## **Exercices de lecture de fichiers**
@@ -63,6 +95,16 @@ with open("poeme.txt", "r") as fichier:
 ### **Exercice 3 : Lire un fichier ligne par ligne**
 
 ```python
+index = 1
+with open("villes.txt", "r") as fichier:
+    for ligne in fichier:
+        print(f"{index}: {ligne.strip()}")
+        index += 1
+```
+
+#### Avec `enumerate`
+
+```python
 with open("villes.txt", "r") as fichier:
     for index, ligne in enumerate(fichier, start=1):
         print(f"{index}: {ligne.strip()}")
@@ -74,14 +116,23 @@ with open("villes.txt", "r") as fichier:
 
 ```python
 somme = 0.0
+compteur = 0 # Pour compter le nombre de nombres valides
+
 with open("nombres.txt", "r") as fichier:
     for ligne in fichier:
         try:
             nombre = float(ligne)
             somme += nombre
+            compteur += 1 # On incrémente à chaque nombre valide trouvé
         except ValueError:
             print(f"Ligne ignorée : {ligne.strip()} (n'est pas un nombre)")
-print(f"La somme est {somme}.")
+
+# On vérifie que le compteur n'est pas à zéro pour éviter une division par zéro
+if compteur > 0:
+    moyenne = somme / compteur
+    print(f"La moyenne est {moyenne}.")
+else:
+    print("Aucun nombre valide n'a été trouvé pour calculer une moyenne.")
 ```
 
 ---
@@ -218,26 +269,8 @@ with open("nombres.txt", "r") as entree, open("pairs.txt", "w") as sortie:
 
 ---
 
-### **Exercice 15 : Compter les occurrences de mots**
 
-```python
-from collections import defaultdict
-
-occurrences = defaultdict(int)
-with open("texte.txt", "r") as fichier:
-    for ligne in fichier:
-        mots = ligne.strip().split()
-        for mot in mots:
-            occurrences[mot] += 1
-
-with open("occurrences.txt", "w") as fichier:
-    for mot, count in occurrences.items():
-        fichier.write(f"{mot}: {count}\n")
-```
-
----
-
-### **Exercice 16 : Fusionner deux fichiers**
+### **Exercice 15 : Fusionner deux fichiers**
 
 ```python
 with open("fichier1.txt", "r") as f1, open("fichier2.txt", "r") as f2, open("fusion.txt", "w") as fusion:
@@ -247,7 +280,7 @@ with open("fichier1.txt", "r") as f1, open("fichier2.txt", "r") as f2, open("fus
 
 ---
 
-### **Exercice 17 : Lire et écrire des chaînes formatées**
+### **Exercice 16 : Lire et écrire des chaînes formatées**
 
 ```python
 with open("noms.txt", "r") as entree, open("salutations.txt", "w") as sortie:
@@ -258,52 +291,9 @@ with open("noms.txt", "r") as entree, open("salutations.txt", "w") as sortie:
 
 ---
 
-### **Exercice 18 : Calculer la moyenne des nombres dans un fichier**
+----------
 
-```python
-nombres = []
-with open("notes.txt", "r") as fichier:
-    for ligne in fichier:
-        try:
-            nombre = float(ligne)
-            nombres.append(nombre)
-        except ValueError:
-            continue
-
-moyenne = sum(nombres) / len(nombres) if nombres else 0
-with open("moyenne.txt", "w") as fichier:
-    fichier.write(f"Moyenne : {moyenne:.2f}\n")
-```
-
----
-
-### **Exercice 19 : Lire et écrire des données structurées**
-
-```python
-notes = []
-with open("etudiants.txt", "r") as fichier:
-    for ligne in fichier:
-        nom, note = ligne.strip().split(",")
-        notes.append(float(note))
-
-moyenne = sum(notes) / len(notes) if notes else 0
-with open("resultats.txt", "w") as fichier:
-    fichier.write(f"Moyenne des notes : {moyenne:.2f}\n")
-```
-
----
-
-### **Exercice 20 : Gestion des erreurs de fichier**
-
-```python
-try:
-    with open("inexistant.txt", "r") as fichier:
-        contenu = fichier.read()
-        print(contenu)
-except FileNotFoundError:
-    print("Erreur : Le fichier n'existe pas.")
-except PermissionError:
-    print("Erreur : Permission refusée.")
-```
-
----
+??? info "Utilisation de l'IA"
+    Page rédigée en partie avec l'aide d'un assistant IA. L'IA a été utilisée pour générer des 
+    explications, des exemples et/ou des suggestions de structure. Toutes les informations ont 
+    été vérifiées, éditées et complétées par l'auteur.

@@ -42,7 +42,9 @@ def exercice_5_ajouter_une_legende():
     """Exercice 5 : Ajouter une légende."""
     x = [0, 1, 2, 3, 4]
     y1 = x
-    y2 = [i ** 2 for i in x]
+    y2 = []
+    for i in x:
+        y2.append(i ** 2)
 
     plt.plot(x, y1, 'b-', label="y = x")
     plt.plot(x, y2, 'r--', label="y = x²")
@@ -88,20 +90,17 @@ def exercice_8_diagramme_de_dispersion():
 
 
 def exercice_9_tracer_plusieurs_courbes():
-    """Exercice 9 : Tracer plusieurs courbes avec une boucle."""
+    """Exercice 9 : Tracer plusieurs courbes."""
     x = np.linspace(0, 3, 100)
-    fonctions = [
-        ("y = x", lambda x: x, 'b-'),
-        ("y = x²", lambda x: x ** 2, 'r--'),
-        ("y = x³", lambda x: x ** 3, 'g:')
-    ]
 
-    for label, func, style in fonctions:
-        plt.plot(x, func(x), style, label=label)
+    # Calcul et tracé direct de chaque courbe
+    plt.plot(x, x, 'b-', label="y = x")
+    plt.plot(x, x ** 2, 'r--', label="y = x²")
+    plt.plot(x, x ** 3, 'g:', label="y = x³")
 
     plt.xlabel("x")
     plt.ylabel("y")
-    plt.title("Exercice 9 : Plusieurs courbes avec boucle")
+    plt.title("Plusieurs courbes sans boucle")
     plt.legend()
     plt.show()
 
@@ -154,24 +153,38 @@ def exercice_12_tracer_donnees_validation(nom_fichier):
 
 
 def exercice_13_tracer_sous_graphiques():
-    """Exercice 13 : Tracer des sous-graphiques avec des boucles."""
+    """Exercice 13 : Tracer des sous-graphiques."""
     x = np.linspace(0, 2 * np.pi, 100)
-    fonctions = [
-        ("sin(x)", np.sin),
-        ("cos(x)", np.cos),
-        ("tan(x)", np.tan),
-        ("x²", lambda x: x ** 2)
-    ]
 
+    # Création de la figure et des axes (2 lignes, 2 colonnes)
     fig, axes = plt.subplots(2, 2, figsize=(10, 8))
+    (ax1, ax2), (ax3, ax4) = axes  # Extraction des axes pour un accès plus simple
 
-    for ax, (label, func) in zip(axes.flatten(), fonctions):
-        ax.plot(x, func(x))
-        ax.set_title(label)
-        ax.set_xlabel("x")
-        ax.set_ylabel("y")
+    # Sous-graphique 1 : sin(x)
+    ax1.plot(x, np.sin(x))
+    ax1.set_title("sin(x)")
+    ax1.set_xlabel("x")
+    ax1.set_ylabel("y")
 
-    plt.suptitle("Exercice 13 : Sous-graphiques avec boucle")
+    # Sous-graphique 2 : cos(x)
+    ax2.plot(x, np.cos(x))
+    ax2.set_title("cos(x)")
+    ax2.set_xlabel("x")
+    ax2.set_ylabel("y")
+
+    # Sous-graphique 3 : tan(x)
+    ax3.plot(x, np.tan(x))
+    ax3.set_title("tan(x)")
+    ax3.set_xlabel("x")
+    ax3.set_ylabel("y")
+
+    # Sous-graphique 4 : x²
+    ax4.plot(x, x ** 2)
+    ax4.set_title("x²")
+    ax4.set_xlabel("x")
+    ax4.set_ylabel("y")
+
+    plt.suptitle("Exercice 13 : Sous-graphiques")
     plt.tight_layout()
     plt.show()
 

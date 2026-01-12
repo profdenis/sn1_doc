@@ -1060,4 +1060,129 @@ print(tronquer("Bonjour tout le monde", 10))  # "Bonjour..."
 ---
 
 
-e
+
+### **Exercice 15 : Compter les occurrences de mots**
+
+Écrivez un programme qui lit un fichier `texte.txt`, compte les occurrences de chaque mot, et écrit les résultats dans
+un fichier `occurrences.txt`.
+
+---
+
+### **Exercice 15 : Compter les occurrences de mots**
+
+```python
+from collections import defaultdict
+
+occurrences = defaultdict(int)
+with open("texte.txt", "r") as fichier:
+    for ligne in fichier:
+        mots = ligne.strip().split()
+        for mot in mots:
+            occurrences[mot] += 1
+
+with open("occurrences.txt", "w") as fichier:
+    for mot, count in occurrences.items():
+        fichier.write(f"{mot}: {count}\n")
+```
+
+---
+
+
+### **Exercice 18 : Calculer la moyenne des nombres dans un fichier**
+
+Écrivez un programme qui lit un fichier `notes.txt` contenant une note par ligne, calcule la moyenne de ces notes, et
+écrit le résultat dans un fichier `moyenne.txt`.
+
+---
+
+### **Exercice 18 : Calculer la moyenne des nombres dans un fichier**
+
+```python
+nombres = []
+with open("notes.txt", "r") as fichier:
+    for ligne in fichier:
+        try:
+            nombre = float(ligne)
+            nombres.append(nombre)
+        except ValueError:
+            continue
+
+moyenne = sum(nombres) / len(nombres) if nombres else 0
+with open("moyenne.txt", "w") as fichier:
+    fichier.write(f"Moyenne : {moyenne:.2f}\n")
+```
+
+---
+
+
+### **Exercice 19 : Lire et écrire des données structurées**
+
+Écrivez un programme qui lit un fichier `etudiants.txt` contenant des lignes au format `nom,note`, calcule la moyenne
+des notes, et écrit le résultat dans un fichier `resultats.txt`.
+
+---
+
+### **Exercice 20 : Gestion des erreurs de fichier**
+
+Écrivez un programme qui tente de lire un fichier `inexistant.txt` et gère les erreurs `FileNotFoundError` et
+`PermissionError`.
+
+---
+
+
+
+### **Exercice 19 : Lire et écrire des données structurées**
+
+```python
+notes = []
+with open("etudiants.txt", "r") as fichier:
+    for ligne in fichier:
+        nom, note = ligne.strip().split(",")
+        notes.append(float(note))
+
+moyenne = sum(notes) / len(notes) if notes else 0
+with open("resultats.txt", "w") as fichier:
+    fichier.write(f"Moyenne des notes : {moyenne:.2f}\n")
+```
+
+---
+
+### **Exercice 20 : Gestion des erreurs de fichier**
+
+```python
+try:
+    with open("inexistant.txt", "r") as fichier:
+        contenu = fichier.read()
+        print(contenu)
+except FileNotFoundError:
+    print("Erreur : Le fichier n'existe pas.")
+except PermissionError:
+    print("Erreur : Permission refusée.")
+```
+
+---
+
+
+### **Exercice 14 : Masques et conditions**
+
+1. Créez un tableau `valeurs` contenant `[5, 10, 15, 20, 25]`.
+    - Créez un masque pour sélectionner les valeurs supérieures à 15.
+    - Affichez les valeurs qui satisfont cette condition.
+2. À partir du tableau `notes` de l'exercice 9, sélectionnez les notes supérieures ou égales à 15.
+
+---
+
+### **Exercice 14 : Masques et conditions**
+
+```python
+# 1. Masque pour les valeurs > 15
+valeurs = np.array([5, 10, 15, 20, 25])
+masque = valeurs > 15
+print("Valeurs > 15 :", valeurs[masque])  # Affiche [20 25]
+
+# 2. Notes >= 15
+notes = np.array([12, 15, 18, 9, 14])
+notes_filtrees = notes[notes >= 15]
+print("Notes >= 15 :", notes_filtrees)  # Affiche [15 18]
+```
+

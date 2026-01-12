@@ -79,11 +79,9 @@ bleus.
 
 ---
 
-## **Exercices combinés avec boucles, conditionnelles, `ndarray`, et gestion d'erreurs**
+### **Exercice 9 : Tracer plusieurs courbes**
 
-### **Exercice 9 : Tracer plusieurs courbes avec une boucle**
-
-Utilisez une boucle pour tracer les courbes suivantes sur le même graphique :
+Tracer les courbes suivantes sur le même graphique :
 
 - `y = x`
 - `y = x²`
@@ -134,7 +132,7 @@ trois 4
 
 ---
 
-### **Exercice 13 : Tracer des sous-graphiques avec des boucles**
+### **Exercice 13 : Tracer des sous-graphiques**
 
 Utilisez une boucle pour créer 4 sous-graphiques (2 lignes, 2 colonnes) affichant :
 
@@ -158,7 +156,7 @@ Colorez les barres en rouge si la valeur est supérieure à 10, sinon en bleu.
 
 ---
 
-### **Exercice 15 : Tracer des données avec des masques NumPy**
+### :material-checkbox-blank-outline: **Exercice 15 : Tracer des données avec des masques NumPy**
 
 Générez un tableau NumPy `x` de 100 valeurs entre 0 et \(4\pi\), puis :
 
@@ -167,7 +165,7 @@ Générez un tableau NumPy `x` de 100 valeurs entre 0 et \(4\pi\), puis :
 
 ---
 
-### **Exercice 16 : Tracer des données avec gestion d'erreurs**
+### :material-checkbox-blank-outline: **Exercice 16 : Tracer des données avec gestion d'erreurs**
 
 Écrivez une fonction qui :
 
@@ -177,7 +175,7 @@ Générez un tableau NumPy `x` de 100 valeurs entre 0 et \(4\pi\), puis :
 
 ---
 
-### **Exercice 17 : Tracer une fonction par morceaux**
+### :material-checkbox-blank-outline: **Exercice 17 : Tracer une fonction par morceaux**
 
 Tracez la fonction suivante :
 
@@ -189,7 +187,7 @@ pour `x` allant de -3 à 3 avec un pas de 0.1.
 
 ---
 
-### **Exercice 18 : Tracer des données depuis un tableau 2D**
+### :material-checkbox-blank-outline: **Exercice 18 : Tracer des données depuis un tableau 2D**
 
 Créez un tableau NumPy 2D où chaque ligne représente une série de données, puis tracez chaque série sur le même
 graphique avec une couleur et un style différents.
@@ -213,7 +211,7 @@ histogramme avec 30 bins.
 
 ---
 
-### **Exercice 20 : Tracer des données avec des boucles et des conditions**
+### :material-checkbox-blank-outline: **Exercice 20 : Tracer des données avec des boucles et des conditions**
 
 Tracez les fonctions suivantes sur le même graphique, en utilisant une boucle et des conditions pour choisir les
 couleurs :
@@ -235,3 +233,10 @@ pour `x` allant de 0 à \(2\pi\) avec un pas de 0.1.
 - Testez vos programmes avec différentes valeurs pour vérifier leur bon fonctionnement.
 
 ---
+
+----------
+
+??? info "Utilisation de l'IA"
+    Page rédigée en partie avec l'aide d'un assistant IA. L'IA a été utilisée pour générer des 
+    explications, des exemples et/ou des suggestions de structure. Toutes les informations ont 
+    été vérifiées, éditées et complétées par l'auteur.

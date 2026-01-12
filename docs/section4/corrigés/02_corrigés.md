@@ -63,7 +63,9 @@ plt.show()
 ```python
 x = [0, 1, 2, 3, 4]
 y1 = x
-y2 = [i ** 2 for i in x]
+y2 = []
+for i in x:
+    y2.append(i ** 2)
 
 plt.plot(x, y1, 'b-', label="y = x")
 plt.plot(x, y2, 'r--', label="y = x²")
@@ -125,29 +127,28 @@ plt.show()
 ![q08.png](../images/q08.png)
 ---
 
-## **Exercices combinés avec boucles, conditionnelles, `ndarray`, et gestion d'erreurs**
-
-### **Exercice 9 : Tracer plusieurs courbes avec une boucle**
+### **Exercice 9 : Tracer plusieurs courbes**
 
 ```python
-x = np.linspace(0, 3, 100)
-fonctions = [
-    ("y = x", lambda x: x, 'b-'),
-    ("y = x²", lambda x: x ** 2, 'r--'),
-    ("y = x³", lambda x: x ** 3, 'g:')
-]
+import matplotlib.pyplot as plt
+import numpy as np
 
-for label, func, style in fonctions:
-    plt.plot(x, func(x), style, label=label)
+x = np.linspace(0, 3, 100)
+
+# Calcul et tracé direct de chaque courbe
+plt.plot(x, x, 'b-', label="y = x")
+plt.plot(x, x ** 2, 'r--', label="y = x²")
+plt.plot(x, x ** 3, 'g:', label="y = x³")
 
 plt.xlabel("x")
 plt.ylabel("y")
-plt.title("Exercice 9 : Plusieurs courbes avec boucle")
+plt.title("Plusieurs courbes sans boucle")
 plt.legend()
 plt.show()
 ```
 
 ![q09.png](../images/q09.png)
+
 ---
 
 ### **Exercice 10 : Tracer une fonction conditionnelle**
@@ -214,26 +215,43 @@ tracer_points_fichier("points.txt")
 ![q12.png](../images/q12.png)
 ---
 
-### **Exercice 13 : Tracer des sous-graphiques avec des boucles**
+### **Exercice 13 : Tracer des sous-graphiques**
 
 ```python
+import matplotlib.pyplot as plt
+import numpy as np
+
 x = np.linspace(0, 2 * np.pi, 100)
-fonctions = [
-    ("sin(x)", np.sin),
-    ("cos(x)", np.cos),
-    ("tan(x)", np.tan),
-    ("x²", lambda x: x ** 2)
-]
 
+# Création de la figure et des axes (2 lignes, 2 colonnes)
 fig, axes = plt.subplots(2, 2, figsize=(10, 8))
+(ax1, ax2), (ax3, ax4) = axes # Extraction des axes pour un accès plus simple
 
-for ax, (label, func) in zip(axes.flatten(), fonctions):
-    ax.plot(x, func(x))
-    ax.set_title(label)
-    ax.set_xlabel("x")
-    ax.set_ylabel("y")
+# Sous-graphique 1 : sin(x)
+ax1.plot(x, np.sin(x))
+ax1.set_title("sin(x)")
+ax1.set_xlabel("x")
+ax1.set_ylabel("y")
 
-plt.suptitle("Exercice 13 : Sous-graphiques avec boucle")
+# Sous-graphique 2 : cos(x)
+ax2.plot(x, np.cos(x))
+ax2.set_title("cos(x)")
+ax2.set_xlabel("x")
+ax2.set_ylabel("y")
+
+# Sous-graphique 3 : tan(x)
+ax3.plot(x, np.tan(x))
+ax3.set_title("tan(x)")
+ax3.set_xlabel("x")
+ax3.set_ylabel("y")
+
+# Sous-graphique 4 : x² 
+ax4.plot(x, x**2)
+ax4.set_title("x²")
+ax4.set_xlabel("x")
+ax4.set_ylabel("y")
+
+plt.suptitle("Exercice 13 : Sous-graphiques")
 plt.tight_layout()
 plt.show()
 ```
@@ -258,7 +276,7 @@ plt.show()
 ![q14.png](../images/q14.png)
 ---
 
-### **Exercice 15 : Tracer des données avec des masques NumPy**
+### :material-checkbox-blank-outline: **Exercice 15 : Tracer des données avec des masques NumPy**
 
 ```python
 x = np.linspace(0, 4 * np.pi, 100)
@@ -277,7 +295,7 @@ plt.show()
 ![q15.png](../images/q15.png)
 ---
 
-### **Exercice 16 : Tracer des données avec gestion d'erreurs**
+### :material-checkbox-blank-outline: **Exercice 16 : Tracer des données avec gestion d'erreurs**
 
 ```python
 def tracer_donnees_utilisateur():
@@ -307,7 +325,7 @@ tracer_donnees_utilisateur()
 ![q16.png](../images/q16.png)
 ---
 
-### **Exercice 17 : Tracer une fonction par morceaux**
+### :material-checkbox-blank-outline: **Exercice 17 : Tracer une fonction par morceaux**
 
 ```python
 x = np.arange(-3, 3.1, 0.1)
@@ -323,7 +341,7 @@ plt.show()
 ![q17.png](../images/q17.png)
 ---
 
-### **Exercice 18 : Tracer des données depuis un tableau 2D**
+### :material-checkbox-blank-outline: **Exercice 18 : Tracer des données depuis un tableau 2D**
 
 ```python
 donnees = np.array([
@@ -363,7 +381,7 @@ plt.show()
 ![q19.png](../images/q19.png)
 ---
 
-### **Exercice 20 : Tracer des données avec boucles et conditions**
+### :material-checkbox-blank-outline: **Exercice 20 : Tracer des données avec boucles et conditions**
 
 ```python
 x = np.linspace(0, 2 * np.pi, 100)
@@ -393,3 +411,9 @@ plt.show()
 
 ---
 
+----------
+
+??? info "Utilisation de l'IA"
+    Page rédigée en partie avec l'aide d'un assistant IA. L'IA a été utilisée pour générer des 
+    explications, des exemples et/ou des suggestions de structure. Toutes les informations ont 
+    été vérifiées, éditées et complétées par l'auteur.
