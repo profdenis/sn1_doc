@@ -19,7 +19,7 @@ icon: material/checkbox-outline
 
 ### **1.2 Démarrer la console Python**
 
-#### **Sur Windows :**
+#### :material-checkbox-blank-outline: **Sur Windows :**
 
 1. Ouvrez le menu **Démarrer**.
 2. Tapez `cmd` pour ouvrir l'**Invite de commandes**.
@@ -31,7 +31,7 @@ icon: material/checkbox-outline
       >>>
       ```
 
-#### **Sur macOS :**
+#### :material-checkbox-blank-outline: **Sur macOS :**
 
 1. Ouvrez le **Terminal** (via Spotlight : `Cmd + Espace`, puis tapez `Terminal`).
 2. Tapez `python3` et appuyez sur **Entrée**.
@@ -103,7 +103,7 @@ icon: material/checkbox-outline
 
 ---
 
-### **2.3 Exécuter un fichier Python dans le terminal**
+###  :material-checkbox-blank-outline: **2.3 Exécuter un fichier Python dans le terminal**
 
 #### **Sur Windows :**
 

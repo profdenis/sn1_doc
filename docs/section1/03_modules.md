@@ -223,7 +223,7 @@ log10(100) = 2.0
 
 ---
 
-## **4. Le module `datetime`**
+## :material-checkbox-blank-outline: **4. Le module `datetime`**
 
 Le module `datetime` permet de manipuler des **dates et heures**. Il est utile pour :
 
