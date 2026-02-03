@@ -43,7 +43,12 @@ print(2025)
 
 ```python
 # 1.
-print("Les notes :", 15, 18, 12, sep=", ", end=".\n")
+# Avec 2 print
+print("Les notes :")
+print(15, 18, 12, sep=", ", end=".\n")
+# Avec 1 print, il faut utiliser une virgule comme séparateur, mais on ne doit avoir de virgule 
+# entre le : et le premier nombre, on peut utiliser un f-string ou .format()
+print(f"Les notes : {15}", 18, 12, sep=", ", end=".\n")
 
 # 2.
 print("3", end=">")
