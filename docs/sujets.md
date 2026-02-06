@@ -13,7 +13,7 @@
     2. Type de données, conversions des entrées vers `int` ou `float`
     3. Importation de modules (`math`, `random`)
     4. Notes de cours : section 1.3
-    5. Livre : sections 2.0, 2.1, 3.0, 3.1. 3.2
+    5. Livre : sections 2.0, 2.1, 3.0, 3.1, 3.2
 3. Semaine 3
     1. Définition et utilisation de fonctions
     2. Notes de cours : section 1.4
@@ -25,6 +25,7 @@
 5. Semaine 5
     1. Exercices et préparation à l'examen 1
 6. Semaine 6
+   1. Examen 1
 7. Semaine 7
 8. Semaine 8
 9. Semaine 9
