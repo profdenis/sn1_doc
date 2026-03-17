@@ -25,11 +25,23 @@
 5. Semaine 5
     1. Exercices et préparation à l'examen 1
 6. Semaine 6
-   1. Examen 1
+    1. Examen 1 (2 heures)
 7. Semaine 7
+    1. Boucles `while`
+    2. Notes de cours : section 2.4
+    3. Livre : chapitre 5, sections 5.0, 5.1 et 5.2 et encadrés *Erreurs et débogage*
 8. Semaine 8
+    1. Boucles `for`
+    2. Notes de cours : section 2.5
+    3. Livre : chapitre 6, sections 6.0, 6.1 et 6.2
 9. Semaine 9
+    1. Structures de contrôle imbriquées
+    2. Notes de cours : section 2.5
+    3. Livre : chapitre 7
 10. Semaine 10
+    1. Les listes (partie 1)
+    2. Notes de cours : section 2.4
+    3. Livre : chapitre 5
 11. Semaine 11
     1. Examen 2
 12. Semaine 12
