@@ -36,17 +36,28 @@
     3. Livre : chapitre 6, sections 6.0, 6.1 et 6.2
 9. Semaine 9
     1. Structures de contrôle imbriquées
-    2. Notes de cours : section 2.5
+    2. Notes de cours : section 2.6
     3. Livre : chapitre 7
 10. Semaine 10
-    1. Les listes (partie 1)
-    2. Notes de cours : section 2.4
-    3. Livre : chapitre 5
+    1. Les listes
+    2. Notes de cours : section 3.2
+    3. Livre : 
+       - chapitre 8, jusqu'à la section 8.3 inclusivement
+       - chapitre 9, sections 9.2 et 9.3
 11. Semaine 11
     1. Examen 2
 12. Semaine 12
+    1. Les chaînes de caractères et la lecture et l'écriture de fichiers
+    2. Notes de cours : section 3.3 et 3.4
+    3. Livre : chapitre 12, chapitre 9 section 9.4
 13. Semaine 13
+    1. NumPy
+    2. Notes de cours : section 4.1
+    3. Livre :
 14. Semaine 14
+    1. Matplotlib et pyplot
+    2. Notes de cours : section 4.2
+    3. Livre :
 15. Semaine 15
     1. Préparation à l'examen final
 16. Semaine 16

@@ -1,4 +1,4 @@
-# **Exercices pratiques : Chaînes de caractères**
+# **Exercices 3 : Chaînes de caractères**
 
 ---
 
