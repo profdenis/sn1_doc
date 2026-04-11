@@ -194,6 +194,6 @@ print(remplacer_voyelles("Bonjour", "*"))  # "B*nj**r"
 -------
 
 ??? info "Utilisation de l'IA"
-      Page rédigée en partie avec l'aide d'un assistant IA, principalement à l'aide de Perplexity AI. L'IA a été 
-      utilisée pour générer des explications, des exemples et/ou des suggestions de structure. Toutes les informations 
-      ont été vérifiées, éditées et complétées par l'auteur.
+    Page rédigée en partie avec l'aide d'un assistant IA. L'IA a été utilisée pour générer des 
+    explications, des exemples et/ou des suggestions de structure. Toutes les informations ont 
+    été vérifiées, éditées et complétées par l'auteur.

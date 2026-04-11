@@ -297,9 +297,75 @@ while i < 5:
 
 ---
 
+## Exercices supplémentaires
+
+## 1. Affichage de carrés dans la console
+
+```python
+def afficher_carre(n):
+    # Ligne du haut
+    print("* " * n)
+
+    # Lignes du milieu
+    for i in range(1, n - 1):
+        print("* ", end="")
+        for _ in range(1, n - 1):
+            print(". ", end="")
+        print("*")
+
+    # Ligne du bas
+    if n > 1:
+        print("* " * n)
+
+
+for largeur in range(10, 3, -2):
+    print(f"largeur = {largeur}")
+    afficher_carre(largeur)
+    print()
+```
+
+## 2. Logarithme en base 2
+
+```python
+def log_2(n):
+    puissance = 1
+    exposant = 0
+
+    while puissance < n:
+        puissance *= 2
+        exposant += 1
+
+    return exposant
+
+
+valeurs = [32, 34, 64, 100, 128, 150]
+
+for n in valeurs:
+    print(f"log_2({n}) = {log_2(n)}")
+```
+
+## 3. Somme des n premiers entiers
+
+```python
+def somme_boucle(n):
+    somme = 0
+    for i in range(1, n + 1):
+        somme += i
+    return somme
+
+
+def somme_formule(n):
+    return n * (n + 1) // 2
+
+
+for n in range(0, 101, 7):
+    print(f"somme_boucle({n}) == somme_formule({n}) == {somme_boucle(n)}")
+```
+
+
 -------
 
 ??? info "Utilisation de l'IA"
-      Page rédigée en partie avec l'aide d'un assistant IA, principalement à l'aide de Perplexity AI. L'IA a été 
-      utilisée pour générer des explications, des exemples et/ou des suggestions de structure. Toutes les informations 
-      ont été vérifiées, éditées et complétées par l'auteur.
+    Page rédigée en partie avec l'aide d'un assistant IA. L'IA a été utilisée pour générer des 
+    explications, des exemples et/ou des suggestions de structure. Toutes les informations ont 
+    été vérifiées, éditées et complétées par l'auteur.
