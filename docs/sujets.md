@@ -47,8 +47,8 @@
 11. Semaine 11
     1. Examen 2
 12. Semaine 12
-    1. Les chaînes de caractères et la lecture et l'écriture de fichiers
-    2. Notes de cours : section 3.3 et 3.4
+    1. Les listes (deuxième partie), les chaînes de caractères, et la lecture et l'écriture de fichiers
+    2. Notes de cours : sections 3.2, 3.3 et 3.4
     3. Livre : chapitre 12, chapitre 9 section 9.4
 13. Semaine 13
     1. NumPy
@@ -61,7 +61,7 @@
 15. Semaine 15
     1. Préparation à l'examen final
 16. Semaine 16
-    1. Examen final (semaine des examens)
+    1. Examen final (semaine des examens): 22 mai 2026, de 12h à 15h
 
 ## Exercices
 
