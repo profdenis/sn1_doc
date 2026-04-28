@@ -370,6 +370,10 @@ moyenne = somme / len(nombres)
 print(f"La moyenne est {moyenne}.")  # Affiche "La moyenne est 30.0."
 ```
 
+!!! note "Remarque"
+    La boucle précédente pourrait être remplacée par un appel à la fonction `sum()`, avec la liste de nombres en 
+    argument. Donc, on aurait pu utiliser `moyenne = sum(nombres) / len(nombres)` sans avoir besoin de faire une boucle.
+
 ---
 
 ----------

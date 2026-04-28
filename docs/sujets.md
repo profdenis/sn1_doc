@@ -47,21 +47,22 @@
 11. Semaine 11
     1. Examen 2
 12. Semaine 12
-    1. Les listes (deuxième partie), les chaînes de caractères, et la lecture et l'écriture de fichiers
+    1. Les listes (deuxième partie), les chaînes de caractères
     2. Notes de cours : sections 3.2, 3.3 et 3.4
     3. Livre : chapitre 12, chapitre 9 section 9.4
 13. Semaine 13
-    1. NumPy
-    2. Notes de cours : section 4.1
-    3. Livre :
+    1. La lecture et l'écriture de fichiers, les bases de `numpy`, et premiers graphiques avec `matplotlib.pyplot`
+    2. Notes de cours : sections 3.4 (pas de tableaux en 2D ni matrices), 4.1, 4.2 (début)
+    3. Livre : sections 2.2, 2.3, 9.4, 11.0, 11.1
 14. Semaine 14
-    1. Matplotlib et pyplot
+    1. `Matplotlib` et `pyplot`
     2. Notes de cours : section 4.2
-    3. Livre :
+    3. Livre : sections 9.5, 11.2
 15. Semaine 15
     1. Préparation à l'examen final
 16. Semaine 16
     1. Examen final (semaine des examens): 22 mai 2026, de 12h à 15h
+    2. Dispo : 19 mai de 12h à 14h30 (local habituel)
 
 ## Exercices
 
