@@ -57,12 +57,12 @@
 14. Semaine 14
     1. `Matplotlib` et `pyplot`
     2. Notes de cours : section 4.2
-    3. Livre : sections 9.5, 11.2
+    3. Livre : sections 5.4, 9.5, 11.2
 15. Semaine 15
     1. Préparation à l'examen final
 16. Semaine 16
-    1. Examen final (semaine des examens): 22 mai 2026, de 12h à 15h
-    2. Dispo : 19 mai de 12h à 14h30 (local habituel)
+    1. Dispo : 19 mai de 12h à 14h30 (local habituel)
+    2. Examen final (semaine des examens): 22 mai 2026, de 12h à 15h
 
 ## Exercices
 
